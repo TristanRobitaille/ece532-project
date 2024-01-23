@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Jan 23 08:08:25 2024
+# Process ID: 9936
+# Current directory: W:/University/ece532/labs/warmup_demo/kris_warmup_2/kris_warmup_2.runs/design_1_lmb_bram_0_synth_1
+# Command line: vivado.exe -log design_1_lmb_bram_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_lmb_bram_0.tcl
+# Log file: W:/University/ece532/labs/warmup_demo/kris_warmup_2/kris_warmup_2.runs/design_1_lmb_bram_0_synth_1/design_1_lmb_bram_0.vds
+# Journal file: W:/University/ece532/labs/warmup_demo/kris_warmup_2/kris_warmup_2.runs/design_1_lmb_bram_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_lmb_bram_0.tcl -notrace
