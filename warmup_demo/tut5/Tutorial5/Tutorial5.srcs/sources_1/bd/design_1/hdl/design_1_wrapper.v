@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Thu Jan 18 20:26:28 2024
+//Date        : Tue Jan 23 19:17:11 2024
 //Host        : yudi running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -32,6 +32,9 @@ module design_1_wrapper
     eth_rmii_rxd,
     eth_rmii_tx_en,
     eth_rmii_txd,
+    gpio_io_i_0,
+    gpio_io_i_2,
+    gpio_io_o_0,
     reset,
     sys_clock,
     usb_uart_rxd,
@@ -58,6 +61,9 @@ module design_1_wrapper
   input [1:0]eth_rmii_rxd;
   output eth_rmii_tx_en;
   output [1:0]eth_rmii_txd;
+  input [15:0]gpio_io_i_0;
+  input [4:0]gpio_io_i_2;
+  output [15:0]gpio_io_o_0;
   input reset;
   input sys_clock;
   input usb_uart_rxd;
@@ -88,6 +94,9 @@ module design_1_wrapper
   wire [1:0]eth_rmii_rxd;
   wire eth_rmii_tx_en;
   wire [1:0]eth_rmii_txd;
+  wire [15:0]gpio_io_i_0;
+  wire [4:0]gpio_io_i_2;
+  wire [15:0]gpio_io_o_0;
   wire reset;
   wire sys_clock;
   wire usb_uart_rxd;
@@ -118,6 +127,9 @@ module design_1_wrapper
         .eth_rmii_rxd(eth_rmii_rxd),
         .eth_rmii_tx_en(eth_rmii_tx_en),
         .eth_rmii_txd(eth_rmii_txd),
+        .gpio_io_i_0(gpio_io_i_0),
+        .gpio_io_i_2(gpio_io_i_2),
+        .gpio_io_o_0(gpio_io_o_0),
         .reset(reset),
         .sys_clock(sys_clock),
         .usb_uart_rxd(usb_uart_rxd),
