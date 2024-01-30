@@ -5,34 +5,43 @@
 #########
 #Exclude all
 #########
-*
-!*/
-!.gitignore
+#*
+#!*/
+#!.gitignore
 ###########################################################################
 ##	VIVADO
 ###########################################################################
 #####relavant folders:
 ######IP:
 
-!*/ips/
+#!**/ips
 
 ######rtl:
-!*/rtl/
+#!**/rtl
 
 ######constraints:
 
-!*/constraints/
+#!**/constraints
 ######exported_hardware:
 
-!*/exported_hardware/
+#!**/exported_hardware
 
 ######block_designs:
 
-!*/block_designs/
+#!**/block_designs
 
 ###### project tcl:
-!/rebuild.tcl
+#!*/rebuild.tcl
 
 
-###########SDK related dependencies: only include application project##############
-#!*software/<name_of_project>
+
+
+
+
+##########another version
+
+**/project_1
+*.jou
+*.log
+*/software/
+#### add: !/software/application_project_name to unignore the project name
