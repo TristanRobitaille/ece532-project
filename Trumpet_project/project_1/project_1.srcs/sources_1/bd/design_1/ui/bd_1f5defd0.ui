@@ -1,0 +1,16 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk_100MHz -pg 1 -y 20 -defaultsOSRD
+preplace port reset_rtl_0 -pg 1 -y 50 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 1 -y 720 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 1 -y 510 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -y 190 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 1 -y 330 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 1 -y 910 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 70 -defaultsOSRD
+levelinfo -pg 1 0 250 490 -top 0 -bot 990
+"
+}
+

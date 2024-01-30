@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Tue Jan 30 13:21:19 2024
+# Process ID: 54624
+# Current directory: C:/ECE532/Trumpet_project/software/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/ECE532/Trumpet_project/software/webtalk/webtalk.log
+# Journal file: C:/ECE532/Trumpet_project/software/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
