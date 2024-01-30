@@ -6,14 +6,13 @@
 #Exclude all
 #########
 *
-!*/
 !.gitignore
 ###########################################################################
 ##	VIVADO
 ###########################################################################
 #####relavant folders:
 ######IP:
-
+!doc/
 !*/ips/
 
 ######rtl:
@@ -21,7 +20,7 @@
 
 ######constraints:
 
-!*constraints/
+!*/constraints/
 ######exported_hardware:
 
 !*/exported_hardware/
