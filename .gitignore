@@ -14,24 +14,24 @@
 #####relavant folders:
 ######IP:
 
-!ips/
+!*/ips/
 
 ######rtl:
-!rtl/
+!*/rtl/
 
 ######constraints:
 
-!constraints/
+!*constraints/
 ######exported_hardware:
 
-!exported_hardware/
+!*/exported_hardware/
 
 ######block_designs:
 
-!block_designs/
+!*/block_designs/
 
-######tcl:
-!*.tcl
+###### project tcl:
+!/rebuild.tcl
 
 
 ###########SDK related dependencies: only include application project##############
