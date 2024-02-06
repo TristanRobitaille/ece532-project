@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="i2c_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="i2c_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="295368333334fs"></ZoomStartTime>
+      <ZoomEndTime time="427768333335fs"></ZoomEndTime>
+      <Cursor1Time time="307195000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/i2c_tb/clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2c_tb/i2c/i2c_clk_cnt" type="array">
+      <obj_property name="ElementShortName">i2c_clk_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">i2c_clk_cnt[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2c_tb/i2c/clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2c_tb/i2c/i2c_clk_200kHz" type="logic">
+      <obj_property name="ElementShortName">i2c_clk_200kHz</obj_property>
+      <obj_property name="ObjectShortName">i2c_clk_200kHz</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,43 @@
+/*
+ * cap_btn.h
+ *
+ *  Created on: Feb 3, 2024
+ *      Author: robita46
+ */
+
+#ifndef CAP_BTN_H_
+#define CAP_BTN_H_
+
+#include "xparameters.h"
+#include "xiic.h"
+#include "xil_exception.h"
+#include "xil_printf.h"
+
+#ifdef XPAR_INTC_0_DEVICE_ID
+ #include "xintc.h"
+#else
+ #include "xscugic.h"
+#endif
+
+//----- DEFINE -----//
+#define AD7156_WRITE_ADDR 0x90
+#define AD7156_READ_ADDR AD7156_WRITE_ADDR | 0x01
+#define AD7156_SERIAL_NUM_MSB_ADDR 0x13
+
+#define I2C_AXI_CTRL 0x100
+#define I2C_AXI_TX_FIFO 0x108
+#define I2C_AXI_RX_FIFO 0x10C
+
+//----- FUNCTIONS -----//
+int init_cap_btn();
+void read_cap_btn_serial_num();
+int read_rx_fifo();
+
+u8 read_i2c_single_byte_blocking(u8 addr);
+int write_i2c_single_byte_blocking(u8 data_to_write);
+
+static void SendHandler(XIic *InstancePtr);
+static void ReceiveHandler(XIic *InstancePtr);
+static void StatusHandler(XIic *InstancePtr, int Event);
+
+#endif /* CAP_BTN_H_ */

@@ -1,0 +1,91 @@
+/*
+ * cap_btn.c
+ *
+ *  Created on: Feb 3, 2024
+ *      Author: robita46
+ */
+
+#include "cap_btn.h"
+
+//----- TYPEDEF -----//
+typedef u8 AddressType;
+
+//----- GLOBALS -----//
+volatile unsigned int* i2c = (unsigned int*) XPAR_I2C_CAP_BTN_AXI_IIC_0_BASEADDR;
+volatile u8 TransmitComplete;
+volatile u8 ReceiveComplete;
+
+u8 rx_buffer;
+
+XIic IicInstance;
+
+//----- FUNCTIONS -----//
+int init_cap_btn() {
+	int status;
+	XIic_Config *ConfigPtr;	// Pointer to configuration data
+
+	// Initialize the IIC driver so that it is ready to use
+	ConfigPtr = XIic_LookupConfig(XPAR_I2C_CAP_BTN_AXI_IIC_0_DEVICE_ID);
+	if (ConfigPtr == NULL) { return XST_FAILURE; }
+	status = XIic_CfgInitialize(&IicInstance, ConfigPtr, ConfigPtr->BaseAddress);
+	if (status != XST_SUCCESS) { return XST_FAILURE; }
+
+	// Setup the Interrupt System
+//	Status = SetupInterruptSystem(&IicInstance);
+//	if (Status != XST_SUCCESS) { return XST_FAILURE; }
+
+	// Set the Handlers for transmit and reception
+	XIic_SetSendHandler(&IicInstance, &IicInstance, (XIic_Handler) SendHandler);
+	XIic_SetRecvHandler(&IicInstance, &IicInstance, (XIic_Handler) ReceiveHandler);
+	XIic_SetStatusHandler(&IicInstance, &IicInstance, (XIic_StatusHandler) StatusHandler);
+
+	// Set the Slave address
+	status = XIic_SetAddress(&IicInstance, XII_ADDR_TO_SEND_TYPE, (u8) AD7156_ADDR);
+	if (status != XST_SUCCESS) { return XST_FAILURE; }
+
+	return status;
+}
+
+int write_i2c_single_byte_blocking(u8 data_to_write) {
+	int status;
+
+	u8 data[3] = {0xCA, 0xFE, 0xBE};
+
+	XIic_Send(XPAR_AXI_IIC_0_BASEADDR, AD7156_ADDR, data, 3, XIIC_STOP);
+
+
+	//	TransmitComplete = 1;
+//	IicInstance.Stats.TxErrors = 0;
+//	status = XIic_Start(&IicInstance);
+//	status = XIic_MasterSend(&IicInstance, &data_to_write, /*ByteCount*/ 1);
+//	while ((TransmitComplete) || (XIic_IsIicBusy(&IicInstance) == TRUE)) { //TODO: Don't print here
+//		xil_printf("XIic_IsIicBusy(&IicInstance): %d\n", XIic_IsIicBusy(&IicInstance));
+//		xil_printf("TransmitComplete: %d\n", TransmitComplete);
+//		usleep(1000);
+//	}
+//	status = XIic_Stop(&IicInstance);
+
+	return status;
+}
+
+u8 read_i2c_single_byte_blocking(u8 addr) {
+	ReceiveComplete = 1;
+	write_i2c_single_byte_blocking(addr);
+
+	XIic_Start(&IicInstance);
+//	XIic_MasterRecv(&IicInstance, &rx_buffer, /*ByteCount*/ 1);
+	while (1) {
+		XIic_MasterRecv(&IicInstance, &rx_buffer, /*ByteCount*/ 1);
+		usleep(50000);
+	}
+	//	while ((ReceiveComplete) || (XIic_IsIicBusy(&IicInstance) == TRUE));
+	XIic_Stop(&IicInstance);
+
+	return rx_buffer;
+}
+
+void SendHandler(XIic *InstancePtr) {
+	TransmitComplete = 0; }
+void ReceiveHandler(XIic *InstancePtr){
+	ReceiveComplete = 0; }
+static void StatusHandler(XIic *InstancePtr, int Event) { ; }
