@@ -46,5 +46,6 @@
 
 //----- FUNCTIONS -----//
 void init_cap_btn();
+void update_cap_btn_led(volatile unsigned int* led, volatile unsigned int* cap_btn);
 
 #endif /* CAP_BTN_H_ */

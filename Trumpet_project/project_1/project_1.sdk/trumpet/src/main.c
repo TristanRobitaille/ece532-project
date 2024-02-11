@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
@@ -13,11 +12,15 @@ volatile unsigned int* cap_btn = (unsigned int*) XPAR_I2C_CAP_BTN_AXI_CAP_BTN_GP
 int main()
 {
     init_platform();
-    init_cap_btn();
+//    init_cap_btn();
+
+    xil_printf("start");
 
     while (1) {
-    	update_cap_btn_led(led, cap_btn);
-		usleep(1000);
+//    	update_cap_btn_led(led, cap_btn);
+		xil_printf("Swt: %d\n", (uint32_t) *swt);
+		*led = *swt;
+    	sleep(1);
     };
 
     cleanup_platform();

@@ -26,7 +26,7 @@ C_DEPS += \
 src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MicroBlaze gcc compiler'
-	mb-gcc -Wall -O0 -g3 -I../../trumpet_bsp/microblaze_0/include -I"C:\Users\robita46\ECE532-project-main\Trumpet_project\project_1\project_1.sdk\trumpet\inc" -c -fmessage-length=0 -MT"$@" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	mb-gcc -Wall -O0 -g3 -I../../trumpet_bsp/microblaze_0/include -I"C:\Users\robita46\ECE532-project-main\ECE532-project-main\Trumpet_project\project_1\project_1.sdk\trumpet\inc" -c -fmessage-length=0 -MT"$@" -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

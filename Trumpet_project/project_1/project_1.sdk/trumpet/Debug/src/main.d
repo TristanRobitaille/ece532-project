@@ -1,4 +1,5 @@
 src/main.o src/main.o: ../src/main.c ../src/platform.h \
+ ../src/platform_config.h \
  ../../trumpet_bsp/microblaze_0/include/xil_printf.h \
  ../../trumpet_bsp/microblaze_0/include/xil_types.h \
  ../../trumpet_bsp/microblaze_0/include/xparameters.h \
@@ -9,13 +10,15 @@ src/main.o src/main.o: ../src/main.c ../src/platform.h \
  ../../trumpet_bsp/microblaze_0/include/mb_interface.h \
  ../../trumpet_bsp/microblaze_0/include/xil_assert.h \
  ../../trumpet_bsp/microblaze_0/include/xil_exception.h \
- C:\Users\robita46\ECE532-project-main\Trumpet_project\project_1\project_1.sdk\trumpet\inc/cap_btn.h \
+ C:\Users\robita46\ECE532-project-main\ECE532-project-main\Trumpet_project\project_1\project_1.sdk\trumpet\inc/cap_btn.h \
  ../../trumpet_bsp/microblaze_0/include/xparameters.h \
  ../../trumpet_bsp/microblaze_0/include/xiic.h \
  ../../trumpet_bsp/microblaze_0/include/xstatus.h \
  ../../trumpet_bsp/microblaze_0/include/xiic_l.h
 
 ../src/platform.h:
+
+../src/platform_config.h:
 
 ../../trumpet_bsp/microblaze_0/include/xil_printf.h:
 
@@ -37,7 +40,7 @@ src/main.o src/main.o: ../src/main.c ../src/platform.h \
 
 ../../trumpet_bsp/microblaze_0/include/xil_exception.h:
 
-C:\Users\robita46\ECE532-project-main\Trumpet_project\project_1\project_1.sdk\trumpet\inc/cap_btn.h:
+C:\Users\robita46\ECE532-project-main\ECE532-project-main\Trumpet_project\project_1\project_1.sdk\trumpet\inc/cap_btn.h:
 
 ../../trumpet_bsp/microblaze_0/include/xparameters.h:
 

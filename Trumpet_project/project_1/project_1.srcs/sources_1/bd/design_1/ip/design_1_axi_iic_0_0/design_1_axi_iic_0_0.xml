@@ -1738,11 +1738,11 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 02:15:53 UTC 2024</spirit:value>
+            <spirit:value>Sun Feb 11 17:58:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:70bf7c3d</spirit:value>
+            <spirit:value>9:08916c43</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1758,11 +1758,11 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 02:15:53 UTC 2024</spirit:value>
+            <spirit:value>Sun Feb 11 17:58:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:70bf7c3d</spirit:value>
+            <spirit:value>9:08916c43</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1790,11 +1790,11 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Feb 03 02:21:39 UTC 2024</spirit:value>
+            <spirit:value>Sun Feb 11 17:58:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4feca952</spirit:value>
+            <spirit:value>9:122a81dc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1810,11 +1810,11 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 02:15:53 UTC 2024</spirit:value>
+            <spirit:value>Sun Feb 11 17:58:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4feca952</spirit:value>
+            <spirit:value>9:122a81dc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1828,11 +1828,11 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 02:15:53 UTC 2024</spirit:value>
+            <spirit:value>Sun Feb 11 17:58:21 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:70bf7c3d</spirit:value>
+            <spirit:value>9:08916c43</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1846,11 +1846,11 @@ interrupt is set.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 02:16:31 UTC 2024</spirit:value>
+            <spirit:value>Sun Feb 11 18:00:02 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:70bf7c3d</spirit:value>
+            <spirit:value>9:08916c43</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2705,7 +2705,7 @@ interrupt is set.
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK.CLK_DOMAIN" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK.FREQ_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK.PHASE" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.AXI_ACLK_FREQ_MHZ" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.AXI_ACLK_FREQ_MHZ" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_GPO_WIDTH" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SCL_INERTIAL_DELAY" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SDA_INERTIAL_DELAY" xilinx:valueSource="user"/>
