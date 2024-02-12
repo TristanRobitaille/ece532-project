@@ -1,4 +1,5 @@
 *.jou
 *.log
 */software/
+*/.DS_Store
 #### add: !/software/application_project_name to unignore the project name
