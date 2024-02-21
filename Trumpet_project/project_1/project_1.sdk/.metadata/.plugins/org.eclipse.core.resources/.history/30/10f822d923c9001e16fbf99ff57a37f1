@@ -1,0 +1,7 @@
+#ifndef INC_I2S_FIFO_H_
+#define INC_I2S_FIFO_H_
+
+#include "xparameters.h"
+#define I2S_FIFO_DEVICE_ID XPAR_XI2STX_0_DEVICE_ID
+
+#endif /* INC_I2S_FIFO_H_ */

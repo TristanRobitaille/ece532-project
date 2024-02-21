@@ -1,0 +1,17 @@
+#ifndef INC_I2S_AUDIO_H_
+#define INC_I2S_AUDIO_H_
+
+#include "xparameters.h"
+
+//----- DEFINES -----//
+#define I2S_DATA_REG XPAR_AXI_I2S_DRIVER_0_S00_AXI_BASEADDR
+#define I2S_EN_REG (I2S_DATA_REG + 32)
+
+//----- DECLARATIONS -----//
+void i2s_audio_en() {
+	u32 reg_content = Xil_In32((UINTPTR) I2S_EN_REG);
+	Xil_Out32((UINTPTR) I2S_EN_REG, (u32) (reg_content || 0x1)); //EN bit is the LSb
+
+}
+
+#endif /* INC_I2S_AUDIO_H_ */

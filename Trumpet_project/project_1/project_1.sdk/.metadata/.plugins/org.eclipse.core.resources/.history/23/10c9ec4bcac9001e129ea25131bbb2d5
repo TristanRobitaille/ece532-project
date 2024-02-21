@@ -1,0 +1,14 @@
+//#ifndef INC_DMA_H_
+//#define INC_DMA_H_
+//
+//#include "xaxidma.h"
+//#include "xparameters.h"
+//
+////----- DEFINE -----//
+//#define DMA_DEVICE_ID XPAR_AXI_DMA_DEVICE_ID
+//
+////---- DECLARATIONS -----//
+//int init_dma();
+//int write_dma_blocking(int32_t data, u32 len);
+//
+//#endif /* INC_DMA_H_ */

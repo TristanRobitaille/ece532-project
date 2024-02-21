@@ -1,0 +1,29 @@
+#ifndef INC_I2S_AUDIO_H_
+#define INC_I2S_AUDIO_H_
+
+#include "xparameters.h"
+#include "xil_io.h"
+#include "stdlib.h"
+
+//----- DEFINES -----//
+#define I2S_DATA_REG XPAR_AXI_I2S_DRIVER_0_S00_AXI_BASEADDR
+#define I2S_EN_REG (I2S_DATA_REG + 0x4)
+#define I2S_DATA_WIDTH_REG (I2S_DATA_REG + 0x8)
+#define I2S_CLK_DIV_REG (I2S_DATA_REG + 0xC)
+#define I2S_BCLK_DIV_OFFSET 0x0 // BCLK_DIV is 16 LSb of CLK_DIV reg
+#define I2S_MCLK_DIV_OFFSET 0x10 // MCLK_DIV is 16 MSb of CLK_DIV reg
+
+#define I2S_DEFAULT_DATA_WIDTH 32
+#define I2S_DEFAULT_BCLK_DIV 2 // bclk = 100MHz/2*BCLK_DIV
+#define I2S_DEFAULT_MCLK_DIV 2 // mclk = 100MHz/2*BCLK_DIV
+
+//----- PROTOTYPES -----//
+void i2s_audio_init();
+void i2s_audio_enable();
+void i2s_audio_disable();
+void i2s_audio_set_data_width(u32 data_width);
+void i2s_audio_set_bclk_div(u32 bclk_div);
+void i2s_audio_set_mclk_div(u32 mclk_div);
+void i2s_audio_write_data(u32 data);
+
+#endif /* INC_I2S_AUDIO_H_ */

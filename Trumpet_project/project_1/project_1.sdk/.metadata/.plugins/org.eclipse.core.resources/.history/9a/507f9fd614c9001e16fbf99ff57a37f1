@@ -1,0 +1,15 @@
+/*
+ * main.h
+ *
+ *  Created on: Feb 11, 2024
+ *      Author: robita46
+ */
+
+#ifndef INC_MAIN_H_
+#define INC_MAIN_H_
+
+//#define USE_CAP_BTN // Uncomment to enable I2C capacitive button only if PMOD module is connected. Else, system will during initialization.
+
+If I2C capacitive button PMOD isn't connected, need to disable it by setting this define to 0. Else, it will freeze the system waiting for a response.s
+
+#endif /* INC_MAIN_H_ */

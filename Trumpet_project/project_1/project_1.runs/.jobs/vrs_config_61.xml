@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_axi_iic_0_0_synth_1" LaunchDir="C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.runs/design_1_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_iic_0_2_synth_1" LaunchDir="C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.runs/design_1_axi_iic_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_axi_iic_0_0_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_axi_iic_0_0_synth_1"/>
+		<Parent Id="design_1_axi_iic_0_2_synth_1"/>
+	</Run>
+	<Run Id="nexys_video" LaunchDir="C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.runs/nexys_video" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="design_1_axi_iic_0_0_synth_1"/>
+		<Parent Id="design_1_axi_iic_0_2_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

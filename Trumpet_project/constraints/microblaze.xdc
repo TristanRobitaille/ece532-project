@@ -4,7 +4,7 @@ create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_
 
 ## Reset (CPU_RESET)
 set_property -dict {PACKAGE_PIN G4 IOSTANDARD LVCMOS33} [get_ports reset_rtl_0]
-set_property IOSTANDARD LVCMOS33 [get_ports reset_rtl_0_0]
+set_property IOSTANDARD LVCMOS33 [get_ports reset_rtl_0]
 
 ##Switches
 set_property PACKAGE_PIN E22 [get_ports {swt_tri_i[0]}]
@@ -58,22 +58,31 @@ set_property PACKAGE_PIN AB18 [get_ports cap_btn_i2c_sda_io]
 set_property PACKAGE_PIN AB20 [get_ports cap_btn_i2c_scl_io]
 set_property PULLUP true [get_ports cap_btn_i2c_scl_io]
 set_property PULLUP true [get_ports cap_btn_i2c_sda_io]
-
+set_property DRIVE 8 [get_ports cap_btn_i2c_scl_io]
+set_property DRIVE 8 [get_ports cap_btn_i2c_sda_io]
+set_property SLEW SLOW [get_ports cap_btn_i2c_sda_io]
+set_property SLEW SLOW [get_ports cap_btn_i2c_scl_io]
 
 ## I2S audio
-set_property PACKAGE_PIN T5 [get_ports i2s_bclk_o]
-set_property IOSTANDARD LVCMOS33 [get_ports i2s_bclk_o]
-set_property PACKAGE_PIN W6 [get_ports i2s_data_o]
-set_property IOSTANDARD LVCMOS33 [get_ports i2s_data_o]
-
 set_property PACKAGE_PIN T5 [get_ports i2s_bclk]
 set_property PACKAGE_PIN W6 [get_ports i2s_data]
+set_property PACKAGE_PIN U6 [get_ports i2s_mclk]
+set_property PACKAGE_PIN U5 [get_ports i2s_lrclk]
+set_property IOSTANDARD LVCMOS33 [get_ports i2s_mclk]
+set_property IOSTANDARD LVCMOS33 [get_ports i2s_lrclk]
 set_property IOSTANDARD LVCMOS33 [get_ports i2s_bclk]
 set_property IOSTANDARD LVCMOS33 [get_ports i2s_data]
+set_property DRIVE 4 [get_ports i2s_bclk]
+set_property DRIVE 4 [get_ports i2s_mclk]
+set_property DRIVE 4 [get_ports i2s_data]
+set_property DRIVE 4 [get_ports i2s_lrclk]
+set_property SLEW SLOW [get_ports i2s_bclk]
+set_property SLEW SLOW [get_ports i2s_mclk]
+set_property SLEW SLOW [get_ports i2s_data]
+set_property SLEW SLOW [get_ports i2s_lrclk]
+set_property OFFCHIP_TERM FP_VTT_50[get_ports i2s_data]
 
-set_property DRIVE 16 [get_ports cap_btn_i2c_scl_io]
-set_property DRIVE 16 [get_ports cap_btn_i2c_sda_io]
-set_property SLEW FAST [get_ports cap_btn_i2c_sda_io]
-set_property SLEW FAST [get_ports cap_btn_i2c_scl_io]
-set_property OFFCHIP_TERM NONE [get_ports cap_btn_i2c_scl_io]
-set_property OFFCHIP_TERM NONE [get_ports cap_btn_i2c_sda_io]
+set_property IOSTANDARD LVCMOS33 [get_ports i2s_i2c_scl_io]
+set_property IOSTANDARD LVCMOS33 [get_ports i2s_i2c_sda_io]
+set_property PACKAGE_PIN V5 [get_ports i2s_i2c_sda_io]
+set_property PACKAGE_PIN W5 [get_ports i2s_i2c_scl_io]

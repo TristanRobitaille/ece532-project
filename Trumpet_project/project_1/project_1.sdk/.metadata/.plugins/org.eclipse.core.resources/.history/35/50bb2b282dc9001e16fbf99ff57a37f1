@@ -1,0 +1,14 @@
+#ifndef INC_I2S_FIFO_H_
+#define INC_I2S_FIFO_H_
+
+#include "xparameters.h"
+#include "xllfifo.h"
+#include "xstatus.h"
+
+#define I2S_FIFO_DEVICE_ID XPAR_AXI_FIFO_0_DEVICE_ID
+
+//----- DECLARATIONS -----//
+int init_i2s_fifo();
+void i2s_fifo_write_period(int* sine_value);
+
+#endif /* INC_I2S_FIFO_H_ */

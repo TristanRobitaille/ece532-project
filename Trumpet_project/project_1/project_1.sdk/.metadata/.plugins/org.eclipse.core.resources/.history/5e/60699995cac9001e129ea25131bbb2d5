@@ -1,0 +1,8 @@
+#ifndef INC_I2S_AUDIO_H_
+#define INC_I2S_AUDIO_H_
+
+//----- DEFINES -----//
+#define I2S_DATA_REG XPAR_AXI_I2S_DRIVER_0_S00_AXI_BASEADDR
+#define I2S_EN_REG (I2S_DATA_REG + 32)
+
+#endif /* INC_I2S_AUDIO_H_ */

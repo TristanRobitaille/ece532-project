@@ -1,0 +1,19 @@
+#ifndef INC_I2S_AUDIO_H_
+#define INC_I2S_AUDIO_H_
+
+#include "xparameters.h"
+#include "xil_io.h"
+
+//----- DEFINES -----//
+#define I2S_DATA_REG XPAR_AXI_I2S_DRIVER_0_S00_AXI_BASEADDR
+#define I2S_EN_REG (I2S_DATA_REG + 0x4)
+#define I2S_DATA_WIDTH_REG (I2S_DATA_REG + 0x8)
+#define I2S_BCLK_DIV_REG (I2S_DATA_REG + 0xC) // 16 LSb of slv_reg_3
+#define I2S_MCLK_DIV_REG (I2S_DATA_REG + 0xE) // 16 MSb of slv_reg_3
+
+//----- PROTOTYPES -----//
+void i2s_audio_init();
+void i2s_audio_enable();
+void i2s_audio_disable();
+
+#endif /* INC_I2S_AUDIO_H_ */

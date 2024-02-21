@@ -1,10 +1,3 @@
-/*
- * cap_btn.h
- *
- *  Created on: Feb 3, 2024
- *      Author: robita46
- */
-
 #ifndef CAP_BTN_H_
 #define CAP_BTN_H_
 

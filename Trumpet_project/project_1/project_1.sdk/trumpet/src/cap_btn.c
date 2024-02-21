@@ -1,10 +1,3 @@
-/*
- * cap_btn.c
- *
- *  Created on: Feb 3, 2024
- *      Author: robita46
- */
-
 #include "cap_btn.h"
 
 //----- FUNCTIONS -----//
