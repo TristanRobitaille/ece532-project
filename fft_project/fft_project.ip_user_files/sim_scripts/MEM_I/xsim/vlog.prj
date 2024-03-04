@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../bd/MEM_I/ip/MEM_I_axi_bram_ctrl_0_bram_0/sim/MEM_I_axi_bram_ctrl_0_bram_0.v" \
+"../../../bd/MEM_I/sim/MEM_I.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

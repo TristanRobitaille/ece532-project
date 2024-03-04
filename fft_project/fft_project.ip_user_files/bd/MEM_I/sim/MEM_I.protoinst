@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"MEM_I": {
+			"proto_instances": {
+			}
+		}
+	}
+}
