@@ -7,6 +7,9 @@
 <img width="1201" alt="Filtered_output_functional" src="https://github.com/TristanRobitaille/ECE532-project/assets/73756462/0d62ba3e-b60b-4680-ae42-465ccacd749c">
 
 # SPI Protocol Functioning Correctly
-### Note: The tx_data at the top is what is converted from parallel->serial in the testbench.
-###       It gets converted into binary bits on the MISO line which is decoded by the SPI FSM controller
-###       And output correctly on the data_out 
+##### Note: The tx_data at the top is what is converted from parallel->serial in the testbench.
+#####       It gets converted into binary bits on the MISO line which is decoded by the SPI FSM controller
+#####       And output correctly on the data_out 
+<img width="767" alt="final_spi" src="https://github.com/TristanRobitaille/ECE532-project/assets/73756462/75d08e1f-05fe-4249-bce6-49fe3f87b19f">
+
+
