@@ -44,6 +44,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     //not sure:
     parameter BFU_INIT = 4'd3;
     parameter READ_SYNC = 4'd4; 
+    parameter BFU_WAIT = 4'd11;
     parameter BFU_DONE = 4'd5; // finished one BFU operation
     
 
@@ -127,9 +128,11 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                         twiddle_addr_incr <= 'b1;
                         read_write<= 'b0; //to read instead of write
                         read_write_2 <= 'b0;
-                        data_count <= data_count + 'b1;
+                        if(data_count >= FFT_LENGTH) data_count <= data_count;
+                        else data_count <= data_count + 'b1;
                         //increment the butterfly pairs
-                        buttferfly_pair <= buttferfly_pair + 1;
+                        if(buttferfly_pair == FFT_LENGTH) buttferfly_pair <= buttferfly_pair;
+                        else buttferfly_pair <= buttferfly_pair + 1;
                         sync_read <= 'b0;
                         mem_1_state <= READ_WAIT;
                     end
@@ -140,12 +143,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                 end
                 READ_WAIT: begin //just waiting for read_done to be asserted
                     if(read_done && data_count == FFT_LENGTH-1) begin 
-                        mem_1_state <= BFU_DONE;
-                        read_done <= 'b0;
-                        data_count <= 'b0;
-                        read_done <= ~read_done;
-                        write_triggered <= 'b1;
-                        sync_read <= 'b0;
+                        mem_1_state <= BFU_WAIT;
                     end
                     else if (read_done && data_count < FFT_LENGTH-1) begin
                         mem_1_state <= READ_MEM_1;
@@ -156,9 +154,16 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                         mem_1_state <= READ_WAIT;
                     end
                 end
-
+                BFU_WAIT: begin
+                    read_done <= 'b0;
+                    data_count <= 'b0;
+                    read_done <= ~read_done;
+                    //write_triggered <= 'b1;
+                    sync_read <= 'b0;
+                    mem_1_state <= BFU_DONE; 
+                end
                 BFU_DONE: begin //wait for 3 clock cycles also:
-                    write_triggered <= 'b1;
+                   // write_triggered <= 'b1;
                     buttferfly_pair <= 'b0; //this is to regenerate all the written addresses;
                     mem_en <= 'b0;
                     mem_en2 <= 'b0;
@@ -184,7 +189,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                 MEM_2_WRITTEN : begin
                     data_count <= data_count + 'b1;
                     if(fft_level == FFT_LENGTH-1) mem_1_state <= FINISH_FFT;
-                    else if(data_count == FFT_LENGTH -1) begin //next level of computation
+                    else if(data_count == FFT_LENGTH ) begin //next level of computation
                         mem_1_state <= READ_MEM_1;
                         data_count <= 'b0;
                         write_triggered <= 'b0;
@@ -240,8 +245,8 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     //temp signals:
     logic [13:0] but_p_1;
     logic [13:0] but_p_2;
-    assign but_p_1 = buttferfly_pair * 2;
-    assign but_p_2 = buttferfly_pair * 2 + 1'b1;
+    assign but_p_1 = (buttferfly_pair == 'b0) ? buttferfly_pair * 2 : (buttferfly_pair-1) * 2;
+    assign but_p_2 = (buttferfly_pair == 'b0) ? buttferfly_pair * 2 + 1'b1 : (buttferfly_pair-1) * 2 + 'b1;
     //the rotate functions:
     rotate rotate_a (
         .level(fft_level),
@@ -268,7 +273,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
         else begin
             if(twiddle_addr_incr) begin //this is a pulse
                 //generating my selection and the twiddle facotrmem
-                twiddle_addr <= buttferfly_pair[4:0]; //masking out hhigher bits
+                twiddle_addr <= buttferfly_pair[4:0] - 'b1; //masking out hhigher bits
             end
         end
     end
