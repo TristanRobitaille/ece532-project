@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="spi_controller_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="spi_controller_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="86860000000fs"></ZoomStartTime>
+      <ZoomEndTime time="308460000001fs"></ZoomEndTime>
+      <Cursor1Time time="193220000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="359"></NameColumnWidth>
+      <ValueColumnWidth column_width="327"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wave_markers>
+      <marker time="15525000000" label="" />
+      <marker time="326565000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/spi_controller_tb/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/chip_select" type="logic">
+      <obj_property name="ElementShortName">chip_select</obj_property>
+      <obj_property name="ObjectShortName">chip_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/master_in_slave_out" type="logic">
+      <obj_property name="ElementShortName">master_in_slave_out</obj_property>
+      <obj_property name="ObjectShortName">master_in_slave_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/serial_clock" type="logic">
+      <obj_property name="ElementShortName">serial_clock</obj_property>
+      <obj_property name="ObjectShortName">serial_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/spi_state" type="array">
+      <obj_property name="ElementShortName">spi_state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_state[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/spi_data_out" type="array">
+      <obj_property name="ElementShortName">spi_data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/clk_counter" type="array">
+      <obj_property name="ElementShortName">clk_counter[511:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_counter[511:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_controller_tb/dut/spi_clk_div" type="array">
+      <obj_property name="ElementShortName">spi_clk_div[31:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_clk_div[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
