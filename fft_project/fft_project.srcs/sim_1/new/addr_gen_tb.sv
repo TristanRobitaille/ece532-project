@@ -175,7 +175,8 @@ module addr_gen_tb;
         #40;
         #20;
         start_fft <= 'b1;
-        #6000;
+        #50;
+        start_fft <= 'b0;
         //$finish();
     end
 endmodule

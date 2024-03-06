@@ -86,7 +86,6 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
             read_write <= 'b0;
             //writedata <= 'b0;
             read_done <= 'b0;
-            finished_writting <= 'b1;
             fft_level <= 'b0;
             buttferfly_pair <= 'b0;
             done_computation <= 'b1;
@@ -103,13 +102,12 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                     write_triggered <= 'b0;
                     fft_count <= 'b0;
                     sync_read <= 'b0;
-                    if(start_fft & finished_writting) begin
+                    if(start_fft) begin
                         mem_1_state <=  READ_MEM_1; 
-                        finished_writting <= 'b0;
+                        fft_done <= 'b0;
                     end
                     else begin 
                         mem_1_state <= START;
-                        fft_done <= 'b0;
                         incr_read_addr <= 'b0;
                         twiddle_addr_incr <= 'b0;
                     end
@@ -128,8 +126,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                         twiddle_addr_incr <= 'b1;
                         read_write<= 'b0; //to read instead of write
                         read_write_2 <= 'b0;
-                        if(data_count >= FFT_LENGTH) data_count <= data_count;
-                        else data_count <= data_count + 'b1;
+                        data_count <= data_count + 'b1;
                         //increment the butterfly pairs
                         if(buttferfly_pair == FFT_LENGTH) buttferfly_pair <= buttferfly_pair;
                         else buttferfly_pair <= buttferfly_pair + 1;
@@ -142,10 +139,10 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                     end
                 end
                 READ_WAIT: begin //just waiting for read_done to be asserted
-                    if(read_done && data_count == FFT_LENGTH-1) begin 
+                    if(read_done && data_count == FFT_LENGTH+1) begin 
                         mem_1_state <= BFU_WAIT;
                     end
-                    else if (read_done && data_count < FFT_LENGTH-1) begin
+                    else if (read_done && data_count < FFT_LENGTH+1) begin
                         mem_1_state <= READ_MEM_1;
                         bfu_start <= 'b1;
                         read_done <= 'b0;
@@ -164,15 +161,17 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                 end
                 BFU_DONE: begin //wait for 3 clock cycles also:
                    // write_triggered <= 'b1;
+                   twiddle_addr_incr <= 'b0;
                     buttferfly_pair <= 'b0; //this is to regenerate all the written addresses;
                     mem_en <= 'b0;
                     mem_en2 <= 'b0;
-                    if(sync_read == 'b11)
+                    mem_1_state <= WRITE_MEM_2;
+                   /* if(sync_read == 'b11)
                         mem_1_state <= WRITE_MEM_2;
                     else begin
                          mem_1_state <= BFU_DONE;
                          sync_read <= sync_read + 'b1;
-                    end
+                    end*/
                 end
                 WRITE_MEM_2:begin
                     bfu_start <= 'b0; 
@@ -183,19 +182,21 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                     mem_en2 <= 'b1;
                     read_write <= 'b1;
                     read_write_2 <= 'b1;
-                    buttferfly_pair <= buttferfly_pair + 1;
                     mem_1_state <= MEM_2_WRITTEN;
+                    buttferfly_pair <= buttferfly_pair + 1;
                 end
                 MEM_2_WRITTEN : begin
-                    data_count <= data_count + 'b1;
-                    if(fft_level == FFT_LENGTH-1) mem_1_state <= FINISH_FFT;
-                    else if(data_count == FFT_LENGTH ) begin //next level of computation
+                    if(fft_level == 5) mem_1_state <= FINISH_FFT;
+                    else if(data_count == FFT_LENGTH+1 ) begin //next level of computation
                         mem_1_state <= READ_MEM_1;
                         data_count <= 'b0;
                         write_triggered <= 'b0;
                         buttferfly_pair <= 'b0;
                     end
-                    else mem_1_state <= WRITE_MEM_2;
+                    else begin 
+                        mem_1_state <= WRITE_MEM_2;
+                        data_count <= data_count + 'b1;
+                    end
                 end
                 FINISH_FFT: begin
                     fft_done <= 'b1;
@@ -213,7 +214,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     logic [13:0] memory_1_addr;
     logic [13:0] memory_2_addr;
     logic [2:0] mem_valid;
-
+    logic fft_incr;
     //read control:
     always_ff @(posedge clk) begin
         if(!rstn) begin
@@ -226,6 +227,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
             bfu_start <= 'b0;
             read_write <= 'b0;
             read_write_2 <= 'b0;
+            fft_incr <= 'b0;
         end
         else begin
             if(incr_read_addr) begin
@@ -235,9 +237,13 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
             /*if (write_triggered) begin
                 write_triggered <= ~write_triggered;
             end*/
-            if(buttferfly_pair == FFT_LENGTH-1 && mem_1_state == MEM_2_WRITTEN) begin 
-                fft_level <= fft_level + 1; //related to fft_length
+            if(buttferfly_pair == FFT_LENGTH && mem_1_state == MEM_2_WRITTEN) begin 
+                fft_incr <= 'b1;
+            end
+            if(fft_incr) begin
+                 fft_level <= fft_level + 1; //related to fft_length
                 buttferfly_pair = 'b0;
+                fft_incr <= 'b0;
             end
         end
     end
@@ -273,7 +279,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
         else begin
             if(twiddle_addr_incr) begin //this is a pulse
                 //generating my selection and the twiddle facotrmem
-                twiddle_addr <= buttferfly_pair[4:0] - 'b1; //masking out hhigher bits
+                twiddle_addr <= (('hFFFFFFF0 >> fft_level) & 'hF) & buttferfly_pair;//fft_level [4:0];//buttferfly_pair[4:0] - 'b1; //masking out hhigher bits
             end
         end
     end
@@ -285,4 +291,3 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     );
 endmodule
 
-    

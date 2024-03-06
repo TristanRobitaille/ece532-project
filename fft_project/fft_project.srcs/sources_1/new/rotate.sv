@@ -27,14 +27,9 @@ module rotate #(parameter N = 14)(
     input [N-1:0] butterfly_pair, //this is X
     output logic [N-1:0] shifted_address
 ); 
-  //  logic [N-1] address;
-   // genvar i;
-   // assign address = butterfly_pair;
-   /* generate 
-        for (i = 0; i < level; i = i+1) begin
-            shifted_address = // {address[N-2:0],address[N-1]};
-            address = shifted_address;
-        end
-    endgenerate*/
-    assign shifted_address = (butterfly_pair << level) | (butterfly_pair >> (N-level));
+    //for now hardcode
+    logic [N-1:0] temp, temp_2;
+    assign temp = 'h1F & (butterfly_pair[4:0] << level[4:0]) ;
+    assign temp_2 = (butterfly_pair[4:0] >> (5-level[4:0]));
+    assign shifted_address = temp | (butterfly_pair[4:0] >> (5-level[4:0]));
 endmodule
