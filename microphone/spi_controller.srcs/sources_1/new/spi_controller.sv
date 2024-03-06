@@ -72,13 +72,13 @@ always_ff @( posedge clk or negedge rst_n) begin : FSM_transition_states
                     clk_counter = 1'b0;
 
                     //shift in data
-                    //spi_data_out = {spi_data_out[14:0], master_in_slave_out};
+                    spi_data_out = {spi_data_out[14:0], master_in_slave_out};
                 end
                 
-                if(sclk_counter == spi_clk_div/2) begin
+                if(sclk_counter == spi_clk_div) begin // div 2?
                     sclk_counter = 1'b0;
                 end
-                if(sclk_counter == (spi_clk_div/4)) begin
+                if(sclk_counter == (spi_clk_div/2)) begin //div 4?
                     serial_clock = ~serial_clock; // toggle clock
                 end
 
@@ -97,18 +97,11 @@ always_ff @( posedge clk or negedge rst_n) begin : FSM_transition_states
     
 end
 /*
-always_comb begin : shift_reg
-    if(serial_clock) begin
-        //shift in data
-        spi_data_out = {spi_data_out[14:0], master_in_slave_out};
-    end
-end*/
-
 always_ff @( negedge serial_clock ) begin : shift
     if(~serial_clock) begin
         spi_data_out = {spi_data_out[14:0], master_in_slave_out};
     end
-end
+end */
     
 
 

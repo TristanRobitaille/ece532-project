@@ -1,0 +1,636 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar  6 08:05:26 2024
+# Process ID: 24320
+# Current directory: C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.runs/synth_1
+# Command line: vivado.exe -log design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_wrapper.tcl
+# Log file: C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.runs/synth_1/design_wrapper.vds
+# Journal file: C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_wrapper.tcl -notrace
+Command: synth_design -top design_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18628 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 456.336 ; gain = 96.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_wrapper' [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/design_wrapper.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'spi_controller' [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/spi_controller.sv:23]
+	Parameter spi_clk_div bound to: 512 - type: integer 
+WARNING: [Synth 8-5788] Register chip_select_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/spi_controller.sv:59]
+WARNING: [Synth 8-5788] Register spi_data_out_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/spi_controller.sv:61]
+WARNING: [Synth 8-5788] Register serial_clock_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/spi_controller.sv:62]
+WARNING: [Synth 8-5788] Register sclk_counter_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/spi_controller.sv:63]
+WARNING: [Synth 8-5788] Register data_out_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/spi_controller.sv:92]
+INFO: [Synth 8-6155] done synthesizing module 'spi_controller' (1#1) [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/spi_controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'audio_preprocessor' [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:25]
+	Parameter weight_num bound to: 17 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element accummulate_reg was removed.  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:100]
+WARNING: [Synth 8-6014] Unused sequential element product_reg was removed.  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:132]
+WARNING: [Synth 8-5788] Register delay_line_reg[0] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[1] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[2] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[3] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[4] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[5] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[6] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[7] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[8] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[9] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[10] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[11] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[12] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[13] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[14] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[15] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register delay_line_reg[16] in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+WARNING: [Synth 8-5788] Register filtered_audio_out_reg in module audio_preprocessor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:135]
+INFO: [Synth 8-6155] done synthesizing module 'audio_preprocessor' (2#1) [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'hex_dp' [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/hex_dp.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex_dp' (3#1) [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/hex_dp.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_wrapper' (4#1) [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/design_wrapper.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 512.449 ; gain = 152.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 512.449 ; gain = 152.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 512.449 ; gain = 152.922
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/constrs_1/imports/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/constrs_1/imports/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/constrs_1/imports/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 865.801 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 865.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 865.801 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 865.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 865.801 ; gain = 506.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 865.801 ; gain = 506.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 865.801 ; gain = 506.273
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'spi_state_reg' in module 'spi_controller'
+INFO: [Synth 8-5546] ROM "serial_clock" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "spi_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "spi_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "delay_line" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "hex_dp_num" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex_dp0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex_dp1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex_dp2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex_dp3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hex_value" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "hex_dp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hex_dp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hex_dp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hex_dp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   SLEEP |                              001 | 00000000000000000000000000000000
+                TRANSFER |                              010 | 00000000000000000000000000000001
+                    DONE |                              100 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'spi_state_reg' using encoding 'one-hot' in module 'spi_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 865.801 ; gain = 506.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    512 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               16 Bit    Registers := 21    
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input    512 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 8     
+	   3 Input     16 Bit        Muxes := 2     
+	  17 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module spi_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    512 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input    512 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 8     
+	   3 Input     16 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 9     
+Module audio_preprocessor 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 18    
+Module hex_dp 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "serial_clock" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP a0/filtered_audio_out2, operation Mode is: A*(B:0x1242).
+DSP Report: operator a0/filtered_audio_out2 is absorbed into DSP a0/filtered_audio_out2.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x3fff).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out17 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x1167).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out3 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x111e).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out4 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x1172).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out5 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x1261).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out6 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x13ed).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out7 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x161f).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out8 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x18ef).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out9 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x1c5a).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out10 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x205d).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out11 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x24e5).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out12 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x29e3).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out13 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x2f3c).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out14 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x34ba).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out15 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x3946).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out16 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: Generating DSP a0/filtered_audio_out1, operation Mode is: PCIN+A*(B:0x3c92).
+DSP Report: operator a0/filtered_audio_out1 is absorbed into DSP a0/filtered_audio_out1.
+DSP Report: operator a0/filtered_audio_out17 is absorbed into DSP a0/filtered_audio_out1.
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[31]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[30]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[29]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[28]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[27]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[26]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[25]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[24]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[23]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[22]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[21]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[20]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[19]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[18]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[17]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[16]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[15]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[14]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[13]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[12]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[11]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[10]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[9]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[8]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[7]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[6]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[5]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[4]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'h0/hex_dp_num_reg[3]' (FDR) to 'h0/hex_dp_num_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h0/hex_dp_num_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[5]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[7]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[8]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[9]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[10]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[11]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[12]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[13]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[14]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/spi_data_out_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[9]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[10]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[11]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[12]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[13]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[14]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[5]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[7]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/sclk_counter_reg[8]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s0/serial_clock_reg_LDC )
+WARNING: [Synth 8-3332] Sequential element (s0/serial_clock_reg_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/serial_clock_reg_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[15]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[15]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[14]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[14]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[13]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[13]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[12]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[12]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[11]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[11]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[10]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[10]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[9]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[9]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[8]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[8]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[7]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[7]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[6]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[6]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[5]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[5]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[4]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[4]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[3]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[3]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[2]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[2]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[1]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[1]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[0]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/sclk_counter_reg[0]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[15]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[15]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[14]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[14]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[13]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[13]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[12]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[12]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[11]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[11]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[10]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[10]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[9]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[9]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[8]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[8]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[7]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[7]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[6]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[6]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[5]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[5]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[4]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[4]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[3]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[3]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[2]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[2]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[1]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[1]_C) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[0]_LDC) is unused and will be removed from module design_wrapper.
+WARNING: [Synth 8-3332] Sequential element (s0/spi_data_out_reg[0]_C) is unused and will be removed from module design_wrapper.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 865.801 ; gain = 506.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|audio_preprocessor | A*(B:0x1242)      | 16     | 14     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x3fff) | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x1167) | 16     | 14     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x111e) | 16     | 14     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x1172) | 16     | 14     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x1261) | 16     | 14     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x13ed) | 16     | 14     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x161f) | 16     | 14     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x18ef) | 16     | 14     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x1c5a) | 16     | 14     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x205d) | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x24e5) | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x29e3) | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x2f3c) | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x34ba) | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x3946) | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_preprocessor | PCIN+A*(B:0x3c92) | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 907.102 ; gain = 547.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 909.062 ; gain = 549.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.srcs/sources_1/new/audio_preprocessor.sv:102]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 932.609 ; gain = 573.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 932.609 ; gain = 573.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 932.609 ; gain = 573.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 932.609 ; gain = 573.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 932.609 ; gain = 573.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 932.609 ; gain = 573.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 932.609 ; gain = 573.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   218|
+|3     |DSP48E1   |    16|
+|4     |DSP48E1_1 |     1|
+|5     |LUT1      |     3|
+|6     |LUT2      |     6|
+|7     |LUT3      |   205|
+|8     |LUT4      |   704|
+|9     |LUT5      |     7|
+|10    |LUT6      |    31|
+|11    |FDCE      |   790|
+|12    |FDPE      |     1|
+|13    |FDRE      |    63|
+|14    |IBUF      |     3|
+|15    |OBUF      |    29|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------------------+------+
+|      |Instance |Module             |Cells |
++------+---------+-------------------+------+
+|1     |top      |                   |  2078|
+|2     |  a0     |audio_preprocessor |   289|
+|3     |  h0     |hex_dp             |    54|
+|4     |  s0     |spi_controller     |  1702|
++------+---------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 932.609 ; gain = 573.082
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 932.609 ; gain = 219.730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 932.609 ; gain = 573.082
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 235 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_wrapper' is not ideal for floorplanning, since the cellview 'spi_controller' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 932.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+135 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 932.609 ; gain = 585.434
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 932.609 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ECE53/Desktop/mid-project_demo/ECE532-project/microphone/spi_controller.runs/synth_1/design_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_wrapper_utilization_synth.rpt -pb design_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  6 08:06:28 2024...
