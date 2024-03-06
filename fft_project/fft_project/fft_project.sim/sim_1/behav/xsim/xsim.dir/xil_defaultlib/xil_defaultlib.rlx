@@ -1,0 +1,16 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/ECE532/fft_project/fft_project/fft_project.ip_user_files/bd/MEM_I/ip/MEM_I_axi_bram_ctrl_0_bram_0/sim/MEM_I_axi_bram_ctrl_0_bram_0.v,1709316522,verilog,,C:/ECE532/fft_project/fft_project/fft_project.ip_user_files/bd/MEM_I/sim/MEM_I.v,,MEM_I_axi_bram_ctrl_0_bram_0,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.ip_user_files/bd/MEM_I/sim/MEM_I.v,1709702647,verilog,,C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/bd/MEM_I/hdl/MEM_I_wrapper.v,,MEM_I,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.srcs/sim_1/new/addr_gen_tb.sv,1709525668,systemVerilog,,,,addr_gen_tb,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.srcs/sim_1/new/bit_reversal_test_tb.sv,1708487579,systemVerilog,,,,bit_reversal_test_tb,,,,,,,,
+,,,,,,MEM_I_wrapper,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/Butterfly_op.sv,1709681840,systemVerilog,,C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/FFT.sv,,Butterfly_op,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/FFT.sv,1709698802,systemVerilog,,C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/addr_gen.sv,,FFT,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/addr_gen.sv,1709701622,systemVerilog,,C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/bit_reversal.sv,,addr_gen,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/bit_reversal.sv,1709510858,systemVerilog,,C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/rotate.sv,,addr_bit_reversal,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/rotate.sv,1709702641,systemVerilog,,C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/twiddle_factor_mem.sv,,rotate,,,,,,,,
+C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/new/twiddle_factor_mem.sv,1709330824,systemVerilog,,C:/ECE532/fft_project/fft_project/fft_project.srcs/sim_1/new/addr_gen_tb.sv,,twiddle_factor_mem,,,,,,,,

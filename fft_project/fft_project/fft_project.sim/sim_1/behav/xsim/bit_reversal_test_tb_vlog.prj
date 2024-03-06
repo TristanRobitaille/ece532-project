@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../fft_project.srcs/sources_1/new/bit_reversal.sv" \
+"../../../../fft_project.srcs/sim_1/new/bit_reversal_test_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
