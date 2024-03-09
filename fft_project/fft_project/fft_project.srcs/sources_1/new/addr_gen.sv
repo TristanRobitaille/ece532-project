@@ -23,7 +23,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     input logic bfu_finished_cal,
     //for writing back:
     output logic write_triggered,
-    input write_done,
+
     /////////////////////////////
    // output logic [7:0] twiddle_addr,
    // output logic [13:0] memory_1_addr,
@@ -93,6 +93,9 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
             write_triggered <= 'b0;
             fft_count <= 'b0;
             sync_read <= 'b0;
+            address_mem_1 <= 'b0;
+            address_mem_2 <= 'b0;
+            bank_select <= 'b0;
         end else begin
             case (mem_1_state)
                 START: begin
@@ -119,6 +122,8 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                         address_mem_2 <= memory_2_addr;
                         mem_en <= 'b1;
                         mem_en2 <= 'b1;
+                        read_write_2 <= 'b0;
+                        read_write<= 'b0;
                 end
                 READ_SYNC: begin
                     if(sync_read == 'b11) begin
@@ -166,34 +171,37 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                     mem_en <= 'b0;
                     mem_en2 <= 'b0;
                     mem_1_state <= WRITE_MEM_2;
-                   /* if(sync_read == 'b11)
+                    if(sync_read == 'b10)
                         mem_1_state <= WRITE_MEM_2;
                     else begin
                          mem_1_state <= BFU_DONE;
                          sync_read <= sync_read + 'b1;
-                    end*/
+                    end
+                    bank_select <= ~bank_select;
                 end
                 WRITE_MEM_2:begin
                     bfu_start <= 'b0; 
                     write_triggered <= 'b1;
                     address_mem_1 <= memory_1_addr;
                     address_mem_2 <= memory_2_addr;
-                    mem_en <= 'b1;
-                    mem_en2 <= 'b1;
-                    read_write <= 'b1;
-                    read_write_2 <= 'b1;
                     mem_1_state <= MEM_2_WRITTEN;
                     buttferfly_pair <= buttferfly_pair + 1;
                 end
                 MEM_2_WRITTEN : begin
                     if(fft_level == 5) mem_1_state <= FINISH_FFT;
-                    else if(data_count == FFT_LENGTH+1 ) begin //next level of computation
+                    else if(data_count == FFT_LENGTH ) begin //next level of computation
                         mem_1_state <= READ_MEM_1;
                         data_count <= 'b0;
                         write_triggered <= 'b0;
                         buttferfly_pair <= 'b0;
+                        mem_en <= 'b0;
+                        mem_en2 <= 'b0;
                     end
-                    else begin 
+                    else begin
+                        mem_en <= 'b1;
+                        mem_en2 <= 'b1;
+                        read_write <= 'b1;
+                        read_write_2 <= 'b1;
                         mem_1_state <= WRITE_MEM_2;
                         data_count <= data_count + 'b1;
                     end
@@ -220,8 +228,6 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
         if(!rstn) begin
             buttferfly_pair <= 'b0;
             mem_valid <= 'b0;
-            address_mem_1 <= 'b0;
-            address_mem_2 <= 'b0;
             mem_en <= 'b0;
             mem_en2 <= 'b0;
             bfu_start <= 'b0;
@@ -279,7 +285,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
         else begin
             if(twiddle_addr_incr) begin //this is a pulse
                 //generating my selection and the twiddle facotrmem
-                twiddle_addr <= (('hFFFFFFF0 >> fft_level) & 'hF) & buttferfly_pair;//fft_level [4:0];//buttferfly_pair[4:0] - 'b1; //masking out hhigher bits
+                twiddle_addr <= (('hFFFFFFF0 >> fft_level) & 'hF) & ((buttferfly_pair == 'b0) ?  buttferfly_pair : buttferfly_pair - 1);//buttferfly_pair;//fft_level [4:0];//buttferfly_pair[4:0] - 'b1; //masking out hhigher bits
             end
         end
     end

@@ -75,7 +75,7 @@ module addr_gen_tb;
        // .BRAM_PORTB_0_clk(clk),
         .writedata_2(writedata_2),
         .readdata_2(readdata_2),
-        .en_2(en_2),
+        .en_load(en_2),
         .read_write_2(read_write_2)
     );
 
@@ -175,7 +175,8 @@ module addr_gen_tb;
         #40;
         #20;
         start_fft <= 'b1;
-        #6000;
+        #50;
+        start_fft <= 'b0;
         //$finish();
     end
 endmodule

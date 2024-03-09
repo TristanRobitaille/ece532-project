@@ -30,10 +30,10 @@ module Butterfly_op( //the length should be your original data length + 5 extra 
     input signed [31:0] twiddle_factor_real,
     input signed [31:0] twiddle_factor_img,
     input valid,
-    output signed logic [31:0] A_real_o,
-    output signed logic [31:0] A_img_o,
-    output signed logic [31:0] B_real_o,
-    output signed logic [31:0] B_img_o,
+    output signed [31:0] A_real_o,
+    output signed [31:0] A_img_o,
+    output signed  [31:0] B_real_o,
+    output signed  [31:0] B_img_o,
     output logic o_valid
     );
 
@@ -71,10 +71,10 @@ module Butterfly_op( //the length should be your original data length + 5 extra 
         end else begin
             if(valid) begin
                 //do your additions and then output: //just selecting the top 16 bits
-                B_rea_o_i <= A_real - mult_DSP_real;
-                B_img_o_i <= A_img - mult_DSP_img;
-                A_rea_o_i <= mult_DSP_real + A_real;
-                A_img_o_i <= mult_DSP_img + A_img;
+                B_rea_o_i <= A_real - mult_DSP_real[14:0];
+                B_img_o_i <= A_img - mult_DSP_img[14:0];
+                A_rea_o_i <= mult_DSP_real[14:0] + A_real;
+                A_img_o_i <= mult_DSP_img[14:0] + A_img;
                 o_valid_i <= 'b1;
             end else begin
                 A_rea_o_i <= A_rea_o_i;

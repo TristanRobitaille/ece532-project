@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5)(
+module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5, parameter SAMPLE_FREQUENCY = 14800)(
     input clk,
     input rstn,
     //input signed [15:0] data_in, //this needs to be a 2D array for processing a window of signals
@@ -32,7 +32,7 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5)(
     input [13:0] address_mem_2, //this is to load the data in bit-reserved order
     input [31:0] writedata_2,
     output logic [31:0] readdata_2, //don't think this is needed
-    input en_2,
+    input en_load,
     input read_write_2
     );
     //control signals////
@@ -93,22 +93,22 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5)(
     logic [31:0] B_real_o;
     logic [31:0] B_img_o;
     logic o_valid;
-    logic write_done;
     logic write_triggered;
-
+     //selecting which memory:
+    logic mem_select;
     addr_gen addr_gen(
     .start_fft(start_fft),
     .rstn(rstn),
     .clk(clk),
     .load_data(load_data),
-    //mem_1 signals, port 1, 
+    //mem_1 signals, A
     .address_mem_1(address_mem_1),
     .mem_en(en),
     .read_write(read_write),
 
     .incr_read_addr(incr_read_addr),
     .read_done(read_done),
-    //mem_1 signals, port 2,
+    //mem_1 signals, B
     .address_mem_2(addr_2_ad),
     .mem_en2(en_2_ad),
     .read_write_2(rdw_2_ad),
@@ -121,9 +121,8 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5)(
     .bfu_finished_cal(bfu_finished_cal),
     //writing signals:
     .write_triggered(write_triggered),
-    .write_done(write_done),
     .fft_done(fft_done),
-    .bank_select()
+    .bank_select(mem_select)
     );
     
     logic [12:0] addr_out;
@@ -135,99 +134,195 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5)(
         .addr_out(addr_out_i)
     );
 
-    //latching all inputs and outputs to MEM_I for synchronization purpose:
-    logic [12:0] address_mem_1_L;
-    logic [31:0] writedata_L;
-    logic en_L;
-    logic read_write_L;
-    logic [12:0] addr_2_ad_L;
-    logic en_2_ad_L;
-    logic rdw_2_ad_L;
-    logic [31:0] wdata_A_img_L;
-    logic [31:0] wdata_B_img_L;
+
+    //latching the sin_cos data:
+    logic [5:0]  [31:0] sin_data_L;
+    logic [5:0]  [31:0] cos_data_L;
+    //latch for 5 cycles..
     always_ff @(posedge clk) begin
         if(!rstn) begin
-            addr_2 <= 'b0;
-            wdata <= 'b0;
-           // rdata <= 'b0;
-            en_2_ <= 'b0;
-            readwrite_2 <= 'b0;
-        end
-        else begin
-            if(load_data) begin
-                    addr_2 <= addr_out;
-                    wdata <= writedata_2;
-                    readdata_2 <= rdata;
-                    en_2_ <= en_2;
-                    readwrite_2 <= read_write_2;
-                end
-            else begin//connect to 
-                    addr_2 <= addr_2_ad;
-                    wdata <= wdata_2_ad;
-                    rdata_2_ad <= rdata;
-                    en_2_ <= en_2_ad;
-                    readwrite_2 <= rdw_2_ad;
+            for(int x = 0; x < 6; x = x + 1) begin
+                sin_data_L [x] <= 'b0;
+                cos_data_L [x] <= 'b0;
             end
         end
-    end
-    
-        //latching all inputs and outputs to MEM_I for synchronization purpose:
-    always_ff @ (posedge clk) begin
-        if(!rstn) begin
-             //the normal latched signals:
-            address_mem_1_L <= 'b0;
-            writedata_L <= 'b0;
-            en_L <= 'b0;
-            read_write_L <= 'b0;
-            en_2_ad_L <= 'b0;
-            rdw_2_ad_L <= 'b0;
-            addr_2_ad_L <= 'b0;
-             wdata_A_img_L <= 'b0;
-            wdata_B_img_L <= 'b0;
-        end else begin
-            //the normal latched signals:
-            address_mem_1_L <= address_mem_1;
-            writedata_L <= writedata;
-            en_L <= en;
-            read_write_L <= read_write;
-            en_2_ad_L <= en_2_ad;
-            rdw_2_ad_L <= rdw_2_ad;
-            addr_2_ad_L <= addr_2_ad;
-            wdata_A_img_L <= wdata_A_img;
-            wdata_B_img_L <= wdata_B_img;
+        else begin
+            //rotate:
+            for(int x = 1; x < 6; x = x + 1) begin
+                sin_data_L [x] <= sin_data_L[x-1];
+                cos_data_L [x] <= cos_data_L[x-1];
+            end
+            sin_data_L[0] <= sin_data;
+            cos_data_L[0] <= cos_data;
         end
     end
+    //renaming all the signals here:
+    //bank I and II can connect to the same address
+    //enable and readdata enable controlled separately
+    ////////////////////all data signals
+    logic [31:0] rdata_A_data_I_real, wdata_A_data_I_real;
+    logic [31:0] rdata_A_data_II_real, wdata_A_data_II_real;
+    logic [31:0] rdata_B_data_I_real, wdata_B_data_I_real;
+    logic [31:0] rdata_B_data_II_real, wdata_B_data_II_real;
 
-    MEM_I_wrapper MEM_I_real //true dual port?
-   (.BRAM_PORTA_0_addr(address_mem_1_L),
+
+    logic [31:0] rdata_A_data_I_img, wdata_A_data_I_img;
+    logic [31:0] rdata_A_data_II_img, wdata_A_data_II_img;
+    logic [31:0] rdata_B_data_I_img, wdata_B_data_I_img;
+    logic [31:0] rdata_B_data_II_img, wdata_B_data_II_img;
+
+    ///all address signals (can be shared):
+    logic [13:0] A_data_address;
+    logic [13:0] B_data_address;
+    logic [13:0] load_data_address;
+    
+    //enable and readwrite signals for each port
+    logic en_1,en_2,en_3,en_4,en_5,en_6,en_7,en_8;
+    logic rw_1,rw_2,rw_3,rw_4,rw_5,rw_6,rw_7,rw_8;
+    
+
+    //latched write-data signals:
+    logic [31:0] wdata_A_data_I_real_L;
+    logic [31:0] wdata_A_data_II_real_L;
+    logic [31:0] wdata_B_data_I_real_L;
+    logic [31:0] wdata_B_data_II_real_L;
+    logic [31:0] wdata_A_data_I_img_L;
+    logic [31:0] wdata_A_data_II_img_L;
+    logic [31:0] wdata_B_data_I_img_L;
+    logic [31:0] wdata_B_data_II_img_L;
+    //signals to latch the readwrites, enable, and loaddata:
+    always_ff @ (posedge clk) begin
+        if(!rstn) begin
+            A_data_address <= 'b0;
+            B_data_address <= 'b0;
+            //latched write data_signals:
+            wdata_A_data_I_real_L<= 'b0;
+            wdata_A_data_II_real_L <= 'b0;
+            wdata_B_data_I_real_L <= 'b0;
+            wdata_B_data_II_real_L <= 'b0;
+            wdata_A_data_I_img_L <= 'b0;
+            wdata_A_data_II_img_L <= 'b0;
+            wdata_B_data_I_img_L <= 'b0;
+            wdata_B_data_II_img_L <= 'b0;
+            //all the readwrite and enable signals:
+            en_1 <= 'b0; //A_real
+            en_2 <= 'b0; //B_real
+            en_3 <= 'b0; //A_img
+            en_4 <= 'b0; //B_img
+            en_5 <= 'b0;
+            en_6 <= 'b0;
+            en_7 <= 'b0; //A_real
+            en_8 <= 'b0; //B_rea
+            rw_1 <= 'b0; //B_img
+            rw_2 <= 'b0;
+            rw_3 <= 'b0;
+            rw_4 <= 'b0; //A_real
+            rw_5 <= 'b0; //B_real
+            rw_6 <= 'b0; //A_img
+            rw_7 <= 'b0; //B_img
+            rw_8 <= 'b0;
+        end
+        else begin
+            //if load_data:
+           /* if(load_data) begin
+                wdata_A_data_I_real_L <= writedata_2;
+                A_data_address <= addr_out;
+                en_1 <= en_load;
+                rw_1 <= read_write_2
+            end
+            else begin*/
+                //depending on the select signal, we can routed to different mem
+                A_data_address <= (load_data) ? addr_out : address_mem_1;
+                B_data_address <= addr_2_ad;
+                //latched write data_signals:
+                  wdata_A_data_I_real_L<= (load_data)? writedata_2: wdata_A_data_I_real;
+                  wdata_A_data_II_real_L <= wdata_A_data_II_real;
+                  wdata_B_data_I_real_L <= wdata_B_data_I_real;
+                  wdata_B_data_II_real_L <= wdata_B_data_II_real;
+                  wdata_A_data_I_img_L <= wdata_A_data_I_img;
+                  wdata_A_data_II_img_L <= wdata_A_data_II_img;
+                  wdata_B_data_I_img_L <= wdata_B_data_I_img;
+                  wdata_B_data_II_img_L <= wdata_B_data_II_img;
+                //all the readwrite and enable signals:
+                    en_1 <= (load_data) ? en_load :!mem_select & en; //A_real
+                    en_2 <= !mem_select & en_2_ad; //B_real
+                    en_3 <= !mem_select & en; //A_img
+                    en_4 <= !mem_select & en_2_ad; //B_img
+                    en_5 <= mem_select & en;
+                    en_6 <= mem_select & en_2_ad;
+                    en_7 <= mem_select & en;
+                    en_8 <= mem_select & en_2_ad;
+                    rw_1 <= (load_data) ? read_write_2 : !mem_select & read_write;
+                    rw_2 <= !mem_select & rdw_2_ad;
+                    rw_3 <= !mem_select & read_write;
+                    rw_4 <= !mem_select & rdw_2_ad;
+                    rw_5 <= mem_select & read_write;
+                    rw_6 <= mem_select & rdw_2_ad;
+                    rw_7 <= mem_select & read_write;
+                    rw_8 <= mem_select & rdw_2_ad;
+            //end
+        end
+    end
+    /////////////////////////////////////bank I //////////////////////////
+    MEM_I_wrapper MEM_I_real_data_I //true dual port?
+   (.BRAM_PORTA_0_addr(A_data_address), //take data from outside
     .BRAM_PORTA_0_clk(clk),
-    .BRAM_PORTA_0_din(writedata_L), //write
-    .BRAM_PORTA_0_dout(readdata), //read
-    .BRAM_PORTA_0_en(en_L), //enable?
-    .BRAM_PORTA_0_we(read_write_L), //read/write enable?
+    .BRAM_PORTA_0_din(wdata_A_data_I_real_L), //write
+    .BRAM_PORTA_0_dout(rdata_A_data_I_real), //read
+    .BRAM_PORTA_0_en(en_1), //enable?
+    .BRAM_PORTA_0_we(rw_1), //read/write enable?
+    .BRAM_PORTB_0_addr(B_data_address), 
+    .BRAM_PORTB_0_clk(clk),
+    .BRAM_PORTB_0_din(wdata_B_data_I_real_L),
+    .BRAM_PORTB_0_dout(rdata_B_data_I_real),
+    .BRAM_PORTB_0_en(en_2),
+    .BRAM_PORTB_0_we(rw_2));
+    MEM_I_wrapper MEM_I_img_data_I //don't need to be written, all zeros
+   (.BRAM_PORTA_0_addr(A_data_address),
+    .BRAM_PORTA_0_clk(clk),
+    .BRAM_PORTA_0_din(wdata_A_data_I_img_L), //write
+    .BRAM_PORTA_0_dout(rdata_A_data_I_img), //read
+    .BRAM_PORTA_0_en(en_3), //enable?
+    .BRAM_PORTA_0_we(rw_3), 
+    .BRAM_PORTB_0_addr(B_data_address), //(address_mem_2),
+    .BRAM_PORTB_0_clk(clk),
+    .BRAM_PORTB_0_din(wdata_B_data_I_img_L),//(writedata_2),
+    .BRAM_PORTB_0_dout(rdata_B_data_I_img),//(readdata_2),
+    .BRAM_PORTB_0_en(en_4),//(en_2),
+    .BRAM_PORTB_0_we(rw_4));//(read_write_2));
+
+
+    /////////////////////////////////////////////bank 2 ////////////////////////////
+    MEM_I_wrapper MEM_I_real_data_II //true dual port?
+   (.BRAM_PORTA_0_addr(A_data_address),
+    .BRAM_PORTA_0_clk(clk),
+    .BRAM_PORTA_0_din(wdata_A_data_II_real_L), //write
+    .BRAM_PORTA_0_dout(rdata_A_data_II_real), //read
+    .BRAM_PORTA_0_en(en_5), //enable?
+    .BRAM_PORTA_0_we(rw_5), //read/write enable?
     //this is from the outside -> one cycle late
-    .BRAM_PORTB_0_addr(addr_2), 
+    .BRAM_PORTB_0_addr(B_data_address), 
     .BRAM_PORTB_0_clk(clk),
-    .BRAM_PORTB_0_din(wdata),
-    .BRAM_PORTB_0_dout(rdata),
-    .BRAM_PORTB_0_en(en_2_),
-    .BRAM_PORTB_0_we(readwrite_2));
+    .BRAM_PORTB_0_din(wdata_B_data_II_real_L),
+    .BRAM_PORTB_0_dout(rdata_B_data_II_real),
+    .BRAM_PORTB_0_en(en_6),
+    .BRAM_PORTB_0_we(rw_6));
 
 
 
-    MEM_I_wrapper MEM_I_img //don't need to be written, all zeros
-   (.BRAM_PORTA_0_addr(address_mem_1_L),
+    MEM_I_wrapper MEM_I_img_data_II //don't need to be written, all zeros
+   (.BRAM_PORTA_0_addr(A_data_address),
     .BRAM_PORTA_0_clk(clk),
-    .BRAM_PORTA_0_din(wdata_A_img_L), //write
-    .BRAM_PORTA_0_dout(rdata_A_img), //read
-    .BRAM_PORTA_0_en(en_L), //enable?
-    .BRAM_PORTA_0_we(read_write_L), 
-    .BRAM_PORTB_0_addr(addr_2_ad_L), //(address_mem_2),
+    .BRAM_PORTA_0_din(wdata_A_data_II_img_L), //write
+    .BRAM_PORTA_0_dout(rdata_A_data_II_img), //read
+    .BRAM_PORTA_0_en(en_7), //enable?
+    .BRAM_PORTA_0_we(rw_7), 
+    .BRAM_PORTB_0_addr(B_data_address), //(address_mem_2),
     .BRAM_PORTB_0_clk(clk),
-    .BRAM_PORTB_0_din(wdata_B_img_L),//(writedata_2),
-    .BRAM_PORTB_0_dout(rdata_B_img),//(readdata_2),
-    .BRAM_PORTB_0_en(en_2_ad_L),//(en_2),
-    .BRAM_PORTB_0_we(rdw_2_ad_L));//(read_write_2));
+    .BRAM_PORTB_0_din(wdata_B_data_II_img_L),//(writedata_2),
+    .BRAM_PORTB_0_dout(rdata_B_data_II_img),//(readdata_2),
+    .BRAM_PORTB_0_en(en_8),//(en_2),
+    .BRAM_PORTB_0_we(rw_8));//(read_write_2));
     
     ///////////////////////
     //controlling the memory block to read into A and B:
@@ -253,10 +348,10 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5)(
             latched_read_done <= read_done;
             if(read_done) begin
                 //valid <= bfu_start;
-                A_real <= readdata;
-                A_img <= rdata_A_img;
-                B_real <= rdata;
-                B_img <= rdata_B_img;
+                A_real <= (mem_select == 'b0) ? rdata_A_data_I_real : rdata_A_data_II_real;
+                A_img <= (mem_select == 'b0) ? rdata_A_data_I_img : rdata_A_data_II_img;
+                B_real <= (mem_select == 'b0) ? rdata_B_data_I_real : rdata_B_data_II_real;
+                B_img <= (mem_select == 'b0) ? rdata_B_data_I_img : rdata_B_data_II_img;
             end
             else begin
                 A_real <= A_real;
@@ -275,8 +370,8 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5)(
         .A_img(A_img),
         .B_real(B_real),
         .B_img(B_img),
-        .twiddle_factor_real(cos_data),
-        .twiddle_factor_img(sin_data),
+        .twiddle_factor_real(cos_data_L[4]),
+        .twiddle_factor_img(sin_data_L[4]),
         .valid(bfu_start&latched_read_done&!write_triggered),
         .A_real_o(A_real_o),
         .A_img_o(A_img_o),
@@ -284,7 +379,7 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5)(
         .B_img_o(B_img_o),
         .o_valid(o_valid)
     );
-    logic [8:0] counter;
+    logic [4:0] counter_r, counter_w;
     logic delay;
     //when reading, write the values of the calculation into a local variable:
     always_ff @ (posedge clk) begin
@@ -295,55 +390,169 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5)(
                 local_data_B_real [x] <= 'b0;
                 local_data_B_img [x] <= 'b0;
             end
-            counter <= 'b0;
+            counter_r <= 'b0;
         end 
         else begin
-            if(bfu_start&latched_read_done) begin
-                local_data_A_real [counter] <= A_real_o;
-                local_data_A_img [counter] <= A_img_o;
-                local_data_B_real [counter] <= B_real_o;
-                local_data_B_img [counter] <= B_img_o;
-                counter <= counter + 'b1;
+            if(bfu_start&latched_read_done && !(rdw_2_ad)) begin
+                local_data_A_real [counter_r] <= A_real_o;
+                local_data_A_img [counter_r] <= A_img_o;
+                local_data_B_real [counter_r] <= B_real_o;
+                local_data_B_img [counter_r] <= B_img_o;
+                delay <= 'b1;
+                if(delay) counter_r <= counter_r + 'b1;
             end
-            if (counter == FFT_LENGTH-1) counter <= 'b0;
+            if (counter_r == FFT_LENGTH) counter_r <= 'b0;
         end
     end
     always_ff @ (posedge clk) begin
         if(!rstn) begin
-            writedata <= 'b0;
-            wdata_2_ad <= 'b0;
-            wdata_A_img <= 'b0;
-            wdata_B_img <= 'b0;
+            wdata_A_data_I_real<= 'b0;
+            wdata_A_data_II_real <= 'b0;
+            wdata_B_data_I_real <= 'b0;
+            wdata_B_data_II_real <= 'b0;
+            wdata_A_data_I_img <= 'b0;
+            wdata_A_data_II_img <= 'b0;
+            wdata_B_data_I_img <= 'b0;
+            wdata_B_data_II_img <= 'b0;
             delay <= 'b0;
+            counter_w <= 'b0;
         end else begin
             if(write_triggered) begin
-                    writedata <=  local_data_A_real [counter];
-                    wdata_2_ad <= local_data_A_img [counter];
-                    wdata_A_img <= local_data_B_real [counter];
-                    wdata_B_img <= local_data_B_img [counter];
-                    delay <= ~delay;
-                    if(delay) counter <= counter + 'b1;
+                if(mem_select == 'b0) begin
+                     /*wdata_A_data_I_real <=  local_data_A_real [counter_w];
+                     wdata_A_data_I_img <= local_data_A_img [counter_w];
+                     wdata_B_data_I_real <= local_data_B_real [counter_w];
+                     wdata_B_data_I_img <= local_data_B_img [counter_w];*/
+                     wdata_B_data_I_real <=  local_data_A_real [counter_w];
+                     wdata_B_data_I_img <= local_data_A_img [counter_w];
+                     wdata_A_data_I_real <= local_data_B_real [counter_w];
+                     wdata_A_data_I_img <= local_data_B_img [counter_w];
+                end else begin
+                     /*wdata_A_data_II_real <=  local_data_A_real [counter_w];
+                     wdata_A_data_II_img <= local_data_A_img [counter_w];
+                     wdata_B_data_II_real <= local_data_B_real [counter_w];
+                     wdata_B_data_II_img <= local_data_B_img [counter_w];*/
+                     wdata_B_data_II_real <=  local_data_A_real [counter_w];
+                     wdata_B_data_II_img <= local_data_A_img [counter_w];
+                     wdata_A_data_II_real <= local_data_B_real [counter_w];
+                     wdata_A_data_II_img <= local_data_B_img [counter_w];
                 end
-            if (counter == FFT_LENGTH-1) counter <= 'b0;
+                delay <= ~delay;
+                if(delay) counter_w <= counter_w + 'b1;
+                if (counter_w >= FFT_LENGTH-1) counter_w <= counter_w;
+            end
+            if(!write_triggered) counter_w <= 'b0;
+            
         end
     end
 
     always_ff @ (posedge clk) begin
         if(!rstn) begin
             bfu_finished_cal <= 'b0;
-            write_done <= 'b0;
+            
         end
         else begin
             if(o_valid) begin
                 bfu_finished_cal <= 'b1; //finished calculation, can initate writeback
             end
 
-            if(write_triggered) begin
-                write_done <= 'b1;
-            end
-            else write_done <= 'b0;
+           
         end
     end
+logic [4:0] counter;
+logic [31:0] A_val, B_val;
+
+logic [FFT_LENGTH-1:0] [31:0] amplitude_A;
+logic [FFT_LENGTH-1:0] [31:0] amplitude_B;
+logic [4:0] index_largest;
+logic [31:0] largest_amp;
+logic A_sel,B_sel;
+logic [8:0] final_index;
+//output logic for looking at which one is the highest frequency, extracting it from the temporary local_data:
+always_ff @ (posedge clk) begin
+    if(!rstn) begin
+        A_val <= 'b0;
+        B_val <= 'b0;
+        counter <= 'b0;
+        index_largest <= 'b0;
+        largest_amp <= 'b0;
+        A_sel <= 'b0;
+        B_sel <= 'b0;
+        final_index <= 'b0;
+        for(int x = 0; x < FFT_LENGTH; x = x + 1) begin
+                amplitude_A [x] <= 'b0;
+                amplitude_B [x] <= 'b0;
+            end
+    end
+    else begin
+        if(fft_done) begin
+            //scanning through the local_data to see which one should be used for outputing the frequency:
+            //look at the amplitude:
+            for(int x = 0; x < FFT_LENGTH; x = x + 1) begin
+                amplitude_A [x] <= local_data_A_real[x] + local_data_A_img[x];
+                amplitude_B [x] <= local_data_B_real[x] + local_data_B_img[x];
+                if(amplitude_A > largest_amp) begin
+                    largest_amp <= amplitude_A;
+                    index_largest <= x;
+                    final_index <= x;
+                    A_sel <= 'b1;
+                end
+                else if(amplitude_B > largest_amp) begin
+                    largest_amp <= amplitude_B;
+                    index_largest <= x;
+                    final_index <= x + FFT_LENGTH;
+                    B_sel <= 'b1;
+                end
+            end
+        end
+    end
+end
+logic [63:0] frequency;
+always_comb begin
+    if(A_sel || B_sel) begin
+        frequency = (final_index) * (SAMPLE_FREQUENCY / (FFT_LENGTH * 2));
+    end
+    else frequency = 'b0;
+end
+//static array of possible frequencies:
+
+/*logic [FFT_LENGTH*2 - 1: 0] [31:0] frequencies;
+
+
+always_comb begin
+   frequencies [0] = SAMPLE_FREQUENCY
+   frequencies [1] = 
+   frequencies [2] = 
+   frequencies [3] = 
+   frequencies [4] = 
+   frequencies [5] = 
+   frequencies [6] = 
+   frequencies [7] = 
+   frequencies [8] = 
+   frequencies [9] = 
+   frequencies [10] = 
+   frequencies [11] = 
+   frequencies [12] = 
+   frequencies [13] = 
+   frequencies [14] = 
+   frequencies [15] = 
+   frequencies [16] = 
+   frequencies [17] = 
+   frequencies [18] = 
+   frequencies [19] = 
+   frequencies [20] = 
+   frequencies [21] = 
+   frequencies [22] = 
+   frequencies [23] = 
+   frequencies [24] = 
+   frequencies [25] = 
+   frequencies [26] = 
+   frequencies [27] = 
+   frequencies [28] = 
+   frequencies [29] = 
+   frequencies [30] = 
+   frequencies [31] = 
+end*/
 
 
 
