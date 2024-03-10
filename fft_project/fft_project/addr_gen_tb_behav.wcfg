@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="19000000001fs"></ZoomEndTime>
-      <Cursor1Time time="15088232000fs"></Cursor1Time>
+      <ZoomStartTime time="2431620000fs"></ZoomStartTime>
+      <ZoomEndTime time="16211620001fs"></ZoomEndTime>
+      <Cursor1Time time="4690000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="385"></NameColumnWidth>
-      <ValueColumnWidth column_width="124"></ValueColumnWidth>
+      <ValueColumnWidth column_width="196"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="80" />
+   <WVObjectSize size="84" />
    <wvobject fp_name="/addr_gen_tb/FFT/load_data" type="logic">
       <obj_property name="ElementShortName">load_data</obj_property>
       <obj_property name="ObjectShortName">load_data</obj_property>
@@ -232,6 +232,30 @@
       <obj_property name="ElementShortName">twiddle_factor_img[31:0]</obj_property>
       <obj_property name="ObjectShortName">twiddle_factor_img[31:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/mult_DSP_real" type="array">
+      <obj_property name="ElementShortName">mult_DSP_real[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_DSP_real[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/mult_ii" type="array">
+      <obj_property name="ElementShortName">mult_ii[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_ii[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/mult_DSP_img" type="array">
+      <obj_property name="ElementShortName">mult_DSP_img[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_DSP_img[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/mult_rr" type="array">
+      <obj_property name="ElementShortName">mult_rr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_rr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/mult_ri" type="array">
+      <obj_property name="ElementShortName">mult_ri[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_ri[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/mult_ir" type="array">
+      <obj_property name="ElementShortName">mult_ir[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_ir[31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/valid" type="logic">
       <obj_property name="ElementShortName">valid</obj_property>
       <obj_property name="ObjectShortName">valid</obj_property>
@@ -251,14 +275,6 @@
    <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/B_img_o_i" type="array">
       <obj_property name="ElementShortName">B_img_o_i[15:0]</obj_property>
       <obj_property name="ObjectShortName">B_img_o_i[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/mult_DSP_real" type="array">
-      <obj_property name="ElementShortName">mult_DSP_real[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_DSP_real[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/mult_DSP_img" type="array">
-      <obj_property name="ElementShortName">mult_DSP_img[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_DSP_img[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/addr_gen_tb/FFT/Butterfly_op/o_valid_i" type="logic">
       <obj_property name="ElementShortName">o_valid_i</obj_property>
@@ -339,5 +355,6 @@
    <wvobject fp_name="/addr_gen_tb/FFT/frequency" type="array">
       <obj_property name="ElementShortName">frequency[63:0]</obj_property>
       <obj_property name="ObjectShortName">frequency[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

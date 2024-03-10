@@ -136,19 +136,19 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5, paramete
 
 
     //latching the sin_cos data:
-    logic [5:0]  [31:0] sin_data_L;
-    logic [5:0]  [31:0] cos_data_L;
+    logic [10:0]  [31:0] sin_data_L;
+    logic [10:0]  [31:0] cos_data_L;
     //latch for 5 cycles..
     always_ff @(posedge clk) begin
         if(!rstn) begin
-            for(int x = 0; x < 6; x = x + 1) begin
+            for(int x = 0; x < 11; x = x + 1) begin
                 sin_data_L [x] <= 'b0;
                 cos_data_L [x] <= 'b0;
             end
         end
         else begin
             //rotate:
-            for(int x = 1; x < 6; x = x + 1) begin
+            for(int x = 1; x < 11; x = x + 1) begin
                 sin_data_L [x] <= sin_data_L[x-1];
                 cos_data_L [x] <= cos_data_L[x-1];
             end
@@ -370,8 +370,8 @@ module FFT #( parameter FFT_LENGTH = 16, parameter RESERVAL_LENGTH = 5, paramete
         .A_img(A_img),
         .B_real(B_real),
         .B_img(B_img),
-        .twiddle_factor_real(cos_data_L[4]),
-        .twiddle_factor_img(sin_data_L[4]),
+        .twiddle_factor_real(cos_data_L[7]),
+        .twiddle_factor_img(sin_data_L[7]),
         .valid(bfu_start&latched_read_done&!write_triggered),
         .A_real_o(A_real_o),
         .A_img_o(A_img_o),
@@ -497,7 +497,7 @@ always_ff @ (posedge clk) begin
                     final_index <= x;
                     A_sel <= 'b1;
                 end
-                else if(amplitude_B > largest_amp) begin
+                if(amplitude_B > largest_amp) begin
                     largest_amp <= amplitude_B;
                     index_largest <= x;
                     final_index <= x + FFT_LENGTH;

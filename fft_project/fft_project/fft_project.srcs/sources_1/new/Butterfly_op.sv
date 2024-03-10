@@ -41,10 +41,29 @@ module Butterfly_op( //the length should be your original data length + 5 extra 
     //intermediate nodes:
     logic signed [31:0] mult_DSP_real;
     logic signed [31:0] mult_DSP_img;
-
+    logic signed [15:0] twiddle_real, twiddle_img;
+    assign twiddle_real = twiddle_factor_real;//(twiddle_factor_real[15:0] == 'h7fff) ?  32'h00010000 : {{16{twiddle_factor_real[15]}}, twiddle_factor_real[14:0], 1'b0};
+    assign twiddle_img = twiddle_factor_img; //(twiddle_factor_img[15:0] =='h7fff) ?  32'h00010000 : {{16{twiddle_factor_img[15]}}, twiddle_factor_img[14:0], 1'b0};
     ///////////////////////////////////////////////////////
-    assign mult_DSP_real = B_real * twiddle_factor_real - B_img * twiddle_factor_img ;
-    assign mult_DSP_img = B_real * twiddle_factor_img  + B_img * twiddle_factor_real;
+    logic signed [14:0] temp, temp_i;
+    //assign mult_DSP_real = B_real * twiddle_real - B_img * twiddle_img ;
+    //assign mult_DSP_img = B_real * twiddle_img  + B_img * twiddle_real;
+
+
+
+    ////////debug:
+    logic signed [31:0] mult_rr;
+    logic signed [31:0] mult_ri;
+    logic signed [31:0] mult_ir;
+    logic signed [31:0] mult_ii;
+    assign mult_rr = B_real * twiddle_real;
+    assign mult_ri = B_real * twiddle_img;
+    assign mult_ir = B_img * twiddle_real;
+    assign mult_ii = B_img * twiddle_img;
+    assign temp = mult_DSP_real;
+    assign temp_i = mult_DSP_img;
+    assign mult_DSP_real = mult_rr - mult_ii ;
+    assign mult_DSP_img = mult_ri  + mult_ir;
      //intermediate nodes:
     logic signed [15:0] A_rea_o_i;
     logic signed [15:0] A_img_o_i;
