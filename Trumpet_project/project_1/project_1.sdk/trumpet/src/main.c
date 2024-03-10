@@ -25,15 +25,15 @@ int main() {
     xil_printf("Initialization complete\n\n");
 
     //----- Main loop -----//
-    u32 index = 0;
+//    u32 index = 0;
     while (1) {
 #if USE_CAP_BTN
     	update_cap_btn_led(led, cap_btn); // Reflect state of capacitive buttons on LED0 and LED1
 #endif
-        i2s_audio_write_data(sine_lut_31b[index]);
-        index++;
-        index %= 32;
-    	usleep(32 * AUDIO_FREQ_1KHZ);
+//        i2s_audio_write_data(sine_lut_31b[index]);
+//        index++;
+//        index %= 32;
+//    	  usleep(32 * AUDIO_FREQ_1KHZ);
     };
 
     cleanup_platform();

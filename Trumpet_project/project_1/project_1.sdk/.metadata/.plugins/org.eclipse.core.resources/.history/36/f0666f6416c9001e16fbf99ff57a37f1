@@ -1,8 +1,0 @@
-#ifndef INC_AUDIO_UTILS_H_
-#define INC_AUDIO_UTILS_H_
-
-uint16_t sine_lut_11b[30] = { // LUT of sine wave in with an amplitude of 11b
-
-};
-
-#endif /* INC_AUDIO_UTILS_H_ */

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-//Date        : Tue Feb 20 13:13:20 2024
+//Date        : Sat Mar  9 20:47:37 2024
 //Host        : BA3135WS38 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -10,9 +10,11 @@
 `timescale 1 ps / 1 ps
 
 module design_1_wrapper
-   (cap_btn_i2c_scl_io,
+   (btn_rst,
+    cap_btn,
+    cap_btn_i2c_scl_io,
     cap_btn_i2c_sda_io,
-    cap_btn_in_tri_i,
+    chip_select,
     clk_100MHz,
     i2s_bclk,
     i2s_data,
@@ -20,14 +22,22 @@ module design_1_wrapper
     i2s_i2c_sda_io,
     i2s_lrclk,
     i2s_mclk,
+    led_mic_pwm,
+    led_playback_mode,
     led_tri_o,
+    master_in_slave_out,
+    playback_in_progress_led,
+    recording_in_progress_led,
     reset_rtl_0,
+    serial_clock,
     swt_tri_i,
     uart_rtl_0_rxd,
     uart_rtl_0_txd);
+  input btn_rst;
+  input [1:0]cap_btn;
   inout cap_btn_i2c_scl_io;
   inout cap_btn_i2c_sda_io;
-  input [1:0]cap_btn_in_tri_i;
+  output chip_select;
   input clk_100MHz;
   output i2s_bclk;
   output i2s_data;
@@ -35,12 +45,20 @@ module design_1_wrapper
   inout i2s_i2c_sda_io;
   output i2s_lrclk;
   output i2s_mclk;
-  output [7:0]led_tri_o;
+  output led_mic_pwm;
+  output led_playback_mode;
+  output [3:0]led_tri_o;
+  input master_in_slave_out;
+  output playback_in_progress_led;
+  output recording_in_progress_led;
   input reset_rtl_0;
+  output serial_clock;
   input [7:0]swt_tri_i;
   input uart_rtl_0_rxd;
   output uart_rtl_0_txd;
 
+  wire btn_rst;
+  wire [1:0]cap_btn;
   wire cap_btn_i2c_scl_i;
   wire cap_btn_i2c_scl_io;
   wire cap_btn_i2c_scl_o;
@@ -49,7 +67,7 @@ module design_1_wrapper
   wire cap_btn_i2c_sda_io;
   wire cap_btn_i2c_sda_o;
   wire cap_btn_i2c_sda_t;
-  wire [1:0]cap_btn_in_tri_i;
+  wire chip_select;
   wire clk_100MHz;
   wire i2s_bclk;
   wire i2s_data;
@@ -63,8 +81,14 @@ module design_1_wrapper
   wire i2s_i2c_sda_t;
   wire i2s_lrclk;
   wire i2s_mclk;
-  wire [7:0]led_tri_o;
+  wire led_mic_pwm;
+  wire led_playback_mode;
+  wire [3:0]led_tri_o;
+  wire master_in_slave_out;
+  wire playback_in_progress_led;
+  wire recording_in_progress_led;
   wire reset_rtl_0;
+  wire serial_clock;
   wire [7:0]swt_tri_i;
   wire uart_rtl_0_rxd;
   wire uart_rtl_0_txd;
@@ -80,13 +104,15 @@ module design_1_wrapper
         .O(cap_btn_i2c_sda_i),
         .T(cap_btn_i2c_sda_t));
   design_1 design_1_i
-       (.cap_btn_i2c_scl_i(cap_btn_i2c_scl_i),
+       (.btn_rst(btn_rst),
+        .cap_btn(cap_btn),
+        .cap_btn_i2c_scl_i(cap_btn_i2c_scl_i),
         .cap_btn_i2c_scl_o(cap_btn_i2c_scl_o),
         .cap_btn_i2c_scl_t(cap_btn_i2c_scl_t),
         .cap_btn_i2c_sda_i(cap_btn_i2c_sda_i),
         .cap_btn_i2c_sda_o(cap_btn_i2c_sda_o),
         .cap_btn_i2c_sda_t(cap_btn_i2c_sda_t),
-        .cap_btn_in_tri_i(cap_btn_in_tri_i),
+        .chip_select(chip_select),
         .clk_100MHz(clk_100MHz),
         .i2s_bclk(i2s_bclk),
         .i2s_data(i2s_data),
@@ -98,8 +124,14 @@ module design_1_wrapper
         .i2s_i2c_sda_t(i2s_i2c_sda_t),
         .i2s_lrclk(i2s_lrclk),
         .i2s_mclk(i2s_mclk),
+        .led_mic_pwm(led_mic_pwm),
+        .led_playback_mode(led_playback_mode),
         .led_tri_o(led_tri_o),
+        .master_in_slave_out(master_in_slave_out),
+        .playback_in_progress_led(playback_in_progress_led),
+        .recording_in_progress_led(recording_in_progress_led),
         .reset_rtl_0(reset_rtl_0),
+        .serial_clock(serial_clock),
         .swt_tri_i(swt_tri_i),
         .uart_rtl_0_rxd(uart_rtl_0_rxd),
         .uart_rtl_0_txd(uart_rtl_0_txd));

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-| Date         : Tue Feb 20 13:18:21 2024
+| Date         : Sat Mar  9 20:57:56 2024
 | Host         : BA3135WS38 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,15 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 102
+             Violations found: 141
 +-----------+----------+------------------------------------------------+------------+
 | Rule      | Severity | Description                                    | Violations |
 +-----------+----------+------------------------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert                   | 1          |
+| LUTAR-1   | Warning  | LUT drives async reset alert                   | 2          |
 | TIMING-6  | Warning  | No common primary clock between related clocks | 2          |
 | TIMING-9  | Warning  | Unknown CDC Logic                              | 1          |
-| TIMING-17 | Warning  | Non-clocked sequential cell                    | 71         |
-| TIMING-18 | Warning  | Missing input or output delay                  | 27         |
+| TIMING-17 | Warning  | Non-clocked sequential cell                    | 107        |
+| TIMING-18 | Warning  | Missing input or output delay                  | 29         |
 +-----------+----------+------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -39,6 +39,11 @@ Table of Contents
 LUTAR-1#1 Warning
 LUT drives async reset alert  
 LUT cell design_1_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/mic_storage_0/inst/playback_data[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/mic_storage_0/inst/timebase_clk_reg/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[0]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[10]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[11]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[12]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[13]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[14]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[15]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[1]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[2]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[3]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[4]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[5]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[6]/CLR, design_1_i/mic_storage_0/inst/timebase_counter_reg[7]/CLR (the first 15 of 17 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-6#1 Warning
@@ -58,490 +63,680 @@ Related violations: <none>
 
 TIMING-17#1 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#2 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#3 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[11]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#4 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[12]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#5 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[13]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#6 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[14]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#7 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[15]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#8 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[16]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#9 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[17]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#10 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[18]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#11 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[19]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#12 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#13 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[20]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[21]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[22]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[23]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[24]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[25]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[26]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[27]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[28]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[29]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[30]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[31]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/cnt_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/cnt_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#34 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#35 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[11]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#36 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[12]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#37 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[13]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#38 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[14]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#39 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[15]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#40 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[16]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#41 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[17]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#42 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[18]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#43 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[19]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#44 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/current_data_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#45 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[20]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/intra_word_cnt_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#46 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[21]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/intra_word_cnt_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#47 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[22]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/intra_word_cnt_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#48 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[23]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/intra_word_cnt_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#49 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[24]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/intra_word_cnt_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#50 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[25]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/lrclk_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#51 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[26]/C is not reached by a timing clock
+The clock pin design_1_i/i2s_0/inst/sd_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#52 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[27]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/FSM_onehot_spi_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#53 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[28]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/FSM_onehot_spi_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#54 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[29]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/FSM_onehot_spi_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#55 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/SPI_bit_counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#56 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[30]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/SPI_bit_counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#57 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[31]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/SPI_bit_counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#58 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/SPI_bit_counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#59 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/SPI_bit_counter_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#60 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/chip_select_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#61 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#62 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#63 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#64 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/current_data_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#65 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/intra_word_cnt_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#66 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/intra_word_cnt_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#67 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/intra_word_cnt_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#68 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/intra_word_cnt_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#69 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/intra_word_cnt_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#70 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/lrclk_reg/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#71 Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/I2S_audio/AXI_I2S_driver_1/inst/AXI_I2S_driver_v1_0_S00_AXI_inst/sd_reg/C is not reached by a timing clock
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/mic_data_out_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/new_sample_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#77 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#81 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#82 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#83 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#84 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#85 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/pwm_threshold_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#86 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#87 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#88 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#89 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#90 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#91 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#92 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#93 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#94 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#95 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/sclk_sampling_counter_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#98 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#99 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#100 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#101 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#102 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#103 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#104 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#105 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#106 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#107 Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/spi_controller_0/inst/spi_data_out_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on cap_btn_i2c_scl_io relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on btn_rst relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on cap_btn_i2c_sda_io relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on cap_btn[0] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An input delay is missing on cap_btn_in_tri_i[0] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on cap_btn[1] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An input delay is missing on cap_btn_in_tri_i[1] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on cap_btn_i2c_scl_io relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An input delay is missing on i2s_i2c_scl_io relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on cap_btn_i2c_sda_io relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An input delay is missing on i2s_i2c_sda_io relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on i2s_i2c_scl_io relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An input delay is missing on reset_rtl_0 relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on i2s_i2c_sda_io relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An input delay is missing on swt_tri_i[0] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on reset_rtl_0 relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An input delay is missing on swt_tri_i[1] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on swt_tri_i[0] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An input delay is missing on swt_tri_i[2] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on swt_tri_i[1] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An input delay is missing on swt_tri_i[3] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on swt_tri_i[2] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An input delay is missing on swt_tri_i[4] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on swt_tri_i[3] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An input delay is missing on swt_tri_i[5] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on swt_tri_i[4] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An input delay is missing on swt_tri_i[6] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on swt_tri_i[5] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An input delay is missing on swt_tri_i[7] relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on swt_tri_i[6] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An input delay is missing on uart_rtl_0_rxd relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on swt_tri_i[7] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on i2s_bclk relative to clock(s) clk_100MHz, sys_clk_pin
+An input delay is missing on uart_rtl_0_rxd relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on i2s_mclk relative to clock(s) clk_100MHz, sys_clk_pin
+An output delay is missing on i2s_bclk relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on led_tri_o[0] relative to clock(s) clk_100MHz, sys_clk_pin
+An output delay is missing on i2s_mclk relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An output delay is missing on led_tri_o[1] relative to clock(s) clk_100MHz, sys_clk_pin
+An output delay is missing on led_mic_pwm relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
-An output delay is missing on led_tri_o[2] relative to clock(s) clk_100MHz, sys_clk_pin
+An output delay is missing on led_playback_mode relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#22 Warning
 Missing input or output delay  
-An output delay is missing on led_tri_o[3] relative to clock(s) clk_100MHz, sys_clk_pin
+An output delay is missing on led_tri_o[0] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#23 Warning
 Missing input or output delay  
-An output delay is missing on led_tri_o[4] relative to clock(s) clk_100MHz, sys_clk_pin
+An output delay is missing on led_tri_o[1] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#24 Warning
 Missing input or output delay  
-An output delay is missing on led_tri_o[5] relative to clock(s) clk_100MHz, sys_clk_pin
+An output delay is missing on led_tri_o[2] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#25 Warning
 Missing input or output delay  
-An output delay is missing on led_tri_o[6] relative to clock(s) clk_100MHz, sys_clk_pin
+An output delay is missing on led_tri_o[3] relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#26 Warning
 Missing input or output delay  
-An output delay is missing on led_tri_o[7] relative to clock(s) clk_100MHz, sys_clk_pin
+An output delay is missing on playback_in_progress_led relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>
 
 TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on recording_in_progress_led relative to clock(s) clk_100MHz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on serial_clock relative to clock(s) clk_100MHz, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#29 Warning
 Missing input or output delay  
 An output delay is missing on uart_rtl_0_txd relative to clock(s) clk_100MHz, sys_clk_pin
 Related violations: <none>

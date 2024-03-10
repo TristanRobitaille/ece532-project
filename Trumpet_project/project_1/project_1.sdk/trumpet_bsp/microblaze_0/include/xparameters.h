@@ -474,17 +474,6 @@
  
  
 /******************************************************************/
-/* Definitions for driver AXI_I2S_DRIVER */
-#define XPAR_AXI_I2S_DRIVER_NUM_INSTANCES 1
-
-/* Definitions for peripheral I2S_AUDIO_AXI_I2S_DRIVER_0 */
-#define XPAR_I2S_AUDIO_AXI_I2S_DRIVER_0_DEVICE_ID 0
-#define XPAR_I2S_AUDIO_AXI_I2S_DRIVER_0_S00_AXI_BASEADDR 0x10000000
-#define XPAR_I2S_AUDIO_AXI_I2S_DRIVER_0_S00_AXI_HIGHADDR 0x10000FFF
-
-
-/******************************************************************/
-
 /* Definitions for driver BRAM */
 #define XPAR_XBRAM_NUM_INSTANCES 2U
 
@@ -615,35 +604,35 @@
 /* Definitions for driver IIC */
 #define XPAR_XIIC_NUM_INSTANCES 2
 
-/* Definitions for peripheral I2C_CAP_BTN_AXI_IIC_0 */
-#define XPAR_I2C_CAP_BTN_AXI_IIC_0_DEVICE_ID 0
-#define XPAR_I2C_CAP_BTN_AXI_IIC_0_BASEADDR 0x40800000
-#define XPAR_I2C_CAP_BTN_AXI_IIC_0_HIGHADDR 0x40800FFF
-#define XPAR_I2C_CAP_BTN_AXI_IIC_0_TEN_BIT_ADR 0
-#define XPAR_I2C_CAP_BTN_AXI_IIC_0_GPO_WIDTH 1
-
-
 /* Definitions for peripheral I2S_AUDIO_AXI_IIC_1 */
-#define XPAR_I2S_AUDIO_AXI_IIC_1_DEVICE_ID 1
+#define XPAR_I2S_AUDIO_AXI_IIC_1_DEVICE_ID 0
 #define XPAR_I2S_AUDIO_AXI_IIC_1_BASEADDR 0x40810000
 #define XPAR_I2S_AUDIO_AXI_IIC_1_HIGHADDR 0x4081FFFF
 #define XPAR_I2S_AUDIO_AXI_IIC_1_TEN_BIT_ADR 0
 #define XPAR_I2S_AUDIO_AXI_IIC_1_GPO_WIDTH 1
 
 
+/* Definitions for peripheral I2C_CAP_BTN_AXI_IIC_0 */
+#define XPAR_I2C_CAP_BTN_AXI_IIC_0_DEVICE_ID 1
+#define XPAR_I2C_CAP_BTN_AXI_IIC_0_BASEADDR 0x40800000
+#define XPAR_I2C_CAP_BTN_AXI_IIC_0_HIGHADDR 0x40800FFF
+#define XPAR_I2C_CAP_BTN_AXI_IIC_0_TEN_BIT_ADR 0
+#define XPAR_I2C_CAP_BTN_AXI_IIC_0_GPO_WIDTH 1
+
+
 /******************************************************************/
 
-/* Canonical definitions for peripheral I2C_CAP_BTN_AXI_IIC_0 */
-#define XPAR_IIC_0_DEVICE_ID XPAR_I2C_CAP_BTN_AXI_IIC_0_DEVICE_ID
-#define XPAR_IIC_0_BASEADDR 0x40800000
-#define XPAR_IIC_0_HIGHADDR 0x40800FFF
+/* Canonical definitions for peripheral I2S_AUDIO_AXI_IIC_1 */
+#define XPAR_IIC_0_DEVICE_ID XPAR_I2S_AUDIO_AXI_IIC_1_DEVICE_ID
+#define XPAR_IIC_0_BASEADDR 0x40810000
+#define XPAR_IIC_0_HIGHADDR 0x4081FFFF
 #define XPAR_IIC_0_TEN_BIT_ADR 0
 #define XPAR_IIC_0_GPO_WIDTH 1
 
-/* Canonical definitions for peripheral I2S_AUDIO_AXI_IIC_1 */
-#define XPAR_IIC_1_DEVICE_ID XPAR_I2S_AUDIO_AXI_IIC_1_DEVICE_ID
-#define XPAR_IIC_1_BASEADDR 0x40810000
-#define XPAR_IIC_1_HIGHADDR 0x4081FFFF
+/* Canonical definitions for peripheral I2C_CAP_BTN_AXI_IIC_0 */
+#define XPAR_IIC_1_DEVICE_ID XPAR_I2C_CAP_BTN_AXI_IIC_0_DEVICE_ID
+#define XPAR_IIC_1_BASEADDR 0x40800000
+#define XPAR_IIC_1_HIGHADDR 0x40800FFF
 #define XPAR_IIC_1_TEN_BIT_ADR 0
 #define XPAR_IIC_1_GPO_WIDTH 1
 

@@ -1,7 +1,0 @@
-#ifndef INC_DMA_H_
-#define INC_DMA_H_
-
-//----- DEFINE -----//
-#define DMA_DEVICE ID
-
-#endif /* INC_DMA_H_ */

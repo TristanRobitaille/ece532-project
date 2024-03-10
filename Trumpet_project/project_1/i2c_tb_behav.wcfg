@@ -3,38 +3,62 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="i2c_tb_behav.wdb" id="1">
+      <db_ref path="spi_mic_tb_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="i2c_tb" />
+            <top_module name="iic_pkg" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="mdm_funcs" />
+            <top_module name="spi_mic_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="295368333334fs"></ZoomStartTime>
-      <ZoomEndTime time="427768333335fs"></ZoomEndTime>
-      <Cursor1Time time="307195000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1336036363638fs"></ZoomEndTime>
+      <Cursor1Time time="170915100000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+      <NameColumnWidth column_width="215"></NameColumnWidth>
+      <ValueColumnWidth column_width="94"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="4" />
-   <wvobject fp_name="/i2c_tb/clk_100MHz" type="logic">
-      <obj_property name="ElementShortName">clk_100MHz</obj_property>
-      <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/spi_mic_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/i2c_tb/i2c/i2c_clk_cnt" type="array">
-      <obj_property name="ElementShortName">i2c_clk_cnt[9:0]</obj_property>
-      <obj_property name="ObjectShortName">i2c_clk_cnt[9:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/spi_mic_tb/btn_rst" type="logic">
+      <obj_property name="ElementShortName">btn_rst</obj_property>
+      <obj_property name="ObjectShortName">btn_rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/i2c_tb/i2c/clk_100MHz" type="logic">
-      <obj_property name="ElementShortName">clk_100MHz</obj_property>
-      <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/cap_btn" type="array">
+      <obj_property name="ElementShortName">cap_btn[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cap_btn[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/i2c_tb/i2c/i2c_clk_200kHz" type="logic">
-      <obj_property name="ElementShortName">i2c_clk_200kHz</obj_property>
-      <obj_property name="ObjectShortName">i2c_clk_200kHz</obj_property>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/playback_start" type="logic">
+      <obj_property name="ElementShortName">playback_start</obj_property>
+      <obj_property name="ObjectShortName">playback_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/recording_in_progress" type="logic">
+      <obj_property name="ElementShortName">recording_in_progress</obj_property>
+      <obj_property name="ObjectShortName">recording_in_progress</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/speaker_mode" type="logic">
+      <obj_property name="ElementShortName">speaker_mode</obj_property>
+      <obj_property name="ObjectShortName">speaker_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/i2s_0/input_source" type="logic">
+      <obj_property name="ElementShortName">input_source</obj_property>
+      <obj_property name="ObjectShortName">input_source</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/playback_in_progress_led" type="logic">
+      <obj_property name="ElementShortName">playback_in_progress_led</obj_property>
+      <obj_property name="ObjectShortName">playback_in_progress_led</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/recording_in_progress_led" type="logic">
+      <obj_property name="ElementShortName">recording_in_progress_led</obj_property>
+      <obj_property name="ObjectShortName">recording_in_progress_led</obj_property>
    </wvobject>
 </wave_config>

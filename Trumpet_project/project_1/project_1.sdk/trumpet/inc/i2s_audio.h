@@ -9,16 +9,6 @@
 #include "stdbool.h"
 
 //----- DEFINES -----//
-#define I2S_DATA_REG XPAR_I2S_AUDIO_AXI_I2S_DRIVER_0_S00_AXI_BASEADDR
-#define I2S_EN_REG (I2S_DATA_REG + 0x4)
-#define I2S_DATA_WIDTH_REG (I2S_DATA_REG + 0x8)
-#define I2S_CLK_DIV_REG (I2S_DATA_REG + 0xC)
-
-#define I2S_DEFAULT_DATA_WIDTH 32
-// For 40kHz refresh (need to send 2x32b per refresh), need bclk = 2.56MHz ~= 5.12MHz --> BCLK_DIV = 19
-// MCLK sets the sampling frequency as f_sampling = MCLK/256. For 40kHz sampling, MCLK = 10.24MHz ~= 10MHz--> MCLK_DIV = 5
-#define I2S_DEFAULT_BCLK_DIV 19 // bclk = 100MHz/2*BCLK_DIV
-#define I2S_DEFAULT_MCLK_DIV 5 // mclk = 100MHz/2*BCLK_DIV
 
 // I2C interface
 #define ADAU1761_I2C_ADDR 0x3B // See datasheet page 38. On Nexys Video, ADDR0 == ADDR1 == 1
@@ -106,12 +96,6 @@
 
 //----- PROTOTYPES -----//
 void i2s_audio_init();
-void i2s_audio_enable();
-void i2s_audio_disable();
-void i2s_audio_set_data_width(u32 data_width);
-void i2s_audio_set_bclk_div(u32 bclk_div);
-void i2s_audio_set_mclk_div(u32 mclk_div);
-void i2s_audio_write_data(u32 data);
 void i2s_audio_i2c_write_to_reg(u8 reg_addr_lsb, u8* data, u8 len);
 void i2s_audio_i2c_write_1B_to_reg(u8 reg_addr_lsb, u8 data);
 u8* i2s_audio_i2c_read_from_reg(u8 reg_addr_lsb, u8 len, bool print_data);

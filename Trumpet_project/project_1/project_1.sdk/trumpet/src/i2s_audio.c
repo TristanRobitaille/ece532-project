@@ -2,74 +2,34 @@
 
 //----- DECLARATIONS -----//
 void i2s_audio_init() {
-	// Clocks
-	i2s_audio_set_bclk_div((u32) I2S_DEFAULT_BCLK_DIV);
-	i2s_audio_set_mclk_div((u32) I2S_DEFAULT_MCLK_DIV);
-	i2s_audio_enable();
-
 	// Write ADAU1761 configuration
-	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_CLOCK_CTRL_REG_R0, (u8) 0b00000001); // Enable core clock
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_CLOCK_CTRL_REG_R0, (u8) 0b00000001); // Enable core clock, from MCLK, fs = MCLK/256
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_SERIAL_CTRL0_REG_R15, (u8) 0b00000001);
-	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_SERIAL_CTRL1_REG_R16, (u8) 0b00000000);
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_SERIAL_CTRL1_REG_R16, (u8) 0b01000000); // 48b LRCLK audio frame (2 x 24b)
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_DAC_CTRL0_REG_R36, (u8) 0b00000011);
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_PLBK_PWR_MGMT_REG_R35, (u8) 0b00000011);
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_SERIAL_IN_CTRL_REG_R58, (u8) 0b00000001);
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_CLOCK_ENABLE0_REG_R65, (u8) 0b01111111); // Enable all clocks
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_CLOCK_ENABLE1_REG_R66, (u8) 0b00000011); // Enable clock generator 0
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_CLOCK_ENABLE1_REG_R66, (u8) 0b00000011); // Enable clock generator 0
-	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_PLBK_LEFT_LN_VOL_REG_R31, (u8) 0b11100110);
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_PLBK_LEFT_LN_VOL_REG_R31, (u8) 0b11111010); // Left line out volume = 3dB
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_PLBK_RIGHT_LN_VOL_REG_R32, (u8) 0b11100110);
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MONO_OUT_PLBK_REG_R33, (u8) 0b00000011);
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_SERIAL_DATA_CONFIG_R60, (u8) 0b00000011);
 
 	// Enable all the mixers
-	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER3_CTRL0_REG_R22, (u8) 0b00000011);
-	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER3_CTRL1_REG_R23, (u8) 0b01100110);
-	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER4_CTRL0_REG_R24, (u8) 0b00000011);
-	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER4_CTRL1_REG_R25, (u8) 0b01100110);
-	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER5_CTRL_REG_R26, (u8) 0b00000011);
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER3_CTRL0_REG_R22, (u8) 0b01101111); // Mixer 3 setup
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER3_CTRL1_REG_R23, (u8) 0b01110111); // MX3G1 and MX3G2 = 3dB
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER4_CTRL0_REG_R24, (u8) 0b01101111); // Mixer 4 setup
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER4_CTRL1_REG_R25, (u8) 0b01110111); // MX4G1 and MX4G2 = 3dB
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER5_CTRL_REG_R26, (u8)  0b00010101); // Mixer 5 6dB output
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER7_CTRL_REG_R28, (u8) 0b00000001);
 	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_MIXER6_CTRL_REG_R27, (u8) 0b00001001);
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_PLBK_LEFT_HP_VOL_REG_R29, (u8) 0b11101011); // Left HP out volume = 3dB
+	i2s_audio_i2c_write_1B_to_reg((u8) ADAU1761_PLBK_RIGHT_HP_VOL_REG_R30, (u8) 0b11101011); // Right HP out volume = 3dB
 
 	// AXI I2S driver settings
-	i2s_audio_set_data_width((u32) I2S_DEFAULT_DATA_WIDTH);
-
-	i2s_audio_write_data((u32) 0x00000000);
-}
-
-void i2s_audio_enable() {
-	Xil_Out32((UINTPTR) I2S_EN_REG, (u32) 0x00000001); //EN bit is the LSb
-}
-
-void i2s_audio_disable() {
-	Xil_Out32((UINTPTR) I2S_EN_REG, (u32) 0x00000000); //EN bit is the LSb
-}
-
-void i2s_audio_set_data_width(u32 data_width) {
-	if (data_width > 32) {
-		xil_printf("I2S audio I2C interface: I2S data width (%d) is greater than maximum (32)! Exiting.\n", data_width);
-		exit(-1);
-	}
-
-	u32 curr_data_width = Xil_In32((UINTPTR) I2S_DATA_WIDTH_REG);
-	if (data_width != curr_data_width) { xil_printf("Note: You are changing the I2S data width (from %d to %d). Will need to update BPF in R16 of I2S driver (ADAU1761).\n", curr_data_width, data_width); }
-	Xil_Out32((UINTPTR) I2S_DATA_WIDTH_REG, data_width);
-}
-
-void i2s_audio_set_bclk_div(u32 bclk_div) {
-	u32 curr_clk_div = Xil_In32((UINTPTR) I2S_CLK_DIV_REG);
-	u32 new_clk_div = (curr_clk_div & 0xFFFF0000) | bclk_div;
-	Xil_Out32((UINTPTR) I2S_CLK_DIV_REG, new_clk_div);
-}
-
-void i2s_audio_set_mclk_div(u32 mclk_div) {
-	u32 curr_clk_div = Xil_In32((UINTPTR) I2S_CLK_DIV_REG);
-	u32 new_clk_div = (curr_clk_div & 0x0000FFFF) | (mclk_div << 16);
-	Xil_Out32((UINTPTR) I2S_CLK_DIV_REG, new_clk_div);
-}
-
-void i2s_audio_write_data(u32 data) {
-	Xil_Out32((UINTPTR) I2S_DATA_REG, data);
+	i2s_audio_i2c_dump_reg();
 }
 
 void i2s_audio_i2c_write_to_reg(u8 reg_addr_lsb, u8* data, u8 len) {
