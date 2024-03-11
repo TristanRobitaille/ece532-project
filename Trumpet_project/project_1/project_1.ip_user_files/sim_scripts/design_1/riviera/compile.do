@@ -52,11 +52,11 @@ vmap axi_data_fifo_v2_1_17 riviera/axi_data_fifo_v2_1_17
 vmap axi_crossbar_v2_1_19 riviera/axi_crossbar_v2_1_19
 
 vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../project_1.srcs/sources_1/bd/design_1/ipshared/85a3" "+incdir+../../../../project_1.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
-"C:/DESL/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"C:/DESL/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+"C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93 \
-"C:/DESL/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
+"C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../project_1.srcs/sources_1/bd/design_1/ipshared/85a3" "+incdir+../../../../project_1.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" \
@@ -179,6 +179,10 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../project_1.srcs/sources_1/b
 "../../../bd/design_1/ip/design_1_spi_controller_0_0/sim/design_1_spi_controller_0_0.v" \
 "../../../bd/design_1/ip/design_1_playback_ctrl_0_1/sim/design_1_playback_ctrl_0_1.v" \
 "../../../bd/design_1/ip/design_1_mic_storage_0_1/sim/design_1_mic_storage_0_1.v" \
+
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../project_1.srcs/sources_1/bd/design_1/ipshared/85a3" "+incdir+../../../../project_1.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../../Users/ECE53/Desktop/m2_mod_dsp/pre_processing/pre_processing/pre_processing.srcs/sources_1/new/audio_preprocessor.sv" \
+"../../../bd/design_1/ip/design_1_audio_preprocessor_0_0/sim/design_1_audio_preprocessor_0_0.sv" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

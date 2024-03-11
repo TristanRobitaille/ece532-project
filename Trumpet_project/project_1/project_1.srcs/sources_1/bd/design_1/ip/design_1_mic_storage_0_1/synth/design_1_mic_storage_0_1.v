@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:module_ref:mic_storage:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "mic_storage,Vivado 2018.3.1" *)
+(* X_CORE_INFO = "mic_storage,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "design_1_mic_storage_0_1,mic_storage,{}" *)
-(* CORE_GENERATION_INFO = "design_1_mic_storage_0_1,mic_storage,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=mic_storage,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,buffer_length=74999,TIMEBASE_CLK_DIV=10000,IDLE=0x00000000,RECORDING=0x00000001,PLAYBACK=0x00000002}" *)
+(* CORE_GENERATION_INFO = "design_1_mic_storage_0_1,mic_storage,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=mic_storage,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,buffer_length=74999,TIMEBASE_CLK_DIV=10000,IDLE=0x00000000,RECORDING=0x00000001,PLAYBACK=0x00000002}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_mic_storage_0_1 (

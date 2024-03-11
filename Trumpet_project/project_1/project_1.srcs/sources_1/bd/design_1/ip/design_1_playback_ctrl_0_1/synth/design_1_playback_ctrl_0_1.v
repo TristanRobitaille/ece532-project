@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:module_ref:playback_ctrl:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "playback_ctrl,Vivado 2018.3.1" *)
+(* X_CORE_INFO = "playback_ctrl,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "design_1_playback_ctrl_0_1,playback_ctrl,{}" *)
-(* CORE_GENERATION_INFO = "design_1_playback_ctrl_0_1,playback_ctrl,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=playback_ctrl,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_playback_ctrl_0_1,playback_ctrl,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=playback_ctrl,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_playback_ctrl_0_1 (

@@ -421,6 +421,9 @@ proc create_root_design { parentCell } {
   # Create instance: I2S_audio
   create_hier_cell_I2S_audio [current_bd_instance .] I2S_audio
 
+  # Create instance: audio_preprocessor_0, and set properties
+  set audio_preprocessor_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:audio_preprocessor:1.0 audio_preprocessor_0 ]
+
   # Create instance: axi_gpio_0, and set properties
   set axi_gpio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 ]
   set_property -dict [ list \
@@ -554,10 +557,11 @@ proc create_root_design { parentCell } {
   # Create port connections
   connect_bd_net -net AXI_I2S_driver_0_bclk1 [get_bd_ports i2s_bclk] [get_bd_pins i2s_0/bclk]
   connect_bd_net -net AXI_I2S_driver_0_lrclk1 [get_bd_ports i2s_lrclk] [get_bd_pins i2s_0/lrclk]
-  connect_bd_net -net btn_rst_1 [get_bd_ports btn_rst] [get_bd_pins i2s_0/btn_rst] [get_bd_pins mic_storage_0/rst_n] [get_bd_pins spi_controller_0/rst_n]
+  connect_bd_net -net audio_preprocessor_0_filtered_audio_out [get_bd_pins audio_preprocessor_0/filtered_audio_out] [get_bd_pins i2s_0/mic_data] [get_bd_pins mic_storage_0/mic_data]
+  connect_bd_net -net btn_rst_1 [get_bd_ports btn_rst] [get_bd_pins audio_preprocessor_0/rst_n] [get_bd_pins i2s_0/btn_rst] [get_bd_pins mic_storage_0/rst_n] [get_bd_pins spi_controller_0/rst_n]
   connect_bd_net -net cap_btn_1 [get_bd_ports cap_btn] [get_bd_pins i2c_cap_btn/cap_btn] [get_bd_pins playback_ctrl_0/cap_btn]
   connect_bd_net -net clk_100MHz_1 [get_bd_ports clk_100MHz] [get_bd_pins clk_wiz_1/clk_in1]
-  connect_bd_net -net clk_wiz_1_clk_out1 [get_bd_pins I2S_audio/s00_axi_aclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins axi_interconnect_0/M04_ACLK] [get_bd_pins axi_interconnect_0/M05_ACLK] [get_bd_pins axi_interconnect_0/M06_ACLK] [get_bd_pins axi_interconnect_0/M07_ACLK] [get_bd_pins axi_interconnect_0/M08_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins i2c_cap_btn/s_axi_aclk] [get_bd_pins i2s_0/clk_100MHz] [get_bd_pins mic_storage_0/clk_100MHz] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins playback_ctrl_0/clk_100MHz] [get_bd_pins rst_clk_wiz_1_100M/slowest_sync_clk] [get_bd_pins spi_controller_0/clk_100MHz]
+  connect_bd_net -net clk_wiz_1_clk_out1 [get_bd_pins I2S_audio/s00_axi_aclk] [get_bd_pins audio_preprocessor_0/clk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins axi_interconnect_0/M04_ACLK] [get_bd_pins axi_interconnect_0/M05_ACLK] [get_bd_pins axi_interconnect_0/M06_ACLK] [get_bd_pins axi_interconnect_0/M07_ACLK] [get_bd_pins axi_interconnect_0/M08_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins i2c_cap_btn/s_axi_aclk] [get_bd_pins i2s_0/clk_100MHz] [get_bd_pins mic_storage_0/clk_100MHz] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins playback_ctrl_0/clk_100MHz] [get_bd_pins rst_clk_wiz_1_100M/slowest_sync_clk] [get_bd_pins spi_controller_0/clk_100MHz]
   connect_bd_net -net clk_wiz_1_locked [get_bd_pins clk_wiz_1/locked] [get_bd_pins rst_clk_wiz_1_100M/dcm_locked]
   connect_bd_net -net i2s_0_mclk [get_bd_ports i2s_mclk] [get_bd_pins i2s_0/mclk]
   connect_bd_net -net i2s_0_sd [get_bd_ports i2s_data] [get_bd_pins i2s_0/sd]
@@ -575,7 +579,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net rst_clk_wiz_1_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins microblaze_0_axi_intc/processor_rst] [get_bd_pins rst_clk_wiz_1_100M/mb_reset]
   connect_bd_net -net rst_clk_wiz_1_100M_peripheral_aresetn [get_bd_pins I2S_audio/s00_axi_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/M03_ARESETN] [get_bd_pins axi_interconnect_0/M04_ARESETN] [get_bd_pins axi_interconnect_0/M05_ARESETN] [get_bd_pins axi_interconnect_0/M06_ARESETN] [get_bd_pins axi_interconnect_0/M07_ARESETN] [get_bd_pins axi_interconnect_0/M08_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins i2c_cap_btn/s_axi_aresetn] [get_bd_pins microblaze_0_axi_intc/s_axi_aresetn] [get_bd_pins playback_ctrl_0/btn_rst] [get_bd_pins rst_clk_wiz_1_100M/peripheral_aresetn]
   connect_bd_net -net spi_controller_0_chip_select [get_bd_ports chip_select] [get_bd_pins spi_controller_0/chip_select]
-  connect_bd_net -net spi_controller_0_data_out [get_bd_pins i2s_0/mic_data] [get_bd_pins mic_storage_0/mic_data] [get_bd_pins spi_controller_0/mic_data_out]
+  connect_bd_net -net spi_controller_0_mic_data_out [get_bd_pins audio_preprocessor_0/noisy_audio_in] [get_bd_pins spi_controller_0/mic_data_out]
   connect_bd_net -net spi_controller_0_new_data_ready_clk_100MHz [get_bd_pins mic_storage_0/new_sample] [get_bd_pins spi_controller_0/new_data_ready_clk_100MHz]
   connect_bd_net -net spi_controller_0_pwm_out [get_bd_ports led_mic_pwm] [get_bd_pins spi_controller_0/pwm_out]
   connect_bd_net -net spi_controller_0_serial_clock [get_bd_ports serial_clock] [get_bd_pins spi_controller_0/serial_clock]
