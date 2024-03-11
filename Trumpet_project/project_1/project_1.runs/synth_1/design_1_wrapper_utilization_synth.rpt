@@ -1,8 +1,8 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-| Date         : Sat Mar  9 20:53:53 2024
-| Host         : BA3135WS38 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Mar 11 14:57:25 2024
+| Host         : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : 7a200tsbg484-1
@@ -182,6 +182,7 @@ Table of Contents
 | design_1_axi_gpio_1_0            |    1 |
 | design_1_axi_gpio_0_1            |    1 |
 | design_1_axi_gpio_0_0            |    1 |
+| design_1_audio_preprocessor_0_0  |    1 |
 +----------------------------------+------+
 
 

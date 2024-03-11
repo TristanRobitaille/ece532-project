@@ -1,8 +1,8 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
----------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-| Date                      : Sat Mar  9 20:55:19 2024
-| Host                      : BA3135WS38 running 64-bit major release  (build 9200)
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version              : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date                      : Mon Mar 11 15:00:02 2024
+| Host                      : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
 | Device                    : xc7a200t
@@ -10,7 +10,7 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 | Package                   : sbg484
 | Package Version           : FINAL 2012-06-12
 | Package Pin Delay Version : VERS. 2.0 2012-06-12
----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 IO Information
 
@@ -200,7 +200,7 @@ Table of Contents
 | F9         |                           |            | MGTAVCC                      | Gigabit Power |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F10        |                           |            | MGTREFCLK1P_216              | Gigabit       |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F11        |                           |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| F12        |                           | Dedicated  | VCCO_0                       | VCCO          |             |       0 |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
+| F12        |                           | Dedicated  | VCCO_0                       | VCCO          |             |       0 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | F13        |                           | High Range | IO_L1P_T0_16                 | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F14        |                           | High Range | IO_L1N_T0_16                 | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F15        |                           | High Range | IO_0_16                      | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -420,7 +420,7 @@ Table of Contents
 | T9         |                           |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | T10        |                           |            | VCCINT                       | VCCINT        |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T11        |                           |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| T12        |                           | Dedicated  | VCCO_0                       | VCCO          |             |       0 |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
+| T12        |                           | Dedicated  | VCCO_0                       | VCCO          |             |       0 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | T13        |                           | Dedicated  | TMS_0                        | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T14        | led_tri_o[0]              | High Range | IO_L15P_T2_DQS_13            | OUTPUT        | LVCMOS33    |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T15        | led_tri_o[1]              | High Range | IO_L15N_T2_DQS_13            | OUTPUT        | LVCMOS33    |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
@@ -438,7 +438,7 @@ Table of Contents
 | U5         | i2s_lrclk                 | High Range | IO_L14N_T2_SRCC_34           | OUTPUT        | LVCMOS33    |      34 |          4 | SLOW |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U6         | i2s_mclk                  | High Range | IO_L16P_T2_34                | OUTPUT        | LVCMOS33    |      34 |          4 | SLOW |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U7         |                           | High Range | IO_25_34                     | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| U8         |                           | Dedicated  | CFGBVS_0                     | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| U8         |                           | Dedicated  | CFGBVS_0                     | Config        |             |       0 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | U9         |                           | Dedicated  | M2_0                         | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U10        |                           | Dedicated  | M1_0                         | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U11        |                           | Dedicated  | M0_0                         | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -521,6 +521,5 @@ Table of Contents
 | Y22        |                           | High Range | IO_L9N_T1_DQS_D13_14         | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 +------------+---------------------------+------------+------------------------------+---------------+-------------+---------+------------+------+---------------------+----------------------+---------+------------+-----------+----------+------+------------------+--------------+-------------------+--------------+
 * Default value
-** Special VCCO requirements may apply. Please consult the device family datasheet for specific guideline on VCCO requirements.
 
 
