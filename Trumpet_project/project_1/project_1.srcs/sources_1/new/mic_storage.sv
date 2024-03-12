@@ -9,11 +9,11 @@ module mic_storage (
     output reg playback_in_progress_led, recording_in_progress_led,
     output reg [11:0] playback_data
 );
-    
-    parameter buffer_length = 5000*15-1;  // 5kHz for 15s
+    parameter recording_duration_s = 5; // Duration of recording in sec
+    parameter buffer_length = 5000*recording_duration_s-1; // 5kHz for 
     reg [$clog2(buffer_length):0] recording_end_index = 'd0;
     reg [$clog2(buffer_length):0] current_playback_index = 'd0;
-    (* ram_style = "block" *) reg [11:0] mic_data_storage [$clog2(buffer_length):0];
+    (* ram_style = "block" *) reg [11:0] mic_data_storage [buffer_length-1:0];
     
     // Self-reset
     reg [7:0] self_start_reset = 'd0;	
@@ -50,6 +50,7 @@ module mic_storage (
     parameter RECORDING = 'd1;
     parameter PLAYBACK = 'd2;
     
+    // TODO: Can only record once
     reg [1:0] state;
     always @ (posedge clk_100MHz) begin
         if(rst_n || (self_start_reset < 'd255)) begin
@@ -75,7 +76,7 @@ module mic_storage (
                 RECORDING: begin
                     if (new_sample) begin
                         recording_end_index <= recording_end_index + 1;
-                        mic_data_storage [recording_end_index] <= mic_data;
+                        mic_data_storage[recording_end_index] <= mic_data;
                     end
                     if ((current_playback_index == buffer_length) || recording_in_progress) begin
                         state <= IDLE;
@@ -86,7 +87,7 @@ module mic_storage (
                 PLAYBACK: begin
                     if (timebase_clk_posedge) begin
                         current_playback_index <= current_playback_index + 1;
-                        playback_data <= mic_data_storage [current_playback_index];                    
+                        playback_data <= mic_data_storage[current_playback_index];                    
                     end
                     if (current_playback_index == recording_end_index || (current_playback_index == buffer_length)) begin
                         state <= IDLE;

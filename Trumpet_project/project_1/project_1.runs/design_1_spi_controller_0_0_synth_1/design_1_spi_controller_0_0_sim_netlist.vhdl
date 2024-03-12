@@ -1,8 +1,8 @@
--- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Mon Mar 11 13:34:50 2024
--- Host        : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+-- Date        : Tue Mar 12 00:29:34 2024
+-- Host        : BA3135WS06 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_spi_controller_0_0_sim_netlist.vhdl
 -- Design      : design_1_spi_controller_0_0
@@ -18,6 +18,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller is
   port (
     serial_clock_reg_0 : out STD_LOGIC;
     pwm_out : out STD_LOGIC;
+    new_data_ready_clk_100MHz : out STD_LOGIC;
     mic_data_out : out STD_LOGIC_VECTOR ( 11 downto 0 );
     chip_select : out STD_LOGIC;
     rst_n : in STD_LOGIC;
@@ -49,6 +50,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controll
   signal chip_select_i_2_n_0 : STD_LOGIC;
   signal data0 : STD_LOGIC_VECTOR ( 15 downto 1 );
   signal \mic_data_out[11]_i_1_n_0\ : STD_LOGIC;
+  signal new_data_ready_clk_100MHz0 : STD_LOGIC;
+  signal new_data_ready_i_1_n_0 : STD_LOGIC;
+  signal new_data_ready_prev : STD_LOGIC;
+  signal new_data_ready_reg_n_0 : STD_LOGIC;
   signal new_sample : STD_LOGIC;
   signal new_sample0 : STD_LOGIC;
   signal new_sample_i_2_n_0 : STD_LOGIC;
@@ -178,9 +183,9 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controll
   signal \NLW_sclk_counter_reg[15]_i_2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \NLW_sclk_counter_reg[15]_i_2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \FSM_onehot_spi_state[0]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \FSM_onehot_spi_state[1]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \FSM_onehot_spi_state[2]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \FSM_onehot_spi_state[0]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \FSM_onehot_spi_state[1]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \FSM_onehot_spi_state[2]_i_1\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \FSM_onehot_spi_state[2]_i_2\ : label is "soft_lutpair0";
   attribute FSM_ENCODED_STATES : string;
   attribute FSM_ENCODED_STATES of \FSM_onehot_spi_state_reg[0]\ : label is "SLEEP:001,TRANSFER:010,DONE:100";
@@ -189,28 +194,27 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controll
   attribute SOFT_HLUTNM of \SPI_bit_counter[2]_i_1\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \SPI_bit_counter[3]_i_1\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \SPI_bit_counter[4]_i_3\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of chip_select_i_2 : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of chip_select_i_2 : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \pwm_threshold[11]_i_2\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \sclk_counter[0]_i_1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \sclk_counter[10]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \sclk_counter[11]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \sclk_counter[12]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \sclk_counter[13]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \sclk_counter[14]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \sclk_counter[15]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \sclk_counter[10]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \sclk_counter[11]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \sclk_counter[12]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \sclk_counter[13]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \sclk_counter[14]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \sclk_counter[15]_i_1\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \sclk_counter[1]_i_1\ : label is "soft_lutpair17";
   attribute SOFT_HLUTNM of \sclk_counter[2]_i_1\ : label is "soft_lutpair16";
   attribute SOFT_HLUTNM of \sclk_counter[3]_i_1\ : label is "soft_lutpair16";
   attribute SOFT_HLUTNM of \sclk_counter[4]_i_1\ : label is "soft_lutpair15";
   attribute SOFT_HLUTNM of \sclk_counter[5]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \sclk_counter[6]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \sclk_counter[7]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \sclk_counter[8]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \sclk_counter[9]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \sclk_counter[6]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \sclk_counter[7]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \sclk_counter[8]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \sclk_counter[9]_i_1\ : label is "soft_lutpair12";
   attribute SOFT_HLUTNM of \sclk_sampling_counter[0]_i_1\ : label is "soft_lutpair18";
   attribute SOFT_HLUTNM of \sclk_sampling_counter[1]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \sclk_sampling_counter[2]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \sclk_sampling_counter[3]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \sclk_sampling_counter[2]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \sclk_sampling_counter[3]_i_1\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \sclk_sampling_counter[5]_i_1\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \sclk_sampling_counter[9]_i_2\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \sclk_sampling_counter[9]_i_4\ : label is "soft_lutpair18";
@@ -218,15 +222,16 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controll
   attribute SOFT_HLUTNM of \self_start_reset[2]_i_1\ : label is "soft_lutpair19";
   attribute SOFT_HLUTNM of \self_start_reset[3]_i_1\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \self_start_reset[4]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \self_start_reset[6]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \self_start_reset[6]_i_1\ : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \self_start_reset[7]_i_2\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of serial_clock_i_1 : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \spi_data_out[0]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \spi_data_out[10]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of serial_clock_i_1 : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \spi_data_out[0]_i_1\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \spi_data_out[10]_i_1\ : label is "soft_lutpair14";
   attribute SOFT_HLUTNM of \spi_data_out[11]_i_2\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \spi_data_out[1]_i_1\ : label is "soft_lutpair24";
   attribute SOFT_HLUTNM of \spi_data_out[2]_i_1\ : label is "soft_lutpair24";
   attribute SOFT_HLUTNM of \spi_data_out[3]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \spi_data_out[4]_i_1\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \spi_data_out[4]_i_1\ : label is "soft_lutpair23";
   attribute SOFT_HLUTNM of \spi_data_out[5]_i_1\ : label is "soft_lutpair22";
   attribute SOFT_HLUTNM of \spi_data_out[6]_i_1\ : label is "soft_lutpair21";
   attribute SOFT_HLUTNM of \spi_data_out[7]_i_1\ : label is "soft_lutpair20";
@@ -581,6 +586,51 @@ chip_select_reg: unisim.vcomponents.FDRE
       CE => \mic_data_out[11]_i_1_n_0\,
       D => \spi_data_out_reg_n_0_[9]\,
       Q => mic_data_out(9),
+      R => '0'
+    );
+new_data_ready_clk_100MHz_i_1: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => new_data_ready_reg_n_0,
+      I1 => new_data_ready_prev,
+      O => new_data_ready_clk_100MHz0
+    );
+new_data_ready_clk_100MHz_reg: unisim.vcomponents.FDRE
+     port map (
+      C => clk_100MHz,
+      CE => '1',
+      D => new_data_ready_clk_100MHz0,
+      Q => new_data_ready_clk_100MHz,
+      R => '0'
+    );
+new_data_ready_i_1: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFD000C"
+    )
+        port map (
+      I0 => \FSM_onehot_spi_state_reg_n_0_[0]\,
+      I1 => pwm_threshold_0,
+      I2 => \self_start_reset[7]_i_1_n_0\,
+      I3 => rst_n,
+      I4 => new_data_ready_reg_n_0,
+      O => new_data_ready_i_1_n_0
+    );
+new_data_ready_prev_reg: unisim.vcomponents.FDRE
+     port map (
+      C => clk_100MHz,
+      CE => '1',
+      D => new_data_ready_reg_n_0,
+      Q => new_data_ready_prev,
+      R => '0'
+    );
+new_data_ready_reg: unisim.vcomponents.FDRE
+     port map (
+      C => \^serial_clock_reg_0\,
+      CE => '1',
+      D => new_data_ready_i_1_n_0,
+      Q => new_data_ready_reg_n_0,
       R => '0'
     );
 new_sample_i_1: unisim.vcomponents.LUT6
@@ -2247,11 +2297,10 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute IP_DEFINITION_SOURCE : string;
   attribute IP_DEFINITION_SOURCE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "module_ref";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "spi_controller,Vivado 2018.3";
+  attribute X_CORE_INFO of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "spi_controller,Vivado 2018.3.1";
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
-  signal \<const0>\ : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of rst_n : signal is "xilinx.com:signal:reset:1.0 rst_n RST";
   attribute X_INTERFACE_PARAMETER : string;
@@ -2259,17 +2308,13 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute X_INTERFACE_INFO of serial_clock : signal is "xilinx.com:signal:clock:1.0 serial_clock CLK";
   attribute X_INTERFACE_PARAMETER of serial_clock : signal is "XIL_INTERFACENAME serial_clock, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_spi_controller_0_0_serial_clock, INSERT_VIP 0";
 begin
-  new_data_ready_clk_100MHz <= \<const0>\;
-GND: unisim.vcomponents.GND
-     port map (
-      G => \<const0>\
-    );
 inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
      port map (
       chip_select => chip_select,
       clk_100MHz => clk_100MHz,
       master_in_slave_out => master_in_slave_out,
       mic_data_out(11 downto 0) => mic_data_out(11 downto 0),
+      new_data_ready_clk_100MHz => new_data_ready_clk_100MHz,
       pwm_out => pwm_out,
       rst_n => rst_n,
       serial_clock_reg_0 => serial_clock

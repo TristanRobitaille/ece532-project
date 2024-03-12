@@ -1,8 +1,8 @@
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Mon Mar 11 13:34:50 2024
-// Host        : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+// Date        : Tue Mar 12 00:29:34 2024
+// Host        : BA3135WS06 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_spi_controller_0_0_sim_netlist.v
 // Design      : design_1_spi_controller_0_0
@@ -13,7 +13,7 @@
 `timescale 1 ps / 1 ps
 
 (* CHECK_LICENSE_TYPE = "design_1_spi_controller_0_0,spi_controller,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "spi_controller,Vivado 2018.3" *) 
+(* X_CORE_INFO = "spi_controller,Vivado 2018.3.1" *) 
 (* NotValidForBitStream *)
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
    (clk_100MHz,
@@ -33,23 +33,21 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   output new_data_ready_clk_100MHz;
   output [11:0]mic_data_out;
 
-  wire \<const0> ;
   wire chip_select;
   wire clk_100MHz;
   wire master_in_slave_out;
   wire [11:0]mic_data_out;
+  wire new_data_ready_clk_100MHz;
   wire pwm_out;
   wire rst_n;
   wire serial_clock;
 
-  assign new_data_ready_clk_100MHz = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller inst
        (.chip_select(chip_select),
         .clk_100MHz(clk_100MHz),
         .master_in_slave_out(master_in_slave_out),
         .mic_data_out(mic_data_out),
+        .new_data_ready_clk_100MHz(new_data_ready_clk_100MHz),
         .pwm_out(pwm_out),
         .rst_n(rst_n),
         .serial_clock_reg_0(serial_clock));
@@ -58,6 +56,7 @@ endmodule
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
    (serial_clock_reg_0,
     pwm_out,
+    new_data_ready_clk_100MHz,
     mic_data_out,
     chip_select,
     rst_n,
@@ -65,6 +64,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
     master_in_slave_out);
   output serial_clock_reg_0;
   output pwm_out;
+  output new_data_ready_clk_100MHz;
   output [11:0]mic_data_out;
   output chip_select;
   input rst_n;
@@ -96,6 +96,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
   wire master_in_slave_out;
   wire [11:0]mic_data_out;
   wire \mic_data_out[11]_i_1_n_0 ;
+  wire new_data_ready_clk_100MHz;
+  wire new_data_ready_clk_100MHz0;
+  wire new_data_ready_i_1_n_0;
+  wire new_data_ready_prev;
+  wire new_data_ready_reg_n_0;
   wire new_sample;
   wire new_sample0;
   wire new_sample_i_2_n_0;
@@ -227,7 +232,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
   wire [3:2]\NLW_sclk_counter_reg[15]_i_2_CO_UNCONNECTED ;
   wire [3:3]\NLW_sclk_counter_reg[15]_i_2_O_UNCONNECTED ;
 
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT4 #(
     .INIT(16'hFF1B)) 
     \FSM_onehot_spi_state[0]_i_1 
@@ -236,7 +241,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(new_sample),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(\FSM_onehot_spi_state[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT5 #(
     .INIT(32'h23202020)) 
     \FSM_onehot_spi_state[1]_i_1 
@@ -246,7 +251,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I3(spi_data_out),
         .I4(\FSM_onehot_spi_state[2]_i_2_n_0 ),
         .O(\FSM_onehot_spi_state[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \FSM_onehot_spi_state[2]_i_1 
@@ -400,7 +405,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I4(chip_select_i_2_n_0),
         .I5(chip_select),
         .O(chip_select_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'h0020)) 
     chip_select_i_2
@@ -493,6 +498,39 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .CE(\mic_data_out[11]_i_1_n_0 ),
         .D(\spi_data_out_reg_n_0_[9] ),
         .Q(mic_data_out[9]),
+        .R(1'b0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    new_data_ready_clk_100MHz_i_1
+       (.I0(new_data_ready_reg_n_0),
+        .I1(new_data_ready_prev),
+        .O(new_data_ready_clk_100MHz0));
+  FDRE new_data_ready_clk_100MHz_reg
+       (.C(clk_100MHz),
+        .CE(1'b1),
+        .D(new_data_ready_clk_100MHz0),
+        .Q(new_data_ready_clk_100MHz),
+        .R(1'b0));
+  LUT5 #(
+    .INIT(32'hFFFD000C)) 
+    new_data_ready_i_1
+       (.I0(\FSM_onehot_spi_state_reg_n_0_[0] ),
+        .I1(pwm_threshold_0),
+        .I2(\self_start_reset[7]_i_1_n_0 ),
+        .I3(rst_n),
+        .I4(new_data_ready_reg_n_0),
+        .O(new_data_ready_i_1_n_0));
+  FDRE new_data_ready_prev_reg
+       (.C(clk_100MHz),
+        .CE(1'b1),
+        .D(new_data_ready_reg_n_0),
+        .Q(new_data_ready_prev),
+        .R(1'b0));
+  FDRE new_data_ready_reg
+       (.C(serial_clock_reg_0),
+        .CE(1'b1),
+        .D(new_data_ready_i_1_n_0),
+        .Q(new_data_ready_reg_n_0),
         .R(1'b0));
   LUT6 #(
     .INIT(64'h0000000040000000)) 
@@ -843,14 +881,13 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .CLR(rst_n),
         .D(\spi_data_out[10]_i_1_n_0 ),
         .Q(pwm_threshold[9]));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \sclk_counter[0]_i_1 
        (.I0(\self_start_reset[7]_i_1_n_0 ),
         .I1(sclk_counter[0]),
         .O(p_0_in[0]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[10]_i_1 
@@ -859,7 +896,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(serial_clock_i_2_n_0),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(p_0_in[10]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[11]_i_1 
@@ -868,7 +905,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(serial_clock_i_2_n_0),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(p_0_in[11]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[12]_i_1 
@@ -877,7 +914,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(serial_clock_i_2_n_0),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(p_0_in[12]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[13]_i_1 
@@ -886,7 +923,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(serial_clock_i_2_n_0),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(p_0_in[13]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[14]_i_1 
@@ -895,7 +932,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(serial_clock_i_2_n_0),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(p_0_in[14]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[15]_i_1 
@@ -949,7 +986,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(serial_clock_i_2_n_0),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(p_0_in[5]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[6]_i_1 
@@ -958,7 +995,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(serial_clock_i_2_n_0),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(p_0_in[6]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[7]_i_1 
@@ -967,7 +1004,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(serial_clock_i_2_n_0),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(p_0_in[7]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[8]_i_1 
@@ -976,7 +1013,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(serial_clock_i_2_n_0),
         .I3(\self_start_reset[7]_i_1_n_0 ),
         .O(p_0_in[8]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'h00A8)) 
     \sclk_counter[9]_i_1 
@@ -1156,7 +1193,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I1(sclk_sampling_counter[1]),
         .I2(sclk_sampling_counter[0]),
         .O(\sclk_sampling_counter[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'h2888)) 
     \sclk_sampling_counter[2]_i_1 
@@ -1165,7 +1202,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I2(sclk_sampling_counter[0]),
         .I3(sclk_sampling_counter[1]),
         .O(\sclk_sampling_counter[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'h28888888)) 
     \sclk_sampling_counter[3]_i_1 
@@ -1389,7 +1426,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .I4(self_start_reset_reg__0[3]),
         .I5(self_start_reset_reg__0[5]),
         .O(\self_start_reset[5]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT2 #(
     .INIT(4'h9)) 
     \self_start_reset[6]_i_1 
@@ -1485,7 +1522,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .D(\self_start_reset[7]_i_2_n_0 ),
         .Q(self_start_reset_reg__0[7]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT4 #(
     .INIT(16'hFEAB)) 
     serial_clock_i_1
@@ -1534,14 +1571,14 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
         .D(serial_clock_i_1_n_0),
         .PRE(rst_n),
         .Q(serial_clock_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \spi_data_out[0]_i_1 
        (.I0(master_in_slave_out),
         .I1(\self_start_reset[7]_i_1_n_0 ),
         .O(p_1_in));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \spi_data_out[10]_i_1 
@@ -1562,6 +1599,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
        (.I0(\spi_data_out_reg_n_0_[10] ),
         .I1(\self_start_reset[7]_i_1_n_0 ),
         .O(\spi_data_out[11]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \spi_data_out[1]_i_1 
@@ -1582,7 +1620,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_spi_controller
        (.I0(\spi_data_out_reg_n_0_[2] ),
         .I1(\self_start_reset[7]_i_1_n_0 ),
         .O(\spi_data_out[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \spi_data_out[4]_i_1 

@@ -17,7 +17,6 @@ int main() {
     i2s_audio_init(); // Enable signal outputs to I2S drivers
 
     #if USE_CAP_BTN
-    xil_printf("HERE\n");
     init_cap_btn();
 #else
     xil_printf("Warning: Capacitive buttons not used in this program!\n");

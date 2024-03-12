@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 10ps
 
 module spi_mic_tb(
 );
@@ -23,20 +23,54 @@ module spi_mic_tb(
         #50;
         cap_btn[0] <= 0;
         #10000;
-        cap_btn[0] <= 1;
-        #50;
-        cap_btn[0] <= 0;
+//        cap_btn[0] <= 1;
+//        #50;
+//        cap_btn[0] <= 0;
         
         #20000;
         
-        // Playback
-        cap_btn[1] <= 1;
-        #50;
-        cap_btn[1] <= 0;
-        #10000;
-        cap_btn[1] <= 1;
-        #50;
-        cap_btn[1] <= 0;
+//        // Playback
+//        cap_btn[1] <= 1;
+//        #50;
+//        cap_btn[1] <= 0;
+//        #10000;
+//        cap_btn[1] <= 1;
+//        #50;
+//        cap_btn[1] <= 0;
+        
+//        #20000;
+        
+//        // Change mode
+//        cap_btn[0] <= 1;
+//        #50;
+//        cap_btn[1] <= 1;
+//        #10000;
+//        cap_btn[0] <= 0;
+//        #50;
+//        cap_btn[1] <= 0;
+        
+//        #20000;
+        
+//        // Change mode
+//        cap_btn[0] <= 1;
+//        #50;
+//        cap_btn[1] <= 1;
+//        #10000;
+//        cap_btn[0] <= 0;
+//        #50;
+//        cap_btn[1] <= 0;
+
+//        #20000;
+        
+//        // Playback
+//        cap_btn[1] <= 1;
+//        #50;
+//        cap_btn[1] <= 0;
+//        #10000;
+//        cap_btn[1] <= 1;
+//        #50;
+//        cap_btn[1] <= 0;
+
     end
     
     reg master_in_slave_out;

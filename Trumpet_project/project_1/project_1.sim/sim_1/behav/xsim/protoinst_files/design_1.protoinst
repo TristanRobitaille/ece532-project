@@ -265,32 +265,6 @@
 						"WVALID": { "actual": "M06_AXI_wvalid[6:6]"}
 					}
 				},
-				"/axi_interconnect_0/M07_AXI": {
-					"interface": "xilinx.com:interface:aximm:1.0",
-					"ports": {
-						"ACLK": { "actual": "M07_ACLK"},
-						"ARADDR": { "actual": "M07_AXI_araddr[255:224]"},
-						"ARESETN": { "actual": "ARESETN"},
-						"ARPROT": { "actual": "M07_AXI_arprot[23:21]"},
-						"ARREADY": { "actual": "M07_AXI_arready[7:7]"},
-						"ARVALID": { "actual": "M07_AXI_arvalid[7:7]"},
-						"AWADDR": { "actual": "M07_AXI_awaddr[255:224]"},
-						"AWPROT": { "actual": "M07_AXI_awprot[23:21]"},
-						"AWREADY": { "actual": "M07_AXI_awready[7:7]"},
-						"AWVALID": { "actual": "M07_AXI_awvalid[7:7]"},
-						"BREADY": { "actual": "M07_AXI_bready[7:7]"},
-						"BRESP": { "actual": "M07_AXI_bresp[15:14]"},
-						"BVALID": { "actual": "M07_AXI_bvalid[7:7]"},
-						"RDATA": { "actual": "M07_AXI_rdata[255:224]"},
-						"RREADY": { "actual": "M07_AXI_rready[7:7]"},
-						"RRESP": { "actual": "M07_AXI_rresp[15:14]"},
-						"RVALID": { "actual": "M07_AXI_rvalid[7:7]"},
-						"WDATA": { "actual": "M07_AXI_wdata[255:224]"},
-						"WREADY": { "actual": "M07_AXI_wready[7:7]"},
-						"WSTRB": { "actual": "M07_AXI_wstrb[31:28]"},
-						"WVALID": { "actual": "M07_AXI_wvalid[7:7]"}
-					}
-				},
 				"/axi_interconnect_0/S00_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {

@@ -1,48 +1,47 @@
 #-----------------------------------------------------------
-# Vivado v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Mar 11 13:32:45 2024
-# Process ID: 2932
-# Current directory: C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Mar 12 00:29:05 2024
+# Process ID: 7944
+# Current directory: C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1
 # Command line: vivado.exe -log design_1_spi_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_spi_controller_0_0.tcl
-# Log file: C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1/design_1_spi_controller_0_0.vds
-# Journal file: C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1\vivado.jou
+# Log file: C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1/design_1_spi_controller_0_0.vds
+# Journal file: C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_spi_controller_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 348.004 ; gain = 97.742
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ECE53/Desktop/m2_mod_dsp/pre_processing/pre_processing'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/ip_repo/AXI_I2S_driver_1.0'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 377.570 ; gain = 29.566
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/robita46/m2_mod_dsp/pre_processing/pre_processing'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/ip_repo/AXI_I2S_driver_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.cache/ip 
+Current IP cache path is c:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.cache/ip 
 Command: synth_design -top design_1_spi_controller_0_0 -part xc7a200tsbg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16312 
+INFO: Helper process launched with PID 8380 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 493.039 ; gain = 102.680
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 469.164 ; gain = 105.223
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_spi_controller_0_0' [c:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_spi_controller_0_0/synth/design_1_spi_controller_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'spi_controller' [C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'design_1_spi_controller_0_0' [c:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_spi_controller_0_0/synth/design_1_spi_controller_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'spi_controller' [C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:3]
 	Parameter SLEEP bound to: 0 - type: integer 
 	Parameter TRANSFER bound to: 1 - type: integer 
 	Parameter DONE bound to: 2 - type: integer 
 	Parameter SPI_CLK_DIV bound to: 100 - type: integer 
 	Parameter NUM_BITS bound to: 16 - type: integer 
 	Parameter SCLK_SAMPLING_FREQ_DIV bound to: 100 - type: integer 
-WARNING: [Synth 8-5788] Register new_data_ready_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:51]
-WARNING: [Synth 8-5788] Register chip_select_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:53]
-WARNING: [Synth 8-5788] Register SPI_bit_counter_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:59]
-WARNING: [Synth 8-5788] Register mic_data_out_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:71]
-INFO: [Synth 8-6155] done synthesizing module 'spi_controller' (1#1) [C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_spi_controller_0_0' (2#1) [c:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_spi_controller_0_0/synth/design_1_spi_controller_0_0.v:58]
+WARNING: [Synth 8-5788] Register new_data_ready_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:51]
+WARNING: [Synth 8-5788] Register chip_select_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:53]
+WARNING: [Synth 8-5788] Register SPI_bit_counter_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:59]
+WARNING: [Synth 8-5788] Register mic_data_out_reg in module spi_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:71]
+INFO: [Synth 8-6155] done synthesizing module 'spi_controller' (1#1) [C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/new/spi_controller.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_spi_controller_0_0' (2#1) [c:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_spi_controller_0_0/synth/design_1_spi_controller_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 549.520 ; gain = 159.160
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 524.855 ; gain = 160.914
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -55,10 +54,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 549.520 ; gain = 159.160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 524.855 ; gain = 160.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 549.520 ; gain = 159.160
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 524.855 ; gain = 160.914
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tsbg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -67,29 +66,29 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 912.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 887.121 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 912.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 887.121 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.166 . Memory (MB): peak = 915.051 ; gain = 2.195
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 889.539 ; gain = 2.418
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:46 . Memory (MB): peak = 915.051 ; gain = 524.691
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 889.539 ; gain = 525.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:46 . Memory (MB): peak = 915.051 ; gain = 524.691
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 889.539 ; gain = 525.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:46 . Memory (MB): peak = 915.051 ; gain = 524.691
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 889.539 ; gain = 525.598
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'spi_state_reg' in module 'spi_controller'
 INFO: [Synth 8-5546] ROM "serial_clock1" won't be mapped to RAM because it is too sparse
@@ -107,7 +106,7 @@ INFO: [Synth 8-5546] ROM "spi_state0" won't be mapped to RAM because it is too s
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'spi_state_reg' using encoding 'one-hot' in module 'spi_controller'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 915.051 ; gain = 524.691
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 889.539 ; gain = 525.598
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -184,11 +183,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/new_data_ready_reg )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/new_data_ready_prev_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/new_data_ready_clk_100MHz_reg )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 915.051 ; gain = 524.691
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 889.539 ; gain = 525.598
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -200,13 +196,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:23 . Memory (MB): peak = 919.613 ; gain = 529.254
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 890.480 ; gain = 526.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:23 . Memory (MB): peak = 919.762 ; gain = 529.402
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 890.555 ; gain = 526.613
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -218,7 +214,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:23 . Memory (MB): peak = 939.535 ; gain = 549.176
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 910.352 ; gain = 546.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,7 +238,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 939.535 ; gain = 549.176
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 910.352 ; gain = 546.410
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -255,7 +251,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 939.535 ; gain = 549.176
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 910.352 ; gain = 546.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -267,25 +263,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 939.535 ; gain = 549.176
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 910.352 ; gain = 546.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 939.535 ; gain = 549.176
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 910.352 ; gain = 546.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 939.535 ; gain = 549.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 910.352 ; gain = 546.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 939.535 ; gain = 549.176
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 910.352 ; gain = 546.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -303,49 +299,49 @@ Report Cell Usage:
 +------+-------+------+
 |1     |CARRY4 |     9|
 |2     |LUT1   |     2|
-|3     |LUT2   |    19|
+|3     |LUT2   |    20|
 |4     |LUT3   |     8|
 |5     |LUT4   |    39|
-|6     |LUT5   |    11|
+|6     |LUT5   |    12|
 |7     |LUT6   |     9|
 |8     |FDCE   |    53|
 |9     |FDPE   |     2|
-|10    |FDRE   |    39|
+|10    |FDRE   |    42|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+---------------+------+
 |      |Instance |Module         |Cells |
 +------+---------+---------------+------+
-|1     |top      |               |   191|
-|2     |  inst   |spi_controller |   191|
+|1     |top      |               |   196|
+|2     |  inst   |spi_controller |   196|
 +------+---------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 939.535 ; gain = 549.176
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 910.352 ; gain = 546.410
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:06 . Memory (MB): peak = 939.535 ; gain = 183.645
-Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:27 . Memory (MB): peak = 939.535 ; gain = 549.176
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 910.352 ; gain = 181.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 910.352 ; gain = 546.410
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 943.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 919.621 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-30 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+26 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:35 . Memory (MB): peak = 943.883 ; gain = 566.273
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 943.883 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 919.621 ; gain = 569.039
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 919.621 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1/design_1_spi_controller_0_0.dcp' has been generated.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 943.883 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1/design_1_spi_controller_0_0.dcp' has been generated.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 919.621 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ECE53/Desktop/m5/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1/design_1_spi_controller_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.runs/design_1_spi_controller_0_0_synth_1/design_1_spi_controller_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_spi_controller_0_0_utilization_synth.rpt -pb design_1_spi_controller_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 11 13:34:55 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 12 00:29:34 2024...

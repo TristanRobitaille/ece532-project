@@ -17,14 +17,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1336036363638fs"></ZoomEndTime>
-      <Cursor1Time time="170915100000fs"></Cursor1Time>
+      <ZoomEndTime time="3370000000001fs"></ZoomEndTime>
+      <Cursor1Time time="520000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="215"></NameColumnWidth>
-      <ValueColumnWidth column_width="94"></ValueColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
+   <WVObjectSize size="43" />
    <wvobject fp_name="/spi_mic_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -60,5 +60,141 @@
    <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/recording_in_progress_led" type="logic">
       <obj_property name="ElementShortName">recording_in_progress_led</obj_property>
       <obj_property name="ObjectShortName">recording_in_progress_led</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/inst/playback_start_persistent" type="logic">
+      <obj_property name="ElementShortName">playback_start_persistent</obj_property>
+      <obj_property name="ObjectShortName">playback_start_persistent</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/inst/playback_start_persistent_prev" type="logic">
+      <obj_property name="ElementShortName">playback_start_persistent_prev</obj_property>
+      <obj_property name="ObjectShortName">playback_start_persistent_prev</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/inst/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/inst/start_playback" type="logic">
+      <obj_property name="ElementShortName">start_playback</obj_property>
+      <obj_property name="ObjectShortName">start_playback</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/inst/recording_end_index" type="array">
+      <obj_property name="ElementShortName">recording_end_index[17:0]</obj_property>
+      <obj_property name="ObjectShortName">recording_end_index[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/inst/spi_state" type="array">
+      <obj_property name="ElementShortName">spi_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/new_sample" type="logic">
+      <obj_property name="ElementShortName">new_sample</obj_property>
+      <obj_property name="ObjectShortName">new_sample</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/inst/mic_data_storage" type="array">
+      <obj_property name="ElementShortName">mic_data_storage[74998:0][11:0]</obj_property>
+      <obj_property name="ObjectShortName">mic_data_storage[74998:0][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/inst/mic_data" type="array">
+      <obj_property name="ElementShortName">mic_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">mic_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/i2s_0/inst/mic_data" type="array">
+      <obj_property name="ElementShortName">mic_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">mic_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/inst/mic_data_out" type="array">
+      <obj_property name="ElementShortName">mic_data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">mic_data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/recording_in_progress" type="logic">
+      <obj_property name="ElementShortName">recording_in_progress</obj_property>
+      <obj_property name="ObjectShortName">recording_in_progress</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/start_playback" type="logic">
+      <obj_property name="ElementShortName">start_playback</obj_property>
+      <obj_property name="ObjectShortName">start_playback</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/new_sample" type="logic">
+      <obj_property name="ElementShortName">new_sample</obj_property>
+      <obj_property name="ObjectShortName">new_sample</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/mic_data" type="array">
+      <obj_property name="ElementShortName">mic_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">mic_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/playback_in_progress_led" type="logic">
+      <obj_property name="ElementShortName">playback_in_progress_led</obj_property>
+      <obj_property name="ObjectShortName">playback_in_progress_led</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/recording_in_progress_led" type="logic">
+      <obj_property name="ElementShortName">recording_in_progress_led</obj_property>
+      <obj_property name="ObjectShortName">recording_in_progress_led</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/mic_storage_0/playback_data" type="array">
+      <obj_property name="ElementShortName">playback_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">playback_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/btn_rst" type="logic">
+      <obj_property name="ElementShortName">btn_rst</obj_property>
+      <obj_property name="ObjectShortName">btn_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/cap_btn" type="array">
+      <obj_property name="ElementShortName">cap_btn[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cap_btn[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/recording_in_progress" type="logic">
+      <obj_property name="ElementShortName">recording_in_progress</obj_property>
+      <obj_property name="ObjectShortName">recording_in_progress</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/playback_start" type="logic">
+      <obj_property name="ElementShortName">playback_start</obj_property>
+      <obj_property name="ObjectShortName">playback_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/playback_ctrl_0/speaker_mode" type="logic">
+      <obj_property name="ElementShortName">speaker_mode</obj_property>
+      <obj_property name="ObjectShortName">speaker_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/master_in_slave_out" type="logic">
+      <obj_property name="ElementShortName">master_in_slave_out</obj_property>
+      <obj_property name="ObjectShortName">master_in_slave_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/chip_select" type="logic">
+      <obj_property name="ElementShortName">chip_select</obj_property>
+      <obj_property name="ObjectShortName">chip_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/serial_clock" type="logic">
+      <obj_property name="ElementShortName">serial_clock</obj_property>
+      <obj_property name="ObjectShortName">serial_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/pwm_out" type="logic">
+      <obj_property name="ElementShortName">pwm_out</obj_property>
+      <obj_property name="ObjectShortName">pwm_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/new_data_ready_clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">new_data_ready_clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">new_data_ready_clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_mic_tb/dut/design_1_i/spi_controller_0/mic_data_out" type="array">
+      <obj_property name="ElementShortName">mic_data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">mic_data_out[11:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -1,9 +1,9 @@
 -makelib ies_lib/xil_defaultlib -sv \
-  "C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-  "C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+  "C:/DESL/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "C:/DESL/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib ies_lib/xpm \
-  "C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
+  "C:/DESL/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" \
@@ -124,12 +124,9 @@
   "../../../bd/design_1/ip/design_1_i2s_0_0/sim/design_1_i2s_0_0.v" \
   "../../../bd/design_1/sim/design_1.v" \
   "../../../bd/design_1/ip/design_1_spi_controller_0_0/sim/design_1_spi_controller_0_0.v" \
-  "../../../bd/design_1/ip/design_1_playback_ctrl_0_1/sim/design_1_playback_ctrl_0_1.v" \
   "../../../bd/design_1/ip/design_1_mic_storage_0_1/sim/design_1_mic_storage_0_1.v" \
--endlib
--makelib ies_lib/xil_defaultlib -sv \
-  "../../../../Users/ECE53/Desktop/m2_mod_dsp/pre_processing/pre_processing/pre_processing.srcs/sources_1/new/audio_preprocessor.sv" \
-  "../../../bd/design_1/ip/design_1_audio_preprocessor_0_0/sim/design_1_audio_preprocessor_0_0.sv" \
+  "../../../bd/design_1/ip/design_1_playback_ctrl_0_0/sim/design_1_playback_ctrl_0_0.v" \
+  "../../../bd/design_1/ip/design_1_one_reg_0_0/sim/design_1_one_reg_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

@@ -48,7 +48,7 @@ module spi_controller(
         end else begin
             case (spi_state)
                 SLEEP: begin
-                    new_data_ready <= 1;
+                    new_data_ready <= 0;
                     if (new_sample) begin
                         chip_select <= 0;
                         spi_state <= TRANSFER;

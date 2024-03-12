@@ -1,8 +1,8 @@
-//Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Mon Mar 11 13:32:30 2024
-//Host        : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+//Date        : Tue Mar 12 01:12:00 2024
+//Host        : BA3135WS06 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -140,7 +140,7 @@ module I2S_audio_imp_NNRZ5J
         .sda_t(Conn2_SDA_T));
 endmodule
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=37,numReposBlks=23,numNonXlnxBlks=0,numHierBlks=14,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=32,da_axi4_s2mm_cnt=1,da_board_cnt=10,da_bram_cntlr_cnt=2,da_clkrst_cnt=21,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=37,numReposBlks=23,numNonXlnxBlks=0,numHierBlks=14,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=32,da_axi4_s2mm_cnt=1,da_board_cnt=10,da_bram_cntlr_cnt=2,da_clkrst_cnt=21,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (btn_rst,
     cap_btn,
@@ -213,7 +213,6 @@ module design_1
   wire I2S_audio_iic_rtl_0_SDA_I;
   wire I2S_audio_iic_rtl_0_SDA_O;
   wire I2S_audio_iic_rtl_0_SDA_T;
-  wire [11:0]audio_preprocessor_0_filtered_audio_out;
   wire [3:0]axi_gpio_0_GPIO_TRI_O;
   wire [7:0]axi_gpio_1_GPIO_TRI_I;
   wire [31:0]axi_interconnect_0_M00_AXI_ARADDR;
@@ -406,8 +405,9 @@ module design_1
   wire [31:0]microblaze_0_interrupt_ADDRESS;
   wire microblaze_0_interrupt_INTERRUPT;
   wire [1:0]microblaze_0_intr;
+  wire [11:0]one_reg_0_out;
   wire playback_ctrl_0_playback_start;
-  wire playback_ctrl_0_recording_in_progress;
+  wire playback_ctrl_0_recording_in_progress1;
   wire playback_ctrl_0_speaker_mode;
   wire reset_rtl_0_1;
   wire [0:0]rst_clk_wiz_1_100M_bus_struct_reset;
@@ -476,11 +476,6 @@ module design_1
         .i2s_i2c_sda_t(I2S_audio_iic_rtl_0_SDA_T),
         .s00_axi_aclk(clk_wiz_1_clk_out1),
         .s00_axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn));
-  design_1_audio_preprocessor_0_0 audio_preprocessor_0
-       (.clk(clk_wiz_1_clk_out1),
-        .filtered_audio_out(audio_preprocessor_0_filtered_audio_out),
-        .noisy_audio_in(spi_controller_0_mic_data_out),
-        .rst_n(btn_rst_1));
   design_1_axi_gpio_0_1 axi_gpio_0
        (.gpio_io_o(axi_gpio_0_GPIO_TRI_O),
         .s_axi_aclk(clk_wiz_1_clk_out1),
@@ -778,7 +773,7 @@ module design_1
         .input_source(playback_ctrl_0_speaker_mode),
         .lrclk(AXI_I2S_driver_0_lrclk1),
         .mclk(i2s_0_mclk),
-        .mic_data(audio_preprocessor_0_filtered_audio_out),
+        .mic_data(one_reg_0_out),
         .playback_data(mic_storage_0_playback_data),
         .sd(i2s_0_sd));
   design_1_mdm_1_0 mdm_1
@@ -794,11 +789,11 @@ module design_1
         .Debug_SYS_Rst(mdm_1_debug_sys_rst));
   design_1_mic_storage_0_1 mic_storage_0
        (.clk_100MHz(clk_wiz_1_clk_out1),
-        .mic_data(audio_preprocessor_0_filtered_audio_out),
+        .mic_data(spi_controller_0_mic_data_out),
         .new_sample(spi_controller_0_new_data_ready_clk_100MHz),
         .playback_data(mic_storage_0_playback_data),
         .playback_in_progress_led(mic_storage_0_playback_in_progress_led),
-        .recording_in_progress(playback_ctrl_0_recording_in_progress),
+        .recording_in_progress(playback_ctrl_0_recording_in_progress1),
         .recording_in_progress_led(mic_storage_0_recording_in_progress_led),
         .rst_n(btn_rst_1),
         .start_playback(playback_ctrl_0_playback_start));
@@ -909,12 +904,16 @@ module design_1
        (.In0(1'b0),
         .In1(1'b0),
         .dout(microblaze_0_intr));
-  design_1_playback_ctrl_0_1 playback_ctrl_0
-       (.btn_rst(rst_clk_wiz_1_100M_peripheral_aresetn),
+  design_1_one_reg_0_0 one_reg_0
+       (.clk_100MHz(clk_wiz_1_clk_out1),
+        .in(spi_controller_0_mic_data_out),
+        .out(one_reg_0_out));
+  design_1_playback_ctrl_0_0 playback_ctrl_0
+       (.btn_rst(btn_rst_1),
         .cap_btn(cap_btn_1),
         .clk_100MHz(clk_wiz_1_clk_out1),
         .playback_start(playback_ctrl_0_playback_start),
-        .recording_in_progress(playback_ctrl_0_recording_in_progress),
+        .recording_in_progress(playback_ctrl_0_recording_in_progress1),
         .speaker_mode(playback_ctrl_0_speaker_mode));
   design_1_rst_clk_wiz_1_100M_0 rst_clk_wiz_1_100M
        (.aux_reset_in(1'b1),

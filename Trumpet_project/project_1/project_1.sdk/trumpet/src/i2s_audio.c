@@ -30,6 +30,7 @@ void i2s_audio_init() {
 
 	// AXI I2S driver settings
 	i2s_audio_i2c_dump_reg();
+    xil_printf("I2S audio codec initialization done\n");
 }
 
 void i2s_audio_i2c_write_to_reg(u8 reg_addr_lsb, u8* data, u8 len) {
