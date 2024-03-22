@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="addr_gen_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="addr_gen_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="17214779662fs"></ZoomStartTime>
+      <ZoomEndTime time="18322211004fs"></ZoomEndTime>
+      <Cursor1Time time="17638065000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="374"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="88" />
+   <wvobject type="divider" fp_name="divider10285">
+      <obj_property name="label">FFT_loading</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/test_data" type="array">
+      <obj_property name="ElementShortName">test_data[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_data[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/input_data" type="array">
+      <obj_property name="ElementShortName">input_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/address" type="array">
+      <obj_property name="ElementShortName">address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/latched_address" type="array">
+      <obj_property name="ElementShortName">latched_address[12:0]</obj_property>
+      <obj_property name="ObjectShortName">latched_address[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/addr_out" type="array">
+      <obj_property name="ElementShortName">addr_out[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_out[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/addr_out_i" type="array">
+      <obj_property name="ElementShortName">addr_out_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_out_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/fft_enable" type="logic">
+      <obj_property name="ElementShortName">fft_enable</obj_property>
+      <obj_property name="ObjectShortName">fft_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/load_data" type="logic">
+      <obj_property name="ElementShortName">load_data</obj_property>
+      <obj_property name="ObjectShortName">load_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/load_done" type="logic">
+      <obj_property name="ElementShortName">load_done</obj_property>
+      <obj_property name="ObjectShortName">load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/fft_done" type="logic">
+      <obj_property name="ElementShortName">fft_done</obj_property>
+      <obj_property name="ObjectShortName">fft_done</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider10295">
+      <obj_property name="label">Memory Bank I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTA_0_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTA_0_clk" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_clk</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTA_0_din" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTA_0_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTA_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTA_0_we" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTB_0_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTB_0_clk" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_clk</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTB_0_din" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTB_0_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTB_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I/BRAM_PORTB_0_we" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTA_0_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTA_0_clk" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_clk</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTA_0_din" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTA_0_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTA_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTA_0_we" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTB_0_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTB_0_clk" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_clk</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTB_0_din" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTB_0_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTB_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I/BRAM_PORTB_0_we" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider10320">
+      <obj_property name="label">Memory Bank II</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTA_0_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTA_0_clk" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_clk</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTA_0_din" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTA_0_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTA_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTA_0_we" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTB_0_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTB_0_clk" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_clk</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTB_0_din" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTB_0_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTB_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II/BRAM_PORTB_0_we" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTA_0_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTA_0_clk" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_clk</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTA_0_din" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTA_0_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTA_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTA_0_we" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTB_0_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTB_0_clk" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_clk</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTB_0_din" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTB_0_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTB_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II/BRAM_PORTB_0_we" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group10345" type="group">
+      <obj_property name="label">control and BFU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/memory_1_addr" type="array">
+      <obj_property name="ElementShortName">memory_1_addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_1_addr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/memory_2_addr" type="array">
+      <obj_property name="ElementShortName">memory_2_addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_2_addr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/fft_count" type="array">
+      <obj_property name="ElementShortName">fft_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/mem_1_state" type="array">
+      <obj_property name="ElementShortName">mem_1_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_1_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/A_real" type="array">
+      <obj_property name="ElementShortName">A_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_real[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/A_img" type="array">
+      <obj_property name="ElementShortName">A_img[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_img[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/B_real" type="array">
+      <obj_property name="ElementShortName">B_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_real[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/B_img" type="array">
+      <obj_property name="ElementShortName">B_img[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_img[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/mult_rr" type="array">
+      <obj_property name="ElementShortName">mult_rr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_rr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/mult_ri" type="array">
+      <obj_property name="ElementShortName">mult_ri[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_ri[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/mult_ir" type="array">
+      <obj_property name="ElementShortName">mult_ir[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_ir[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/mult_ii" type="array">
+      <obj_property name="ElementShortName">mult_ii[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_ii[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/A_real_o" type="array">
+      <obj_property name="ElementShortName">A_real_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_real_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/A_img_o" type="array">
+      <obj_property name="ElementShortName">A_img_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_img_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/B_real_o" type="array">
+      <obj_property name="ElementShortName">B_real_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_real_o[15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/B_img_o" type="array">
+      <obj_property name="ElementShortName">B_img_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_img_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider10690">
+      <obj_property name="label">write_back</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_A_real" type="array">
+      <obj_property name="ElementShortName">local_data_A_real[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_data_A_real[15:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_A_img" type="array">
+      <obj_property name="ElementShortName">local_data_A_img[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_data_A_img[15:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real" type="array">
+      <obj_property name="ElementShortName">local_data_B_real[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_data_B_real[15:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img" type="array">
+      <obj_property name="ElementShortName">local_data_B_img[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_data_B_img[15:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/write_triggered" type="logic">
+      <obj_property name="ElementShortName">write_triggered</obj_property>
+      <obj_property name="ObjectShortName">write_triggered</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/mem_select" type="logic">
+      <obj_property name="ElementShortName">mem_select</obj_property>
+      <obj_property name="ObjectShortName">mem_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/counter_r" type="array">
+      <obj_property name="ElementShortName">counter_r[4:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_r[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/counter_w" type="array">
+      <obj_property name="ElementShortName">counter_w[4:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_w[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/frequency" type="array">
+      <obj_property name="ElementShortName">frequency[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -2,10 +2,17 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="DSP" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
+<<<<<<< Updated upstream
     <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1709709039"/>
     <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1709709039"/>
     <Generation Name="SIMULATION" State="GENERATED" Timestamp="1709709039"/>
     <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1709709039"/>
+=======
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1710178491"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1710178491"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1710178491"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1710178491"/>
+>>>>>>> Stashed changes
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\DSP_xbip_dsp48_macro_0_0\DSP_xbip_dsp48_macro_0_0.xci" Type="IP">
         <Instance HierarchyPath="xbip_dsp48_macro_0"/>

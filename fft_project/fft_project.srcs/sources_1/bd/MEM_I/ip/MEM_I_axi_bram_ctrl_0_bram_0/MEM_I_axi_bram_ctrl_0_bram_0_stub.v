@@ -1,13 +1,21 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+<<<<<<< Updated upstream
 // Date        : Wed Mar  6 02:12:41 2024
+=======
+// Date        : Mon Mar 11 14:39:30 2024
+>>>>>>> Stashed changes
 // Host        : yudi running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/bd/MEM_I/ip/MEM_I_axi_bram_ctrl_0_bram_0/MEM_I_axi_bram_ctrl_0_bram_0_stub.v
 // Design      : MEM_I_axi_bram_ctrl_0_bram_0
 // Purpose     : Stub declaration of top-level module interface
+<<<<<<< Updated upstream
 // Device      : xc7a100tcsg324-1
+=======
+// Device      : xc7a200tfbg484-1
+>>>>>>> Stashed changes
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.

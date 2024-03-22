@@ -8,4 +8,8 @@ if { [string length $curr_wave] == 0 } {
   }
 }
 
+<<<<<<< Updated upstream
 run 5000ns
+=======
+run 8000ns
+>>>>>>> Stashed changes

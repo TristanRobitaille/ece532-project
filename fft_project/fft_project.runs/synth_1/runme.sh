@@ -40,4 +40,8 @@ EAStep()
      fi
 }
 
+<<<<<<< Updated upstream
 EAStep vivado -log FFT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT.tcl
+=======
+EAStep vivado -log FFT_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_wrapper.tcl
+>>>>>>> Stashed changes

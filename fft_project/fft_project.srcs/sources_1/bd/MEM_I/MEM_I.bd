@@ -2,7 +2,11 @@
   "design": {
     "design_info": {
       "boundary_crc": "0x60DFFAC22911B094",
+<<<<<<< Updated upstream
       "device": "xc7a100tcsg324-1",
+=======
+      "device": "xc7a200tfbg484-1",
+>>>>>>> Stashed changes
       "name": "MEM_I",
       "synth_flow_mode": "Hierarchical",
       "tool_version": "2018.3",
@@ -73,9 +77,27 @@
           "Enable_32bit_Address": {
             "value": "false"
           },
+<<<<<<< Updated upstream
           "Memory_Type": {
             "value": "True_Dual_Port_RAM"
           },
+=======
+          "Enable_B": {
+            "value": "Use_ENB_Pin"
+          },
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Port_B_Write_Rate": {
+            "value": "50"
+          },
+>>>>>>> Stashed changes
           "Read_Width_A": {
             "value": "32"
           },

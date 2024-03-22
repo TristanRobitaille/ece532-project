@@ -1,0 +1,102 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x2CBBE12AD98A1229",
+      "device": "xc7a200tsbg484-1",
+      "name": "DSP",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "xbip_dsp48_macro_0": ""
+    },
+    "ports": {
+      "P_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "32",
+        "right": "0"
+      },
+      "CLK_0": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "A_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "B_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "C_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "xbip_dsp48_macro_0": {
+        "vlnv": "xilinx.com:ip:xbip_dsp48_macro:3.0",
+        "xci_name": "DSP_xbip_dsp48_macro_0_0",
+        "parameters": {
+          "a_width": {
+            "value": "16"
+          },
+          "b_width": {
+            "value": "16"
+          },
+          "c_width": {
+            "value": "16"
+          },
+          "p_binarywidth": {
+            "value": "0"
+          },
+          "p_full_width": {
+            "value": "33"
+          },
+          "p_width": {
+            "value": "33"
+          }
+        }
+      }
+    },
+    "nets": {
+      "xbip_dsp48_macro_0_P": {
+        "ports": [
+          "xbip_dsp48_macro_0/P",
+          "P_0"
+        ]
+      },
+      "CLK_0_1": {
+        "ports": [
+          "CLK_0",
+          "xbip_dsp48_macro_0/CLK"
+        ]
+      },
+      "A_0_1": {
+        "ports": [
+          "A_0",
+          "xbip_dsp48_macro_0/A"
+        ]
+      },
+      "B_0_1": {
+        "ports": [
+          "B_0",
+          "xbip_dsp48_macro_0/B"
+        ]
+      },
+      "C_0_1": {
+        "ports": [
+          "C_0",
+          "xbip_dsp48_macro_0/C"
+        ]
+      }
+    }
+  }
+}

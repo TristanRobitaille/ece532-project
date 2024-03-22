@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1709709368">
   <File Type="PA-TCL" Name="FFT.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="FFT_drc_synth.rpt"/>
@@ -9,6 +10,15 @@
   <File Type="RDS-DCP" Name="FFT.dcp"/>
   <File Type="VDS-TIMINGSUMMARY" Name="FFT_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="FFT_timing_summary_synth.pb"/>
+=======
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1710172463">
+  <File Type="PA-TCL" Name="FFT_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="FFT_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="FFT_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="FFT_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FFT_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="FFT_wrapper.dcp"/>
+>>>>>>> Stashed changes
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/MEM_I/MEM_I.bd">
@@ -32,6 +42,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+<<<<<<< Updated upstream
+=======
+    <File Path="$PSRCDIR/sources_1/new/FFT.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+>>>>>>> Stashed changes
     <File Path="$PSRCDIR/sources_1/new/addr_gen.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -60,13 +80,28 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+<<<<<<< Updated upstream
     <File Path="$PSRCDIR/sources_1/new/FFT.sv">
+=======
+    <File Path="$PSRCDIR/sources_1/new/FFT_wrapper.sv">
+>>>>>>> Stashed changes
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+<<<<<<< Updated upstream
+=======
+    <File Path="$PSRCDIR/sources_1/bd/MEM_II/MEM_II.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+>>>>>>> Stashed changes
     <File Path="$PSRCDIR/sources_1/bd/DSP/DSP.bd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -83,9 +118,24 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+<<<<<<< Updated upstream
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="FFT"/>
+=======
+    <File Path="$PSRCDIR/sources_1/bd/MEM_II/hdl/MEM_II_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FFT_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+>>>>>>> Stashed changes
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

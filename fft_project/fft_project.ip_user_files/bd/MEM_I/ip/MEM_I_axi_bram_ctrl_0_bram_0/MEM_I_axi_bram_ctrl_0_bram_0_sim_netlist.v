@@ -1,14 +1,22 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+<<<<<<< Updated upstream
 // Date        : Wed Mar  6 02:12:41 2024
+=======
+// Date        : Mon Mar 11 14:39:30 2024
+>>>>>>> Stashed changes
 // Host        : yudi running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/ECE532/fft_project/fft_project/fft_project.srcs/sources_1/bd/MEM_I/ip/MEM_I_axi_bram_ctrl_0_bram_0/MEM_I_axi_bram_ctrl_0_bram_0_sim_netlist.v
 // Design      : MEM_I_axi_bram_ctrl_0_bram_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
+<<<<<<< Updated upstream
 // Device      : xc7a100tcsg324-1
+=======
+// Device      : xc7a200tfbg484-1
+>>>>>>> Stashed changes
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 

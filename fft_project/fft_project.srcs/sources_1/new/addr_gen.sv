@@ -1,9 +1,16 @@
 module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     input start_fft,
     input rstn,
+<<<<<<< Updated upstream
     input clk,
     input load_data,
     //related to mem block 1: actually only need one port
+=======
+    input clk_100MHz,
+    input load_data,
+    //related to mem block 1: actually only need one port
+    output logic fft_busy,
+>>>>>>> Stashed changes
     output logic [13:0] address_mem_1, 
     output logic mem_en,
     output logic read_write, 
@@ -23,13 +30,22 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     input logic bfu_finished_cal,
     //for writing back:
     output logic write_triggered,
+<<<<<<< Updated upstream
     input write_done,
+=======
+
+>>>>>>> Stashed changes
     /////////////////////////////
    // output logic [7:0] twiddle_addr,
    // output logic [13:0] memory_1_addr,
     //output logic [13:0] memory_2_addr,
     output logic fft_done,
+<<<<<<< Updated upstream
     output logic bank_select
+=======
+    output logic bank_select,
+    input load_done
+>>>>>>> Stashed changes
     );
     
     //modules in addr_gen:
@@ -54,15 +70,25 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     parameter MEM_2_WRITTEN = 4'd7;
 
 
+<<<<<<< Updated upstream
     parameter LEVEL_COUNTER_INCR = 4'd8;
     parameter FINISH_FFT = 4'd9;
     parameter READ_WAIT = 4'd10;
+=======
+    parameter LOAD_DATA = 4'd8;
+    parameter FINISH_FFT = 4'd9;
+    parameter READ_WAIT = 4'd10;
+    parameter WRITE_WAIT = 4'd12;
+>>>>>>> Stashed changes
 
 
 
     logic [3:0] mem_1_state; //manages the twiddle factor and the mem 1 factor
+<<<<<<< Updated upstream
     logic [3:0] bfu_state;
     logic [3:0] mem_2_state;
+=======
+>>>>>>> Stashed changes
 
     logic [4:0] fft_level;
     logic [N-1:0] buttferfly_pair;
@@ -73,12 +99,21 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     //determining when to end:
 
     logic [4:0] fft_count;
+<<<<<<< Updated upstream
     logic [1:0] sync_read;
     //for writing back:
     //logic read_write;
     //encoding mem_1_state:
     always_ff @ (posedge clk) begin
         if(!rstn) begin
+=======
+    logic [6:0] sync_read;
+    //for writing back:
+    //logic read_write;
+    //encoding mem_1_state:
+    always_ff @ (posedge clk_100MHz) begin
+        if(rstn ) begin
+>>>>>>> Stashed changes
             mem_1_state <= START;
             incr_read_addr <= 0;
             twiddle_addr_incr <=0;
@@ -86,14 +121,38 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
             read_write <= 'b0;
             //writedata <= 'b0;
             read_done <= 'b0;
+<<<<<<< Updated upstream
             fft_level <= 'b0;
+=======
+>>>>>>> Stashed changes
             buttferfly_pair <= 'b0;
             done_computation <= 'b1;
             data_count <= 'b0;
             write_triggered <= 'b0;
             fft_count <= 'b0;
             sync_read <= 'b0;
+<<<<<<< Updated upstream
         end else begin
+=======
+            address_mem_1 <= 'b0;
+            address_mem_2 <= 'b0;
+            bank_select <= 'b0;
+            mem_en <= 'b0;
+            mem_en2 <= 'b0;
+            mem_valid <= 'b0;         
+            bfu_start <= 'b0;
+            read_write <= 'b0;
+            read_write_2 <= 'b0;
+            fft_busy <= 'b0;
+        end else begin
+            if(fft_incr) begin
+                buttferfly_pair <= 'b0;
+            end
+            if(incr_read_addr) begin
+                incr_read_addr <= ~incr_read_addr;
+                read_done <= 'b1;
+            end
+>>>>>>> Stashed changes
             case (mem_1_state)
                 START: begin
                     buttferfly_pair <= 'b0;
@@ -102,9 +161,18 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                     write_triggered <= 'b0;
                     fft_count <= 'b0;
                     sync_read <= 'b0;
+<<<<<<< Updated upstream
                     if(start_fft) begin
                         mem_1_state <=  READ_MEM_1; 
                         fft_done <= 'b0;
+=======
+                    mem_en <= 'b0;
+                    mem_en2 <= 'b0;
+                    fft_done <= 'b0;
+                    if(load_data) begin
+                        mem_1_state <= LOAD_DATA;
+                        bank_select <= 'b0;
+>>>>>>> Stashed changes
                     end
                     else begin 
                         mem_1_state <= START;
@@ -112,16 +180,42 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                         twiddle_addr_incr <= 'b0;
                     end
                 end
+<<<<<<< Updated upstream
+=======
+                LOAD_DATA: begin
+                    if(start_fft&!load_data&load_done) begin
+                        fft_busy <= 'b1;
+                        mem_1_state <=  READ_MEM_1; 
+                        fft_done <= 'b0;
+                    end
+                    else mem_1_state <= LOAD_DATA;
+                end
+>>>>>>> Stashed changes
                 READ_MEM_1: begin //incremenet readaddress in bit_reversed_order:
                         mem_1_state <= READ_SYNC;
                         //enable memory read and write:
                         address_mem_1 <= memory_1_addr;
                         address_mem_2 <= memory_2_addr;
+<<<<<<< Updated upstream
                         mem_en <= 'b1;
                         mem_en2 <= 'b1;
                 end
                 READ_SYNC: begin
                     if(sync_read == 'b11) begin
+=======
+                        if(data_count == FFT_LENGTH) begin
+                            mem_en = 'b0;
+                            mem_en2 = 'b0;
+                        end else begin
+                        mem_en <= 'b1;
+                        mem_en2 <= 'b1;
+                        end
+                        read_write_2 <= 'b0;
+                        read_write<= 'b0;
+                end
+                READ_SYNC: begin
+                    if(sync_read >= 'b01) begin
+>>>>>>> Stashed changes
                         incr_read_addr <= 'b1;
                         twiddle_addr_incr <= 'b1;
                         read_write<= 'b0; //to read instead of write
@@ -146,6 +240,13 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                         mem_1_state <= READ_MEM_1;
                         bfu_start <= 'b1;
                         read_done <= 'b0;
+<<<<<<< Updated upstream
+=======
+                        if(data_count == FFT_LENGTH) begin
+                            mem_en = 'b0;
+                            mem_en2 = 'b0;
+                        end
+>>>>>>> Stashed changes
                     end
                     else begin
                         mem_1_state <= READ_WAIT;
@@ -166,18 +267,28 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                     mem_en <= 'b0;
                     mem_en2 <= 'b0;
                     mem_1_state <= WRITE_MEM_2;
+<<<<<<< Updated upstream
                    /* if(sync_read == 'b11)
+=======
+                    if(sync_read >= 'b10)
+>>>>>>> Stashed changes
                         mem_1_state <= WRITE_MEM_2;
                     else begin
                          mem_1_state <= BFU_DONE;
                          sync_read <= sync_read + 'b1;
+<<<<<<< Updated upstream
                     end*/
+=======
+                    end
+                    bank_select <= ~bank_select;
+>>>>>>> Stashed changes
                 end
                 WRITE_MEM_2:begin
                     bfu_start <= 'b0; 
                     write_triggered <= 'b1;
                     address_mem_1 <= memory_1_addr;
                     address_mem_2 <= memory_2_addr;
+<<<<<<< Updated upstream
                     mem_en <= 'b1;
                     mem_en2 <= 'b1;
                     read_write <= 'b1;
@@ -188,19 +299,72 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                 MEM_2_WRITTEN : begin
                     if(fft_level == 5) mem_1_state <= FINISH_FFT;
                     else if(data_count == FFT_LENGTH+1 ) begin //next level of computation
+=======
+                    mem_1_state <= MEM_2_WRITTEN;
+                    if(buttferfly_pair == FFT_LENGTH) buttferfly_pair <= buttferfly_pair;
+                    else buttferfly_pair <= buttferfly_pair + 1;
+                    if(data_count == FFT_LENGTH) begin
+                         mem_en <= 'b0;
+                            mem_en2 <= 'b0;
+                            read_write_2 <= 'b0;
+                            read_write<= 'b0;
+                    end
+                end
+                MEM_2_WRITTEN : begin
+                    if(fft_level == 5) begin
+                        mem_1_state <= FINISH_FFT;
+                        sync_read <= 'b0;
+                    end
+                    else if(data_count == FFT_LENGTH ) begin //next level of computation
+>>>>>>> Stashed changes
                         mem_1_state <= READ_MEM_1;
                         data_count <= 'b0;
                         write_triggered <= 'b0;
                         buttferfly_pair <= 'b0;
+<<<<<<< Updated upstream
                     end
                     else begin 
+=======
+                        mem_en <= 'b0;
+                        mem_en2 <= 'b0;
+                    end
+                    else begin
+                       /* if(data_count == FFT_LENGTH -1) begin
+                            mem_en <= 'b0;
+                            mem_en2 <= 'b0;
+                            read_write_2 <= 'b0;
+                            read_write<= 'b0;
+                        end else begin*/
+                        mem_en <= 'b1;
+                        mem_en2 <= 'b1;
+                        read_write <= 'b1;
+                        read_write_2 <= 'b1;
+                        //end
+>>>>>>> Stashed changes
                         mem_1_state <= WRITE_MEM_2;
                         data_count <= data_count + 'b1;
                     end
                 end
+<<<<<<< Updated upstream
                 FINISH_FFT: begin
                     fft_done <= 'b1;
                     mem_1_state <= START;
+=======
+                WRITE_WAIT:
+                begin
+                    mem_1_state <= READ_MEM_1;
+
+                end
+                FINISH_FFT: begin
+                    fft_done <= 'b1;
+                    //let it stay here for a while:
+                    sync_read <= sync_read + 'b1;
+                    if (sync_read >= 'd18) begin
+                        mem_1_state <= START;
+                        fft_busy <= 'b0;
+                        sync_read <= 'b0;
+                    end
+>>>>>>> Stashed changes
                 end
                 default: mem_1_state <= mem_1_state;
 
@@ -216,6 +380,7 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     logic [2:0] mem_valid;
     logic fft_incr;
     //read control:
+<<<<<<< Updated upstream
     always_ff @(posedge clk) begin
         if(!rstn) begin
             buttferfly_pair <= 'b0;
@@ -238,21 +403,41 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
                 write_triggered <= ~write_triggered;
             end*/
             if(buttferfly_pair == FFT_LENGTH && mem_1_state == MEM_2_WRITTEN) begin 
+=======
+    always_ff @(posedge clk_100MHz) begin
+        if(rstn | mem_1_state == START) begin
+            fft_incr <= 'b0;
+            fft_level <= 'b0;
+        end
+        else begin
+            if(buttferfly_pair == FFT_LENGTH-1 && mem_1_state == MEM_2_WRITTEN) begin 
+>>>>>>> Stashed changes
                 fft_incr <= 'b1;
             end
             if(fft_incr) begin
                  fft_level <= fft_level + 1; //related to fft_length
+<<<<<<< Updated upstream
                 buttferfly_pair = 'b0;
                 fft_incr <= 'b0;
             end
+=======
+                fft_incr <= 'b0;
+            end
+            if(mem_1_state == START) fft_level <= 'b0;
+>>>>>>> Stashed changes
         end
     end
 
     //temp signals:
     logic [13:0] but_p_1;
     logic [13:0] but_p_2;
+<<<<<<< Updated upstream
     assign but_p_1 = (buttferfly_pair == 'b0) ? buttferfly_pair * 2 : (buttferfly_pair-1) * 2;
     assign but_p_2 = (buttferfly_pair == 'b0) ? buttferfly_pair * 2 + 1'b1 : (buttferfly_pair-1) * 2 + 'b1;
+=======
+    assign but_p_1 =buttferfly_pair * 2 ; //(buttferfly_pair == 'b0) ? buttferfly_pair * 2 : (buttferfly_pair-1) * 2;
+    assign but_p_2 = buttferfly_pair * 2  + 1'b1;//(buttferfly_pair == 'b0) ? buttferfly_pair * 2 + 1'b1 : (buttferfly_pair-1) * 2 + 'b1;
+>>>>>>> Stashed changes
     //the rotate functions:
     rotate rotate_a (
         .level(fft_level),
@@ -272,14 +457,23 @@ module addr_gen #(parameter FFT_LENGTH = 16, parameter N = 14)(
     //twiddle can just be a readmemh function with set values:
     logic [4:0] twiddle_addr;
     logic [31:0] sin_data,cos_data;
+<<<<<<< Updated upstream
     always_ff @(posedge clk) begin
         if(!rstn) begin
+=======
+    always_ff @(posedge clk_100MHz) begin
+        if(rstn  | mem_1_state == START) begin
+>>>>>>> Stashed changes
             twiddle_addr<= 'b0;
         end
         else begin
             if(twiddle_addr_incr) begin //this is a pulse
                 //generating my selection and the twiddle facotrmem
+<<<<<<< Updated upstream
                 twiddle_addr <= (('hFFFFFFF0 >> fft_level) & 'hF) & buttferfly_pair;//fft_level [4:0];//buttferfly_pair[4:0] - 'b1; //masking out hhigher bits
+=======
+                twiddle_addr <= (('hFFFFFFF0 >> fft_level) & 'hF) & buttferfly_pair;//(('hFFFFFFF0 >> fft_level) & 'hF) & ((buttferfly_pair == 'b0) ?  buttferfly_pair : buttferfly_pair - 1);//buttferfly_pair;//fft_level [4:0];//buttferfly_pair[4:0] - 'b1; //masking out hhigher bits
+>>>>>>> Stashed changes
             end
         end
     end

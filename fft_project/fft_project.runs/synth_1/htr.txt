@@ -6,4 +6,8 @@ REM          to be invoked for Vivado to track run status.
 REM Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 REM
 
+<<<<<<< Updated upstream
 vivado -log FFT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT.tcl
+=======
+vivado -log FFT_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_wrapper.tcl
+>>>>>>> Stashed changes

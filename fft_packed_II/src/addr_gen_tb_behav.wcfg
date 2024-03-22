@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="addr_gen_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="addr_gen_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="19000000001fs"></ZoomEndTime>
+      <Cursor1Time time="14399748000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="324"></NameColumnWidth>
+      <ValueColumnWidth column_width="307"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="72" />
+   <wvobject type="divider" fp_name="divider10285">
+      <obj_property name="label">FFT_loading</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/input_data" type="array">
+      <obj_property name="ElementShortName">input_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/mic_data" type="array">
+      <obj_property name="ElementShortName">mic_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">mic_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/address" type="array">
+      <obj_property name="ElementShortName">address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/latched_address" type="array">
+      <obj_property name="ElementShortName">latched_address[12:0]</obj_property>
+      <obj_property name="ObjectShortName">latched_address[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/addr_out" type="array">
+      <obj_property name="ElementShortName">addr_out[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_out[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/fft_enable" type="logic">
+      <obj_property name="ElementShortName">fft_enable</obj_property>
+      <obj_property name="ObjectShortName">fft_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/load_data" type="logic">
+      <obj_property name="ElementShortName">load_data</obj_property>
+      <obj_property name="ObjectShortName">load_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/load_FFT" type="logic">
+      <obj_property name="ElementShortName">load_FFT</obj_property>
+      <obj_property name="ObjectShortName">load_FFT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/load_done" type="logic">
+      <obj_property name="ElementShortName">load_done</obj_property>
+      <obj_property name="ObjectShortName">load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/fft_done" type="logic">
+      <obj_property name="ElementShortName">fft_done</obj_property>
+      <obj_property name="ObjectShortName">fft_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/addr_out_i" type="array">
+      <obj_property name="ElementShortName">addr_out_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_out_i[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_out" type="array">
+      <obj_property name="ElementShortName">addr_out[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_out[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/address_mem_1" type="array">
+      <obj_property name="ElementShortName">address_mem_1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">address_mem_1[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider47">
+      <obj_property name="label">MEMORY</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_I" type="array">
+      <obj_property name="ElementShortName">MEM_I_real_data_I[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_I_real_data_I[31:0][31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/wdata_A_data_I_real_L" type="array">
+      <obj_property name="ElementShortName">wdata_A_data_I_real_L[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_A_data_I_real_L[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/A_data_address" type="array">
+      <obj_property name="ElementShortName">A_data_address[13:0]</obj_property>
+      <obj_property name="ObjectShortName">A_data_address[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/B_data_address" type="array">
+      <obj_property name="ElementShortName">B_data_address[13:0]</obj_property>
+      <obj_property name="ObjectShortName">B_data_address[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_I" type="array">
+      <obj_property name="ElementShortName">MEM_I_img_data_I[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_I_img_data_I[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_real_data_II" type="array">
+      <obj_property name="ElementShortName">MEM_I_real_data_II[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_I_real_data_II[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/MEM_I_img_data_II" type="array">
+      <obj_property name="ElementShortName">MEM_I_img_data_II[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_I_img_data_II[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/buttferfly_pair" type="array">
+      <obj_property name="ElementShortName">buttferfly_pair[13:0]</obj_property>
+      <obj_property name="ObjectShortName">buttferfly_pair[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider48">
+      <obj_property name="label">addr_gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group10345" type="group">
+      <obj_property name="label">control and BFU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/memory_1_addr" type="array">
+      <obj_property name="ElementShortName">memory_1_addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_1_addr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/memory_2_addr" type="array">
+      <obj_property name="ElementShortName">memory_2_addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_2_addr[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/fft_count" type="array">
+      <obj_property name="ElementShortName">fft_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/mem_1_state" type="array">
+      <obj_property name="ElementShortName">mem_1_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_1_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/A_real" type="array">
+      <obj_property name="ElementShortName">A_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_real[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/A_img" type="array">
+      <obj_property name="ElementShortName">A_img[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_img[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/B_real" type="array">
+      <obj_property name="ElementShortName">B_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_real[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/B_img" type="array">
+      <obj_property name="ElementShortName">B_img[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_img[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/mult_rr" type="array">
+      <obj_property name="ElementShortName">mult_rr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_rr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/mult_ri" type="array">
+      <obj_property name="ElementShortName">mult_ri[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_ri[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/mult_ir" type="array">
+      <obj_property name="ElementShortName">mult_ir[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_ir[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/mult_ii" type="array">
+      <obj_property name="ElementShortName">mult_ii[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_ii[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/twiddle_factor_real" type="array">
+      <obj_property name="ElementShortName">twiddle_factor_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">twiddle_factor_real[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/twiddle_factor_img" type="array">
+      <obj_property name="ElementShortName">twiddle_factor_img[15:0]</obj_property>
+      <obj_property name="ObjectShortName">twiddle_factor_img[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/twiddle_real" type="array">
+      <obj_property name="ElementShortName">twiddle_real[31:0]</obj_property>
+      <obj_property name="ObjectShortName">twiddle_real[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/twiddle_img" type="array">
+      <obj_property name="ElementShortName">twiddle_img[31:0]</obj_property>
+      <obj_property name="ObjectShortName">twiddle_img[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/A_real_o" type="array">
+      <obj_property name="ElementShortName">A_real_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_real_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/A_img_o" type="array">
+      <obj_property name="ElementShortName">A_img_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_img_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/B_real_o" type="array">
+      <obj_property name="ElementShortName">B_real_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_real_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/B_img_o" type="array">
+      <obj_property name="ElementShortName">B_img_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_img_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_A_real" type="array">
+      <obj_property name="ElementShortName">local_data_A_real[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_data_A_real[15:0][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_A_img" type="array">
+      <obj_property name="ElementShortName">local_data_A_img[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_data_A_img[15:0][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real" type="array">
+      <obj_property name="ElementShortName">local_data_B_real[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_data_B_real[15:0][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_real[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img" type="array">
+      <obj_property name="ElementShortName">local_data_B_img[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_data_B_img[15:0][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/local_data_B_img[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider10690">
+      <obj_property name="label">write_back</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/amplitude_A" type="array">
+      <obj_property name="ElementShortName">amplitude_A[15:0][63:0]</obj_property>
+      <obj_property name="ObjectShortName">amplitude_A[15:0][63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/amplitude_B" type="array">
+      <obj_property name="ElementShortName">amplitude_B[15:0][63:0]</obj_property>
+      <obj_property name="ObjectShortName">amplitude_B[15:0][63:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/A_sel" type="logic">
+      <obj_property name="ElementShortName">A_sel</obj_property>
+      <obj_property name="ObjectShortName">A_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/B_sel" type="logic">
+      <obj_property name="ElementShortName">B_sel</obj_property>
+      <obj_property name="ObjectShortName">B_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/fft_level" type="array">
+      <obj_property name="ElementShortName">fft_level[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_level[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/address_mem_1" type="array">
+      <obj_property name="ElementShortName">address_mem_1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">address_mem_1[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/addr_gen/address_mem_2" type="array">
+      <obj_property name="ElementShortName">address_mem_2[13:0]</obj_property>
+      <obj_property name="ObjectShortName">address_mem_2[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/frequency" type="array">
+      <obj_property name="ElementShortName">frequency[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/final_index" type="array">
+      <obj_property name="ElementShortName">final_index[8:0]</obj_property>
+      <obj_property name="ObjectShortName">final_index[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/twiddle_real" type="array">
+      <obj_property name="ElementShortName">twiddle_real[31:0]</obj_property>
+      <obj_property name="ObjectShortName">twiddle_real[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/Butterfly_op/twiddle_img" type="array">
+      <obj_property name="ElementShortName">twiddle_img[31:0]</obj_property>
+      <obj_property name="ObjectShortName">twiddle_img[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/max_a" type="array">
+      <obj_property name="ElementShortName">max_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">max_a[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/min_a" type="array">
+      <obj_property name="ElementShortName">min_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">min_a[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/max_b" type="array">
+      <obj_property name="ElementShortName">max_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">max_b[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/min_b" type="array">
+      <obj_property name="ElementShortName">min_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">min_b[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/a_i" type="array">
+      <obj_property name="ElementShortName">a_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a_i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/a_r" type="array">
+      <obj_property name="ElementShortName">a_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a_r[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/b_i" type="array">
+      <obj_property name="ElementShortName">b_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/b_r" type="array">
+      <obj_property name="ElementShortName">b_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_r[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addr_gen_tb/FFT_wrapper/FFT/x" type="array">
+      <obj_property name="ElementShortName">x[6:0]</obj_property>
+      <obj_property name="ObjectShortName">x[6:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

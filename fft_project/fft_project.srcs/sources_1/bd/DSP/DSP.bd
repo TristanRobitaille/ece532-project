@@ -2,11 +2,18 @@
   "design": {
     "design_info": {
       "boundary_crc": "0x2CBBE12AD98A1229",
+<<<<<<< Updated upstream
       "device": "xc7a100tcsg324-1",
       "name": "DSP",
       "synth_flow_mode": "Hierarchical",
       "tool_version": "2018.3",
       "validated": "true"
+=======
+      "device": "xc7a200tsbg484-1",
+      "name": "DSP",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+>>>>>>> Stashed changes
     },
     "design_tree": {
       "xbip_dsp48_macro_0": ""
@@ -16,6 +23,7 @@
         "type": "data",
         "direction": "O",
         "left": "32",
+<<<<<<< Updated upstream
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
@@ -45,11 +53,19 @@
             "value_src": "default"
           }
         }
+=======
+        "right": "0"
+      },
+      "CLK_0": {
+        "type": "clk",
+        "direction": "I"
+>>>>>>> Stashed changes
       },
       "A_0": {
         "type": "data",
         "direction": "I",
         "left": "15",
+<<<<<<< Updated upstream
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
@@ -57,11 +73,15 @@
             "value_src": "default"
           }
         }
+=======
+        "right": "0"
+>>>>>>> Stashed changes
       },
       "B_0": {
         "type": "data",
         "direction": "I",
         "left": "15",
+<<<<<<< Updated upstream
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
@@ -69,11 +89,15 @@
             "value_src": "default"
           }
         }
+=======
+        "right": "0"
+>>>>>>> Stashed changes
       },
       "C_0": {
         "type": "data",
         "direction": "I",
         "left": "15",
+<<<<<<< Updated upstream
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
@@ -81,6 +105,9 @@
             "value_src": "default"
           }
         }
+=======
+        "right": "0"
+>>>>>>> Stashed changes
       }
     },
     "components": {

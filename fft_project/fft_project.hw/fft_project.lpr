@@ -3,4 +3,10 @@
 <!--                                                              -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.        -->
 
+<<<<<<< Updated upstream
 <labtools version="1" minor="0"/>
+=======
+<labtools version="1" minor="0">
+  <HWSession Dir="hw_1" File="hw.xml"/>
+</labtools>
+>>>>>>> Stashed changes

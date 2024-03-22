@@ -2,10 +2,17 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="MEM_I" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
+<<<<<<< Updated upstream
     <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1709709095"/>
     <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1709709095"/>
     <Generation Name="SIMULATION" State="GENERATED" Timestamp="1709709095"/>
     <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1709709095"/>
+=======
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1710182294"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1710182294"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1710182294"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1710182294"/>
+>>>>>>> Stashed changes
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\MEM_I_axi_bram_ctrl_0_bram_0\MEM_I_axi_bram_ctrl_0_bram_0.xci" Type="IP">
         <Instance HierarchyPath="axi_bram_ctrl_0_bram"/>

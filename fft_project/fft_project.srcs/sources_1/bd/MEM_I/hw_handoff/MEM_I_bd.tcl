@@ -43,7 +43,11 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
+<<<<<<< Updated upstream
    create_project project_1 myproj -part xc7a100tcsg324-1
+=======
+   create_project project_1 myproj -part xc7a200tfbg484-1
+>>>>>>> Stashed changes
 }
 
 
@@ -166,7 +170,15 @@ proc create_root_design { parentCell } {
    CONFIG.Byte_Size {9} \
    CONFIG.EN_SAFETY_CKT {false} \
    CONFIG.Enable_32bit_Address {false} \
+<<<<<<< Updated upstream
    CONFIG.Memory_Type {True_Dual_Port_RAM} \
+=======
+   CONFIG.Enable_B {Use_ENB_Pin} \
+   CONFIG.Memory_Type {True_Dual_Port_RAM} \
+   CONFIG.Port_B_Clock {100} \
+   CONFIG.Port_B_Enable_Rate {100} \
+   CONFIG.Port_B_Write_Rate {50} \
+>>>>>>> Stashed changes
    CONFIG.Read_Width_A {32} \
    CONFIG.Read_Width_B {32} \
    CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \

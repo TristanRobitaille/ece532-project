@@ -1,0 +1,917 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 20 14:01:26 2024
+# Process ID: 16084
+# Current directory: C:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_FFT_wrapper_0_0_synth_1
+# Command line: vivado.exe -log design_1_FFT_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_FFT_wrapper_0_0.tcl
+# Log file: C:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_FFT_wrapper_0_0_synth_1/design_1_FFT_wrapper_0_0.vds
+# Journal file: C:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_FFT_wrapper_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_FFT_wrapper_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/ECE532/m2_mod_dsp/pre_processing/pre_processing'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/ip_repo/AXI_I2S_driver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/fft_project/fft_packed_II'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top design_1_FFT_wrapper_0_0 -part xc7a200tsbg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 35488 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:138]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:42]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:43]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:44]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:47]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:48]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:49]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:50]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:55]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:56]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:59]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:60]
+WARNING: [Synth 8-2507] parameter declaration becomes local in addr_gen with formal parameter declaration list [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:61]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT_wrapper.sv:75]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 504.777 ; gain = 111.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_FFT_wrapper_0_0' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_FFT_wrapper_0_0/synth/design_1_FFT_wrapper_0_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'FFT_wrapper' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT_wrapper.sv:23]
+	Parameter REV_LENGTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'addr_bit_reversal' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/bit_reversal.sv:1]
+	Parameter RESERVAL_LENGTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'addr_bit_reversal' (1#1) [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/bit_reversal.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'FFT' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:23]
+	Parameter FFT_LENGTH bound to: 16 - type: integer 
+	Parameter RESERVAL_LENGTH bound to: 5 - type: integer 
+	Parameter SAMPLE_FREQUENCY bound to: 5000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'addr_gen' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:1]
+	Parameter FFT_LENGTH bound to: 16 - type: integer 
+	Parameter N bound to: 14 - type: integer 
+	Parameter START bound to: 4'b0000 
+	Parameter READ_MEM_1 bound to: 4'b0001 
+	Parameter READ_MEM_FIN bound to: 4'b0010 
+	Parameter BFU_INIT bound to: 4'b0011 
+	Parameter READ_SYNC bound to: 4'b0100 
+	Parameter BFU_WAIT bound to: 4'b1011 
+	Parameter BFU_DONE bound to: 4'b0101 
+	Parameter WRITE_MEM_2 bound to: 4'b0110 
+	Parameter MEM_2_WRITTEN bound to: 4'b0111 
+	Parameter LOAD_DATA bound to: 4'b1000 
+	Parameter FINISH_FFT bound to: 4'b1001 
+	Parameter READ_WAIT bound to: 4'b1010 
+INFO: [Synth 8-6157] synthesizing module 'rotate' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/rotate.sv:25]
+	Parameter N bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rotate' (2#1) [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/rotate.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'twiddle_factor_mem' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/twiddle_factor_mem.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'twiddle_factor_mem' (3#1) [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/twiddle_factor_mem.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element done_computation_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:90]
+WARNING: [Synth 8-6014] Unused sequential element fft_count_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:93]
+WARNING: [Synth 8-6014] Unused sequential element mem_valid_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'addr_gen' (4#1) [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Butterfly_op' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/Butterfly_op.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element delay_1_cycle_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/Butterfly_op.sv:115]
+INFO: [Synth 8-6155] done synthesizing module 'Butterfly_op' (5#1) [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/Butterfly_op.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'twiddle_factor_real' does not match port width (16) of module 'Butterfly_op' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:380]
+WARNING: [Synth 8-689] width (32) of port connection 'twiddle_factor_img' does not match port width (16) of module 'Butterfly_op' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:381]
+WARNING: [Synth 8-6014] Unused sequential element sin_data_L_reg[10] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:152]
+WARNING: [Synth 8-6014] Unused sequential element sin_data_L_reg[9] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:152]
+WARNING: [Synth 8-6014] Unused sequential element sin_data_L_reg[8] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:152]
+WARNING: [Synth 8-6014] Unused sequential element sin_data_L_reg[7] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:152]
+WARNING: [Synth 8-6014] Unused sequential element sin_data_L_reg[6] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:152]
+WARNING: [Synth 8-6014] Unused sequential element cos_data_L_reg[10] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element cos_data_L_reg[9] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element cos_data_L_reg[8] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element cos_data_L_reg[7] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element cos_data_L_reg[6] was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element A_val_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:495]
+WARNING: [Synth 8-6014] Unused sequential element B_val_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:496]
+WARNING: [Synth 8-6014] Unused sequential element index_largest_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:498]
+WARNING: [Synth 8-6014] Unused sequential element ar_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:508]
+WARNING: [Synth 8-6014] Unused sequential element ai_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:509]
+WARNING: [Synth 8-6014] Unused sequential element br_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:510]
+WARNING: [Synth 8-6014] Unused sequential element bi_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:511]
+WARNING: [Synth 8-6014] Unused sequential element ar_l_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:512]
+WARNING: [Synth 8-6014] Unused sequential element ai_l_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:513]
+WARNING: [Synth 8-6014] Unused sequential element br_l_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:514]
+WARNING: [Synth 8-6014] Unused sequential element bi_l_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:515]
+WARNING: [Synth 8-6014] Unused sequential element max_a_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:517]
+WARNING: [Synth 8-6014] Unused sequential element min_b_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:518]
+INFO: [Synth 8-4471] merging register 'en_4_reg' into 'en_2_reg' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:218]
+INFO: [Synth 8-4471] merging register 'en_7_reg' into 'en_5_reg' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:221]
+INFO: [Synth 8-4471] merging register 'en_8_reg' into 'en_6_reg' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:222]
+INFO: [Synth 8-4471] merging register 'rw_4_reg' into 'rw_2_reg' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:226]
+INFO: [Synth 8-4471] merging register 'rw_7_reg' into 'rw_5_reg' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:229]
+INFO: [Synth 8-4471] merging register 'rw_8_reg' into 'rw_6_reg' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:230]
+WARNING: [Synth 8-6014] Unused sequential element en_4_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:218]
+WARNING: [Synth 8-6014] Unused sequential element en_7_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:221]
+WARNING: [Synth 8-6014] Unused sequential element en_8_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:222]
+WARNING: [Synth 8-6014] Unused sequential element rw_4_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:226]
+WARNING: [Synth 8-6014] Unused sequential element rw_7_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:229]
+WARNING: [Synth 8-6014] Unused sequential element rw_8_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:230]
+WARNING: [Synth 8-3848] Net readdata_2 in module/entity FFT does not have driver. [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (6#1) [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element load_data_enlongate_reg was removed.  [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT_wrapper.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_wrapper' (7#1) [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/FFT_wrapper.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FFT_wrapper_0_0' (8#1) [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_FFT_wrapper_0_0/synth/design_1_FFT_wrapper_0_0.sv:58]
+WARNING: [Synth 8-3331] design twiddle_factor_mem has unconnected port addr[4]
+WARNING: [Synth 8-3331] design rotate has unconnected port butterfly_pair[13]
+WARNING: [Synth 8-3331] design rotate has unconnected port butterfly_pair[12]
+WARNING: [Synth 8-3331] design rotate has unconnected port butterfly_pair[11]
+WARNING: [Synth 8-3331] design rotate has unconnected port butterfly_pair[10]
+WARNING: [Synth 8-3331] design rotate has unconnected port butterfly_pair[9]
+WARNING: [Synth 8-3331] design rotate has unconnected port butterfly_pair[8]
+WARNING: [Synth 8-3331] design rotate has unconnected port butterfly_pair[7]
+WARNING: [Synth 8-3331] design rotate has unconnected port butterfly_pair[6]
+WARNING: [Synth 8-3331] design rotate has unconnected port butterfly_pair[5]
+WARNING: [Synth 8-3331] design addr_gen has unconnected port bfu_finished_cal
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[31]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[30]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[29]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[28]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[27]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[26]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[25]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[24]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[23]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[22]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[21]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[20]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[19]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[18]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[17]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[16]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[15]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[14]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[13]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[12]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[11]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[10]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[9]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[8]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[7]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[6]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[5]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[4]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[3]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[2]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[1]
+WARNING: [Synth 8-3331] design FFT has unconnected port readdata_2[0]
+WARNING: [Synth 8-3331] design FFT has unconnected port address_mem_2[13]
+WARNING: [Synth 8-3331] design FFT has unconnected port address_mem_2[12]
+WARNING: [Synth 8-3331] design FFT has unconnected port address_mem_2[11]
+WARNING: [Synth 8-3331] design FFT has unconnected port address_mem_2[10]
+WARNING: [Synth 8-3331] design FFT has unconnected port address_mem_2[9]
+WARNING: [Synth 8-3331] design FFT has unconnected port address_mem_2[8]
+WARNING: [Synth 8-3331] design FFT has unconnected port address_mem_2[7]
+WARNING: [Synth 8-3331] design FFT has unconnected port address_mem_2[6]
+WARNING: [Synth 8-3331] design FFT has unconnected port address_mem_2[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 690.453 ; gain = 297.414
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 690.453 ; gain = 297.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 690.453 ; gain = 297.414
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_FFT_wrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_FFT_wrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1000.301 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1000.301 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 1002.797 ; gain = 2.496
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1002.797 ; gain = 609.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1002.797 ; gain = 609.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1002.797 ; gain = 609.758
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'read_write_2_reg' into 'read_write_reg' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:103]
+INFO: [Synth 8-4471] merging register 'mem_en2_reg' into 'mem_en_reg' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:99]
+INFO: [Synth 8-5546] ROM "mem_1_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "read_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sync_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fft_level" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "triggered_stop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MEM_I_real_data_I_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "local_data_A_real_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "A_data_address0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "final_index" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1002.797 ; gain = 609.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |FFT__GB0         |           1|     30335|
+|2     |FFT__GB1         |           1|      8768|
+|3     |FFT__GB2         |           1|     11991|
+|4     |FFT__GB3         |           1|     14888|
+|5     |FFT_wrapper__GC0 |           1|       122|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     16 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	               33 Bit    Registers := 32    
+	               32 Bit    Registers := 238   
+	               16 Bit    Registers := 4     
+	               14 Bit    Registers := 6     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 29    
++---Multipliers : 
+	                16x32  Multipliers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 397   
+	   2 Input     14 Bit        Muxes := 3     
+	   3 Input     14 Bit        Muxes := 1     
+	  11 Input     14 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	  32 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 5     
+	  33 Input      9 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 447   
+	  31 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Butterfly_op 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                16x32  Multipliers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module rotate__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module rotate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module addr_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 5     
+	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	  11 Input     14 Bit        Muxes := 1     
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 19    
+	  12 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 20    
+Module FFT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               33 Bit    Registers := 32    
+	               32 Bit    Registers := 237   
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 393   
+	   2 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 1     
+	  32 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 5     
+	  33 Input      9 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 426   
+	  31 Input      1 Bit        Muxes := 1     
+Module FFT_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "amplitude_A_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/Butterfly_op.sv:65]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/Butterfly_op.sv:62]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/Butterfly_op.sv:64]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/Butterfly_op.sv:63]
+DSP Report: Generating DSP mult_ii0, operation Mode is: A*B.
+DSP Report: operator mult_ii0 is absorbed into DSP mult_ii0.
+DSP Report: operator mult_ii0 is absorbed into DSP mult_ii0.
+DSP Report: Generating DSP mult_ii0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_ii0 is absorbed into DSP mult_ii0.
+DSP Report: operator mult_ii0 is absorbed into DSP mult_ii0.
+DSP Report: Generating DSP mult_rr0, operation Mode is: A*B.
+DSP Report: operator mult_rr0 is absorbed into DSP mult_rr0.
+DSP Report: operator mult_rr0 is absorbed into DSP mult_rr0.
+DSP Report: Generating DSP mult_rr0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_rr0 is absorbed into DSP mult_rr0.
+DSP Report: operator mult_rr0 is absorbed into DSP mult_rr0.
+DSP Report: Generating DSP mult_ir0, operation Mode is: A*B.
+DSP Report: operator mult_ir0 is absorbed into DSP mult_ir0.
+DSP Report: operator mult_ir0 is absorbed into DSP mult_ir0.
+DSP Report: Generating DSP mult_ir0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_ir0 is absorbed into DSP mult_ir0.
+DSP Report: operator mult_ir0 is absorbed into DSP mult_ir0.
+DSP Report: Generating DSP mult_ri0, operation Mode is: A*B.
+DSP Report: operator mult_ri0 is absorbed into DSP mult_ri0.
+DSP Report: operator mult_ri0 is absorbed into DSP mult_ri0.
+DSP Report: Generating DSP mult_ri0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_ri0 is absorbed into DSP mult_ri0.
+DSP Report: operator mult_ri0 is absorbed into DSP mult_ri0.
+INFO: [Synth 8-4471] merging register 'buttferfly_pair_reg[13:0]' into 'buttferfly_pair_reg[13:0]' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:89]
+INFO: [Synth 8-4471] merging register 'buttferfly_pair_reg[13:0]' into 'buttferfly_pair_reg[13:0]' [c:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/a3d0/src/addr_gen.sv:89]
+DSP Report: Generating DSP frequency0, operation Mode is: (D+(A:0x1))*(B:0x9c).
+DSP Report: operator frequency0 is absorbed into DSP frequency0.
+DSP Report: operator frequency1 is absorbed into DSP frequency0.
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[15][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[14][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[13][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[12][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[12][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[11][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[10][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[10][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[9][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[9][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[8][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[7][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[6][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[5][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[4][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[4][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[3][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[2][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[1][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[0][15]' (FDRE) to 'FFTi_0/local_data_A_img_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[15][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[14][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[13][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[12][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[12][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[11][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[10][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[10][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[9][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[9][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[8][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[7][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[6][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[5][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[4][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[4][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[3][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[2][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[1][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[0][16]' (FDRE) to 'FFTi_0/local_data_A_img_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[15][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[14][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[13][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[12][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[12][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[11][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[10][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[10][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[9][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[9][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[8][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[7][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[6][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[5][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[4][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[4][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[3][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[2][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[1][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[0][17]' (FDRE) to 'FFTi_0/local_data_A_img_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[15][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[14][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[13][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[12][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[12][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[11][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[10][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[10][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[9][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[9][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[8][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[7][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[6][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[5][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[4][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[4][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[3][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[2][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[1][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[0][18]' (FDRE) to 'FFTi_0/local_data_A_img_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[15][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[14][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[13][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[12][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[12][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[11][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[10][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[10][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[9][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[9][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[8][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[7][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[6][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[5][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[4][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[4][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[3][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[2][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[1][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[0][19]' (FDRE) to 'FFTi_0/local_data_A_img_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[15][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[14][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[13][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[12][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[12][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[11][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[10][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[10][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[9][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[9][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[8][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[7][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[6][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[5][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[4][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[4][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[3][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[2][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[1][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[0][20]' (FDRE) to 'FFTi_0/local_data_A_img_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[15][21]' (FDRE) to 'FFTi_0/local_data_A_img_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[14][21]' (FDRE) to 'FFTi_0/local_data_A_img_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[13][21]' (FDRE) to 'FFTi_0/local_data_A_img_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'FFTi_0/local_data_A_img_reg[12][21]' (FDRE) to 'FFTi_0/local_data_A_img_reg[12][31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FFTi_0/\b_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FFTi_0/\largest_amp_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FFTi_3/\sin_data_L_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FFTi_3/\final_index_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FFTi_3/addr_gen/\address_mem_1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_4/\latched_address_reg[12] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:08 . Memory (MB): peak = 1002.797 ; gain = 609.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Butterfly_op | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Butterfly_op | (PCIN>>17)+A*B       | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Butterfly_op | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Butterfly_op | (PCIN>>17)+A*B       | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Butterfly_op | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Butterfly_op | (PCIN>>17)+A*B       | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Butterfly_op | A*B                  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Butterfly_op | (PCIN>>17)+A*B       | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT          | (D+(A:0x1))*(B:0x9c) | 1      | 8      | -      | 9      | 18     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
++-------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |FFT__GB0         |           1|     10238|
+|2     |FFT__GB1         |           1|      4321|
+|3     |FFT__GB2         |           1|      5711|
+|4     |FFT__GB3         |           1|      3825|
+|5     |FFT_wrapper__GC0 |           1|        53|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:16 . Memory (MB): peak = 1046.512 ; gain = 653.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:16 . Memory (MB): peak = 1046.586 ; gain = 653.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |FFT__GB0         |           1|     10238|
+|2     |FFT__GB1         |           1|      4321|
+|3     |FFT__GB2         |           1|      5711|
+|4     |FFT__GB3         |           1|      3825|
+|5     |FFT_wrapper__GC0 |           1|        53|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:21 . Memory (MB): peak = 1143.891 ; gain = 750.852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 1143.891 ; gain = 750.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 1143.891 ; gain = 750.852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 1143.891 ; gain = 750.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 1143.891 ; gain = 750.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 1143.891 ; gain = 750.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 1143.891 ; gain = 750.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name              | RTL Name                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_FFT_wrapper_0_0 | inst/FFT/cos_data_L_reg[4][15] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|design_1_FFT_wrapper_0_0 | inst/FFT/cos_data_L_reg[5][14] | 6      | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|design_1_FFT_wrapper_0_0 | inst/FFT/sin_data_L_reg[5][14] | 6      | 15    | YES          | NO                 | YES               | 15     | 0       | 
++-------------------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   156|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     2|
+|4     |DSP48E1_3 |     4|
+|5     |DSP48E1_4 |     2|
+|6     |LUT1      |     8|
+|7     |LUT2      |   340|
+|8     |LUT3      |  1046|
+|9     |LUT4      |   655|
+|10    |LUT5      |  1323|
+|11    |LUT6      |  2160|
+|12    |MUXF7     |   700|
+|13    |MUXF8     |    64|
+|14    |SRL16E    |    31|
+|15    |FDRE      |  4421|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------+-------------------+------+
+|      |Instance                   |Module             |Cells |
++------+---------------------------+-------------------+------+
+|1     |top                        |                   | 10913|
+|2     |  inst                     |FFT_wrapper        | 10913|
+|3     |    FFT                    |FFT                | 10884|
+|4     |      Butterfly_op         |Butterfly_op       |   231|
+|5     |      addr_gen             |addr_gen           |   368|
+|6     |        twiddel_factor_mem |twiddle_factor_mem |    31|
++------+---------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 1143.891 ; gain = 750.852
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:16 . Memory (MB): peak = 1143.891 ; gain = 438.508
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 1143.891 ; gain = 750.852
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 929 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_FFT_wrapper_0_0' is not ideal for floorplanning, since the cellview 'FFT' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1143.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+304 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:26 . Memory (MB): peak = 1143.891 ; gain = 762.320
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1143.891 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_FFT_wrapper_0_0_synth_1/design_1_FFT_wrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_FFT_wrapper_0_0, cache-ID = 0b4495a7ee452a30
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1143.891 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.runs/design_1_FFT_wrapper_0_0_synth_1/design_1_FFT_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_FFT_wrapper_0_0_utilization_synth.rpt -pb design_1_FFT_wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 20 14:03:03 2024...

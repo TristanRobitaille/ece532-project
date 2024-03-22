@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<<<<<<< Updated upstream
 <EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar  6 02:11:35 2024" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="MEM_I" PACKAGE="csg324" SPEEDGRADE="-1"/>
@@ -34,6 +35,13 @@
         <CONNECTION INSTANCE="axi_bram_ctrl_0_bram" PORT="web"/>
       </CONNECTIONS>
     </PORT>
+=======
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 11 14:38:14 2024" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a200t" NAME="MEM_I" PACKAGE="fbg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+>>>>>>> Stashed changes
     <PORT DIR="I" LEFT="12" NAME="BRAM_PORTA_0_addr" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_addra">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_bram_ctrl_0_bram" PORT="addra"/>
@@ -64,6 +72,39 @@
         <CONNECTION INSTANCE="axi_bram_ctrl_0_bram" PORT="wea"/>
       </CONNECTIONS>
     </PORT>
+<<<<<<< Updated upstream
+=======
+    <PORT DIR="I" LEFT="12" NAME="BRAM_PORTB_0_addr" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_addrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_bram_ctrl_0_bram" PORT="addrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="BRAM_PORTB_0_clk" SIGIS="clk" SIGNAME="axi_bram_ctrl_0_bram_clkb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_bram_ctrl_0_bram" PORT="clkb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="BRAM_PORTB_0_din" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_dinb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_bram_ctrl_0_bram" PORT="dinb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="BRAM_PORTB_0_dout" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_doutb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_bram_ctrl_0_bram" PORT="doutb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BRAM_PORTB_0_en" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_enb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_bram_ctrl_0_bram" PORT="enb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="BRAM_PORTB_0_we" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_web">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_bram_ctrl_0_bram" PORT="web"/>
+      </CONNECTIONS>
+    </PORT>
+>>>>>>> Stashed changes
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>

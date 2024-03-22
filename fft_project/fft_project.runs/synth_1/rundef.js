@@ -23,7 +23,11 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
+<<<<<<< Updated upstream
          "-log FFT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT.tcl" );
+=======
+         "-log FFT_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_wrapper.tcl" );
+>>>>>>> Stashed changes
 
 
 
