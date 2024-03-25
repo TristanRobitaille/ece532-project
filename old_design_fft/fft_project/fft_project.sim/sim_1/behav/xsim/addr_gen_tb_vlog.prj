@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../fft_project.srcs/sources_1/new/Butterfly_op.sv" \
+"../../../../fft_project.srcs/sources_1/new/FFT.sv" \
+"../../../../fft_project.srcs/sources_1/new/FFT_wrapper.sv" \
+"../../../../fft_project.srcs/sources_1/new/addr_gen.sv" \
+"../../../../fft_project.srcs/sources_1/new/bit_reversal.sv" \
+"../../../../fft_project.srcs/sources_1/new/rotate.sv" \
+"../../../../fft_project.srcs/sources_1/new/twiddle_factor_mem.sv" \
+"../../../../fft_project.srcs/sim_1/new/addr_gen_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

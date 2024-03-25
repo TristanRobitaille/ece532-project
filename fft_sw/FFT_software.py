@@ -1,7 +1,14 @@
 #referneces:
-#https://web.mit.edu/6.111/www/f2017/handouts/FFTtutorial121102.pdf
-#https://medium.com/@anht_59851/tone-frequency-detection-from-an-audio-file-by-python-44d673f2e26b
+#FPGA reference and Danielson exmplanation:
+#https://web.mit.edu/6.111/www/f2017/handouts/FFTtutorial121102.pdf -> FPGA reference
+#https://www.youtube.com/watch?v=qUl4izAZaEI -> very clear!!
+#https://ursula.chem.yale.edu/~batista/classes/vvv/f12-2.pdfo-file-by-python-44d673f2e26b -> Danielson explanation
+
+#numpy fft:
+#https://medium.com/@anht_59851/tone-frequency-detection-from-an-audi
 #https://medium.com/0xcode/fast-fourier-transform-fft-algorithm-implementation-in-python-b592099bdb27
+
+#frequency-time
 #https://dsp.stackexchange.com/questions/2605/how-do-i-create-a-frequency-vs-time-plot
 #https://kevinsprojects.wordpress.com/2014/12/13/short-time-fourier-transform-using-python-and-numpy/
 #purpose of fft in our system: converting audio file into its corssponding frequencies for
@@ -15,35 +22,108 @@ import numpy as np
 import soundfile as sf
 from matplotlib import pyplot as plt
 from matplotlib import axes as ax
+import math
 
-def permute(raw_data):
+def permute(raw_data): #this can be implmented using even/odd split or the bit-reversing algorithm from the paper
+    #should have the same effect
     i = 1
-    x = raw_data
-    for n in range(1, len(raw_data)):
-        if(n > i):
-            #swap Xn and xi
-            temp = x[i]
-            x[i] = x[n]
-            x[n] = temp
-        m = len(raw_data) / 2
-        while (m >= 2 and i >m):
-            i = i - m
-            m = m / 2
-        i = i + m
+    raw_data = np.array(raw_data)
+    even = raw_data[::2]
+    odd = raw_data[1::2]
+    #making a new one with [even, odd]
+    #double every element in the array, one responsible for
+    x = np.concatenate((even,odd))
+    #converting to complex numbers:
+    x = x.astype(complex)
     return x
 
-def DanielsonLanczos(x,w,N):
+def permute_2 (raw_data): #think this is the correct one
+    nn = len(raw_data)
+    n = nn // 2
+    j = 1
+    m = 0
+
+    for i in range(1,int(n),2): # because I don't have real and img sides
+        print(" j: "+ str(j) + " i :"+str(i)+" m: " + str(m))
+        j = int(j)
+        if(j > i):
+            temp = raw_data[j-1] #img data
+            raw_data[j-1] = raw_data[i-1]
+            raw_data[i-1] = temp
+
+            temp = raw_data[j] #real data
+            raw_data[j] = raw_data[i]
+            raw_data[i] = temp
+        m = n
+        while(m>=2 and j > m):
+            j = j - m
+            m = m //2
+        j = j + m
+    #printing raw_data for each iteration in the for loop
+    
+
+    return raw_data
+
+
+def DL_2 (x, N, data):
     M = 1
+    istep = M << 1
+    w_r = 0
+    w_i = 0
+    while (N > M):
+        for m in range(1,M+1,2): #because of imaginary number
+            for i in range(m,M,istep):
+                j = i + M
+                Temp_real = w_r * data[j-1] - w_i*data[j]
+                Temp_img = w_r * data[j-1] - w_i * data[j]
+
+                data[j-1] = data[i-1] - Temp_real
+                data[j] = data[i] - Temp_img
+                data[i-1] += Temp_real
+                data[i] += Temp_img
+            WTemp = w_r
+        M = istep
+
+
+def DanielsonLanczos(x,N,copy_data):
+    M = 1
+    w = np.exp((2j*np.pi)/N) #this is w
+    w_m = complex(1,0)
+    #print(x)
     while (N > M):
         #what is Isteps?
-        isteps = M << 1 #don't know if this works
-        for m in range(1,M):
+        isteps = M << 1 #multiply by 2
+        for m in range(1,M+1):
             for i in range(m,N,isteps):
                 j = i+ M
-                Temp = w[m] * x[j]
+                print("j :"+str(j)+" M :"+str(M))
+                Temp = w_m * x[j] #w_m is the root of unity
                 x[j] = x[i] - Temp
                 x[i] = x[i] + Temp
+            #update w_m:
+            w_m = w_m*w #not sure if this is okay -> roots of unity... should be okay?? This is the Z_0, Z_1 from the youtube video
+            #t = input("test")
         M = isteps
+
+    #rearrange data for output:mt
+    for i in range(0,N):
+        j = 2*i+1
+        copy_data[i] = x[j]
+
+def FFT_implmentation(raw_data): #radix-2 implmentationg
+    #make sure that length of data is power of 2:
+    #data = raw_data.copy()
+    #while(not (len(data) % 2 == 0)):
+    #    data.append(data[len(data)-1]) #shouldn't append zeros actually
+   # raw_data = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+    pdata = permute_2(raw_data) #even odd split
+    N = len(pdata)
+    copy_data = pdata.copy()
+    print("final data: ")
+    for i in pdata:
+        print(i)
+    DanielsonLanczos(pdata,N,copy_data)
+    return copy_data
 def main(argv):
     #taken in input from commandline:
     parser = OptionParser()
@@ -51,7 +131,7 @@ def main(argv):
 
     (options ,args) = parser.parse_args()
   
-    ftype = "stft_numpy"
+    ftype = "fpga"
     if not options.inputfile:
             parser.print_help()
             sys.exit(1)
@@ -123,14 +203,10 @@ def main(argv):
     elif ftype == "matplotlib_spec":
         powerSpectrum, frequenciesFound, time, imageAxis = plt.specgram(raw_data, Fs=sample_rate)
         plt.show()
-    else: #this is the "FPGA paper" implmentation for FFT, not done
-        pdata = permute(raw_data)
-        #the butterfly operations: executed on pairs of data samples
-        #stepping sequentially through each of the logg_2 N levels:
-
-        #determining w:
-        w = []
-        DanielsonLanczos(pdata,w,len(pdata))
+    else: #this is the "FPGA paper" implmentation for FFT, should use matrix operations really,,,
+        #test = FFT_implmentation([0,1,2,3,4,5,6,7])
+        fft_data = FFT_implmentation(raw_data)
+        print(fft_data)
     
     f_out.close()
 if __name__ == "__main__":

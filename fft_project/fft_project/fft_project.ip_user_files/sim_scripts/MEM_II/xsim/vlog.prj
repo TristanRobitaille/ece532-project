@@ -1,7 +1,0 @@
-verilog xil_defaultlib  \
-"../../../bd/MEM_II/ip/MEM_II_axi_bram_ctrl_0_bram_0/sim/MEM_II_axi_bram_ctrl_0_bram_0.v" \
-"../../../bd/MEM_II/sim/MEM_II.v" \
-
-verilog xil_defaultlib "glbl.v"
-
-nosort

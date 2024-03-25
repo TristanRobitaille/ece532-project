@@ -1,5 +1,0 @@
-<<<<<<< Updated upstream
--wto "7c962d4175d44528afd560e32a4141a3" --incr --debug "typical" --relax --mt "2" -L "blk_mem_gen_v8_4_2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "addr_gen_tb_behav" "xil_defaultlib.addr_gen_tb" "xil_defaultlib.glbl" -log "elaborate.log" 
-=======
--wto "7c962d4175d44528afd560e32a4141a3" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "addr_gen_tb_behav" "xil_defaultlib.addr_gen_tb" "xil_defaultlib.glbl" -log "elaborate.log" 
->>>>>>> Stashed changes
