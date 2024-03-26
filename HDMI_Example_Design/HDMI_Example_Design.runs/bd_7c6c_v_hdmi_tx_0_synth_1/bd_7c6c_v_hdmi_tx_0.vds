@@ -1,0 +1,1089 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb  6 10:20:21 2024
+# Process ID: 8744
+# Current directory: C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_hdmi_tx_0_synth_1
+# Command line: vivado.exe -log bd_7c6c_v_hdmi_tx_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_7c6c_v_hdmi_tx_0.tcl
+# Log file: C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_hdmi_tx_0_synth_1/bd_7c6c_v_hdmi_tx_0.vds
+# Journal file: C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_hdmi_tx_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_7c6c_v_hdmi_tx_0.tcl -notrace
+Command: synth_design -top bd_7c6c_v_hdmi_tx_0 -part xc7a200tsbg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11432 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 500.445 ; gain = 106.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_7c6c_v_hdmi_tx_0' [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_0/synth/bd_7c6c_v_hdmi_tx_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1S' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45604]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1S' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45604]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:205]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (2#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1055]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1107]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (4#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1055]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-5534] Detected attribute (* DIRECT_ENABLE = "yes" *) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:560]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (4#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (5#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized0' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized0' (5#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:358]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (14#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (16#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized1' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized1' (16#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (17#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized2' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized2' (17#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized3' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized3' (18#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-5856] 3D RAM clk_dat_in_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM clk_ctl_in_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM clk_enc_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM clk_dat_in_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM clk_ctl_in_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM clk_enc_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM clk_dat_in_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM clk_ctl_in_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM clk_enc_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'bd_7c6c_v_hdmi_tx_0' (38#1) [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_0/synth/bd_7c6c_v_hdmi_tx_0.sv:57]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_lib_cdc__parameterized2 has unconnected port SRC_RST_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_lib_cdc__parameterized2 has unconnected port DST_RST_IN
+WARNING: [Synth 8-3331] design xpm_cdc_single__parameterized0 has unconnected port src_clk
+WARNING: [Synth 8-3331] design xpm_cdc_handshake has unconnected port dest_ack
+WARNING: [Synth 8-3331] design xpm_cdc_handshake__parameterized1 has unconnected port dest_ack
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_pkt_ecc has unconnected port SOP_OUT
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_pkt_ecc has unconnected port EOP_OUT
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_pkt_ecc has unconnected port SOP_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_pkt_ecc has unconnected port EOP_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_pkt_mux has unconnected port RST_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_pkt_mux has unconnected port CLK_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_pkt_mux has unconnected port CKE_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_enc__parameterized1 has unconnected port LNK_IN\.sop
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_enc__parameterized1 has unconnected port LNK_IN\.eop
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_enc__parameterized1 has unconnected port LNK_IN\.vld
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_scrm__parameterized1 has unconnected port LNK_IN\.vld
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized1 has unconnected port LNK_IN\.vgb[-1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized1 has unconnected port LNK_IN\.vgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized1 has unconnected port LNK_IN\.dlgb[-1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized1 has unconnected port LNK_IN\.dlgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized1 has unconnected port LNK_IN\.dtgb[-1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized1 has unconnected port LNK_IN\.dtgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.id
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.vgb[3]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.vgb[2]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.vgb[1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.vgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.dlgb[3]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.dlgb[2]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.dlgb[1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.dlgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.dtgb[3]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.dtgb[2]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.dtgb[1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port VID_IN\.dtgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port RST_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port CLK_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_mux has unconnected port CKE_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.id
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.vgb[3]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.vgb[2]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.vgb[1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.vgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.dlgb[3]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.dlgb[2]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.dlgb[1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.dlgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.dtgb[3]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.dtgb[2]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.dtgb[1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_dly has unconnected port LNK_IN\.dtgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_enc__parameterized0 has unconnected port LNK_IN\.sop
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_enc__parameterized0 has unconnected port LNK_IN\.eop
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_enc__parameterized0 has unconnected port LNK_IN\.vld
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_scrm__parameterized0 has unconnected port LNK_IN\.vld
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized0 has unconnected port LNK_IN\.vgb[-1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized0 has unconnected port LNK_IN\.vgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized0 has unconnected port LNK_IN\.dlgb[-1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized0 has unconnected port LNK_IN\.dlgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized0 has unconnected port LNK_IN\.dtgb[-1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb__parameterized0 has unconnected port LNK_IN\.dtgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_enc has unconnected port LNK_IN\.sop
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_enc has unconnected port LNK_IN\.eop
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_enc has unconnected port LNK_IN\.vld
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_scrm has unconnected port SSCP_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb has unconnected port LNK_IN\.vgb[-1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb has unconnected port LNK_IN\.vgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb has unconnected port LNK_IN\.dlgb[-1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb has unconnected port LNK_IN\.dlgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb has unconnected port LNK_IN\.dtgb[-1]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_gb has unconnected port LNK_IN\.dtgb[0]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_lib_cdc has unconnected port SRC_RST_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_lib_cdc has unconnected port DST_RST_IN
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.trdy
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port EGRESS\.trdy
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tid
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[31]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[30]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[29]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[28]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[27]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[26]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[25]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[24]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[23]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[22]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[21]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[20]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[19]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[18]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[17]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[16]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[15]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[14]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[13]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[12]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[11]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[10]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[9]
+WARNING: [Synth 8-3331] design v_hdmi_tx_v3_0_0_core has unconnected port INGRESS\.tusr[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 658.016 ; gain = 264.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 658.016 ; gain = 264.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 658.016 ; gain = 264.297
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_0/bd_7c6c_v_hdmi_tx_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_0/bd_7c6c_v_hdmi_tx_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_hdmi_tx_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_hdmi_tx_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_0/bd_7c6c_v_hdmi_tx_0_core.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_0/bd_7c6c_v_hdmi_tx_0_core.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_0/bd_7c6c_v_hdmi_tx_0_core.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_7c6c_v_hdmi_tx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_7c6c_v_hdmi_tx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUX_INST/HDR_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUX_INST/HDR_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUX_INST/HDR_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUX_INST/HDR_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUX_INST/SUB_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUX_INST/SUB_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUX_INST/SUB_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUX_INST/SUB_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUD_INST/AUD_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUD_INST/AUD_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUD_INST/AUD_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUD_INST/AUD_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUD_INST/ACR_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUD_INST/ACR_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUD_INST/ACR_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/AUD_INST/ACR_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/FIFO_INST/RP_CDA_INST/XPM_GRAY_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/FIFO_INST/WP_CDA_INST/XPM_GRAY_INST'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_7c6c_v_hdmi_tx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_7c6c_v_hdmi_tx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/BRDG_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/BRDG_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CFG_CS_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CFG_CS_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/VCLK_CD_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/VCLK_CD_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_BU_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_BU_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_GY_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_GY_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_RV_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_RV_CDC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/gen_handshake.XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/gen_handshake.XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/gen_handshake.XPM_INST'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_7c6c_v_hdmi_tx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_7c6c_v_hdmi_tx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/ET_DIS_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/ET_DIS_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/PIO_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/PIO_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/ACLK_CTRL_FMT_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/ACLK_CTRL_FMT_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/ACLK_CTRL_RUN_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/ACLK_CTRL_RUN_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/ACLK_PKT_RDY_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/ACLK_PKT_RDY_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_FMT_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_FMT_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_RUN_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_RUN_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CTRL_RUN_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CTRL_RUN_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_VID_VS_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_VID_VS_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/SCLK_PKT_RDY_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/SCLK_PKT_RDY_SYNC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_MODE_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_MODE_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_MODE_SCRM_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_MODE_SCRM_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GCP_AVMUTE_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GCP_AVMUTE_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GCP_CLEARAVMUTE_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GCP_CLEARAVMUTE_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CTRL_REG_NOISE_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CTRL_REG_NOISE_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CTRL_REG_RUN_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CTRL_REG_RUN_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VID_BRDG_LOCKED_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VID_BRDG_LOCKED_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VID_BRDG_UNDERFLOW_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VID_BRDG_UNDERFLOW_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VID_VS_CDC_INST/gen_single.(null)[0].XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VID_VS_CDC_INST/gen_single.(null)[0].XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/BRDG_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/BRDG_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/BRDG_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/BRDG_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/VCLK_CFG_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_BU_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_BU_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_BU_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_BU_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CFG_CS_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CFG_CS_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CFG_CS_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_CFG_CS_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_GY_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_GY_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_GY_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_GY_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_RV_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_RV_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_RV_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/GEN_MASK.MASK_INST/VCLK_RV_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/HPD_INST/HPD_CAP_INST/XPM_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/HPD_INST/HPD_CAP_INST/XPM_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VCLK_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VCLK_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VCLK_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/SYS_INST/VCLK_CD_CDC_INST/gen_handshake.XPM_INST/xpm_cdc_single_src2dest_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_7c6c_v_hdmi_tx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_7c6c_v_hdmi_tx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/ARST_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/ARST_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/AXIS_RST_INST/XPM_RST_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/AXIS_RST_INST/XPM_RST_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/SRST_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/SRST_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/SYS_INST/LRST_INST/XPM_RST_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/SYS_INST/LRST_INST/XPM_RST_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/SYS_INST/VRST_INST/XPM_RST_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/SYS_INST/VRST_INST/XPM_RST_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/S_AXIS_VIDEO_RST_CDC_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/S_AXIS_VIDEO_RST_CDC_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/VIDEO_RST_INST/XPM_RST_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/VIDEO_RST_INST/XPM_RST_INST'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1058.277 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1058.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1058.277 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.254 . Memory (MB): peak = 1058.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:46 . Memory (MB): peak = 1058.277 ; gain = 664.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:46 . Memory (MB): peak = 1058.277 ; gain = 664.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_hdmi_tx_0_synth_1/dont_touch.xdc, line 6).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/HDR_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/HDR_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/ACR_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/ACR_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/AUD_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/AUD_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/SUB_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/SUB_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CFG_CS_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/VCLK_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/BRDG_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_RV_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_GY_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_BU_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ET_DIS_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CTRL_REG_RUN_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CTRL_REG_NOISE_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/VID_VS_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/VID_BRDG_LOCKED_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/VID_BRDG_UNDERFLOW_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/GCP_AVMUTE_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/GCP_CLEARAVMUTE_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/SCLK_PKT_RDY_SYNC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/LCLK_CTRL_RUN_SYNC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/LCLK_VID_VS_SYNC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/ACLK_PKT_RDY_SYNC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/ACLK_CTRL_RUN_SYNC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/ACLK_CTRL_FMT_SYNC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/LCLK_CTRL_RUN_SYNC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/LCLK_CTRL_FMT_SYNC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CFG_MODE_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CFG_MODE_SCRM_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/PIO_CDC_INST/\gen_single.(null)[0].XPM_INST . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/HPD_INST/HPD_CAP_INST/XPM_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CFG_CS_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_RV_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_GY_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_BU_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/VCLK_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/BRDG_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CFG_CS_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_RV_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_GY_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_BU_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/VCLK_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/BRDG_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ARST_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SRST_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/S_AXIS_VIDEO_RST_CDC_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/VRST_INST/XPM_RST_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/SYS_INST/LRST_INST/XPM_RST_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/VIDEO_RST_INST/XPM_RST_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/AXIS_RST_INST/XPM_RST_INST. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 1058.277 ; gain = 664.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "sclk_id_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_sta_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_ctrl_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_rv_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_gy_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_bu_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_ctrl_reg_set_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_ctrl_reg_clr_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ep" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ep" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'clk_sm_cur_reg' in module 'v_hdmi_tx_v3_0_0_axi'
+INFO: [Synth 8-5544] ROM "clk_to_cnt_end" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_lb_wr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_lb_wr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_lb_wr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_lb_wr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_lb_wr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_lb_wr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk_lb_rd_set" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_lb_wr_set" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_id_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ver_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_id_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sta_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_pio_in_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ctrl_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_pio_out_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_pio_in_evt_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_hpd_timegrid_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_hpd_toggle_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_hpd_connect_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ctrl_reg_set_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ctrl_reg_clr_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_pio_out_set_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_pio_out_clr_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_pio_out_msk_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_pio_in_evt_re_msk_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_pio_in_evt_fe_msk_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "clk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "clk_id_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ctrl_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sta_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_bit_cnt_end" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_dat_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_cmd_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk_sta_busy" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "clk_ctrl_reg_set_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ctrl_reg_clr_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "clk_tick_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_len_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_done_flg_clr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_to_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_sm_nxt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_20_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "clk_id_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ctrl_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sta_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_bit_cnt_end" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_dat_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_cmd_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk_sta_busy" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "clk_ctrl_reg_set_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_ctrl_reg_clr_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "clk_tick_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_len_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_done_flg_clr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_to_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_sm_nxt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_20_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "clk_bit_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_to_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_sm_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "aclk_ep" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bclk_ep" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "aclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sclk_id_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_sta_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_ctrl_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sclk_hdr_fifo_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sclk_dat_reg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "lclk_pkt_hdr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "lclk_gcp_pp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sclk_sub_fifo_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "lclk_gcp_pkt_cnt_end" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sclk_ctrl_reg_set_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "lclk_pkt_rd_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_hdr_fifo_rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_eop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclk_hdr_fifo_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclk_sub_fifo_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_rd_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_hdr_fifo_rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_eop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'lclk_sm_cur_reg' in module 'v_hdmi_tx_v3_0_0_aud'
+INFO: [Synth 8-5546] ROM "lclk_pkt_rd_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_sop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_eop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_rd_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_sop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_eop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'clk_sm_cur_reg' in module 'v_hdmi_tx_v3_0_0_dly'
+INFO: [Synth 8-5546] ROM "clk_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk_fifo_run" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_fifo_ld" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_sm_nxt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gen_sscp_master.clk_sscp_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vgb_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_vko_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_kow_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_pkt_rd_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'clk_rsm_cur_reg' in module 'v_hdmi_tx_v3_0_0_pkt_fifo'
+INFO: [Synth 8-5546] ROM "clk_pkt_rd_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_to_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk_fifo_clr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                           000001 | 00000000000000000000000000000000
+                   sm_wr |                           000010 | 00000000000000000000000000000001
+               sm_wr_end |                           000100 | 00000000000000000000000000000010
+                   sm_rd |                           001000 | 00000000000000000000000000000011
+              sm_rd_loop |                           010000 | 00000000000000000000000000000100
+               sm_rd_end |                           100000 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'clk_sm_cur_reg' using encoding 'one-hot' in module 'v_hdmi_tx_v3_0_0_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                               00 | 00000000000000000000000000000000
+                  sm_acr |                               01 | 00000000000000000000000000000001
+                  sm_aud |                               10 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'lclk_sm_cur_reg' using encoding 'sequential' in module 'v_hdmi_tx_v3_0_0_aud'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                              001 | 00000000000000000000000000000000
+                   sm_ld |                              010 | 00000000000000000000000000000001
+                  sm_run |                              100 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'clk_sm_cur_reg' using encoding 'one-hot' in module 'v_hdmi_tx_v3_0_0_dly'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                rsm_idle |                               00 | 00000000000000000000000000000000
+                 rsm_err |                               01 | 00000000000000000000000000000011
+                 rsm_sop |                               10 | 00000000000000000000000000000001
+                 rsm_eop |                               11 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'clk_rsm_cur_reg' using encoding 'sequential' in module 'v_hdmi_tx_v3_0_0_pkt_fifo'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:01:06 . Memory (MB): peak = 1058.277 ; gain = 664.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "lclk_pkt_rd_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_hdr_fifo_rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_eop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclk_hdr_fifo_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclk_sub_fifo_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_done_flg_clr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_tick_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_len_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_sm_nxt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_to_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclk_hdr_fifo_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclk_sub_fifo_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bclk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_rd_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_sop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lclk_pkt_eop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gen_sscp_master.clk_sscp_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PKT_INST/CTL_INST/clk_pkt_rd_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PKT_INST/CTL_INST/clk_kow_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PKT_INST/CTL_INST/clk_vko_cnt_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PKT_INST/FIFO_INST/FIFO_INST/clk_ep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[30]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[31]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[28]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[29]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[26]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[27]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[24]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[25]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[18]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[19]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[16]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[17]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[14]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[15]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[13]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[6]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[7]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[4]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[5]' (FDE) to 'inst/SYS_INST/AUD_INST/lclk_hdr_fifo_din_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/AUD_INST/\lclk_hdr_fifo_din_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][6][4]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][6][5]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][6][2]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][6][3]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][6][10]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][6][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][6][6]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][6][7]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][7][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][5][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][5][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_ctl_reg[1]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_ctl_reg[0]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][4][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][6][4]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][6][5]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][6][2]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][6][3]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][6][10]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][6][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][6][6]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][6][7]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][7][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][5][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][5][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_ctl_reg[1]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_ctl_reg[0]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][4][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][6][4]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][6][5]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][6][2]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][6][3]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][3][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][1][10]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][0][10]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][1][10]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][0][8]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][1][8]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][1][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][1][10]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][1][10]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][2][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][1][8]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][2][8]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][2][10]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][2][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][2][8]' (FDC) to 'inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/vclk_vid_reg[stripe][3][8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/\vclk_vid_reg[stripe][2][9] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][3][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][1][10]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][0][10]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][1][10]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][0][8]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][1][8]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][1][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][1][10]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][1][10]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][2][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][1][8]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][2][8]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][2][10]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][2][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][2][8]' (FDC) to 'inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/vclk_vid_reg[stripe][3][8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/\vclk_vid_reg[stripe][2][9] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/PKT_INST/gen_ecc_sub[0].ECC_SUB_INST/gen_sub_inputs.clk_vld_reg[0]' (FDE) to 'inst/SYS_INST/CORE_INST/PKT_INST/ECC_HDR_INST/gen_hdr_inputs.clk_vld_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/\PKT_INST/FIFO_INST/clk_ipkt_dat_reg[15] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_vgb_slot_4_lanes.clk_vgb_slot_reg[0][3]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_vgb_slot_4_lanes.clk_vgb_slot_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_vgb_slot_4_lanes.clk_vgb_slot_reg[0][4]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_vgb_slot_4_lanes.clk_vgb_slot_reg[0][3]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_vgb_slot_4_lanes.clk_vgb_slot_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_vgb_slot_4_lanes.clk_vgb_slot_reg[0][4]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_pkt_dat_4_lanes.clk_pkt_dat_reg[2][3]' (FDSE) to 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_pkt_dat_4_lanes.clk_pkt_dat_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_pkt_dat_4_lanes.clk_pkt_dat_reg[1][3]' (FDSE) to 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_pkt_dat_4_lanes.clk_pkt_dat_reg[3][3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/\gen_pkt_dat_4_lanes.clk_pkt_dat_reg[3][3] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_vgb_slot_4_lanes.clk_vgb_slot_reg[0][3]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_vgb_slot_4_lanes.clk_vgb_slot_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_vgb_slot_4_lanes.clk_vgb_slot_reg[0][4]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[0]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[0]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[1]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[2]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[2]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/\gen_ctl_out_4_lanes.clk_dtgb_out_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[0]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[0]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[1]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[2]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[2]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/\gen_ctl_out_4_lanes.clk_dtgb_out_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[0]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[0]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[1]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[2]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dtgb_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[2]' (FDCE) to 'inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/gen_ctl_out_4_lanes.clk_dlgb_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/\gen_ctl_out_4_lanes.clk_dtgb_out_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][6][10]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][6][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][6][6]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][6][7]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][7][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][7][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][5][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][5][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH2_INST/SCRM_INST/clk_sscp_reg[2]' (FDE) to 'inst/SYS_INST/CORE_INST/CH2_INST/SCRM_INST/clk_sscp_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/SCRM_INST/\clk_sscp_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH1_INST/SCRM_INST/clk_sscp_reg[2]' (FDE) to 'inst/SYS_INST/CORE_INST/CH1_INST/SCRM_INST/clk_sscp_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/SCRM_INST/\clk_sscp_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/SCRM_INST/clk_sscp_reg[2]' (FDE) to 'inst/SYS_INST/CORE_INST/CH0_INST/SCRM_INST/clk_sscp_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/SCRM_INST/\clk_sscp_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][3][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][1][10]'
+INFO: [Synth 8-3886] merging instance 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][4][9]' (FDC) to 'inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/vclk_vid_reg[stripe][1][10]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/\vclk_vid_reg[stripe][0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/AUD_INST/sclk_irq_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/DDC_INST/\clk_sm_cur_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/PIO_INST/\clk_pio_in_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/AXI_INST/\clk_axi_rresp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/GB_INST/\gen_vgb_slot_4_lanes.clk_vgb_slot_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/GB_INST/\gen_vgb_slot_4_lanes.clk_vgb_slot_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/GB_INST/\gen_vgb_slot_4_lanes.clk_vgb_slot_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/SCRM_INST/\clk_scv_disp_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/SCRM_INST/\clk_scv_disp_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/SCRM_INST/\clk_scv_disp_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/PIO_INST/\gen_pio_io_edge[4].PIO_IN_EDGE_INST/clk_a_del_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/ENC_INST/\clk_enc_reg[3][dtgb][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH0_INST/VID_INST/\FIFO_INST/bclk_wrd_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH1_INST/VID_INST/\FIFO_INST/bclk_wrd_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/CORE_INST/CH2_INST/VID_INST/\FIFO_INST/bclk_wrd_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/AUD_INST/\ACR_FIFO_INST/aclk_wrd_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/AUX_INST/\HDR_FIFO_INST/aclk_wrd_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/DDC_INST/\P_DAT_FIFO_INST/clk_wrds_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/SYS_INST/AXI_INST/\AW_FIFO_INST/clk_wrds_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:45 ; elapsed = 00:02:19 . Memory (MB): peak = 1058.277 ; gain = 664.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:54 ; elapsed = 00:02:29 . Memory (MB): peak = 1058.277 ; gain = 664.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:57 ; elapsed = 00:02:32 . Memory (MB): peak = 1058.277 ; gain = 664.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:07 ; elapsed = 00:02:43 . Memory (MB): peak = 1206.281 ; gain = 812.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:09 ; elapsed = 00:02:45 . Memory (MB): peak = 1206.281 ; gain = 812.562
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:09 ; elapsed = 00:02:45 . Memory (MB): peak = 1206.281 ; gain = 812.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:11 ; elapsed = 00:02:47 . Memory (MB): peak = 1206.281 ; gain = 812.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:11 ; elapsed = 00:02:47 . Memory (MB): peak = 1206.281 ; gain = 812.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:12 ; elapsed = 00:02:48 . Memory (MB): peak = 1206.281 ; gain = 812.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:12 ; elapsed = 00:02:48 . Memory (MB): peak = 1206.281 ; gain = 812.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    69|
+|2     |LUT1     |   117|
+|3     |LUT2     |   809|
+|4     |LUT3     |   590|
+|5     |LUT4     |  1076|
+|6     |LUT5     |  1172|
+|7     |LUT6     |  2585|
+|8     |MUXF7    |    65|
+|9     |RAM32M   |   101|
+|10    |RAM64M   |   155|
+|11    |RAM64X1D |     8|
+|12    |RAM64X1S |     1|
+|13    |SRL16E   |   265|
+|14    |FDCE     |  2129|
+|15    |FDPE     |    75|
+|16    |FDRE     |  5145|
+|17    |FDSE     |   101|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:12 ; elapsed = 00:02:48 . Memory (MB): peak = 1206.281 ; gain = 812.562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 247 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:46 ; elapsed = 00:02:30 . Memory (MB): peak = 1206.281 ; gain = 412.301
+Synthesis Optimization Complete : Time (s): cpu = 00:02:12 ; elapsed = 00:02:48 . Memory (MB): peak = 1206.281 ; gain = 812.562
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1206.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 265 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 101 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 155 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+413 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:17 ; elapsed = 00:02:55 . Memory (MB): peak = 1206.281 ; gain = 812.562
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1206.281 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_hdmi_tx_0_synth_1/bd_7c6c_v_hdmi_tx_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_7c6c_v_hdmi_tx_0, cache-ID = 3927d8cb0038f24f
+INFO: [Coretcl 2-1174] Renamed 234 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1206.281 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_hdmi_tx_0_synth_1/bd_7c6c_v_hdmi_tx_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_7c6c_v_hdmi_tx_0_utilization_synth.rpt -pb bd_7c6c_v_hdmi_tx_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  6 10:23:48 2024...

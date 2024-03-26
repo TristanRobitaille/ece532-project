@@ -1,0 +1,182 @@
+2018.3:
+ * Version 3.1 (Rev. 1)
+ * Bug Fix: Fixed EDID read failures when HDMI cable length is longer issue
+ * Bug Fix: Removed un-used pin (IDT_8T49N241_RST_OUT) in ZCU104
+ * Bug Fix: Removed overriding of the PSS_REF_CLK for ZCU104
+ * Feature Enhancement: Add example design topology (Pass-through + I2S Audio) for ZCU102 (One system configuration only)
+ * Feature Enhancement: Added two Interrupt in HDMI TX detecting Video Bridge FIFO status (overflow and underflow)
+ * Feature Enhancement: Example design supporting core upversion (v_tpg from 7.0 to 8.0)
+ * Feature Enhancement: Example design supporting core upversion (microblaze from 10.0 to 11.0)
+ * Feature Enhancement: Added support for XC7Z012S Zynq Device
+ * Feature Enhancement: HPD detection enhancement
+ * Revision change in one or more subcores
+
+2018.2:
+ * Version 3.1
+ * No changes
+
+2018.1:
+ * Version 3.1
+ * Bug Fix: Fixed occasional color shift when using AXI4-Stream interface with YUV420 at resolutions other than UHD
+ * Bug Fix: Fixed occasional AXI4-Stream Bridge FIFO overflow when changing resolutions
+ * Bug Fix: Fixed Example Design to write out correct Zynq UltraScale+ parameters to enable FSBL for SD Card boot
+ * Bug Fix: Fixed sending of GCP packet during vertical blanking in deep color mode
+ * Bug Fix: Fixed the Zynq Ultrscale+ PS settings to match the demo board for FSBL support
+ * Feature Enhancement: Example design supporting core upversion (vid_phy_controller from v2.1 to v2.2)
+ * Feature Enhancement: Example design AXILITE Configuration Support (50Mhz, 100Mhz, 150Mhz, 200Mhz)
+ * Feature Enhancement: Example design new board supports (VCU118, ZCU104, ZCU106)
+ * Feature Enhancement: Example design supporting core upversion (clk_wiz from 5.4 to 6.0)
+ * Other: Added AXI4-Stream Video Bridge lock to software interface to improve video lock detection
+ * Revision change in one or more subcores
+
+2017.4:
+ * Version 3.0 (Rev. 1)
+ * Bug Fix: Allow axi4-lite to read Aud_Reset and TMDSClkRatio registers bits
+ * Bug Fix: Fixed HBR Audio support issue
+ * Bug Fix: Fixed Audio Channel Swapping issue in Audio Pattern Generator
+ * Revision change in one or more subcores
+
+2017.3:
+ * Version 3.0
+ * Bug Fix: Synchronized AXI master reset for all processor blocks
+ * Bug Fix: Updated ACR controller to support HDMI 2.0
+ * Bug Fix: Updated to block reading VTC register when no video clock is present
+ * Bug Fix: Updated Example Design C_HDMI_FAST_SWITCH to have default as true
+ * Bug Fix: Implemented synchronous axis reset to fix Vivado DRC warnings
+ * Bug Fix: Updated axis reset to be fully synchronous
+ * Bug Fix: Added YUV420 and YUV444 support to video mask
+ * Bug Fix: Updated DDC peripheral to support longer clock stretching
+ * Bug Fix: Updated axis clock to 150Mhz for 4PPC for better timing closure
+ * Feature Enhancement: Example design supporting core upversion (vid_phy_controller from v2.0 to v2.1)
+ * Feature Enhancement: Example design topology supports (TX-Only, RX-Only, Pass-through)
+ * Feature Enhancement: Example design VPHY Configuration Support (NI-DRU Enable/Disable, TXPLL selection, RXPLL selection)
+ * Feature Enhancement: Example design new board supports (ZCU102, ZCU106)
+ * Feature Enhancement: Example design subcore addressing mechanism changed from auto-assign to fix address
+ * Revision change in one or more subcores
+
+2017.2:
+ * Version 2.0 (Rev. 5)
+ * Bug Fix: Fixed Timing violation in Exdes for Zynq devices
+ * Feature Enhancement: Added HBR Audio Feature
+ * Feature Enhancement: Introduced video mask feature
+ * Revision change in one or more subcores
+
+2017.1:
+ * Version 2.0 (Rev. 4)
+ * Bug Fix: Fixed running disparity issue in HDMI TX TMDS encoder module to pass 7-16, 7-17, HF1-12 compliance tests
+ * Bug Fix: Fixed scrambler synchronization issue
+ * Bug Fix: Fixed Audio instability issue while sending low resolution video
+ * Bug Fix: Fixed CDC issues
+ * Bug Fix: Reduce BRAM usage in Example design to 512K with HDCP or 256K without HDCP
+ * Bug Fix: Tie vid_phy_controller input pins vid_phy_tx_axi4s_aresetn and vid_phy_tx_axi4s_aresetn to HIGH
+ * Bug Fix: Suppresspress BD warnings by using connect_bd_net -quiet
+ * Bug Fix: Remove Microblaze cache settings from Example design as those are disabled parameters
+ * Bug Fix: Improve CPU SS reset mechanism
+ * Feature Enhancement: Example design supporting core upversion (clk_wiz from 5.3 to 5.4, Microblaze from 9.6 to 10.0)
+ * Feature Enhancement: Integrated HLS based remapper feature into video bridge subcore
+ * Revision change in one or more subcores
+
+2016.4:
+ * Version 2.0 (Rev. 3)
+ * Feature Enhancement: Added Vivado Example Design support for ZC706 Board.
+ * Revision change in one or more subcores
+
+2016.3:
+ * Version 2.0 (Rev. 2)
+ * Bug Fix: Resolved Combinatorial Logic Critical Warning when enabling HDCP 2.2
+ * Bug Fix: Fixed HDCP mapping to suppress SUGGESTED_PRIOITY warning when validating Vivado IP Integrator design
+ * Bug Fix: Fixed error when setting the s_axi_cpu_aclk to something other than 100MHz
+ * Bug Fix: Fixed DDC state machine which forced SDA data low in the last state and can cause HDCP authentication to fail
+ * Feature Enhancement: Added a HPD toggle function to the HDMI TX core. This update was required to solve an issue related to HDCP compliance testing.
+ * Feature Enhancement: Added HDCP auto-switching between 1.4 and 2.2
+ * Feature Enhancement: Added HDCP repeater mode support
+ * Feature Enhancement: Added HPD polarity control in GUI.
+ * Feature Enhancement: Integrated reference design Vivado release. It is now available as a Vivado Example Design. Supports KC705 and KCU105 Boards.
+ * Revision change in one or more subcores
+
+2016.2:
+ * Version 2.0 (Rev. 1)
+ * Added option to Enable/Disable Remapper
+ * Fixed DVI mode so that no HDMI Info frames are sent causing DVI monitors to sometimes fail
+ * Revision change in one or more subcores
+
+2016.1:
+ * Version 2.0
+ * Added Native video interface to increase user flexibility and optimize resource
+ * Added support for HDCP 1.4 and 2.2
+ * Added ability to disable sending of info frames in DVI mode
+ * Added 3D video support
+ * Fixed audio channel swap for some audio formats
+ * Fixed issue with Audio Info Frames not being sent in pass-through mode
+ * Fixed issue with Link Clock failing to run at 297MHz with Hardware Evaluation License
+ * Changed the license type in IP Catalog to be "Purchase" which was incorrectly marked as "Included"
+ * Added XC7Z015clg485 device support
+ * Updated the GUI display to have "Number of pixels per clock on Video Interface"
+ * Revision change in one or more subcores
+
+2015.4.2:
+ * Version 1.0
+ * No changes
+
+2015.4.1:
+ * Version 1.0
+ * No changes
+
+2015.4:
+ * Version 1.0
+ * Initial Release
+ * HDMI 1.4 and 2.0 Source
+ * Single, dual, and quad pixel-wide video interface
+ * Video resolutions up to UHD @ 60 fps
+ * Video encoding RGB 4:4:4, YCbCr 4:4:4, YCbCr 4:2:2, and YCbCr 4:2:0
+ * Deep color support (24, 30, 36 and 48-bits per pixel)
+ * Audio support for up to 8 channels and sample rates up to 192 kHz
+ * Supports info frames, DDC, EDID, hot plug, SCDC and scrambler
+ * Optional HDCP 1.4 support
+ * Supports Video and Audio over AXI-S and control/status over AXI-lite interfaces
+
+(c) Copyright 2015 - 2018 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_1/sim/bd_7c6c_v_tc_0.vhd" \
+
+nosort

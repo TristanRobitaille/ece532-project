@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="bootloop" key="hdmi_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="false" key="hdmi_wrapper_hw_platform_0-partial_bit"/>
+	<item value="hdmi_wrapper.bit" key="hdmi_wrapper_hw_platform_0-bitFile"/>
+	<item value="hdmi_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="hdmi_wrapper.mmi" key="hdmi_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Local" key="hdmi_wrapper_hw_platform_0-target"/>
+	<item value="Auto Detect" key="hdmi_wrapper_hw_platform_0-device"/>
+</section>

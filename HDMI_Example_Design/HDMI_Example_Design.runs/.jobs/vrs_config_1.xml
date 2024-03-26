@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="bd_7c6c_v_hdmi_tx_0_synth_1" LaunchDir="C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_hdmi_tx_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_7c6c_v_tc_0_synth_1" LaunchDir="C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_tc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_7c6c_v_axi4s_vid_out_0_synth_1" LaunchDir="C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_v_axi4s_vid_out_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_7c6c_util_vector_logic_0_0_synth_1" LaunchDir="C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_7c6c_axi_crossbar_0_synth_1" LaunchDir="C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/bd_7c6c_axi_crossbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="HDMI_Transmitter_sub_synth_1" LaunchDir="C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_7c6c_v_hdmi_tx_0_synth_1"/>
+		<Parent Id="bd_7c6c_v_tc_0_synth_1"/>
+		<Parent Id="bd_7c6c_v_axi4s_vid_out_0_synth_1"/>
+		<Parent Id="bd_7c6c_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="bd_7c6c_axi_crossbar_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

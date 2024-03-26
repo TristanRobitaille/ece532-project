@@ -1,0 +1,306 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb  6 10:23:51 2024
+# Process ID: 1424
+# Current directory: C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1
+# Command line: vivado.exe -log HDMI_Transmitter_sub.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_Transmitter_sub.tcl
+# Log file: C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/HDMI_Transmitter_sub.vds
+# Journal file: C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDMI_Transmitter_sub.tcl -notrace
+Command: synth_design -top HDMI_Transmitter_sub -part xc7a200tsbg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19576 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 503.254 ; gain = 108.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Transmitter_sub' [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/synth/HDMI_Transmitter_sub.v:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_7c6c' [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/synth/bd_7c6c.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_7c6c_axi_crossbar_0' [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_axi_crossbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7c6c_axi_crossbar_0' (1#1) [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_axi_crossbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (6) of module 'bd_7c6c_axi_crossbar_0' [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/synth/bd_7c6c.v:304]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (6) of module 'bd_7c6c_axi_crossbar_0' [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/synth/bd_7c6c.v:308]
+INFO: [Synth 8-6157] synthesizing module 'bd_7c6c_util_vector_logic_0_0' [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7c6c_util_vector_logic_0_0' (2#1) [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_7c6c_v_axi4s_vid_out_0' [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_v_axi4s_vid_out_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7c6c_v_axi4s_vid_out_0' (3#1) [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_v_axi4s_vid_out_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_axi4s_vid_out' of module 'bd_7c6c_v_axi4s_vid_out_0' requires 31 connections, but only 26 given [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/synth/bd_7c6c.v:344]
+INFO: [Synth 8-6157] synthesizing module 'bd_7c6c_v_hdmi_tx_0' [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_v_hdmi_tx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7c6c_v_hdmi_tx_0' (4#1) [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_v_hdmi_tx_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_hdmi_tx' of module 'bd_7c6c_v_hdmi_tx_0' requires 78 connections, but only 73 given [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/synth/bd_7c6c.v:371]
+INFO: [Synth 8-6157] synthesizing module 'bd_7c6c_v_tc_0' [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_v_tc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7c6c_v_tc_0' (5#1) [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/.Xil/Vivado-1424-Jasons-PC/realtime/bd_7c6c_v_tc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_tc' of module 'bd_7c6c_v_tc_0' requires 33 connections, but only 31 given [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/synth/bd_7c6c.v:445]
+INFO: [Synth 8-6155] done synthesizing module 'bd_7c6c' (6#1) [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/synth/bd_7c6c.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Transmitter_sub' (7#1) [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/synth/HDMI_Transmitter_sub.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 558.855 ; gain = 164.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 558.855 ; gain = 164.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 558.855 ; gain = 164.090
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_0/bd_7c6c_v_hdmi_tx_0/bd_7c6c_v_hdmi_tx_0_in_context.xdc] for cell 'inst/v_hdmi_tx'
+Finished Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_0/bd_7c6c_v_hdmi_tx_0/bd_7c6c_v_hdmi_tx_0_in_context.xdc] for cell 'inst/v_hdmi_tx'
+Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_1/bd_7c6c_v_tc_0/bd_7c6c_v_tc_0_in_context.xdc] for cell 'inst/v_tc'
+Finished Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_1/bd_7c6c_v_tc_0/bd_7c6c_v_tc_0_in_context.xdc] for cell 'inst/v_tc'
+Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_2/bd_7c6c_v_axi4s_vid_out_0/bd_7c6c_v_axi4s_vid_out_0_in_context.xdc] for cell 'inst/v_axi4s_vid_out'
+Finished Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_2/bd_7c6c_v_axi4s_vid_out_0/bd_7c6c_v_axi4s_vid_out_0_in_context.xdc] for cell 'inst/v_axi4s_vid_out'
+Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_3/bd_7c6c_util_vector_logic_0_0/bd_7c6c_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Finished Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_3/bd_7c6c_util_vector_logic_0_0/bd_7c6c_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_4/bd_7c6c_axi_crossbar_0/bd_7c6c_axi_crossbar_0_in_context.xdc] for cell 'inst/axi_crossbar'
+Finished Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/bd_0/ip/ip_4/bd_7c6c_axi_crossbar_0/bd_7c6c_axi_crossbar_0_in_context.xdc] for cell 'inst/axi_crossbar'
+Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/HDMI_Transmitter_sub_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.srcs/sources_1/ip/HDMI_Transmitter_sub/HDMI_Transmitter_sub_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 875.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 875.605 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 877.180 ; gain = 1.895
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 877.180 ; gain = 482.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 877.180 ; gain = 482.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/v_hdmi_tx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/v_tc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/v_axi4s_vid_out. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/axi_crossbar. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 877.180 ; gain = 482.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 877.180 ; gain = 482.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 877.180 ; gain = 482.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 916.426 ; gain = 521.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 916.500 ; gain = 521.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 926.531 ; gain = 531.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 926.531 ; gain = 531.766
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 926.531 ; gain = 531.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 926.531 ; gain = 531.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 926.531 ; gain = 531.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 926.531 ; gain = 531.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 926.531 ; gain = 531.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |bd_7c6c_axi_crossbar_0        |         1|
+|2     |bd_7c6c_util_vector_logic_0_0 |         1|
+|3     |bd_7c6c_v_axi4s_vid_out_0     |         1|
+|4     |bd_7c6c_v_hdmi_tx_0           |         1|
+|5     |bd_7c6c_v_tc_0                |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |bd_7c6c_axi_crossbar_0        |     1|
+|2     |bd_7c6c_util_vector_logic_0_0 |     1|
+|3     |bd_7c6c_v_axi4s_vid_out_0     |     1|
+|4     |bd_7c6c_v_hdmi_tx_0           |     1|
+|5     |bd_7c6c_v_tc_0                |     1|
++------+------------------------------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   716|
+|2     |  inst   |bd_7c6c |   716|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 926.531 ; gain = 531.766
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 926.531 ; gain = 213.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 926.531 ; gain = 531.766
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 944.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 948.160 ; gain = 553.395
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 948.160 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/HDMI_Transmitter_sub.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP HDMI_Transmitter_sub, cache-ID = b16dab47bde26657
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 948.539 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jason/ECE532/ECE532-project/HDMI_Example_Design/HDMI_Example_Design.runs/HDMI_Transmitter_sub_synth_1/HDMI_Transmitter_sub.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HDMI_Transmitter_sub_utilization_synth.rpt -pb HDMI_Transmitter_sub_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  6 10:24:31 2024...
