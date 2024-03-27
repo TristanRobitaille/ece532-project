@@ -421,6 +421,7 @@ int XAxiVdma_ChannelStartParking(XAxiVdma_Channel *Channel)
 
 	XAxiVdma_WriteReg(Channel->ChanBase, XAXIVDMA_CR_OFFSET,
 	    CrBits);
+	xil_printf("cr_bits: %d\n\r");
 
 	return XST_SUCCESS;
 }
@@ -941,6 +942,10 @@ int XAxiVdma_ChannelSetBufferAddr(XAxiVdma_Channel *Channel,
 					XAXIVDMA_START_ADDR_OFFSET +
 					Loop16 * XAXIVDMA_START_ADDR_LEN,
 					BufferAddrSet[i]);
+				xil_printf("address: %x\n\r",BufferAddrSet[i]);
+				xil_printf("offset: %x\n\r",Channel->StartAddrBase +
+						XAXIVDMA_START_ADDR_OFFSET +
+						Loop16 * XAXIVDMA_START_ADDR_LEN);
 			}
 
 

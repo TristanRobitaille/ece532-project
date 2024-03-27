@@ -250,7 +250,7 @@ int DisplayStart(DisplayCtrl *dispPtr)
 	dispPtr->vdmaConfig.Stride = dispPtr->stride;
 	for (i = 0; i < DISPLAY_NUM_FRAMES; i++)
 	{
-		dispPtr->vdmaConfig.FrameStoreStartAddr[i] = (u32)  dispPtr->framePtr[i];
+		dispPtr->vdmaConfig.FrameStoreStartAddr[i] =  dispPtr->framePtr[i];
 	}
 
 
@@ -283,6 +283,7 @@ int DisplayStart(DisplayCtrl *dispPtr)
 		xdbg_printf(XDBG_DEBUG_GENERAL, "Unable to park the channel %d\r\n", Status);
 		return XST_FAILURE;
 	}
+
 
 	dispPtr->state = DISPLAY_RUNNING;
 
@@ -371,6 +372,8 @@ int DisplayInitialize(DisplayCtrl *dispPtr, XAxiVdma *vdma, u16 vtcId, u32 dynCl
 	}
 
 	dispPtr->vdma = vdma;
+
+
 
 
 	/*

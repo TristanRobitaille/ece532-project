@@ -104,10 +104,8 @@ void DemoInitialize()
 	int Status;
 	XAxiVdma_Config *vdmaConfig;
 	int i;
-	Status = XAxiVdma_SetFrmStore(&vdma,8,XAXIVDMA_READ);
-	if(Status != XST_SUCCESS){
-		xil_printf("set frame store worked: %d\r\n",Status);
-	}
+
+
 
 	/*
 	 * Initialize an array of pointers to the 3 frame buffers
@@ -174,6 +172,25 @@ void DemoInitialize()
 	 */
 	VideoSetCallback(&videoCapt, DemoISR, &fRefresh);
 
+	int frames;
+	for (int a = 0;a<8 ;a++){
+		frames = dispCtrl.vdmaConfig.FrameStoreStartAddr[a];
+		xil_printf("frames: %x\n\r",frames);
+	}
+
+	dispCtrl.vdma->MaxNumFrames = 8;
+	int alas = dispCtrl.vdma->ReadChannel.NumFrames;
+	xil_printf("alas: %d\n\r",alas);
+
+		Status = XAxiVdma_SetFrmStore(dispCtrl.vdma,8,XAXIVDMA_READ);
+		if(Status == XST_SUCCESS) xil_printf("success\n\r");
+		else print("fail\n\r");
+		Status = XAxiVdma_SetFrmStore(dispCtrl.vdma,8,XAXIVDMA_WRITE);
+		if(Status == XST_SUCCESS) xil_printf("success\n\r");
+		else print("fail\n\r");
+
+
+
 	DemoPrintTest(dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride, DEMO_PATTERN_1);
 
 	return;
@@ -214,44 +231,81 @@ void DemoRun()
 		switch (userInput)
 		{
 		case '1':
+			pFrames[0] = 0x90000000;
+			//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+						//DisplayStart(&dispCtrl);
 			nextFrame = 0;
-						VideoChangeFrame(&videoCapt, nextFrame);
-						DisplayChangeFrame(&dispCtrl, nextFrame);
+						//VideoChangeFrame(&videoCapt, nextFrame);
+			memcpy(0x90000000,0x98000000,(size_t) 1440800);
 			break;
 		case '2':
-			nextFrame = 1;
-			VideoChangeFrame(&videoCapt, nextFrame);
-			DisplayChangeFrame(&dispCtrl, nextFrame);
+			pFrames[1] = 0x91000000;
+						//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+									//DisplayStart(&dispCtrl);
+						nextFrame = 1;
+									//VideoChangeFrame(&videoCapt, nextFrame);
+									memcpy(0x90000000,0x91000000,(size_t) 1440800);
 			break;
 		case '3':
-			nextFrame = 2;
-			VideoChangeFrame(&videoCapt, nextFrame);
-			DisplayChangeFrame(&dispCtrl, nextFrame);
+			pFrames[2] = 0x92000000;
+									//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+												//DisplayStart(&dispCtrl);
+									nextFrame = 2;
+												//VideoChangeFrame(&videoCapt, nextFrame);
+									memcpy(0x90000000,0x92000000,(size_t) 1440800);
 			break;
 		case '4':
-			nextFrame = 3;
-						VideoChangeFrame(&videoCapt, nextFrame);
-						xil_printf(DisplayChangeFrame(&dispCtrl, nextFrame));
+			pFrames[0] = 0x93000000;
+												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+															//DisplayStart(&dispCtrl);
+												nextFrame = 3;
+															//VideoChangeFrame(&videoCapt, nextFrame);
+												memcpy(0x90000000,0x93000000,(size_t) 1440800);
 			break;
 		case '5':
-			nextFrame = 4;
-						VideoChangeFrame(&videoCapt, nextFrame);
-						DisplayChangeFrame(&dispCtrl, nextFrame);
+			pFrames[1] = 0x94000000;
+												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+															//DisplayStart(&dispCtrl);
+												nextFrame = 4;
+															//VideoChangeFrame(&videoCapt, nextFrame);
+												memcpy(0x90000000,0x94000000,(size_t) 1440800);
 			break;
 		case '6':
-			nextFrame = 5;
-						VideoChangeFrame(&videoCapt, nextFrame);
-						DisplayChangeFrame(&dispCtrl, nextFrame);
+			pFrames[2] = 0x95000000;
+												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+															//DisplayStart(&dispCtrl);
+												nextFrame = 5;
+															//VideoChangeFrame(&videoCapt, nextFrame);
+												memcpy(0x90000000,0x95000000,(size_t) 1440800);
 			break;
 		case '7':
-			nextFrame = 6;
-						VideoChangeFrame(&videoCapt, nextFrame);
-						DisplayChangeFrame(&dispCtrl, nextFrame);
+			pFrames[0] = 0x96000000;
+												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+															//DisplayStart(&dispCtrl);
+												nextFrame = 6;
+															//VideoChangeFrame(&videoCapt, nextFrame);
+												memcpy(0x90000000,0x96000000,(size_t) 1440800);
 			break;
 		case '8':
-			nextFrame = 7;
+			pFrames[1] = 0x97000000;
+												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+															//DisplayStart(&dispCtrl);
+												nextFrame = 7;
+															//VideoChangeFrame(&videoCapt, nextFrame);
+												memcpy(0x90000000,0x97000000,(size_t) 1440800);
+
+			break;
+		case '9':
+			for (int i = 0; i < DISPLAY_NUM_FRAMES; i++)
+				{
+					pFrames[i] = 0x90000000 + i*0x1000000;
+				}
+			DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+			DisplayStart(&dispCtrl);
+			nextFrame = 2;
 						VideoChangeFrame(&videoCapt, nextFrame);
 						DisplayChangeFrame(&dispCtrl, nextFrame);
+
 			break;
 		case 'q':
 			break;

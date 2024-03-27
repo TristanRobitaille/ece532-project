@@ -748,8 +748,12 @@ int XAxiVdma_StartParking(XAxiVdma *InstancePtr, int FrameIndex,
 
 		RegValue |= FrmBits;
 
+
 		XAxiVdma_WriteReg(InstancePtr->BaseAddr,
 			    XAXIVDMA_PARKPTR_OFFSET, RegValue);
+		xil_printf("reeg_val: %x\n\r",RegValue);
+		xil_printf("ParkPointer: %x\n\r",InstancePtr->BaseAddr +
+			    XAXIVDMA_PARKPTR_OFFSET);
 		}
 	else if (Direction == XAXIVDMA_WRITE) {
 		FrmBits = FrameIndex << XAXIVDMA_WRTREF_SHIFT;
@@ -1025,6 +1029,7 @@ int XAxiVdma_DmaSetBufferAddr(XAxiVdma *InstancePtr, u16 Direction,
 	}
 
 	if (Channel->IsValid) {
+		xil_printf("num_frames: %d\n\r",Channel->NumFrames);
 		return XAxiVdma_ChannelSetBufferAddr(Channel, BufferAddrSet,
 		    Channel->NumFrames);
 	}
