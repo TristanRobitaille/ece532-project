@@ -1,10 +1,3 @@
-/*
- * cap_btn.h
- *
- *  Created on: Feb 3, 2024
- *      Author: robita46
- */
-
 #ifndef CAP_BTN_H_
 #define CAP_BTN_H_
 
@@ -40,11 +33,12 @@
 #define AD7156_CHIP_ID				0x17
 
 // Settings
-#define AD7156_SETUP 		0b00001000 // 2pF range, hysteresis enabled, 0b1000 adaptive throttle
+#define AD7156_SETUP 		0b11001010 // 4pF range, hysteresis enabled, 0b1010 adaptive throttle
 #define AD7156_CONFIG 		0b10111001
 #define AD7156_THRESHOLD	0x0FFF // 12b for threshold (max. threshold to be more resilient against spurious button outputs)
 
 //----- FUNCTIONS -----//
 void init_cap_btn();
+void update_cap_btn_led(volatile unsigned int* led, volatile unsigned int* cap_btn);
 
 #endif /* CAP_BTN_H_ */

@@ -1,0 +1,1066 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 27 12:21:16 2024
+# Process ID: 64908
+# Current directory: C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video/design_1_wrapper.vdi
+# Journal file: C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/ECE532/m2_mod_dsp/pre_processing/pre_processing'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/new_fft_design/fft_package'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/git-version/ECE532-project/preprocessor'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/git-version/ECE532-project/Trumpet_project/ip_repo/AXI_I2S_driver_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.cache/ip 
+add_files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 415.230 ; gain = 31.984
+Command: link_design -top design_1_wrapper -part xc7a200tsbg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_audio_preprocessor_0_0/design_1_audio_preprocessor_0_0.dcp' for cell 'design_1_i/audio_preprocessor_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.dcp' for cell 'design_1_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp' for cell 'design_1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.dcp' for cell 'design_1_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_fft_wrapper_0_1/design_1_fft_wrapper_0_1.dcp' for cell 'design_1_i/fft_wrapper_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_i2s_0_0/design_1_i2s_0_0.dcp' for cell 'design_1_i/i2s_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp' for cell 'design_1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mic_storage_0_1/design_1_mic_storage_0_1.dcp' for cell 'design_1_i/mic_storage_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.dcp' for cell 'design_1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.dcp' for cell 'design_1_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_one_reg_0_0/design_1_one_reg_0_0.dcp' for cell 'design_1_i/one_reg_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_playback_ctrl_0_0/design_1_playback_ctrl_0_0.dcp' for cell 'design_1_i/playback_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.dcp' for cell 'design_1_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_spi_controller_0_0/design_1_spi_controller_0_0.dcp' for cell 'design_1_i/spi_controller_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_2/design_1_axi_iic_0_2.dcp' for cell 'design_1_i/I2S_audio/axi_iic_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.dcp' for cell 'design_1_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/i2c_cap_btn/axi_cap_btn_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0.dcp' for cell 'design_1_i/i2c_cap_btn/axi_iic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Netlist 29-17] Analyzing 6536 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1825.805 ; gain = 861.266
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/i2c_cap_btn/axi_iic_0/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/i2c_cap_btn/axi_iic_0/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/i2c_cap_btn/axi_cap_btn_gpio/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/i2c_cap_btn/axi_cap_btn_gpio/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/i2c_cap_btn/axi_cap_btn_gpio/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/i2c_cap_btn/axi_cap_btn_gpio/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_2/design_1_axi_iic_0_2_board.xdc] for cell 'design_1_i/I2S_audio/axi_iic_1/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_2/design_1_axi_iic_0_2_board.xdc] for cell 'design_1_i/I2S_audio/axi_iic_1/U0'
+Parsing XDC File [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc]
+WARNING: [Vivado 12-584] No ports matched 'swt_playback_mode'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_playback_mode'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vadj_en[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vadj_en[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fft_done'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/load_done'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/load_data'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:113]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:113]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:114]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:114]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:115]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:115]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:116]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:116]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:117]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:117]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:118]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:118]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:119]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:119]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:120]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:120]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:121]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:121]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[9]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:122]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:122]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[10]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:123]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:123]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[11]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:124]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:124]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[12]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:125]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:125]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[13]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:126]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:126]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[14]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:127]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:127]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[15]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:128]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:128]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[16]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:129]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:129]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[17]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:130]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:130]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[9]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[10]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[11]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[13]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[15]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[14]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[12]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[16]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[17]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[10]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[12]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[9]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[16]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[13]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[17]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[11]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[14]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[15]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[9]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[10]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[11]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[12]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[13]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[14]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[15]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[16]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[17]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:177]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:179]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[17]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[9]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:187]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:223]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:226]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:1098]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:1185]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2257]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2258]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2259]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2260]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2342]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2343]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2344]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2345]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2346]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2347]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2348]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2349]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2350]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2351]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2352]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2353]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2354]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2355]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2356]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2357]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2358]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2359]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2360]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2361]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2362]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2363]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2364]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2365]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2366]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2367]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2368]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2369]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2370]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2371]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2372]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2373]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2374]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2375]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2376]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2377]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2378]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2379]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2380]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2381]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2382]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2384]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2385]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2386]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2387]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2388]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2389]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2390]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2391]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2392]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2393]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2394]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2395]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2396]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2397]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2398]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2399]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2400]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2401]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2402]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2403]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2404]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2405]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2406]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2407]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2408]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2409]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2410]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2411]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2412]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2413]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2414]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2415]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2644]
+INFO: [Common 17-14] Message 'Vivado 12-1419' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:2644]
+Finished Parsing XDC File [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc]
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1832.508 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1696 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 1564 instances
+
+42 Infos, 110 Warnings, 200 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:58 . Memory (MB): peak = 1832.508 ; gain = 1417.277
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Command: opt_design -directive RuntimeOptimized
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.990 . Memory (MB): peak = 1832.508 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_0 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "06fc8d3be0d80af2".
+get_clocks: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.324 ; gain = 182.816
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 2015.324 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 14d310539
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:02:31 . Memory (MB): peak = 2015.324 ; gain = 182.816
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 22 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1f8fa94e2
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:02:36 . Memory (MB): peak = 2015.324 ; gain = 182.816
+INFO: [Opt 31-389] Phase Retarget created 194 cells and removed 313 cells
+INFO: [Opt 31-1021] In phase Retarget, 220 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 3 Constant propagation | Checksum: 1c91ad206
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:02:37 . Memory (MB): peak = 2015.324 ; gain = 182.816
+INFO: [Opt 31-389] Phase Constant propagation created 35 cells and removed 127 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 199 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 1c047cebc
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:02:42 . Memory (MB): peak = 2015.324 ; gain = 182.816
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1404 cells
+INFO: [Opt 31-1021] In phase Sweep, 1107 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0_BUFG_inst to drive 0 load(s) on clock net design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/spi_controller_0/inst/serial_clock_reg_0_BUFG_inst to drive 59 load(s) on clock net serial_clock_OBUF
+INFO: [Opt 31-194] Inserted BUFG design_1_i/i2s_0/inst/bclk_reg_0_BUFG_inst to drive 53 load(s) on clock net i2s_bclk_OBUF
+INFO: [Opt 31-193] Inserted 3 BUFG(s) on clock nets
+Phase 5 BUFG optimization | Checksum: 183364e7d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:02:44 . Memory (MB): peak = 2015.324 ; gain = 182.816
+INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: 1069104ee
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:02:48 . Memory (MB): peak = 2015.324 ; gain = 182.816
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: f27de4f0
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:02:49 . Memory (MB): peak = 2015.324 ; gain = 182.816
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 64 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             194  |             313  |                                            220  |
+|  Constant propagation         |              35  |             127  |                                            199  |
+|  Sweep                        |               0  |            1404  |                                           1107  |
+|  BUFG optimization            |               2  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             64  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 2015.324 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 108ec3c36
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:02:49 . Memory (MB): peak = 2015.324 ; gain = 182.816
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2015.324 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 108ec3c36
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2015.324 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+78 Infos, 110 Warnings, 200 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:02:52 . Memory (MB): peak = 2015.324 ; gain = 182.816
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2015.324 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2015.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2015.324 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2015.324 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'RuntimeOptimized' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2015.324 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 6df31a58
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 2015.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2015.324 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 111224d2a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 2015.324 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 208da6b33
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:36 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 208da6b33
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:36 . Memory (MB): peak = 2462.559 ; gain = 447.234
+Phase 1 Placer Initialization | Checksum: 208da6b33
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:36 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 26b731991
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:41 . Memory (MB): peak = 2462.559 ; gain = 447.234
+Phase 2 Global Placement | Checksum: 24779c464
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:01:40 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 24779c464
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:01:40 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 200352239
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:56 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 20d685702
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:57 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 19b95464f
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:01:57 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 21cb1466f
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:02:06 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: f835391f
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:02:11 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1593687e0
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:02:13 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1593687e0
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:02:13 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1b99170d1
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:02:23 . Memory (MB): peak = 2462.559 ; gain = 447.234
+Phase 3 Detail Placement | Checksum: 1b99170d1
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:02:24 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1d063ba25
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net design_1_i/fft_wrapper_0/inst/fft/level_5/B_16/resetn_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net design_1_i/fft_wrapper_0/inst/fft/level_4/B_16/E[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-46] BUFG insertion identified 2 candidate nets, 0 success, 0 bufg driver replicated, 2 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1d063ba25
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:02:45 . Memory (MB): peak = 2462.559 ; gain = 447.234
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-4.815. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 12a9fcd9d
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:02:51 . Memory (MB): peak = 2462.559 ; gain = 447.234
+Phase 4.1 Post Commit Optimization | Checksum: 12a9fcd9d
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:02:51 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 12a9fcd9d
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:02:52 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 12a9fcd9d
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:02:52 . Memory (MB): peak = 2462.559 ; gain = 447.234
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2462.559 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: bd45d55a
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:02:52 . Memory (MB): peak = 2462.559 ; gain = 447.234
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: bd45d55a
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:02:53 . Memory (MB): peak = 2462.559 ; gain = 447.234
+Ending Placer Task | Checksum: b4f7c2c9
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:02:53 . Memory (MB): peak = 2462.559 ; gain = 447.234
+INFO: [Common 17-83] Releasing license: Implementation
+102 Infos, 110 Warnings, 200 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:10 ; elapsed = 00:02:56 . Memory (MB): peak = 2462.559 ; gain = 447.234
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2462.559 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2462.559 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2462.559 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2462.559 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2462.559 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 2462.559 ; gain = 0.000
+Command: route_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'RuntimeOptimized'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 82859e58 ConstDB: 0 ShapeSum: 32722471 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: aeabc04c
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:55 . Memory (MB): peak = 2494.277 ; gain = 31.719
+Post Restoration Checksum: NetGraph: 228f44f7 NumContArr: 8c1c7b55 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: aeabc04c
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 2527.172 ; gain = 64.613
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: aeabc04c
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 2535.465 ; gain = 72.906
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: aeabc04c
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 2535.465 ; gain = 72.906
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 19e05ca4d
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:01:16 . Memory (MB): peak = 2630.805 ; gain = 168.246
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.748 | TNS=-26682.699| WHS=-0.313 | THS=-1225.007|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: e51b7a30
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:01:28 . Memory (MB): peak = 2900.012 ; gain = 437.453
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.748 | TNS=-26261.822| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: f55754b8
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:01:28 . Memory (MB): peak = 2900.012 ; gain = 437.453
+Phase 2 Router Initialization | Checksum: 141d82ce3
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:01:28 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1890b7372
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:02:05 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2536
+ Number of Nodes with overlaps = 175
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.961 | TNS=-44260.789| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 224cab2ff
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:03:50 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.961 | TNS=-44260.680| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1d3eec29d
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:03:52 . Memory (MB): peak = 2900.012 ; gain = 437.453
+Phase 4 Rip-up And Reroute | Checksum: 1d3eec29d
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:03:52 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1426e8941
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:03:55 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1426e8941
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:03:55 . Memory (MB): peak = 2900.012 ; gain = 437.453
+Phase 5 Delay and Skew Optimization | Checksum: 1426e8941
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:03:55 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 13ebb7ce2
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:03:58 . Memory (MB): peak = 2900.012 ; gain = 437.453
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.844 | TNS=-43665.480| WHS=0.019  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 13740fb4f
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:03:59 . Memory (MB): peak = 2900.012 ; gain = 437.453
+Phase 6 Post Hold Fix | Checksum: 13740fb4f
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:03:59 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 7.46865 %
+  Global Horizontal Routing Utilization  = 9.64646 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 81.982%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 81.0811%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 89.7059%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X34Y54 -> INT_L_X34Y54
+   INT_L_X36Y53 -> INT_L_X36Y53
+   INT_R_X35Y52 -> INT_R_X35Y52
+   INT_R_X35Y51 -> INT_R_X35Y51
+   INT_R_X35Y50 -> INT_R_X35Y50
+West Dir 1x1 Area, Max Cong = 76.4706%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.666667 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 148d1fa69
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:03:59 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 148d1fa69
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:03:59 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 132a62851
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:04:03 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.844 | TNS=-43665.480| WHS=0.019  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 132a62851
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:04:03 . Memory (MB): peak = 2900.012 ; gain = 437.453
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:04:03 . Memory (MB): peak = 2900.012 ; gain = 437.453
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+121 Infos, 111 Warnings, 200 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:11 ; elapsed = 00:04:06 . Memory (MB): peak = 2900.012 ; gain = 437.453
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2900.012 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2900.012 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2900.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2900.012 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2900.012 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 3708.672 ; gain = 808.660
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+133 Infos, 112 Warnings, 200 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 3772.926 ; gain = 64.254
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 12:34:04 2024...

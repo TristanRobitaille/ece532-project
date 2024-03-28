@@ -1,93 +1,122 @@
 #-----------------------------------------------------------
-# Vivado v2018.3.1 (64-bit)
-# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
-# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Mon Feb  5 22:01:43 2024
-# Process ID: 11180
-# Current directory: C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 27 14:11:26 2024
+# Process ID: 40732
+# Current directory: C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
-# Log file: C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/design_1_wrapper.vds
-# Journal file: C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1\vivado.jou
+# Log file: C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'.
-Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/ECE532/m2_mod_dsp/pre_processing/pre_processing'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/new_fft_design/fft_package'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/git-version/ECE532-project/preprocessor'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/git-version/ECE532-project/Trumpet_project/ip_repo/AXI_I2S_driver_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.cache/ip 
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 415.004 ; gain = 36.430
+Command: synth_design -top design_1_wrapper -part xc7a200tsbg484-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7080 
+INFO: Helper process launched with PID 66936 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 495.234 ; gain = 102.621
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 527.020 ; gain = 104.824
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/DESL/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23616]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/DESL/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23616]
-INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (2#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (3#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (4#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' requires 22 connections, but only 21 given [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:269]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (5#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'i2c_cap_btn_imp_1GWOCP' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1569]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (6#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_iic_0_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_iic_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_iic_0_0' (7#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_axi_iic_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'axi_iic_0' of module 'design_1_axi_iic_0_0' requires 27 connections, but only 25 given [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1765]
-INFO: [Synth 8-6155] done synthesizing module 'i2c_cap_btn_imp_1GWOCP' (8#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1569]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (9#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (10#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (11#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:607]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1793]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (12#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1793]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1925]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (13#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1925]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2057]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (14#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2057]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2189]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (15#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2189]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5LX7BU' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2321]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5LX7BU' (16#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2321]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2453]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (17#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2453]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2819]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (18#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2819]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (19#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 40 connections, but only 38 given [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:1528]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (20#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:607]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2585]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (21#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (22#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_dlmb_v10_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2731]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (23#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (24#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_ilmb_v10_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2777]
-INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (25#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_lmb_bram_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_0' requires 16 connections, but only 14 given [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2802]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (26#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2585]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:144]
+INFO: [Synth 8-6157] synthesizing module 'I2S_audio_imp_NNRZ5J' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_iic_0_2' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_iic_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_iic_0_2' (2#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_iic_0_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_iic_1' of module 'design_1_axi_iic_0_2' requires 27 connections, but only 25 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'I2S_audio_imp_NNRZ5J' (3#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:483]
+INFO: [Synth 8-6157] synthesizing module 'design_1_audio_preprocessor_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_audio_preprocessor_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_audio_preprocessor_0_0' (4#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_audio_preprocessor_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'audio_preprocessor_0' of module 'design_1_audio_preprocessor_0_0' requires 4 connections, but only 3 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:483]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (5#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (6#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:952]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CA5Z32' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2554]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CA5Z32' (7#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2554]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_I4GRPB' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_I4GRPB' (8#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1BOGR4T' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2818]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1BOGR4T' (9#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2818]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_J0G1J0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2950]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_J0G1J0' (10#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2950]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_19YU2FS' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3082]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_19YU2FS' (11#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3082]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_KSVY9L' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3214]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_KSVY9L' (12#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3214]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_18J6S0R' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3346]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_18J6S0R' (13#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3346]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_LYVHKQ' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3478]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_LYVHKQ' (14#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3478]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1FF5BKI' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3624]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1FF5BKI' (15#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3624]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:4004]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (16#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:4004]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (17#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (18#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:952]
+WARNING: [Synth 8-350] instance 'axi_interconnect_0' of module 'design_1_axi_interconnect_0_0' requires 198 connections, but only 176 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:529]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (19#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' requires 22 connections, but only 21 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:706]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (20#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fft_wrapper_0_1' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_fft_wrapper_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fft_wrapper_0_1' (21#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_fft_wrapper_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'fft_wrapper_0' of module 'design_1_fft_wrapper_0_1' requires 10 connections, but only 5 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:733]
+INFO: [Synth 8-6157] synthesizing module 'i2c_cap_btn_imp_1GWOCP' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2330]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (22#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_iic_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_iic_0_0' (23#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_iic_0' of module 'design_1_axi_iic_0_0' requires 27 connections, but only 25 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2526]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_cap_btn_imp_1GWOCP' (24#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:2330]
+INFO: [Synth 8-6157] synthesizing module 'design_1_i2s_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_i2s_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_i2s_0_0' (25#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_i2s_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (26#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mic_storage_0_1' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_mic_storage_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mic_storage_0_1' (27#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_mic_storage_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (28#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (29#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3770]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (30#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (31#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3916]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (32#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (33#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3962]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (34#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_0' requires 16 connections, but only 14 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3987]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (35#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:3770]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
 	Parameter IN1_WIDTH bound to: 1 - type: integer 
 	Parameter IN2_WIDTH bound to: 1 - type: integer 
@@ -122,13 +151,19 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/Users/ro
 	Parameter IN31_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 2 - type: integer 
 	Parameter NUM_PORTS bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (27#1) [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (28#1) [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (29#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-11180-BA3135WS38/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' requires 10 connections, but only 8 given [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:596]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (30#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (31#1) [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (36#1) [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (37#1) [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_one_reg_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_one_reg_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_one_reg_0_0' (38#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_one_reg_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_playback_ctrl_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_playback_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_playback_ctrl_0_0' (39#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_playback_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (40#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' requires 10 connections, but only 8 given [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:932]
+INFO: [Synth 8-6157] synthesizing module 'design_1_spi_controller_0_0' [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_spi_controller_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_spi_controller_0_0' (41#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/.Xil/Vivado-40732-yudi/realtime/design_1_spi_controller_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (42#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (43#1) [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In2[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In3[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In4[0]
@@ -159,48 +194,6 @@ WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In2
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In29[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In30[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In31[0]
-WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M02_ARESETN
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M03_ACLK
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M03_ARESETN
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M04_ACLK
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M04_ARESETN
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M05_ACLK
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M05_ARESETN
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
-WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_araddr[31]
 WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_araddr[30]
 WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_araddr[29]
@@ -229,9 +222,51 @@ WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI
 WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[29]
 WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[28]
 WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[27]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[26]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[25]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[24]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[23]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[22]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[21]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[20]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[19]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[18]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[17]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[16]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[15]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[14]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[13]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[12]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[11]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[10]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI1_awaddr[9]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[12]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[11]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[10]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_araddr[9]
+WARNING: [Synth 8-3331] design i2c_cap_btn_imp_1GWOCP has unconnected port S_AXI_awaddr[31]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 551.371 ; gain = 158.758
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 584.504 ; gain = 162.309
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -244,90 +279,213 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 551.371 ; gain = 158.758
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 584.504 ; gain = 162.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 551.371 ; gain = 158.758
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 584.504 ; gain = 162.309
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/i2c_cap_btn/axi_iic_0'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/i2c_cap_btn/axi_iic_0'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/i2c_cap_btn/axi_cap_btn_gpio'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/i2c_cap_btn/axi_cap_btn_gpio'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
-Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
-Finished Parsing XDC File [c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
-Parsing XDC File [C:/Users/robita46/ECE532-project-main/Trumpet_project/constraints/microblaze.xdc]
-WARNING: [Vivado 12-584] No ports matched 'reset_rtl_0_0'. [C:/Users/robita46/ECE532-project-main/Trumpet_project/constraints/microblaze.xdc:7]
-Finished Parsing XDC File [C:/Users/robita46/ECE532-project-main/Trumpet_project/constraints/microblaze.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/robita46/ECE532-project-main/Trumpet_project/constraints/microblaze.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/robita46/ECE532-project-main/Trumpet_project/constraints/microblaze.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/i2c_cap_btn/axi_iic_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/i2c_cap_btn/axi_iic_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/i2c_cap_btn/axi_cap_btn_gpio'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/i2c_cap_btn/axi_cap_btn_gpio'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_2/design_1_axi_iic_0_2/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/I2S_audio/axi_iic_1'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_2/design_1_axi_iic_0_2/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/I2S_audio/axi_iic_1'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_i2s_0_0/design_1_i2s_0_0/design_1_i2s_0_0_in_context.xdc] for cell 'design_1_i/i2s_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_i2s_0_0/design_1_i2s_0_0/design_1_i2s_0_0_in_context.xdc] for cell 'design_1_i/i2s_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_spi_controller_0_0/design_1_spi_controller_0_0/design_1_spi_controller_0_0_in_context.xdc] for cell 'design_1_i/spi_controller_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_spi_controller_0_0/design_1_spi_controller_0_0/design_1_spi_controller_0_0_in_context.xdc] for cell 'design_1_i/spi_controller_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mic_storage_0_1/design_1_mic_storage_0_1/design_1_mic_storage_0_1_in_context.xdc] for cell 'design_1_i/mic_storage_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mic_storage_0_1/design_1_mic_storage_0_1/design_1_mic_storage_0_1_in_context.xdc] for cell 'design_1_i/mic_storage_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_playback_ctrl_0_0/design_1_playback_ctrl_0_0/design_1_playback_ctrl_0_0_in_context.xdc] for cell 'design_1_i/playback_ctrl_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_playback_ctrl_0_0/design_1_playback_ctrl_0_0/design_1_playback_ctrl_0_0_in_context.xdc] for cell 'design_1_i/playback_ctrl_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_one_reg_0_0/design_1_one_reg_0_0/design_1_one_reg_0_0_in_context.xdc] for cell 'design_1_i/one_reg_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_one_reg_0_0/design_1_one_reg_0_0/design_1_one_reg_0_0_in_context.xdc] for cell 'design_1_i/one_reg_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_audio_preprocessor_0_0/design_1_audio_preprocessor_0_0/design_1_audio_preprocessor_0_0_in_context.xdc] for cell 'design_1_i/audio_preprocessor_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_audio_preprocessor_0_0/design_1_audio_preprocessor_0_0/design_1_audio_preprocessor_0_0_in_context.xdc] for cell 'design_1_i/audio_preprocessor_0'
+Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_fft_wrapper_0_1/design_1_fft_wrapper_0_1/design_1_fft_wrapper_0_1_in_context.xdc] for cell 'design_1_i/fft_wrapper_0'
+Finished Parsing XDC File [c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_fft_wrapper_0_1/design_1_fft_wrapper_0_1/design_1_fft_wrapper_0_1_in_context.xdc] for cell 'design_1_i/fft_wrapper_0'
+Parsing XDC File [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc]
+WARNING: [Vivado 12-584] No ports matched 'swt_playback_mode'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'swt_playback_mode'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'vadj_en[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'vadj_en[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:108]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fft_done'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:110]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/load_done'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:111]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/load_data'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:112]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:132]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:133]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[9]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:134]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[10]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:135]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[11]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:136]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[13]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:137]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[15]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:138]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:139]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:140]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[14]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:141]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:142]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:143]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:144]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:145]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:146]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[12]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[16]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:148]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fq[17]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:149]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:150]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:151]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:152]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:153]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:154]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:155]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:156]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:157]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/fi[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:158]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:159]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[10]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:160]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[12]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:161]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[9]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:162]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[16]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:163]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:164]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:165]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:166]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:167]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[13]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:168]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[17]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:169]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:170]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:171]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:172]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:173]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[11]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:174]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[14]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:175]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fq[15]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:176]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:181]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:183]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:184]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[17]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:185]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:186]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[9]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:187]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[10]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:188]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[14]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:189]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:190]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:191]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[11]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:192]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[15]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:193]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:194]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:195]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[12]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:196]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[13]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:197]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg_n_0_[16]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:198]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fi[0]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:200]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fi[2]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:201]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fi[3]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:202]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fi[4]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:203]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fi[1]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:204]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fi[5]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:205]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fi[6]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fi[7]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:207]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/fi[8]'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:208]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[1]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:210]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[9]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:211]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[11]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:212]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[12]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:213]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[14]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:214]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[3]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:215]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[7]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:216]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[10]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:217]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[16]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:218]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[0]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:219]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[6]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:220]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[13]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:221]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[15]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:222]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[17]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:223]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[17]_i_3_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:224]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[2]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:225]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[4]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:226]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[5]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:227]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[8]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:228]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/frequency_reg[17]_i_2_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:229]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/MEM_I_real_data_I[3][5]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:230]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/MEM_I_real_data_I[15][3]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:231]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/MEM_I_real_data_I[17][11]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:232]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/MEM_I_real_data_I[23][4]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:233]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/FFT_wrapper_0/inst/FFT/MEM_I_real_data_I[26][13]_i_1_n_0'. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:234]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc:234]
+Finished Parsing XDC File [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/ECE532/git-version/ECE532-project/Trumpet_project/constraints/microblaze.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 875.352 ; gain = 0.000
+Parsing XDC File [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 935.891 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 875.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 935.891 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 875.352 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 875.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 935.891 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 935.891 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 875.352 ; gain = 482.738
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 935.891 ; gain = 513.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7a100tcsg324-1
+Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 875.352 ; gain = 482.738
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 935.891 ; gain = 513.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/mdm_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
@@ -335,17 +493,26 @@ Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/i2c_cap_btn/axi_iic_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/i2c_cap_btn/axi_cap_btn_gpio. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/I2S_audio/axi_iic_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/i2s_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/spi_controller_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mic_storage_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/playback_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/one_reg_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/audio_preprocessor_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/fft_wrapper_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 875.352 ; gain = 482.738
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 935.891 ; gain = 513.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 875.352 ; gain = 482.738
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 935.891 ; gain = 513.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -371,8 +538,8 @@ Finished RTL Hierarchical Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 240 (col length:80)
-BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
@@ -381,7 +548,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 875.352 ; gain = 482.738
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 935.891 ; gain = 513.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -399,13 +566,7 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_l
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
 INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 877.371 ; gain = 484.758
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 877.520 ; gain = 484.906
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 946.957 ; gain = 524.762
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -417,7 +578,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 888.098 ; gain = 495.484
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 957.770 ; gain = 535.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -429,19 +590,13 @@ Report RTL Partitions:
 Start IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 888.098 ; gain = 495.484
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 957.770 ; gain = 535.574
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -454,7 +609,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 888.098 ; gain = 495.484
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 957.770 ; gain = 535.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -463,28 +618,10 @@ Report RTL Partitions:
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 888.098 ; gain = 495.484
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 888.098 ; gain = 495.484
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 888.098 ; gain = 495.484
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 888.098 ; gain = 495.484
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 957.770 ; gain = 535.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -494,83 +631,102 @@ Report BlackBoxes:
 +------+---------------------------------+----------+
 |      |BlackBox name                    |Instances |
 +------+---------------------------------+----------+
-|1     |design_1_xbar_0                  |         1|
-|2     |design_1_axi_gpio_0_1            |         1|
-|3     |design_1_axi_gpio_1_0            |         1|
-|4     |design_1_axi_uartlite_0_0        |         1|
-|5     |design_1_clk_wiz_1_0             |         1|
-|6     |design_1_mdm_1_0                 |         1|
-|7     |design_1_microblaze_0_0          |         1|
-|8     |design_1_microblaze_0_axi_intc_0 |         1|
-|9     |design_1_rst_clk_wiz_1_100M_0    |         1|
-|10    |design_1_axi_gpio_0_0            |         1|
-|11    |design_1_axi_iic_0_0             |         1|
-|12    |design_1_dlmb_bram_if_cntlr_0    |         1|
-|13    |design_1_dlmb_v10_0              |         1|
-|14    |design_1_ilmb_bram_if_cntlr_0    |         1|
-|15    |design_1_ilmb_v10_0              |         1|
-|16    |design_1_lmb_bram_0              |         1|
+|1     |design_1_axi_iic_0_2             |         1|
+|2     |design_1_xbar_1                  |         1|
+|3     |design_1_axi_gpio_0_0            |         1|
+|4     |design_1_axi_iic_0_0             |         1|
+|5     |design_1_dlmb_bram_if_cntlr_0    |         1|
+|6     |design_1_dlmb_v10_0              |         1|
+|7     |design_1_ilmb_bram_if_cntlr_0    |         1|
+|8     |design_1_ilmb_v10_0              |         1|
+|9     |design_1_lmb_bram_0              |         1|
+|10    |design_1_audio_preprocessor_0_0  |         1|
+|11    |design_1_axi_gpio_0_1            |         1|
+|12    |design_1_axi_gpio_1_0            |         1|
+|13    |design_1_axi_uartlite_0_0        |         1|
+|14    |design_1_clk_wiz_1_0             |         1|
+|15    |design_1_fft_wrapper_0_1         |         1|
+|16    |design_1_i2s_0_0                 |         1|
+|17    |design_1_mdm_1_0                 |         1|
+|18    |design_1_mic_storage_0_1         |         1|
+|19    |design_1_microblaze_0_0          |         1|
+|20    |design_1_microblaze_0_axi_intc_0 |         1|
+|21    |design_1_one_reg_0_0             |         1|
+|22    |design_1_playback_ctrl_0_0       |         1|
+|23    |design_1_rst_clk_wiz_1_100M_0    |         1|
+|24    |design_1_spi_controller_0_0      |         1|
 +------+---------------------------------+----------+
 
 Report Cell Usage: 
 +------+---------------------------------+------+
 |      |Cell                             |Count |
 +------+---------------------------------+------+
-|1     |design_1_axi_gpio_0_0            |     1|
-|2     |design_1_axi_gpio_0_1            |     1|
-|3     |design_1_axi_gpio_1_0            |     1|
-|4     |design_1_axi_iic_0_0             |     1|
-|5     |design_1_axi_uartlite_0_0        |     1|
-|6     |design_1_clk_wiz_1_0             |     1|
-|7     |design_1_dlmb_bram_if_cntlr_0    |     1|
-|8     |design_1_dlmb_v10_0              |     1|
-|9     |design_1_ilmb_bram_if_cntlr_0    |     1|
-|10    |design_1_ilmb_v10_0              |     1|
-|11    |design_1_lmb_bram_0              |     1|
-|12    |design_1_mdm_1_0                 |     1|
-|13    |design_1_microblaze_0_0          |     1|
-|14    |design_1_microblaze_0_axi_intc_0 |     1|
-|15    |design_1_rst_clk_wiz_1_100M_0    |     1|
-|16    |design_1_xbar_0                  |     1|
-|17    |IBUF                             |    12|
-|18    |IOBUF                            |     2|
-|19    |OBUF                             |     9|
+|1     |design_1_audio_preprocessor_0_0  |     1|
+|2     |design_1_axi_gpio_0_0            |     1|
+|3     |design_1_axi_gpio_0_1            |     1|
+|4     |design_1_axi_gpio_1_0            |     1|
+|5     |design_1_axi_iic_0_0             |     1|
+|6     |design_1_axi_iic_0_2             |     1|
+|7     |design_1_axi_uartlite_0_0        |     1|
+|8     |design_1_clk_wiz_1_0             |     1|
+|9     |design_1_dlmb_bram_if_cntlr_0    |     1|
+|10    |design_1_dlmb_v10_0              |     1|
+|11    |design_1_fft_wrapper_0_1         |     1|
+|12    |design_1_i2s_0_0                 |     1|
+|13    |design_1_ilmb_bram_if_cntlr_0    |     1|
+|14    |design_1_ilmb_v10_0              |     1|
+|15    |design_1_lmb_bram_0              |     1|
+|16    |design_1_mdm_1_0                 |     1|
+|17    |design_1_mic_storage_0_1         |     1|
+|18    |design_1_microblaze_0_0          |     1|
+|19    |design_1_microblaze_0_axi_intc_0 |     1|
+|20    |design_1_one_reg_0_0             |     1|
+|21    |design_1_playback_ctrl_0_0       |     1|
+|22    |design_1_rst_clk_wiz_1_100M_0    |     1|
+|23    |design_1_spi_controller_0_0      |     1|
+|24    |design_1_xbar_1                  |     1|
+|25    |IBUF                             |    14|
+|26    |IOBUF                            |     4|
+|27    |OBUF                             |    15|
 +------+---------------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+--------------------------------------+------+
 |      |Instance                      |Module                                |Cells |
 +------+------------------------------+--------------------------------------+------+
-|1     |top                           |                                      |  1763|
-|2     |  design_1_i                  |design_1                              |  1740|
-|3     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0    |   707|
-|4     |    microblaze_0_xlconcat     |design_1_microblaze_0_xlconcat_0      |     0|
+|1     |top                           |                                      |  2270|
+|2     |  design_1_i                  |design_1                              |  2237|
+|3     |    I2S_audio                 |I2S_audio_imp_NNRZ5J                  |    47|
+|4     |    axi_interconnect_0        |design_1_axi_interconnect_0_0         |  1040|
 |5     |    i2c_cap_btn               |i2c_cap_btn_imp_1GWOCP                |    88|
 |6     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
+|7     |    microblaze_0_xlconcat     |design_1_microblaze_0_xlconcat_0      |     0|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 888.098 ; gain = 495.484
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 957.770 ; gain = 535.574
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 888.098 ; gain = 171.504
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 888.098 ; gain = 495.484
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 957.770 ; gain = 184.188
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 957.770 ; gain = 535.574
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 900.910 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 974.031 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-86 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+113 Infos, 223 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 900.910 ; gain = 515.195
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 900.910 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 974.031 ; gain = 559.027
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 974.031 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Feb  5 22:02:11 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 14:12:03 2024...

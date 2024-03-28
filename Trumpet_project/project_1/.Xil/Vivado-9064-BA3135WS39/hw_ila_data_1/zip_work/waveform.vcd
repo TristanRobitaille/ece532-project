@@ -1,0 +1,61 @@
+$date
+        2024-Feb-11 16:40:57
+$end
+$version
+        Vivado v2018.3.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " design_1_i/microblaze_0_axi_periph_M07_AXI_WREADY $end
+$var reg 32 # design_1_i/microblaze_0_axi_periph_M07_AXI_AWADDR [31:0] $end
+$var reg 2 C design_1_i/microblaze_0_axi_periph_M07_AXI_BRESP [1:0] $end
+$var reg 1 E design_1_i/microblaze_0_axi_periph_M07_AXI_BVALID $end
+$var reg 1 F design_1_i/microblaze_0_axi_periph_M07_AXI_BREADY $end
+$var reg 32 G design_1_i/microblaze_0_axi_periph_M07_AXI_ARADDR [31:0] $end
+$var reg 1 g design_1_i/microblaze_0_axi_periph_M07_AXI_RREADY $end
+$var reg 1 h design_1_i/microblaze_0_axi_periph_M07_AXI_WVALID $end
+$var reg 1 i design_1_i/microblaze_0_axi_periph_M07_AXI_ARVALID $end
+$var reg 1 j design_1_i/microblaze_0_axi_periph_M07_AXI_ARREADY $end
+$var reg 32 k design_1_i/microblaze_0_axi_periph_M07_AXI_RDATA [31:0] $end
+$var reg 1 -" design_1_i/microblaze_0_axi_periph_M07_AXI_AWVALID $end
+$var reg 1 ." design_1_i/microblaze_0_axi_periph_M07_AXI_AWREADY $end
+$var reg 2 /" design_1_i/microblaze_0_axi_periph_M07_AXI_RRESP [1:0] $end
+$var reg 32 1" design_1_i/microblaze_0_axi_periph_M07_AXI_WDATA [31:0] $end
+$var reg 4 Q" design_1_i/microblaze_0_axi_periph_M07_AXI_WSTRB [3:0] $end
+$var reg 1 U" design_1_i/microblaze_0_axi_periph_M07_AXI_RVALID $end
+$var reg 3 V" design_1_i/microblaze_0_axi_periph_M07_AXI_ARPROT [2:0] $end
+$var reg 3 Y" design_1_i/microblaze_0_axi_periph_M07_AXI_AWPROT [2:0] $end
+$var reg 1 \" _TRIGGER $end
+$var reg 1 ]" _WINDOW $end
+$var reg 1 ^" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+b111111101000 #
+b0 C
+0E
+0F
+b111111101000 G
+0g
+0h
+0i
+0j
+b0 k
+0-"
+0."
+b0 /"
+b0 1"
+b1111 Q"
+0U"
+b0 V"
+b0 Y"
+0\"
+1]"
+0^"
+$end
+#512
+1\"

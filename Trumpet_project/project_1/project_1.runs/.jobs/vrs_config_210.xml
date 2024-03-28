@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
-	<Run Id="nexys_video" LaunchDir="C:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
+	<Run Id="nexys_video" LaunchDir="C:/ECE532/git-version/ECE532-project/Trumpet_project/project_1/project_1.runs/nexys_video" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design"/>
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
 	</Parameters>

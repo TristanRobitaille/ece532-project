@@ -1,10 +1,3 @@
-/*
- * cap_btn.c
- *
- *  Created on: Feb 3, 2024
- *      Author: robita46
- */
-
 #include "cap_btn.h"
 
 //----- FUNCTIONS -----//
@@ -35,6 +28,8 @@ void init_cap_btn() {
 	tx_data[0] = AD7156_CH2_TIMEOUT_MSB_REG; // It doubles as sensitivity LSB
 	tx_data[1] = (AD7156_THRESHOLD & 0x000F) << 4;
 	XIic_Send(XPAR_I2C_CAP_BTN_AXI_IIC_0_BASEADDR, AD7156_ADDR, tx_data, 2, XIIC_STOP);
+
+    xil_printf("Capacitive button initialization done\n");
 }
 
 void update_cap_btn_led(volatile unsigned int* led, volatile unsigned int* cap_btn) {

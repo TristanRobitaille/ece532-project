@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fft_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fft_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="7328226275fs"></ZoomStartTime>
+      <ZoomEndTime time="8297961600fs"></ZoomEndTime>
+      <Cursor1Time time="910000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="237"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="81" />
+   <wvobject fp_name="/fft_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/sine" type="array">
+      <obj_property name="ElementShortName">sine[0:31][11:0]</obj_property>
+      <obj_property name="ObjectShortName">sine[0:31][11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/sine_II" type="array">
+      <obj_property name="ElementShortName">sine_II[0:31][11:0]</obj_property>
+      <obj_property name="ObjectShortName">sine_II[0:31][11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/data" type="array">
+      <obj_property name="ElementShortName">data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/frequency" type="array">
+      <obj_property name="ElementShortName">frequency[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft_busy" type="logic">
+      <obj_property name="ElementShortName">fft_busy</obj_property>
+      <obj_property name="ObjectShortName">fft_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft_pwm_out" type="logic">
+      <obj_property name="ElementShortName">fft_pwm_out</obj_property>
+      <obj_property name="ObjectShortName">fft_pwm_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/reset_counter" type="array">
+      <obj_property name="ElementShortName">reset_counter[24:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_counter[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/reset_c" type="logic">
+      <obj_property name="ElementShortName">reset_c</obj_property>
+      <obj_property name="ObjectShortName">reset_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_0" type="array">
+      <obj_property name="ElementShortName">out_0[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_0[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_1" type="array">
+      <obj_property name="ElementShortName">out_1[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_1[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_2" type="array">
+      <obj_property name="ElementShortName">out_2[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_2[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_3" type="array">
+      <obj_property name="ElementShortName">out_3[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_3[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_4" type="array">
+      <obj_property name="ElementShortName">out_4[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_4[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_5" type="array">
+      <obj_property name="ElementShortName">out_5[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_5[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_6" type="array">
+      <obj_property name="ElementShortName">out_6[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_6[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_7" type="array">
+      <obj_property name="ElementShortName">out_7[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_7[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_8" type="array">
+      <obj_property name="ElementShortName">out_8[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_8[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_9" type="array">
+      <obj_property name="ElementShortName">out_9[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_9[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_10" type="array">
+      <obj_property name="ElementShortName">out_10[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_10[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_11" type="array">
+      <obj_property name="ElementShortName">out_11[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_11[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_12" type="array">
+      <obj_property name="ElementShortName">out_12[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_12[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_13" type="array">
+      <obj_property name="ElementShortName">out_13[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_13[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_14" type="array">
+      <obj_property name="ElementShortName">out_14[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_14[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_15" type="array">
+      <obj_property name="ElementShortName">out_15[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_15[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_16" type="array">
+      <obj_property name="ElementShortName">out_16[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_16[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_17" type="array">
+      <obj_property name="ElementShortName">out_17[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_17[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_18" type="array">
+      <obj_property name="ElementShortName">out_18[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_18[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_19" type="array">
+      <obj_property name="ElementShortName">out_19[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_19[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_20" type="array">
+      <obj_property name="ElementShortName">out_20[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_20[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_21" type="array">
+      <obj_property name="ElementShortName">out_21[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_21[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_22" type="array">
+      <obj_property name="ElementShortName">out_22[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_22[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_23" type="array">
+      <obj_property name="ElementShortName">out_23[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_23[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_24" type="array">
+      <obj_property name="ElementShortName">out_24[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_24[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_25" type="array">
+      <obj_property name="ElementShortName">out_25[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_25[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_26" type="array">
+      <obj_property name="ElementShortName">out_26[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_26[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_27" type="array">
+      <obj_property name="ElementShortName">out_27[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_27[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_28" type="array">
+      <obj_property name="ElementShortName">out_28[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_28[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_29" type="array">
+      <obj_property name="ElementShortName">out_29[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_29[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_30" type="array">
+      <obj_property name="ElementShortName">out_30[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_30[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_31" type="array">
+      <obj_property name="ElementShortName">out_31[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_31[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_0" type="array">
+      <obj_property name="ElementShortName">out_i_0[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_0[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_1" type="array">
+      <obj_property name="ElementShortName">out_i_1[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_1[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_2" type="array">
+      <obj_property name="ElementShortName">out_i_2[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_2[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_3" type="array">
+      <obj_property name="ElementShortName">out_i_3[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_3[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_4" type="array">
+      <obj_property name="ElementShortName">out_i_4[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_4[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_5" type="array">
+      <obj_property name="ElementShortName">out_i_5[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_5[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_6" type="array">
+      <obj_property name="ElementShortName">out_i_6[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_6[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_7" type="array">
+      <obj_property name="ElementShortName">out_i_7[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_7[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_8" type="array">
+      <obj_property name="ElementShortName">out_i_8[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_8[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_9" type="array">
+      <obj_property name="ElementShortName">out_i_9[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_9[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_10" type="array">
+      <obj_property name="ElementShortName">out_i_10[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_10[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_11" type="array">
+      <obj_property name="ElementShortName">out_i_11[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_11[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_12" type="array">
+      <obj_property name="ElementShortName">out_i_12[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_12[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_13" type="array">
+      <obj_property name="ElementShortName">out_i_13[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_13[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_14" type="array">
+      <obj_property name="ElementShortName">out_i_14[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_14[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_15" type="array">
+      <obj_property name="ElementShortName">out_i_15[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_15[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_16" type="array">
+      <obj_property name="ElementShortName">out_i_16[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_16[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_17" type="array">
+      <obj_property name="ElementShortName">out_i_17[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_17[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_18" type="array">
+      <obj_property name="ElementShortName">out_i_18[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_18[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_19" type="array">
+      <obj_property name="ElementShortName">out_i_19[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_19[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_20" type="array">
+      <obj_property name="ElementShortName">out_i_20[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_20[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_21" type="array">
+      <obj_property name="ElementShortName">out_i_21[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_21[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_22" type="array">
+      <obj_property name="ElementShortName">out_i_22[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_22[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_23" type="array">
+      <obj_property name="ElementShortName">out_i_23[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_23[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_24" type="array">
+      <obj_property name="ElementShortName">out_i_24[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_24[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_25" type="array">
+      <obj_property name="ElementShortName">out_i_25[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_25[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_26" type="array">
+      <obj_property name="ElementShortName">out_i_26[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_26[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_27" type="array">
+      <obj_property name="ElementShortName">out_i_27[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_27[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_28" type="array">
+      <obj_property name="ElementShortName">out_i_28[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_28[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_29" type="array">
+      <obj_property name="ElementShortName">out_i_29[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_29[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_30" type="array">
+      <obj_property name="ElementShortName">out_i_30[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_30[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/out_i_31" type="array">
+      <obj_property name="ElementShortName">out_i_31[4:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_i_31[4:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/frequency" type="array">
+      <obj_property name="ElementShortName">frequency[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/frequency" type="array">
+      <obj_property name="ElementShortName">frequency[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/freq_clipped" type="array">
+      <obj_property name="ElementShortName">freq_clipped[31:0]</obj_property>
+      <obj_property name="ObjectShortName">freq_clipped[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/prev" type="array">
+      <obj_property name="ElementShortName">prev[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prev[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft_done" type="logic">
+      <obj_property name="ElementShortName">fft_done</obj_property>
+      <obj_property name="ObjectShortName">fft_done</obj_property>
+   </wvobject>
+</wave_config>

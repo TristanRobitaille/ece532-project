@@ -1,14 +1,14 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-// Date        : Fri Feb  2 18:45:31 2024
-// Host        : BA3135WS38 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/robita46/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_sim_netlist.v
+// Date        : Sun Feb 11 13:00:31 2024
+// Host        : BA3135WS39 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_dlmb_v10_0 -prefix
+//               design_1_dlmb_v10_0_ design_1_dlmb_v10_0_sim_netlist.v
 // Design      : design_1_dlmb_v10_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7a100tcsg324-1
+// Device      : xc7a200tsbg484-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
@@ -125,7 +125,7 @@ module design_1_dlmb_v10_0
 endmodule
 
 (* C_EXT_RESET_HIGH = "1" *) (* C_LMB_AWIDTH = "32" *) (* C_LMB_DWIDTH = "32" *) 
-(* C_LMB_NUM_SLAVES = "1" *) (* ORIG_REF_NAME = "lmb_v10" *) 
+(* C_LMB_NUM_SLAVES = "1" *) 
 module design_1_dlmb_v10_0_lmb_v10
    (LMB_Clk,
     SYS_Rst,

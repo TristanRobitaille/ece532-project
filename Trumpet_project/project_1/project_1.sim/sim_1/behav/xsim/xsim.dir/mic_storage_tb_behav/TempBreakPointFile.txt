@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+20 true C:/Users/robita46/ECE532-project-main/ECE532-project-main/Trumpet_project/project_1/project_1.srcs/sources_1/new/mic_storage.sv
