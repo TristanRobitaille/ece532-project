@@ -37,7 +37,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="195"/>
+    <Option Name="WTXSimLaunchSim" Val="196"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -106,20 +106,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xci">
-          <Proxy FileSetName="design_1_axi_gpio_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_xbar_1/design_1_xbar_1.xci">
-          <Proxy FileSetName="design_1_xbar_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_mic_storage_0_1/design_1_mic_storage_0_1.xci">
-          <Proxy FileSetName="design_1_mic_storage_0_1"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_i2s_0_0/design_1_i2s_0_0.xci">
           <Proxy FileSetName="design_1_i2s_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_one_reg_0_0/design_1_one_reg_0_0.xci">
-          <Proxy FileSetName="design_1_one_reg_0_0"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_spi_controller_0_0/design_1_spi_controller_0_0.xci">
+          <Proxy FileSetName="design_1_spi_controller_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_audio_preprocessor_0_0/design_1_audio_preprocessor_0_0.xci">
           <Proxy FileSetName="design_1_audio_preprocessor_0_0"/>
@@ -127,11 +118,20 @@
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_playback_ctrl_0_0/design_1_playback_ctrl_0_0.xci">
           <Proxy FileSetName="design_1_playback_ctrl_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_spi_controller_0_0/design_1_spi_controller_0_0.xci">
-          <Proxy FileSetName="design_1_spi_controller_0_0"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_mic_storage_0_1/design_1_mic_storage_0_1.xci">
+          <Proxy FileSetName="design_1_mic_storage_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_one_reg_0_0/design_1_one_reg_0_0.xci">
+          <Proxy FileSetName="design_1_one_reg_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xci">
+          <Proxy FileSetName="design_1_axi_gpio_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_fft_wrapper_0_1/design_1_fft_wrapper_0_1.xci">
           <Proxy FileSetName="design_1_fft_wrapper_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_xbar_1/design_1_xbar_1.xci">
+          <Proxy FileSetName="design_1_xbar_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
@@ -300,8 +300,8 @@
         <StratHandle Name="Flow_RuntimeOptimized" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design">
           <Option Id="FlattenHierarchy">1</Option>
-          <Option Id="FsmExtraction">0</Option>
           <Option Id="Directive">0</Option>
+          <Option Id="FsmExtraction">0</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>

@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="fft.tcl"/>
   <File Type="REPORTS-TCL" Name="fft_reports.tcl"/>
   <File Type="RDS-RDS" Name="fft.vds"/>
-  <File Type="RDS-UTIL" Name="fft_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="fft_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="fft.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

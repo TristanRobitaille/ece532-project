@@ -10,11 +10,11 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1024000fs"></ZoomEndTime>
+      <ZoomEndTime time="1024001fs"></ZoomEndTime>
       <Cursor1Time time="305000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="607"></NameColumnWidth>
+      <NameColumnWidth column_width="593"></NameColumnWidth>
       <ValueColumnWidth column_width="102"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="7" />
@@ -22,16 +22,16 @@
    </wave_markers>
    <wvobject fp_name="design_1_i/fft_wrapper_0/inst/fft/frequency" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/fft_wrapper_0/inst/fft/frequency[31:0]</obj_property>
-      <obj_property name="ObjectShortName">frequency[31:0]</obj_property>
+      <obj_property name="ElementShortName">design_1_i/fft_wrapper_0/inst/fft/frequency[10:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="design_1_i/fft_wrapper_0/inst/frequency" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/fft_wrapper_0/inst/frequency[31:0]</obj_property>
-      <obj_property name="ObjectShortName">frequency[31:0]</obj_property>
+      <obj_property name="ElementShortName">design_1_i/fft_wrapper_0/inst/frequency[10:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -43,18 +43,10 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="design_1_i/fft_wrapper_0/inst/input_data" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/fft_wrapper_0/inst/input_data[11:0]</obj_property>
-      <obj_property name="ObjectShortName">input_data[11:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
    <wvobject fp_name="design_1_i/fft_wrapper_0/inst/fft/counter" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/fft_wrapper_0/inst/fft/counter[8:5]</obj_property>
-      <obj_property name="ObjectShortName">counter[8:5]</obj_property>
+      <obj_property name="ElementShortName">design_1_i/fft_wrapper_0/inst/fft/counter[8:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[8:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -71,6 +63,13 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/fft_wrapper_0/resetn_gen</obj_property>
       <obj_property name="ObjectShortName">resetn_gen</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/fft_wrapper_0/inst/fft_busy" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/fft_wrapper_0/inst/fft_busy</obj_property>
+      <obj_property name="ObjectShortName">fft_busy</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

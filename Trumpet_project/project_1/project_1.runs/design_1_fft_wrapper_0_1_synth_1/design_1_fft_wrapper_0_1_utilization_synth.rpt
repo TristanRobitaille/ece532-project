@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Mar 27 14:06:39 2024
+| Date         : Wed Mar 27 23:10:46 2024
 | Host         : yudi running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_fft_wrapper_0_1_utilization_synth.rpt -pb design_1_fft_wrapper_0_1_utilization_synth.pb
 | Design       : design_1_fft_wrapper_0_1
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 9819 |     0 |    134600 |  7.29 |
-|   LUT as Logic          | 9819 |     0 |    134600 |  7.29 |
+| Slice LUTs*             | 9846 |     0 |    134600 |  7.32 |
+|   LUT as Logic          | 9846 |     0 |    134600 |  7.32 |
 |   LUT as Memory         |    0 |     0 |     46200 |  0.00 |
-| Slice Registers         | 3416 |     0 |    269200 |  1.27 |
-|   Register as Flip Flop | 3416 |     0 |    269200 |  1.27 |
+| Slice Registers         | 3427 |     0 |    269200 |  1.27 |
+|   Register as Flip Flop | 3427 |     0 |    269200 |  1.27 |
 |   Register as Latch     |    0 |     0 |    269200 |  0.00 |
 | F7 Muxes                |  472 |     0 |     67300 |  0.70 |
 | F8 Muxes                |  233 |     0 |     33650 |  0.69 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 3416  |          Yes |       Reset |            - |
+| 3427  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -151,16 +151,16 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | LUT2     | 7092 |                 LUT |
-| FDRE     | 3416 |        Flop & Latch |
-| CARRY4   | 2156 |          CarryLogic |
+| FDRE     | 3427 |        Flop & Latch |
+| CARRY4   | 2158 |          CarryLogic |
 | LUT1     | 1564 |                 LUT |
-| LUT3     |  950 |                 LUT |
+| LUT3     |  964 |                 LUT |
 | DSP48E1  |  609 |    Block Arithmetic |
 | MUXF7    |  472 |               MuxFx |
 | MUXF8    |  233 |               MuxFx |
-| LUT6     |  127 |                 LUT |
-| LUT5     |  100 |                 LUT |
-| LUT4     |   87 |                 LUT |
+| LUT6     |  144 |                 LUT |
+| LUT4     |   97 |                 LUT |
+| LUT5     |   84 |                 LUT |
 +----------+------+---------------------+
 
 

@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="7328226275fs"></ZoomStartTime>
-      <ZoomEndTime time="8297961600fs"></ZoomEndTime>
-      <Cursor1Time time="910000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="33000000001fs"></ZoomEndTime>
+      <Cursor1Time time="10030000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="237"></NameColumnWidth>
+      <NameColumnWidth column_width="216"></NameColumnWidth>
       <ValueColumnWidth column_width="102"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="81" />
+   <WVObjectSize size="85" />
    <wvobject fp_name="/fft_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -59,10 +59,6 @@
    <wvobject fp_name="/fft_tb/fft_wrapper/fft_pwm_out" type="logic">
       <obj_property name="ElementShortName">fft_pwm_out</obj_property>
       <obj_property name="ObjectShortName">fft_pwm_out</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fft_tb/fft_wrapper/rstn" type="logic">
-      <obj_property name="ElementShortName">rstn</obj_property>
-      <obj_property name="ObjectShortName">rstn</obj_property>
    </wvobject>
    <wvobject fp_name="/fft_tb/fft_wrapper/reset_counter" type="array">
       <obj_property name="ElementShortName">reset_counter[24:0]</obj_property>
@@ -341,12 +337,32 @@
       <obj_property name="ElementShortName">freq_clipped[31:0]</obj_property>
       <obj_property name="ObjectShortName">freq_clipped[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fft_tb/fft_wrapper/fft/prev" type="array">
-      <obj_property name="ElementShortName">prev[31:0]</obj_property>
-      <obj_property name="ObjectShortName">prev[31:0]</obj_property>
+   <wvobject fp_name="/fft_tb/fft_wrapper/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
    </wvobject>
    <wvobject fp_name="/fft_tb/fft_wrapper/fft_done" type="logic">
       <obj_property name="ElementShortName">fft_done</obj_property>
       <obj_property name="ObjectShortName">fft_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft/local_freq" type="array">
+      <obj_property name="ElementShortName">local_freq[31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_freq[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/fft_pwm_out" type="logic">
+      <obj_property name="ElementShortName">fft_pwm_out</obj_property>
+      <obj_property name="ObjectShortName">fft_pwm_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/frequency" type="array">
+      <obj_property name="ElementShortName">frequency[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/freq" type="array">
+      <obj_property name="ElementShortName">freq[31:0]</obj_property>
+      <obj_property name="ObjectShortName">freq[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_tb/fft_wrapper/pwm_cnt" type="array">
+      <obj_property name="ElementShortName">pwm_cnt[11:0]</obj_property>
+      <obj_property name="ObjectShortName">pwm_cnt[11:0]</obj_property>
    </wvobject>
 </wave_config>

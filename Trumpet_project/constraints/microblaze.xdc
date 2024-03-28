@@ -2746,6 +2746,20 @@ set_property MARK_DEBUG false [get_nets {design_1_i/fft_wrapper_0/inst/fft/out_1
 connect_debug_port u_ila_0/probe2 [get_nets [list {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[0]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[1]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[2]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[3]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[4]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[5]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[6]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[7]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[8]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[9]} {design_1_i/fft_wrapper_0/inst/fft/freq_clipped[10]}]]
 
 
+
+connect_debug_port u_ila_0/probe12 [get_nets [list design_1_i/fft_wrapper_0/inst/fft/freq_clipped]]
+
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[0]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[1]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[4]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[9]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[10]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[2]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[3]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[5]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[6]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[7]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/fft_wrapper_0/inst/freq_out[8]}]
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
@@ -2758,44 +2772,44 @@ set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
 set_property port_width 1 [get_debug_ports u_ila_0/clk]
 connect_debug_port u_ila_0/clk [get_nets [list design_1_i/clk_wiz_1/inst/clk_out1]]
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-set_property port_width 32 [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {design_1_i/fft_wrapper_0/inst/fft/frequency[0]} {design_1_i/fft_wrapper_0/inst/fft/frequency[1]} {design_1_i/fft_wrapper_0/inst/fft/frequency[2]} {design_1_i/fft_wrapper_0/inst/fft/frequency[3]} {design_1_i/fft_wrapper_0/inst/fft/frequency[4]} {design_1_i/fft_wrapper_0/inst/fft/frequency[5]} {design_1_i/fft_wrapper_0/inst/fft/frequency[6]} {design_1_i/fft_wrapper_0/inst/fft/frequency[7]} {design_1_i/fft_wrapper_0/inst/fft/frequency[8]} {design_1_i/fft_wrapper_0/inst/fft/frequency[9]} {design_1_i/fft_wrapper_0/inst/fft/frequency[10]} {design_1_i/fft_wrapper_0/inst/fft/frequency[11]} {design_1_i/fft_wrapper_0/inst/fft/frequency[12]} {design_1_i/fft_wrapper_0/inst/fft/frequency[13]} {design_1_i/fft_wrapper_0/inst/fft/frequency[14]} {design_1_i/fft_wrapper_0/inst/fft/frequency[15]} {design_1_i/fft_wrapper_0/inst/fft/frequency[16]} {design_1_i/fft_wrapper_0/inst/fft/frequency[17]} {design_1_i/fft_wrapper_0/inst/fft/frequency[18]} {design_1_i/fft_wrapper_0/inst/fft/frequency[19]} {design_1_i/fft_wrapper_0/inst/fft/frequency[20]} {design_1_i/fft_wrapper_0/inst/fft/frequency[21]} {design_1_i/fft_wrapper_0/inst/fft/frequency[22]} {design_1_i/fft_wrapper_0/inst/fft/frequency[23]} {design_1_i/fft_wrapper_0/inst/fft/frequency[24]} {design_1_i/fft_wrapper_0/inst/fft/frequency[25]} {design_1_i/fft_wrapper_0/inst/fft/frequency[26]} {design_1_i/fft_wrapper_0/inst/fft/frequency[27]} {design_1_i/fft_wrapper_0/inst/fft/frequency[28]} {design_1_i/fft_wrapper_0/inst/fft/frequency[29]} {design_1_i/fft_wrapper_0/inst/fft/frequency[30]} {design_1_i/fft_wrapper_0/inst/fft/frequency[31]}]]
+set_property port_width 9 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {design_1_i/fft_wrapper_0/inst/fft/counter[0]} {design_1_i/fft_wrapper_0/inst/fft/counter[1]} {design_1_i/fft_wrapper_0/inst/fft/counter[2]} {design_1_i/fft_wrapper_0/inst/fft/counter[3]} {design_1_i/fft_wrapper_0/inst/fft/counter[4]} {design_1_i/fft_wrapper_0/inst/fft/counter[5]} {design_1_i/fft_wrapper_0/inst/fft/counter[6]} {design_1_i/fft_wrapper_0/inst/fft/counter[7]} {design_1_i/fft_wrapper_0/inst/fft/counter[8]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-set_property port_width 6 [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {design_1_i/fft_wrapper_0/inst/fft/counter[1]} {design_1_i/fft_wrapper_0/inst/fft/counter[2]} {design_1_i/fft_wrapper_0/inst/fft/counter[5]} {design_1_i/fft_wrapper_0/inst/fft/counter[6]} {design_1_i/fft_wrapper_0/inst/fft/counter[7]} {design_1_i/fft_wrapper_0/inst/fft/counter[8]}]]
+set_property port_width 11 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {design_1_i/fft_wrapper_0/inst/fft/frequency[0]} {design_1_i/fft_wrapper_0/inst/fft/frequency[1]} {design_1_i/fft_wrapper_0/inst/fft/frequency[2]} {design_1_i/fft_wrapper_0/inst/fft/frequency[3]} {design_1_i/fft_wrapper_0/inst/fft/frequency[4]} {design_1_i/fft_wrapper_0/inst/fft/frequency[5]} {design_1_i/fft_wrapper_0/inst/fft/frequency[6]} {design_1_i/fft_wrapper_0/inst/fft/frequency[7]} {design_1_i/fft_wrapper_0/inst/fft/frequency[8]} {design_1_i/fft_wrapper_0/inst/fft/frequency[9]} {design_1_i/fft_wrapper_0/inst/fft/frequency[10]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-set_property port_width 25 [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list {design_1_i/fft_wrapper_0/reset_count[0]} {design_1_i/fft_wrapper_0/reset_count[1]} {design_1_i/fft_wrapper_0/reset_count[2]} {design_1_i/fft_wrapper_0/reset_count[3]} {design_1_i/fft_wrapper_0/reset_count[4]} {design_1_i/fft_wrapper_0/reset_count[5]} {design_1_i/fft_wrapper_0/reset_count[6]} {design_1_i/fft_wrapper_0/reset_count[7]} {design_1_i/fft_wrapper_0/reset_count[8]} {design_1_i/fft_wrapper_0/reset_count[9]} {design_1_i/fft_wrapper_0/reset_count[10]} {design_1_i/fft_wrapper_0/reset_count[11]} {design_1_i/fft_wrapper_0/reset_count[12]} {design_1_i/fft_wrapper_0/reset_count[13]} {design_1_i/fft_wrapper_0/reset_count[14]} {design_1_i/fft_wrapper_0/reset_count[15]} {design_1_i/fft_wrapper_0/reset_count[16]} {design_1_i/fft_wrapper_0/reset_count[17]} {design_1_i/fft_wrapper_0/reset_count[18]} {design_1_i/fft_wrapper_0/reset_count[19]} {design_1_i/fft_wrapper_0/reset_count[20]} {design_1_i/fft_wrapper_0/reset_count[21]} {design_1_i/fft_wrapper_0/reset_count[22]} {design_1_i/fft_wrapper_0/reset_count[23]} {design_1_i/fft_wrapper_0/reset_count[24]}]]
+set_property port_width 12 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {design_1_i/fft_wrapper_0/inst/input_data[0]} {design_1_i/fft_wrapper_0/inst/input_data[1]} {design_1_i/fft_wrapper_0/inst/input_data[2]} {design_1_i/fft_wrapper_0/inst/input_data[3]} {design_1_i/fft_wrapper_0/inst/input_data[4]} {design_1_i/fft_wrapper_0/inst/input_data[5]} {design_1_i/fft_wrapper_0/inst/input_data[6]} {design_1_i/fft_wrapper_0/inst/input_data[7]} {design_1_i/fft_wrapper_0/inst/input_data[8]} {design_1_i/fft_wrapper_0/inst/input_data[9]} {design_1_i/fft_wrapper_0/inst/input_data[10]} {design_1_i/fft_wrapper_0/inst/input_data[11]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-set_property port_width 32 [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list {design_1_i/fft_wrapper_0/frequency[0]} {design_1_i/fft_wrapper_0/frequency[1]} {design_1_i/fft_wrapper_0/frequency[2]} {design_1_i/fft_wrapper_0/frequency[3]} {design_1_i/fft_wrapper_0/frequency[4]} {design_1_i/fft_wrapper_0/frequency[5]} {design_1_i/fft_wrapper_0/frequency[6]} {design_1_i/fft_wrapper_0/frequency[7]} {design_1_i/fft_wrapper_0/frequency[8]} {design_1_i/fft_wrapper_0/frequency[9]} {design_1_i/fft_wrapper_0/frequency[10]} {design_1_i/fft_wrapper_0/frequency[11]} {design_1_i/fft_wrapper_0/frequency[12]} {design_1_i/fft_wrapper_0/frequency[13]} {design_1_i/fft_wrapper_0/frequency[14]} {design_1_i/fft_wrapper_0/frequency[15]} {design_1_i/fft_wrapper_0/frequency[16]} {design_1_i/fft_wrapper_0/frequency[17]} {design_1_i/fft_wrapper_0/frequency[18]} {design_1_i/fft_wrapper_0/frequency[19]} {design_1_i/fft_wrapper_0/frequency[20]} {design_1_i/fft_wrapper_0/frequency[21]} {design_1_i/fft_wrapper_0/frequency[22]} {design_1_i/fft_wrapper_0/frequency[23]} {design_1_i/fft_wrapper_0/frequency[24]} {design_1_i/fft_wrapper_0/frequency[25]} {design_1_i/fft_wrapper_0/frequency[26]} {design_1_i/fft_wrapper_0/frequency[27]} {design_1_i/fft_wrapper_0/frequency[28]} {design_1_i/fft_wrapper_0/frequency[29]} {design_1_i/fft_wrapper_0/frequency[30]} {design_1_i/fft_wrapper_0/frequency[31]}]]
+set_property port_width 11 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {design_1_i/fft_wrapper_0/inst/freq_out[0]} {design_1_i/fft_wrapper_0/inst/freq_out[1]} {design_1_i/fft_wrapper_0/inst/freq_out[2]} {design_1_i/fft_wrapper_0/inst/freq_out[3]} {design_1_i/fft_wrapper_0/inst/freq_out[4]} {design_1_i/fft_wrapper_0/inst/freq_out[5]} {design_1_i/fft_wrapper_0/inst/freq_out[6]} {design_1_i/fft_wrapper_0/inst/freq_out[7]} {design_1_i/fft_wrapper_0/inst/freq_out[8]} {design_1_i/fft_wrapper_0/inst/freq_out[9]} {design_1_i/fft_wrapper_0/inst/freq_out[10]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
-set_property port_width 12 [get_debug_ports u_ila_0/probe4]
-connect_debug_port u_ila_0/probe4 [get_nets [list {design_1_i/fft_wrapper_0/input_data[0]} {design_1_i/fft_wrapper_0/input_data[1]} {design_1_i/fft_wrapper_0/input_data[2]} {design_1_i/fft_wrapper_0/input_data[3]} {design_1_i/fft_wrapper_0/input_data[4]} {design_1_i/fft_wrapper_0/input_data[5]} {design_1_i/fft_wrapper_0/input_data[6]} {design_1_i/fft_wrapper_0/input_data[7]} {design_1_i/fft_wrapper_0/input_data[8]} {design_1_i/fft_wrapper_0/input_data[9]} {design_1_i/fft_wrapper_0/input_data[10]} {design_1_i/fft_wrapper_0/input_data[11]}]]
+set_property port_width 11 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {design_1_i/fft_wrapper_0/frequency[0]} {design_1_i/fft_wrapper_0/frequency[1]} {design_1_i/fft_wrapper_0/frequency[2]} {design_1_i/fft_wrapper_0/frequency[3]} {design_1_i/fft_wrapper_0/frequency[4]} {design_1_i/fft_wrapper_0/frequency[5]} {design_1_i/fft_wrapper_0/frequency[6]} {design_1_i/fft_wrapper_0/frequency[7]} {design_1_i/fft_wrapper_0/frequency[8]} {design_1_i/fft_wrapper_0/frequency[9]} {design_1_i/fft_wrapper_0/frequency[10]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
-set_property port_width 32 [get_debug_ports u_ila_0/probe5]
-connect_debug_port u_ila_0/probe5 [get_nets [list {design_1_i/fft_wrapper_0/inst/frequency[0]} {design_1_i/fft_wrapper_0/inst/frequency[1]} {design_1_i/fft_wrapper_0/inst/frequency[2]} {design_1_i/fft_wrapper_0/inst/frequency[3]} {design_1_i/fft_wrapper_0/inst/frequency[4]} {design_1_i/fft_wrapper_0/inst/frequency[5]} {design_1_i/fft_wrapper_0/inst/frequency[6]} {design_1_i/fft_wrapper_0/inst/frequency[7]} {design_1_i/fft_wrapper_0/inst/frequency[8]} {design_1_i/fft_wrapper_0/inst/frequency[9]} {design_1_i/fft_wrapper_0/inst/frequency[10]} {design_1_i/fft_wrapper_0/inst/frequency[11]} {design_1_i/fft_wrapper_0/inst/frequency[12]} {design_1_i/fft_wrapper_0/inst/frequency[13]} {design_1_i/fft_wrapper_0/inst/frequency[14]} {design_1_i/fft_wrapper_0/inst/frequency[15]} {design_1_i/fft_wrapper_0/inst/frequency[16]} {design_1_i/fft_wrapper_0/inst/frequency[17]} {design_1_i/fft_wrapper_0/inst/frequency[18]} {design_1_i/fft_wrapper_0/inst/frequency[19]} {design_1_i/fft_wrapper_0/inst/frequency[20]} {design_1_i/fft_wrapper_0/inst/frequency[21]} {design_1_i/fft_wrapper_0/inst/frequency[22]} {design_1_i/fft_wrapper_0/inst/frequency[23]} {design_1_i/fft_wrapper_0/inst/frequency[24]} {design_1_i/fft_wrapper_0/inst/frequency[25]} {design_1_i/fft_wrapper_0/inst/frequency[26]} {design_1_i/fft_wrapper_0/inst/frequency[27]} {design_1_i/fft_wrapper_0/inst/frequency[28]} {design_1_i/fft_wrapper_0/inst/frequency[29]} {design_1_i/fft_wrapper_0/inst/frequency[30]} {design_1_i/fft_wrapper_0/inst/frequency[31]}]]
+set_property port_width 25 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {design_1_i/fft_wrapper_0/reset_count[0]} {design_1_i/fft_wrapper_0/reset_count[1]} {design_1_i/fft_wrapper_0/reset_count[2]} {design_1_i/fft_wrapper_0/reset_count[3]} {design_1_i/fft_wrapper_0/reset_count[4]} {design_1_i/fft_wrapper_0/reset_count[5]} {design_1_i/fft_wrapper_0/reset_count[6]} {design_1_i/fft_wrapper_0/reset_count[7]} {design_1_i/fft_wrapper_0/reset_count[8]} {design_1_i/fft_wrapper_0/reset_count[9]} {design_1_i/fft_wrapper_0/reset_count[10]} {design_1_i/fft_wrapper_0/reset_count[11]} {design_1_i/fft_wrapper_0/reset_count[12]} {design_1_i/fft_wrapper_0/reset_count[13]} {design_1_i/fft_wrapper_0/reset_count[14]} {design_1_i/fft_wrapper_0/reset_count[15]} {design_1_i/fft_wrapper_0/reset_count[16]} {design_1_i/fft_wrapper_0/reset_count[17]} {design_1_i/fft_wrapper_0/reset_count[18]} {design_1_i/fft_wrapper_0/reset_count[19]} {design_1_i/fft_wrapper_0/reset_count[20]} {design_1_i/fft_wrapper_0/reset_count[21]} {design_1_i/fft_wrapper_0/reset_count[22]} {design_1_i/fft_wrapper_0/reset_count[23]} {design_1_i/fft_wrapper_0/reset_count[24]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
-set_property port_width 12 [get_debug_ports u_ila_0/probe6]
-connect_debug_port u_ila_0/probe6 [get_nets [list {design_1_i/fft_wrapper_0/inst/input_data[0]} {design_1_i/fft_wrapper_0/inst/input_data[1]} {design_1_i/fft_wrapper_0/inst/input_data[2]} {design_1_i/fft_wrapper_0/inst/input_data[3]} {design_1_i/fft_wrapper_0/inst/input_data[4]} {design_1_i/fft_wrapper_0/inst/input_data[5]} {design_1_i/fft_wrapper_0/inst/input_data[6]} {design_1_i/fft_wrapper_0/inst/input_data[7]} {design_1_i/fft_wrapper_0/inst/input_data[8]} {design_1_i/fft_wrapper_0/inst/input_data[9]} {design_1_i/fft_wrapper_0/inst/input_data[10]} {design_1_i/fft_wrapper_0/inst/input_data[11]}]]
+set_property port_width 11 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {design_1_i/fft_wrapper_0/inst/frequency[0]} {design_1_i/fft_wrapper_0/inst/frequency[1]} {design_1_i/fft_wrapper_0/inst/frequency[2]} {design_1_i/fft_wrapper_0/inst/frequency[3]} {design_1_i/fft_wrapper_0/inst/frequency[4]} {design_1_i/fft_wrapper_0/inst/frequency[5]} {design_1_i/fft_wrapper_0/inst/frequency[6]} {design_1_i/fft_wrapper_0/inst/frequency[7]} {design_1_i/fft_wrapper_0/inst/frequency[8]} {design_1_i/fft_wrapper_0/inst/frequency[9]} {design_1_i/fft_wrapper_0/inst/frequency[10]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
-set_property port_width 1 [get_debug_ports u_ila_0/probe7]
-connect_debug_port u_ila_0/probe7 [get_nets [list design_1_i/fft_wrapper_0/inst/fft_busy]]
+set_property port_width 12 [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {design_1_i/fft_wrapper_0/input_data[0]} {design_1_i/fft_wrapper_0/input_data[1]} {design_1_i/fft_wrapper_0/input_data[2]} {design_1_i/fft_wrapper_0/input_data[3]} {design_1_i/fft_wrapper_0/input_data[4]} {design_1_i/fft_wrapper_0/input_data[5]} {design_1_i/fft_wrapper_0/input_data[6]} {design_1_i/fft_wrapper_0/input_data[7]} {design_1_i/fft_wrapper_0/input_data[8]} {design_1_i/fft_wrapper_0/input_data[9]} {design_1_i/fft_wrapper_0/input_data[10]} {design_1_i/fft_wrapper_0/input_data[11]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
 set_property port_width 1 [get_debug_ports u_ila_0/probe8]
-connect_debug_port u_ila_0/probe8 [get_nets [list design_1_i/fft_wrapper_0/fft_busy]]
+connect_debug_port u_ila_0/probe8 [get_nets [list design_1_i/fft_wrapper_0/inst/fft_busy]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
 set_property port_width 1 [get_debug_ports u_ila_0/probe9]
-connect_debug_port u_ila_0/probe9 [get_nets [list design_1_i/fft_wrapper_0/inst/fft_done]]
+connect_debug_port u_ila_0/probe9 [get_nets [list design_1_i/fft_wrapper_0/fft_busy]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
 set_property port_width 1 [get_debug_ports u_ila_0/probe10]
@@ -2803,11 +2817,15 @@ connect_debug_port u_ila_0/probe10 [get_nets [list design_1_i/fft_wrapper_0/fft_
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
 set_property port_width 1 [get_debug_ports u_ila_0/probe11]
-connect_debug_port u_ila_0/probe11 [get_nets [list design_1_i/fft_wrapper_0/fft_pwm_out]]
+connect_debug_port u_ila_0/probe11 [get_nets [list design_1_i/fft_wrapper_0/inst/fft_done]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
 set_property port_width 1 [get_debug_ports u_ila_0/probe12]
-connect_debug_port u_ila_0/probe12 [get_nets [list design_1_i/fft_wrapper_0/resetn_gen]]
+connect_debug_port u_ila_0/probe12 [get_nets [list design_1_i/fft_wrapper_0/fft_pwm_out]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list design_1_i/fft_wrapper_0/resetn_gen]]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
