@@ -1,0 +1,89 @@
+$date
+        2024-Mar-19 00:15:37
+$end
+$version
+        Vivado v2018.3 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 12 " design_1_i/spi_controller_0_mic_data_out [11:0] $end
+$var reg 12 . design_1_i/FFT_wrapper_0/inst/input_data [11:0] $end
+$var reg 5 : design_1_i/FFT_wrapper_0/inst/latched_address [4:0] $end
+$var reg 3 ? design_1_i/FFT_wrapper_0/inst/address_reg__0 [4:2] $end
+$var reg 1 B design_1_i/btn_rst $end
+$var reg 1 C design_1_i/FFT_wrapper_0/fft_done $end
+$var reg 1 D u_ila_0_fft_enable $end
+$var reg 1 E design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_88 $end
+$var reg 1 F design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_89 $end
+$var reg 1 G design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_90 $end
+$var reg 1 H design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_91 $end
+$var reg 1 I design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_92 $end
+$var reg 1 J design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_93 $end
+$var reg 1 K design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_94 $end
+$var reg 1 L design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_95 $end
+$var reg 1 M design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_96 $end
+$var reg 1 N design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_97 $end
+$var reg 1 O design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_98 $end
+$var reg 1 P design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_99 $end
+$var reg 1 Q design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_100 $end
+$var reg 1 R design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_101 $end
+$var reg 1 S design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_102 $end
+$var reg 1 T design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_103 $end
+$var reg 1 U design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_104 $end
+$var reg 1 V design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_105 $end
+$var reg 1 W u_ila_0_load_data_1 $end
+$var reg 1 X u_ila_0_load_data_enlongate $end
+$var reg 1 Y design_1_i/FFT_wrapper_0/load_done $end
+$var reg 1 Z design_1_i/FFT_wrapper_0/inst/rstn $end
+$var reg 1 [ u_ila_0_load_data $end
+$var reg 1 \ _TRIGGER $end
+$var reg 1 ] _WINDOW $end
+$var reg 1 ^ _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000 "
+b1000 .
+b10000 :
+b0 ?
+0B
+0C
+1D
+0E
+0F
+0G
+0H
+0I
+1J
+0K
+0L
+1M
+1N
+1O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+1]
+0^
+$end
+#512
+1C
+1\
+#513
+b0 .
+b0 :
+#529
+0C

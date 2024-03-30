@@ -16,6 +16,21 @@ verilog xil_defaultlib  --include "../../../../project_1.srcs/sources_1/bd/desig
 "../../../../project_1.ip_user_files/bd/design_1/ip/design_1_mic_storage_0_1/sim/design_1_mic_storage_0_1.v" \
 "../../../../project_1.ip_user_files/bd/design_1/ip/design_1_playback_ctrl_0_0/sim/design_1_playback_ctrl_0_0.v" \
 "../../../../project_1.ip_user_files/bd/design_1/ip/design_1_one_reg_0_0/sim/design_1_one_reg_0_0.v" \
+
+sv xil_defaultlib  --include "../../../../project_1.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../project_1.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../../project_1.srcs/sources_1/ECE532/git-version/ECE532-project/preprocessor/rtl/audio_preprocessor.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_audio_preprocessor_0_0/sim/design_1_audio_preprocessor_0_0.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/ad41/src/Level_2.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/ad41/src/Level_1.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/ad41/src/Level_3.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/ad41/src/Level_4.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/ad41/src/Level_5.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/ad41/src/butterfly.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/ad41/src/fft.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/ad41/src/fft_wrapper.sv" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_fft_wrapper_0_1/sim/design_1_fft_wrapper_0_1.sv" \
+
+verilog xil_defaultlib  --include "../../../../project_1.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../project_1.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../../project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
 
 sv xil_defaultlib  --include "../../../../project_1.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../project_1.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \

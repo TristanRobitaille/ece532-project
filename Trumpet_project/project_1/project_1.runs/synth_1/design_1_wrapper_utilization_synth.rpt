@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-| Date         : Tue Mar 12 01:48:54 2024
-| Host         : BA3135WS06 running 64-bit major release  (build 9200)
+| Date         : Fri Mar 29 22:39:30 2024
+| Host         : BA3135WS39 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : 7a200tsbg484-1
@@ -165,7 +165,7 @@ Table of Contents
 | design_1_spi_controller_0_0      |    1 |
 | design_1_rst_clk_wiz_1_100M_0    |    1 |
 | design_1_playback_ctrl_0_0       |    1 |
-| design_1_one_reg_0_0             |    1 |
+| design_1_one_register_0_0        |    1 |
 | design_1_microblaze_0_axi_intc_0 |    1 |
 | design_1_microblaze_0_0          |    1 |
 | design_1_mic_storage_0_1         |    1 |
@@ -174,6 +174,7 @@ Table of Contents
 | design_1_ilmb_v10_0              |    1 |
 | design_1_ilmb_bram_if_cntlr_0    |    1 |
 | design_1_i2s_0_0                 |    1 |
+| design_1_fft_axi_0_1             |    1 |
 | design_1_dlmb_v10_0              |    1 |
 | design_1_dlmb_bram_if_cntlr_0    |    1 |
 | design_1_clk_wiz_1_0             |    1 |
@@ -183,6 +184,7 @@ Table of Contents
 | design_1_axi_gpio_1_0            |    1 |
 | design_1_axi_gpio_0_1            |    1 |
 | design_1_axi_gpio_0_0            |    1 |
+| design_1_audio_preprocessor_1_0  |    1 |
 +----------------------------------+------+
 
 

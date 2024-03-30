@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-| Date                      : Tue Mar 12 01:58:56 2024
-| Host                      : BA3135WS06 running 64-bit major release  (build 9200)
+| Date                      : Fri Mar 29 22:43:54 2024
+| Host                      : BA3135WS39 running 64-bit major release  (build 9200)
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
 | Device                    : xc7a200t
@@ -446,7 +446,7 @@ Table of Contents
 | U13        |                           | Dedicated  | TDO_0                        | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U14        |                           |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | U15        |                           | High Range | IO_L14P_T2_SRCC_13           | User IO       |             |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| U16        | led_tri_o[3]              | High Range | IO_L17N_T2_13                | OUTPUT        | LVCMOS33    |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| U16        | fft_pwm_out               | High Range | IO_L17N_T2_13                | OUTPUT        | LVCMOS33    |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U17        |                           | High Range | IO_L18P_T2_A12_D28_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U18        |                           | High Range | IO_L18N_T2_A11_D27_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U19        |                           | High Range | VCCO_14                      | VCCO          |             |      14 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |

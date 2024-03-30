@@ -2,10 +2,10 @@
 
 module one_reg(
     input clk_100MHz,
-    input [11:0] in,
-    output reg [11:0] out);
+    input [11:0] in_input,
+    output reg [11:0] out_output);
     
     always @ (posedge clk_100MHz) begin
-        out <= in;
+        out_output <= in_input;
     end
 endmodule

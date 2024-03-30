@@ -8,6 +8,7 @@ proc init_gui { IPINST } {
   ipgui::add_param $IPINST -name "RECORDING" -parent ${Page_0}
   ipgui::add_param $IPINST -name "TIMEBASE_CLK_DIV" -parent ${Page_0}
   ipgui::add_param $IPINST -name "buffer_length" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "recording_duration_s" -parent ${Page_0}
 
 
 }
@@ -57,6 +58,20 @@ proc validate_PARAM_VALUE.buffer_length { PARAM_VALUE.buffer_length } {
 	return true
 }
 
+proc update_PARAM_VALUE.recording_duration_s { PARAM_VALUE.recording_duration_s } {
+	# Procedure called to update recording_duration_s when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.recording_duration_s { PARAM_VALUE.recording_duration_s } {
+	# Procedure called to validate recording_duration_s
+	return true
+}
+
+
+proc update_MODELPARAM_VALUE.recording_duration_s { MODELPARAM_VALUE.recording_duration_s PARAM_VALUE.recording_duration_s } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.recording_duration_s}] ${MODELPARAM_VALUE.recording_duration_s}
+}
 
 proc update_MODELPARAM_VALUE.buffer_length { MODELPARAM_VALUE.buffer_length PARAM_VALUE.buffer_length } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value

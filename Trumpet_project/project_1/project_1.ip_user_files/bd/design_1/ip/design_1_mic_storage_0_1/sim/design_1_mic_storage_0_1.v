@@ -79,7 +79,8 @@ output wire recording_in_progress_led;
 output wire [11 : 0] playback_data;
 
   mic_storage #(
-    .buffer_length(74999),
+    .recording_duration_s(5),
+    .buffer_length(24999),
     .TIMEBASE_CLK_DIV(10000),
     .IDLE(32'H00000000),
     .RECORDING(32'H00000001),

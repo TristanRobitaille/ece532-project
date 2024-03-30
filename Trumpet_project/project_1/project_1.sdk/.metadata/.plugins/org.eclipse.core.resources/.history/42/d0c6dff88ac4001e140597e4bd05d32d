@@ -1,0 +1,29 @@
+/*
+ * cap_btn.c
+ *
+ *  Created on: Feb 3, 2024
+ *      Author: robita46
+ */
+
+#include "cap_btn.h"
+
+//----- TYPEDEF -----//
+typedef u8 AddressType;
+
+//----- GLOBALS -----//
+volatile unsigned int* i2c = (unsigned int*) XPAR_I2C_CAP_BTN_AXI_IIC_0_BASEADDR;
+volatile u8 TransmitComplete;
+volatile u8 ReceiveComplete;
+
+u8 rx_buffer;
+
+XIic IicInstance;
+
+//----- FUNCTIONS -----//
+int write_i2c_single_byte_blocking(u8* data_to_write, u8 len) {
+	XIic_Send(XPAR_I2C_CAP_BTN_AXI_IIC_0_BASEADDR, AD7156_ADDR, data_to_write, len, XIIC_STOP);
+	return 0;
+}
+
+u8 read_i2c_single_byte_blocking(u8 addr) {
+}

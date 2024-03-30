@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Fri Mar 29 18:53:25 2024
+| Host         : BA3135WS39 running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file fft_axi_v1_0_bus_skew_routed.rpt -pb fft_axi_v1_0_bus_skew_routed.pb -rpx fft_axi_v1_0_bus_skew_routed.rpx
+| Design       : fft_axi_v1_0
+| Device       : 7a200t-sbg484
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

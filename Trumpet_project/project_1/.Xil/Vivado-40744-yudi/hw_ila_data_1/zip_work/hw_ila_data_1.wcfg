@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/ECE532/GITHUB_PRO/ECE532-project/Trumpet_project/project_1/project_1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="702304fs"></ZoomEndTime>
+      <Cursor1Time time="570000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="754"></NameColumnWidth>
+      <ValueColumnWidth column_width="484"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/input_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/input_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">input_data[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/spi_controller_0_mic_data_out" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/spi_controller_0_mic_data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_controller_0_mic_data_out[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/latched_address" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/latched_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">latched_address[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/latched_address" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/latched_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">latched_address[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/rstn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_fft_enable" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_fft_enable</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_fft_enable</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_load_data" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_load_data</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_load_data</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_load_data_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_load_data_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_load_data_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_load_data_enlongate" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_load_data_enlongate</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_load_data_enlongate</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/FFT_wrapper_0/fft_done" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/fft_done</obj_property>
+      <obj_property name="ObjectShortName">fft_done</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="group110" type="group">
+      <obj_property name="label">freq</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_100" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_100</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_100</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_101" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_101</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_101</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_102" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_102</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_102</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_103" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_103</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_103</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_104" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_104</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_104</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_105" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_105</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_105</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_88" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_88</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_88</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_89" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_89</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_89</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_90" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_90</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_90</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_91" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_91</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_91</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_92" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_92</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_92</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_93" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_93</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_93</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_94" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_94</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_94</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_95" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_95</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_95</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_96" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_96</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_96</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_97" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_97</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_97</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_98" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_98</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_98</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_99" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/FFT/frequency0_n_99</obj_property>
+         <obj_property name="ObjectShortName">frequency0_n_99</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="design_1_i/FFT_wrapper_0/inst/address_reg__0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/inst/address_reg__0[4:2]</obj_property>
+      <obj_property name="ObjectShortName">address_reg__0[4:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/FFT_wrapper_0/load_done" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/FFT_wrapper_0/load_done</obj_property>
+      <obj_property name="ObjectShortName">load_done</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>
