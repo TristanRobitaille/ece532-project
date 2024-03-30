@@ -1,8 +1,8 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-//Date        : Tue Mar 12 01:12:00 2024
-//Host        : BA3135WS06 running 64-bit major release  (build 9200)
+//Date        : Sat Mar 30 17:37:37 2024
+//Host        : BA3135WS39 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -16,6 +16,7 @@ module design_1_wrapper
     cap_btn_i2c_sda_io,
     chip_select,
     clk_100MHz,
+    fft_pwm_out,
     i2s_bclk,
     i2s_data,
     i2s_i2c_scl_io,
@@ -39,6 +40,7 @@ module design_1_wrapper
   inout cap_btn_i2c_sda_io;
   output chip_select;
   input clk_100MHz;
+  output fft_pwm_out;
   output i2s_bclk;
   output i2s_data;
   inout i2s_i2c_scl_io;
@@ -47,7 +49,7 @@ module design_1_wrapper
   output i2s_mclk;
   output led_mic_pwm;
   output led_playback_mode;
-  output [3:0]led_tri_o;
+  output [2:0]led_tri_o;
   input master_in_slave_out;
   output playback_in_progress_led;
   output recording_in_progress_led;
@@ -69,6 +71,7 @@ module design_1_wrapper
   wire cap_btn_i2c_sda_t;
   wire chip_select;
   wire clk_100MHz;
+  wire fft_pwm_out;
   wire i2s_bclk;
   wire i2s_data;
   wire i2s_i2c_scl_i;
@@ -83,7 +86,7 @@ module design_1_wrapper
   wire i2s_mclk;
   wire led_mic_pwm;
   wire led_playback_mode;
-  wire [3:0]led_tri_o;
+  wire [2:0]led_tri_o;
   wire master_in_slave_out;
   wire playback_in_progress_led;
   wire recording_in_progress_led;
@@ -114,6 +117,7 @@ module design_1_wrapper
         .cap_btn_i2c_sda_t(cap_btn_i2c_sda_t),
         .chip_select(chip_select),
         .clk_100MHz(clk_100MHz),
+        .fft_pwm_out(fft_pwm_out),
         .i2s_bclk(i2s_bclk),
         .i2s_data(i2s_data),
         .i2s_i2c_scl_i(i2s_i2c_scl_i),

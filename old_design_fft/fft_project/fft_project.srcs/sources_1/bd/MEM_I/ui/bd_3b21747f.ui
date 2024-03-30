@@ -1,0 +1,15 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port BRAM_PORTB_0 -pg 1 -y -260 -defaultsOSRD
+preplace port BRAM_PORTA_0 -pg 1 -y -290 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 1 -y -270 -defaultsOSRD
+preplace netloc BRAM_PORTA_0_1 1 0 1 -250
+preplace netloc BRAM_PORTB_0_1 1 0 1 N
+levelinfo -pg 1 -270 -140 550 -top -370 -bot 410
+"
+}
+{
+   "da_bram_cntlr_cnt":"2"
+}

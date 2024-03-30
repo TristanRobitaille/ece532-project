@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/ECE532/new_fft_design/fft/fft.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/ECE532/new_fft_design/fft/fft.srcs/sim_1/new/fft_tb.sv,1711592191,systemVerilog,,,,fft_tb,,,,,,,,
+C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/Level_1.sv,1711341714,systemVerilog,,C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/Level_3.sv,,level_1,,,,,,,,
+C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/Level_2.sv,1711322348,verilog,,,,level_2,,,,,,,,
+C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/Level_3.sv,1711322356,systemVerilog,,C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/Level_4.sv,,level_3,,,,,,,,
+C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/Level_4.sv,1711322364,systemVerilog,,C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/Level_5.sv,,level_4,,,,,,,,
+C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/Level_5.sv,1711322371,systemVerilog,,C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/butterfly.sv,,level_5,,,,,,,,
+C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/butterfly.sv,1711407287,systemVerilog,,C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/fft.sv,,radix_2_butterfly;radix_4_butterfly;radix_8_butterfly,,,,,,,,
+C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/fft.sv,1711594120,systemVerilog,,C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/fft_wrapper.sv,,fft,,,,,,,,
+C:/ECE532/new_fft_design/fft/fft.srcs/sources_1/new/fft_wrapper.sv,1711595198,systemVerilog,,C:/ECE532/new_fft_design/fft/fft.srcs/sim_1/new/fft_tb.sv,,fft_wrapper,,,,,,,,

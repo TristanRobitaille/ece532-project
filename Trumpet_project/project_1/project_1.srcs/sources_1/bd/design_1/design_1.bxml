@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1710220407"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1710220407"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1710220407"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1710220407"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1711834658"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1711834658"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1711834658"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1711834658"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\design_1_clk_wiz_1_0\design_1_clk_wiz_1_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_1"/>
@@ -202,8 +202,24 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\design_1_one_reg_0_0\design_1_one_reg_0_0.xci" Type="IP">
-        <Instance HierarchyPath="one_reg_0"/>
+      <File Name="ip\design_1_audio_preprocessor_1_0\design_1_audio_preprocessor_1_0.xci" Type="IP">
+        <Instance HierarchyPath="audio_preprocessor_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_one_register_0_0\design_1_one_register_0_0.xci" Type="IP">
+        <Instance HierarchyPath="one_register_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_fft_axi_0_1\design_1_fft_axi_0_1.xci" Type="IP">
+        <Instance HierarchyPath="fft_axi_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

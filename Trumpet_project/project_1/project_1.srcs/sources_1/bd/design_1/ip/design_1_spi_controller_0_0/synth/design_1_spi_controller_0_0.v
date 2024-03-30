@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "spi_controller,Vivado 2018.3.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_spi_controller_0_0,spi_controller,{}" *)
-(* CORE_GENERATION_INFO = "design_1_spi_controller_0_0,spi_controller,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=spi_controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,SLEEP=0,TRANSFER=1,DONE=2,SPI_CLK_DIV=100,NUM_BITS=16,SCLK_SAMPLING_FREQ_DIV=100}" *)
+(* CORE_GENERATION_INFO = "design_1_spi_controller_0_0,spi_controller,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=spi_controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,SLEEP=0,TRANSFER=1,DONE=2,SPI_CLK_DIV=100,NUM_BITS=16,SCLK_SAMPLING_FREQ_DIV=200}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_spi_controller_0_0 (
@@ -85,7 +85,7 @@ output wire [11 : 0] mic_data_out;
     .DONE(2),
     .SPI_CLK_DIV(100),
     .NUM_BITS(16),
-    .SCLK_SAMPLING_FREQ_DIV(100)
+    .SCLK_SAMPLING_FREQ_DIV(200)
   ) inst (
     .clk_100MHz(clk_100MHz),
     .rst_n(rst_n),
