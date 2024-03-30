@@ -71,7 +71,7 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/robita46/ECE532-project-FFT/ECE532-project-FFT/Trumpet_project/project_1/project_1.cache/wt [current_project]
   set_property parent.project_path C:/Users/robita46/ECE532-project-FFT/ECE532-project-FFT/Trumpet_project/project_1/project_1.xpr [current_project]
-  set_property ip_repo_paths c:/Users/robita46/ECE532-project-FFT/ECE532-project-FFT/Trumpet_project [current_project]
+  set_property ip_repo_paths C:/Users/robita46/ECE532-project-FFT/ECE532-project-FFT/Trumpet_project [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/robita46/ECE532-project-FFT/ECE532-project-FFT/Trumpet_project/project_1/project_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

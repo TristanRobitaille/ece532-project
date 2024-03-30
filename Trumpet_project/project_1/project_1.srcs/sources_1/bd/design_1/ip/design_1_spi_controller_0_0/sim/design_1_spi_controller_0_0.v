@@ -84,7 +84,7 @@ output wire [11 : 0] mic_data_out;
     .DONE(2),
     .SPI_CLK_DIV(100),
     .NUM_BITS(16),
-    .SCLK_SAMPLING_FREQ_DIV(100)
+    .SCLK_SAMPLING_FREQ_DIV(200)
   ) inst (
     .clk_100MHz(clk_100MHz),
     .rst_n(rst_n),

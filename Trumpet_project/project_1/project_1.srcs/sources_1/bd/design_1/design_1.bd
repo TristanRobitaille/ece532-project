@@ -46,11 +46,11 @@
         "m08_couplers": {}
       },
       "i2s_0": "",
-      "spi_controller_0": "",
-      "mic_storage_0": "",
       "playback_ctrl_0": "",
       "audio_preprocessor_1": "",
       "one_register_0": "",
+      "spi_controller_0": "",
+      "mic_storage_0": "",
       "fft_axi_0": ""
     },
     "interface_ports": {
@@ -264,12 +264,6 @@
           }
         },
         "interface_nets": {
-          "microblaze_0_ilmb_bus": {
-            "interface_ports": [
-              "ilmb_bram_if_cntlr/SLMB",
-              "ilmb_v10/LMB_Sl_0"
-            ]
-          },
           "microblaze_0_dlmb_bus": {
             "interface_ports": [
               "dlmb_bram_if_cntlr/SLMB",
@@ -280,6 +274,12 @@
             "interface_ports": [
               "DLMB",
               "dlmb_v10/LMB_M"
+            ]
+          },
+          "microblaze_0_ilmb_bus": {
+            "interface_ports": [
+              "ilmb_bram_if_cntlr/SLMB",
+              "ilmb_v10/LMB_Sl_0"
             ]
           },
           "microblaze_0_ilmb_cntlr": {
@@ -391,6 +391,12 @@
           }
         },
         "interface_nets": {
+          "Conn2": {
+            "interface_ports": [
+              "S_AXI1",
+              "axi_cap_btn_gpio/S_AXI"
+            ]
+          },
           "Conn3": {
             "interface_ports": [
               "cap_btn_i2c",
@@ -401,12 +407,6 @@
             "interface_ports": [
               "S_AXI",
               "axi_iic_0/S_AXI"
-            ]
-          },
-          "Conn2": {
-            "interface_ports": [
-              "S_AXI1",
-              "axi_cap_btn_gpio/S_AXI"
             ]
           }
         },
@@ -1392,18 +1392,6 @@
           }
         },
         "interface_nets": {
-          "xbar_to_m04_couplers": {
-            "interface_ports": [
-              "xbar/M04_AXI",
-              "m04_couplers/S_AXI"
-            ]
-          },
-          "m05_couplers_to_axi_interconnect_0": {
-            "interface_ports": [
-              "M05_AXI",
-              "m05_couplers/M_AXI"
-            ]
-          },
           "xbar_to_m05_couplers": {
             "interface_ports": [
               "xbar/M05_AXI",
@@ -1428,70 +1416,22 @@
               "m07_couplers/M_AXI"
             ]
           },
-          "xbar_to_m07_couplers": {
-            "interface_ports": [
-              "xbar/M07_AXI",
-              "m07_couplers/S_AXI"
-            ]
-          },
           "m08_couplers_to_axi_interconnect_0": {
             "interface_ports": [
               "M08_AXI",
               "m08_couplers/M_AXI"
             ]
           },
+          "xbar_to_m07_couplers": {
+            "interface_ports": [
+              "xbar/M07_AXI",
+              "m07_couplers/S_AXI"
+            ]
+          },
           "xbar_to_m08_couplers": {
             "interface_ports": [
               "xbar/M08_AXI",
               "m08_couplers/S_AXI"
-            ]
-          },
-          "axi_interconnect_0_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
-          "m00_couplers_to_axi_interconnect_0": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
-            ]
-          },
-          "s00_couplers_to_xbar": {
-            "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
-            ]
-          },
-          "m01_couplers_to_axi_interconnect_0": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m00_couplers": {
-            "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
-            ]
-          },
-          "m02_couplers_to_axi_interconnect_0": {
-            "interface_ports": [
-              "M02_AXI",
-              "m02_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m01_couplers": {
-            "interface_ports": [
-              "xbar/M01_AXI",
-              "m01_couplers/S_AXI"
-            ]
-          },
-          "xbar_to_m02_couplers": {
-            "interface_ports": [
-              "xbar/M02_AXI",
-              "m02_couplers/S_AXI"
             ]
           },
           "m03_couplers_to_axi_interconnect_0": {
@@ -1510,6 +1450,66 @@
             "interface_ports": [
               "M04_AXI",
               "m04_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m04_couplers": {
+            "interface_ports": [
+              "xbar/M04_AXI",
+              "m04_couplers/S_AXI"
+            ]
+          },
+          "m05_couplers_to_axi_interconnect_0": {
+            "interface_ports": [
+              "M05_AXI",
+              "m05_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m00_couplers": {
+            "interface_ports": [
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_axi_interconnect_0": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m01_couplers": {
+            "interface_ports": [
+              "xbar/M01_AXI",
+              "m01_couplers/S_AXI"
+            ]
+          },
+          "m02_couplers_to_axi_interconnect_0": {
+            "interface_ports": [
+              "M02_AXI",
+              "m02_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m02_couplers": {
+            "interface_ports": [
+              "xbar/M02_AXI",
+              "m02_couplers/S_AXI"
+            ]
+          },
+          "axi_interconnect_0_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
+          "m00_couplers_to_axi_interconnect_0": {
+            "interface_ports": [
+              "M00_AXI",
+              "m00_couplers/M_AXI"
+            ]
+          },
+          "s00_couplers_to_xbar": {
+            "interface_ports": [
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
             ]
           }
         },
@@ -1622,128 +1622,6 @@
           },
           "sd": {
             "direction": "O"
-          }
-        }
-      },
-      "spi_controller_0": {
-        "vlnv": "xilinx.com:module_ref:spi_controller:1.0",
-        "xci_name": "design_1_spi_controller_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "spi_controller",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "rst_n": {
-            "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "constant"
-              }
-            }
-          },
-          "serial_clock": {
-            "type": "clk",
-            "direction": "O"
-          },
-          "clk_100MHz": {
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_1_clk_out1",
-                "value_src": "ip_prop"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "master_in_slave_out": {
-            "direction": "I"
-          },
-          "chip_select": {
-            "direction": "O"
-          },
-          "pwm_out": {
-            "direction": "O"
-          },
-          "new_data_ready_clk_100MHz": {
-            "direction": "O"
-          },
-          "mic_data_out": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          }
-        }
-      },
-      "mic_storage_0": {
-        "vlnv": "xilinx.com:module_ref:mic_storage:1.0",
-        "xci_name": "design_1_mic_storage_0_1",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "mic_storage",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "rst_n": {
-            "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "constant"
-              }
-            }
-          },
-          "clk_100MHz": {
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_1_clk_out1",
-                "value_src": "ip_prop"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "recording_in_progress": {
-            "direction": "I"
-          },
-          "start_playback": {
-            "direction": "I"
-          },
-          "new_sample": {
-            "direction": "I"
-          },
-          "mic_data": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "playback_in_progress_led": {
-            "direction": "O"
-          },
-          "recording_in_progress_led": {
-            "direction": "O"
-          },
-          "playback_data": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
           }
         }
       },
@@ -1872,28 +1750,150 @@
           }
         }
       },
+      "spi_controller_0": {
+        "vlnv": "xilinx.com:module_ref:spi_controller:1.0",
+        "xci_name": "design_1_spi_controller_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi_controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "serial_clock": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "clk_100MHz": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_1_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "master_in_slave_out": {
+            "direction": "I"
+          },
+          "chip_select": {
+            "direction": "O"
+          },
+          "pwm_out": {
+            "direction": "O"
+          },
+          "new_data_ready_clk_100MHz": {
+            "direction": "O"
+          },
+          "mic_data_out": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "mic_storage_0": {
+        "vlnv": "xilinx.com:module_ref:mic_storage:1.0",
+        "xci_name": "design_1_mic_storage_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mic_storage",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "clk_100MHz": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_1_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "recording_in_progress": {
+            "direction": "I"
+          },
+          "start_playback": {
+            "direction": "I"
+          },
+          "new_sample": {
+            "direction": "I"
+          },
+          "mic_data": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "playback_in_progress_led": {
+            "direction": "O"
+          },
+          "recording_in_progress_led": {
+            "direction": "O"
+          },
+          "playback_data": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
       "fft_axi_0": {
         "vlnv": "utoronto.ca:user:fft_axi:1.0",
         "xci_name": "design_1_fft_axi_0_1"
       }
     },
     "interface_nets": {
-      "axi_interconnect_0_M07_AXI": {
-        "interface_ports": [
-          "axi_interconnect_0/M07_AXI",
-          "fft_axi_0/S00_AXI"
-        ]
-      },
-      "axi_uartlite_0_UART": {
-        "interface_ports": [
-          "uart_rtl_0",
-          "axi_uartlite_0/UART"
-        ]
-      },
       "i2c_cap_btn_IIC_0": {
         "interface_ports": [
           "cap_btn_i2c",
           "i2c_cap_btn/cap_btn_i2c"
+        ]
+      },
+      "axi_gpio_1_GPIO": {
+        "interface_ports": [
+          "swt",
+          "axi_gpio_1/GPIO"
+        ]
+      },
+      "axi_interconnect_0_M07_AXI": {
+        "interface_ports": [
+          "axi_interconnect_0/M07_AXI",
+          "fft_axi_0/S00_AXI"
         ]
       },
       "microblaze_0_dlmb_1": {
@@ -1908,40 +1908,34 @@
           "axi_gpio_1/S_AXI"
         ]
       },
-      "microblaze_0_interrupt": {
-        "interface_ports": [
-          "microblaze_0/INTERRUPT",
-          "microblaze_0_axi_intc/interrupt"
-        ]
-      },
-      "axi_gpio_1_GPIO": {
-        "interface_ports": [
-          "swt",
-          "axi_gpio_1/GPIO"
-        ]
-      },
       "I2S_audio_iic_rtl_0": {
         "interface_ports": [
           "i2s_i2c",
           "I2S_audio/i2s_i2c"
         ]
       },
-      "axi_interconnect_0_M00_AXI": {
+      "microblaze_0_interrupt": {
         "interface_ports": [
-          "axi_interconnect_0/M00_AXI",
-          "i2c_cap_btn/S_AXI"
+          "microblaze_0/INTERRUPT",
+          "microblaze_0_axi_intc/interrupt"
         ]
       },
-      "axi_interconnect_0_M05_AXI": {
+      "axi_uartlite_0_UART": {
         "interface_ports": [
-          "axi_interconnect_0/M05_AXI",
-          "microblaze_0_axi_intc/s_axi"
+          "uart_rtl_0",
+          "axi_uartlite_0/UART"
         ]
       },
-      "microblaze_0_debug": {
+      "axi_interconnect_0_M01_AXI": {
         "interface_ports": [
-          "mdm_1/MBDEBUG_0",
-          "microblaze_0/DEBUG"
+          "axi_interconnect_0/M01_AXI",
+          "i2c_cap_btn/S_AXI1"
+        ]
+      },
+      "axi_interconnect_0_M02_AXI": {
+        "interface_ports": [
+          "axi_interconnect_0/M02_AXI",
+          "axi_gpio_0/S_AXI"
         ]
       },
       "axi_gpio_0_GPIO": {
@@ -1950,22 +1944,10 @@
           "axi_gpio_0/GPIO"
         ]
       },
-      "microblaze_0_ilmb_1": {
+      "axi_interconnect_0_M05_AXI": {
         "interface_ports": [
-          "microblaze_0/ILMB",
-          "microblaze_0_local_memory/ILMB"
-        ]
-      },
-      "microblaze_0_M_AXI_DP": {
-        "interface_ports": [
-          "microblaze_0/M_AXI_DP",
-          "axi_interconnect_0/S00_AXI"
-        ]
-      },
-      "axi_interconnect_0_M02_AXI": {
-        "interface_ports": [
-          "axi_interconnect_0/M02_AXI",
-          "axi_gpio_0/S_AXI"
+          "axi_interconnect_0/M05_AXI",
+          "microblaze_0_axi_intc/s_axi"
         ]
       },
       "axi_interconnect_0_M06_AXI": {
@@ -1980,10 +1962,28 @@
           "axi_uartlite_0/S_AXI"
         ]
       },
-      "axi_interconnect_0_M01_AXI": {
+      "microblaze_0_ilmb_1": {
         "interface_ports": [
-          "axi_interconnect_0/M01_AXI",
-          "i2c_cap_btn/S_AXI1"
+          "microblaze_0/ILMB",
+          "microblaze_0_local_memory/ILMB"
+        ]
+      },
+      "axi_interconnect_0_M00_AXI": {
+        "interface_ports": [
+          "axi_interconnect_0/M00_AXI",
+          "i2c_cap_btn/S_AXI"
+        ]
+      },
+      "microblaze_0_M_AXI_DP": {
+        "interface_ports": [
+          "microblaze_0/M_AXI_DP",
+          "axi_interconnect_0/S00_AXI"
+        ]
+      },
+      "microblaze_0_debug": {
+        "interface_ports": [
+          "mdm_1/MBDEBUG_0",
+          "microblaze_0/DEBUG"
         ]
       }
     },
@@ -2057,10 +2057,10 @@
           "axi_interconnect_0/M07_ACLK",
           "axi_interconnect_0/M08_ACLK",
           "i2s_0/clk_100MHz",
-          "spi_controller_0/clk_100MHz",
-          "mic_storage_0/clk_100MHz",
           "playback_ctrl_0/clk_100MHz",
           "one_register_0/clk_100MHz",
+          "spi_controller_0/clk_100MHz",
+          "mic_storage_0/clk_100MHz",
           "fft_axi_0/s00_axi_aclk"
         ]
       },
@@ -2104,9 +2104,9 @@
         "ports": [
           "btn_rst",
           "i2s_0/btn_rst",
+          "playback_ctrl_0/btn_rst",
           "spi_controller_0/rst_n",
-          "mic_storage_0/rst_n",
-          "playback_ctrl_0/btn_rst"
+          "mic_storage_0/rst_n"
         ]
       },
       "spi_controller_0_chip_select": {
@@ -2200,9 +2200,9 @@
       "Net": {
         "ports": [
           "spi_controller_0/mic_data_out",
-          "mic_storage_0/mic_data",
           "audio_preprocessor_1/noisy_audio_in",
           "one_register_0/in_input",
+          "mic_storage_0/mic_data",
           "fft_axi_0/input_data"
         ]
       },

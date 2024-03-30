@@ -48,7 +48,7 @@
 
 
 // IP VLNV: utoronto.ca:user:fft_axi:1.0
-// IP Revision: 7
+// IP Revision: 10
 
 (* X_CORE_INFO = "fft_axi_v1_0,Vivado 2018.3.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_fft_axi_0_1,fft_axi_v1_0,{}" *)
