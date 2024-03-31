@@ -76,7 +76,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLKIF.PHASE">0</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLKIF.PHASE">0.0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -85,7 +85,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLKIF.CLK_DOMAIN">hdmi_mig_7series_0_0_ui_clk</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLKIF.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -864,7 +864,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PHASE">0</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PHASE">0.0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -873,7 +873,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN">hdmi_mig_7series_0_0_ui_clk</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1701,7 +1701,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.PHASE">0</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.PHASE">0.0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1710,7 +1710,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.CLK_DOMAIN">hdmi_mig_7series_0_0_ui_clk</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2514,7 +2514,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S01_AXI.PHASE">0</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S01_AXI.PHASE">0.0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2523,7 +2523,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S01_AXI.CLK_DOMAIN">hdmi_mig_7series_0_0_ui_clk</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S01_AXI.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -4164,7 +4164,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S02_AXI.PHASE">0</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S02_AXI.PHASE">0.0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -4173,7 +4173,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S02_AXI.CLK_DOMAIN">hdmi_mig_7series_0_0_ui_clk</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S02_AXI.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -5814,7 +5814,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S03_AXI.PHASE">0</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S03_AXI.PHASE">0.0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -5823,7 +5823,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S03_AXI.CLK_DOMAIN">hdmi_mig_7series_0_0_ui_clk</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S03_AXI.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -43618,16 +43618,16 @@
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLKIF.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLKIF.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLKIF.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLKIF.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLKIF.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLKIF.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLKIF.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLKIF.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ADDR_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ARUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.AWUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.BUSER_WIDTH" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.DATA_WIDTH" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_CACHE" xilinx:valuePermission="bd"/>
@@ -43641,7 +43641,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.MAX_BURST_LENGTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.PROTOCOL" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.READ_WRITE_MODE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.RUSER_WIDTH" xilinx:valuePermission="bd"/>
@@ -43675,9 +43675,9 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.AWUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.DATA_WIDTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BURST" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_CACHE" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
@@ -43691,7 +43691,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.MAX_BURST_LENGTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PROTOCOL" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
@@ -43701,9 +43701,9 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.ARUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.AWUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.DATA_WIDTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_BURST" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_CACHE" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
@@ -43717,7 +43717,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.MAX_BURST_LENGTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.NUM_WRITE_OUTSTANDING" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.PROTOCOL" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
@@ -43727,9 +43727,9 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.ARUSER_WIDTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.AWUSER_WIDTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.DATA_WIDTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_BURST" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_CACHE" xilinx:valuePermission="bd"/>
@@ -43745,7 +43745,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.NUM_READ_THREADS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.NUM_WRITE_THREADS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.PROTOCOL" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.READ_WRITE_MODE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.RUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
@@ -43757,9 +43757,9 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.ARUSER_WIDTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.AWUSER_WIDTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.DATA_WIDTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_BURST" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_CACHE" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
@@ -43774,7 +43774,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.NUM_READ_THREADS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.NUM_WRITE_OUTSTANDING" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.PROTOCOL" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.RUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>

@@ -18,7 +18,7 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.ARUSER_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.AWUSER_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.BUSER_WIDTH">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.CLK_DOMAIN">hdmi_mig_7series_0_0_ui_clk</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.DATA_WIDTH">32</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.FREQ_HZ">100000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.HAS_BRESP">1</spirit:configurableElementValue>
@@ -37,7 +37,7 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.NUM_READ_THREADS">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.NUM_WRITE_OUTSTANDING">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.NUM_WRITE_THREADS">1</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.PHASE">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.PHASE">0.0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.PROTOCOL">AXI4LITE</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.CTRL.RUSER_BITS_PER_BYTE">0</spirit:configurableElementValue>
@@ -48,10 +48,10 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.IRQ.PortWidth">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.RESETN_INTF.INSERT_VIP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLKEN_INTF.POLARITY">ACTIVE_LOW</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.CLK_DOMAIN">hdmi_mig_7series_0_0_ui_clk</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.FREQ_HZ">100000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.INSERT_VIP">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.PHASE">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.PHASE">0.0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S_AXI_ARESETN_INTF.INSERT_VIP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DETECT_EN">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DET_ACHROMA_EN">0</spirit:configurableElementValue>
@@ -256,9 +256,9 @@
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.AWUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.BUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.DATA_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
-            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.HAS_BRESP" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.HAS_CACHE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
@@ -272,16 +272,16 @@
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.MAX_BURST_LENGTH" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.NUM_READ_OUTSTANDING" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.NUM_WRITE_OUTSTANDING" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.PROTOCOL" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.READ_WRITE_MODE" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.RUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.SUPPORTS_NARROW_BURST" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CTRL.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.IRQ.PortWidth" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
-            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
+            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
+            <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK_INTF.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.enable_detection" xilinx:valueSource="user"/>
           </xilinx:configElementInfos>
         </xilinx:componentInstanceExtensions>
