@@ -2,7 +2,7 @@
 set_property -dict {PACKAGE_PIN R4 IOSTANDARD LVCMOS33} [get_ports clk_100MHz]
 create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports clk_100MHz]
 #set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets hdmi_i/clk_wiz_0/inst/clk_in1_hdmi_clk_wiz_0_0]
-#set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets clk_100MHz_IBUF]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_100MHz_IBUF]
 #set_property CLOCK_DEDICATED_ROUTE ANY_CMT_COLUMN [get_nets hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/CLK_OUT_5x_hdmi_clk]
 
 ## Reset (CPU_RESET)

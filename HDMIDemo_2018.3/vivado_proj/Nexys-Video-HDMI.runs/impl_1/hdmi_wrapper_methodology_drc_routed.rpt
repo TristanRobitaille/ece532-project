@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Apr  1 16:16:31 2024
+| Date         : Mon Apr  1 19:02:31 2024
 | Host         : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file hdmi_wrapper_methodology_drc_routed.rpt -pb hdmi_wrapper_methodology_drc_routed.pb -rpx hdmi_wrapper_methodology_drc_routed.rpx
 | Design       : hdmi_wrapper
@@ -2147,112 +2147,112 @@ Related violations: <none>
 
 TIMING-16#379 Warning
 Large setup violation  
-There is a large setup violation of -1.242 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.243 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_rr0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#380 Warning
 Large setup violation  
-There is a large setup violation of -1.243 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_rr0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.244 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0/B[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#381 Warning
 Large setup violation  
-There is a large setup violation of -1.244 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0/B[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.245 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ri0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#382 Warning
 Large setup violation  
-There is a large setup violation of -1.245 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ri0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.245 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ri0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#383 Warning
 Large setup violation  
-There is a large setup violation of -1.245 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ri0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.245 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ii0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/B_rea_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#384 Warning
 Large setup violation  
-There is a large setup violation of -1.245 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ii0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/B_rea_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.246 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ri0/B[11] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#385 Warning
 Large setup violation  
-There is a large setup violation of -1.246 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ri0/B[11] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.247 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0__0/A[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#386 Warning
 Large setup violation  
-There is a large setup violation of -1.247 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0__0/A[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.249 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_7/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_7/B_rea_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#387 Warning
 Large setup violation  
-There is a large setup violation of -1.249 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_7/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_7/B_rea_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.249 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_img_o_i_reg[7]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#388 Warning
 Large setup violation  
-There is a large setup violation of -1.249 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_img_o_i_reg[7]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.250 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_rr0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#389 Warning
 Large setup violation  
-There is a large setup violation of -1.250 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_rr0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.250 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ri0/B[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#390 Warning
 Large setup violation  
-There is a large setup violation of -1.250 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ri0/B[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.250 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/B_img_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#391 Warning
 Large setup violation  
-There is a large setup violation of -1.250 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/B_img_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.251 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0__0/A[20] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#392 Warning
 Large setup violation  
-There is a large setup violation of -1.251 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0__0/A[20] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.252 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#393 Warning
 Large setup violation  
-There is a large setup violation of -1.252 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.252 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ri0/B[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#394 Warning
 Large setup violation  
-There is a large setup violation of -1.252 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ri0/B[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.252 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/A_img_o_i_reg[10]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#395 Warning
 Large setup violation  
-There is a large setup violation of -1.252 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/A_img_o_i_reg[10]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.252 ns between hdmi_i/rst_mig_7series_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C (clocked by clk_pll_i) and hdmi_i/axi_dynclk_0/U0/Inst_mmcme2_drp/FSM_onehot_current_state_reg[0]/S (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#396 Warning
 Large setup violation  
-There is a large setup violation of -1.252 ns between hdmi_i/rst_mig_7series_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C (clocked by clk_pll_i) and hdmi_i/axi_dynclk_0/U0/Inst_mmcme2_drp/FSM_onehot_current_state_reg[0]/S (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.252 ns between hdmi_i/rst_mig_7series_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C (clocked by clk_pll_i) and hdmi_i/axi_dynclk_0/U0/Inst_mmcme2_drp/FSM_onehot_current_state_reg[2]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#397 Warning
 Large setup violation  
-There is a large setup violation of -1.252 ns between hdmi_i/rst_mig_7series_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C (clocked by clk_pll_i) and hdmi_i/axi_dynclk_0/U0/Inst_mmcme2_drp/FSM_onehot_current_state_reg[2]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.252 ns between hdmi_i/rst_mig_7series_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C (clocked by clk_pll_i) and hdmi_i/axi_dynclk_0/U0/Inst_mmcme2_drp/FSM_onehot_current_state_reg[3]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#398 Warning
 Large setup violation  
-There is a large setup violation of -1.252 ns between hdmi_i/rst_mig_7series_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C (clocked by clk_pll_i) and hdmi_i/axi_dynclk_0/U0/Inst_mmcme2_drp/FSM_onehot_current_state_reg[3]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.253 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ir0__0/A[19] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#399 Warning
 Large setup violation  
-There is a large setup violation of -1.253 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ir0__0/A[19] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.255 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0/B[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#400 Warning
 Large setup violation  
-There is a large setup violation of -1.255 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0/B[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.255 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#401 Warning
@@ -3077,107 +3077,107 @@ Related violations: <none>
 
 TIMING-16#565 Warning
 Large setup violation  
-There is a large setup violation of -1.362 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0/B[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.361 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[20] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#566 Warning
 Large setup violation  
-There is a large setup violation of -1.363 ns between hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0/C (clocked by clk_pll_i) and hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/INCLUDE_PACKING.DO_REG_SLICES[0].lsig_data_slice_reg_reg[0][1]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.361 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#567 Warning
 Large setup violation  
-There is a large setup violation of -1.363 ns between hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0/C (clocked by clk_pll_i) and hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/INCLUDE_PACKING.DO_REG_SLICES[0].lsig_data_slice_reg_reg[0][4]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.361 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#568 Warning
 Large setup violation  
-There is a large setup violation of -1.363 ns between hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0/C (clocked by clk_pll_i) and hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/INCLUDE_PACKING.DO_REG_SLICES[0].lsig_data_slice_reg_reg[0][5]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.362 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0/B[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#569 Warning
 Large setup violation  
-There is a large setup violation of -1.363 ns between hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0/C (clocked by clk_pll_i) and hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/INCLUDE_PACKING.DO_REG_SLICES[0].lsig_data_slice_reg_reg[0][6]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.363 ns between hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0/C (clocked by clk_pll_i) and hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/INCLUDE_PACKING.DO_REG_SLICES[0].lsig_data_slice_reg_reg[0][1]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#570 Warning
 Large setup violation  
-There is a large setup violation of -1.363 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[17] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.363 ns between hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0/C (clocked by clk_pll_i) and hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/INCLUDE_PACKING.DO_REG_SLICES[0].lsig_data_slice_reg_reg[0][4]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#571 Warning
 Large setup violation  
-There is a large setup violation of -1.363 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.363 ns between hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0/C (clocked by clk_pll_i) and hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/INCLUDE_PACKING.DO_REG_SLICES[0].lsig_data_slice_reg_reg[0][5]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#572 Warning
 Large setup violation  
-There is a large setup violation of -1.363 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.363 ns between hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg__0/C (clocked by clk_pll_i) and hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/INCLUDE_PACKING.DO_REG_SLICES[0].lsig_data_slice_reg_reg[0][6]/R (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#573 Warning
 Large setup violation  
-There is a large setup violation of -1.363 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ri0__0/A[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.363 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[17] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#574 Warning
 Large setup violation  
-There is a large setup violation of -1.364 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0/B[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.363 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#575 Warning
 Large setup violation  
-There is a large setup violation of -1.364 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_img_o_i_reg[7]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.363 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#576 Warning
 Large setup violation  
-There is a large setup violation of -1.366 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_rr0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.363 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ri0__0/A[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#577 Warning
 Large setup violation  
-There is a large setup violation of -1.367 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/A_img_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.364 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0/B[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#578 Warning
 Large setup violation  
-There is a large setup violation of -1.369 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ii0/B[8] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.364 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_img_o_i_reg[7]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#579 Warning
 Large setup violation  
-There is a large setup violation of -1.369 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ri0/B[16] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.366 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_rr0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#580 Warning
 Large setup violation  
-There is a large setup violation of -1.370 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ii0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.367 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/A_img_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#581 Warning
 Large setup violation  
-There is a large setup violation of -1.371 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.369 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ii0/B[8] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#582 Warning
 Large setup violation  
-There is a large setup violation of -1.371 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.369 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ri0/B[16] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#583 Warning
 Large setup violation  
-There is a large setup violation of -1.373 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[20] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.370 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ii0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#584 Warning
 Large setup violation  
-There is a large setup violation of -1.373 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.371 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#585 Warning
 Large setup violation  
-There is a large setup violation of -1.373 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.371 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#586 Warning
@@ -3197,92 +3197,92 @@ Related violations: <none>
 
 TIMING-16#589 Warning
 Large setup violation  
-There is a large setup violation of -1.377 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[27] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.377 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0__0/A[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#590 Warning
 Large setup violation  
-There is a large setup violation of -1.377 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0__0/A[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.380 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#591 Warning
 Large setup violation  
-There is a large setup violation of -1.380 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.380 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_rea_o_i_reg[9]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#592 Warning
 Large setup violation  
-There is a large setup violation of -1.380 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_rea_o_i_reg[9]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.381 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#593 Warning
 Large setup violation  
-There is a large setup violation of -1.381 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.381 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#594 Warning
 Large setup violation  
-There is a large setup violation of -1.381 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.381 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#595 Warning
 Large setup violation  
-There is a large setup violation of -1.381 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.383 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#596 Warning
 Large setup violation  
-There is a large setup violation of -1.383 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.383 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#597 Warning
 Large setup violation  
-There is a large setup violation of -1.383 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.383 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#598 Warning
 Large setup violation  
-There is a large setup violation of -1.383 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ii0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.384 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#599 Warning
 Large setup violation  
-There is a large setup violation of -1.384 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0/B[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#600 Warning
 Large setup violation  
-There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0/B[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ri0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#601 Warning
 Large setup violation  
-There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ri0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ir0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#602 Warning
 Large setup violation  
-There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ir0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ir0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#603 Warning
 Large setup violation  
-There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ir0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ir0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#604 Warning
 Large setup violation  
-There is a large setup violation of -1.385 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ir0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.386 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0__0/A[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#605 Warning
 Large setup violation  
-There is a large setup violation of -1.386 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0__0/A[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.386 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_rea_o_i_reg[12]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#606 Warning
 Large setup violation  
-There is a large setup violation of -1.386 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_rea_o_i_reg[12]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.389 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[27] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#607 Warning
@@ -3352,67 +3352,67 @@ Related violations: <none>
 
 TIMING-16#620 Warning
 Large setup violation  
-There is a large setup violation of -1.400 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.401 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[27] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#621 Warning
 Large setup violation  
-There is a large setup violation of -1.400 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.402 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_rea_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#622 Warning
 Large setup violation  
-There is a large setup violation of -1.401 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[27] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.404 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/fft_busy_reg/C (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ri0/CEB2 (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#623 Warning
 Large setup violation  
-There is a large setup violation of -1.402 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_rea_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.408 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_rr0/B[4] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#624 Warning
 Large setup violation  
-There is a large setup violation of -1.404 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/fft_busy_reg/C (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ri0/CEB2 (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.408 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ir0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#625 Warning
 Large setup violation  
-There is a large setup violation of -1.408 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_rr0/B[4] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.409 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ri0/B[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#626 Warning
 Large setup violation  
-There is a large setup violation of -1.408 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ir0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.409 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ii0/B[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#627 Warning
 Large setup violation  
-There is a large setup violation of -1.409 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ri0/B[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.409 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_img_o_i_reg[8]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#628 Warning
 Large setup violation  
-There is a large setup violation of -1.409 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ii0/B[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.410 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0/B[16] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#629 Warning
 Large setup violation  
-There is a large setup violation of -1.409 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_img_o_i_reg[8]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.411 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/A_rea_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#630 Warning
 Large setup violation  
-There is a large setup violation of -1.410 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0/B[16] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.412 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#631 Warning
 Large setup violation  
-There is a large setup violation of -1.411 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/A_rea_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.413 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#632 Warning
 Large setup violation  
-There is a large setup violation of -1.412 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.413 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#633 Warning
@@ -3422,387 +3422,387 @@ Related violations: <none>
 
 TIMING-16#634 Warning
 Large setup violation  
-There is a large setup violation of -1.415 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/psdsp_144/C (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/B_rea_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.414 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#635 Warning
 Large setup violation  
-There is a large setup violation of -1.416 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[27] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.415 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/psdsp_144/C (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/B_rea_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#636 Warning
 Large setup violation  
-There is a large setup violation of -1.417 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.416 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[27] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#637 Warning
 Large setup violation  
-There is a large setup violation of -1.423 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0/B[17] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.417 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#638 Warning
 Large setup violation  
-There is a large setup violation of -1.424 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ir0/B[4] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.423 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0/B[17] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#639 Warning
 Large setup violation  
-There is a large setup violation of -1.426 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_rea_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.424 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ir0/B[4] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#640 Warning
 Large setup violation  
-There is a large setup violation of -1.427 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0/B[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.426 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_rea_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#641 Warning
 Large setup violation  
-There is a large setup violation of -1.427 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[18] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.427 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0/B[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#642 Warning
 Large setup violation  
-There is a large setup violation of -1.427 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[19] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.427 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[18] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#643 Warning
 Large setup violation  
-There is a large setup violation of -1.427 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_6/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/B[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.427 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[19] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#644 Warning
 Large setup violation  
-There is a large setup violation of -1.428 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.427 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_6/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/B[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#645 Warning
 Large setup violation  
-There is a large setup violation of -1.428 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.428 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#646 Warning
 Large setup violation  
-There is a large setup violation of -1.429 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ri0/B[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.428 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#647 Warning
 Large setup violation  
-There is a large setup violation of -1.429 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_img_o_i_reg[10]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.429 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ri0/B[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#648 Warning
 Large setup violation  
-There is a large setup violation of -1.431 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0/B[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.429 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_img_o_i_reg[10]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#649 Warning
 Large setup violation  
-There is a large setup violation of -1.431 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ir0__0/A[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.431 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0/B[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#650 Warning
 Large setup violation  
-There is a large setup violation of -1.432 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.431 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ir0__0/A[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#651 Warning
 Large setup violation  
-There is a large setup violation of -1.434 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_rea_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.432 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#652 Warning
 Large setup violation  
-There is a large setup violation of -1.434 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/A_rea_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.434 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/A_rea_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#653 Warning
 Large setup violation  
-There is a large setup violation of -1.436 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ri0__0/A[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.434 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/A_rea_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#654 Warning
 Large setup violation  
-There is a large setup violation of -1.437 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0/B[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.436 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ri0__0/A[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#655 Warning
 Large setup violation  
-There is a large setup violation of -1.439 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0__0/A[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.437 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0/B[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#656 Warning
 Large setup violation  
-There is a large setup violation of -1.440 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.439 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0__0/A[12] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#657 Warning
 Large setup violation  
-There is a large setup violation of -1.440 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.440 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#658 Warning
 Large setup violation  
-There is a large setup violation of -1.441 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[16] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.440 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#659 Warning
 Large setup violation  
-There is a large setup violation of -1.441 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[17] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.441 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[16] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#660 Warning
 Large setup violation  
-There is a large setup violation of -1.441 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0__0/A[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.441 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[17] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#661 Warning
 Large setup violation  
-There is a large setup violation of -1.441 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/A_img_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.441 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0__0/A[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#662 Warning
 Large setup violation  
-There is a large setup violation of -1.442 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0__0/A[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.441 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/A_img_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#663 Warning
 Large setup violation  
-There is a large setup violation of -1.442 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.442 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0__0/A[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#664 Warning
 Large setup violation  
-There is a large setup violation of -1.445 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.442 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#665 Warning
 Large setup violation  
-There is a large setup violation of -1.446 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[20] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.445 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#666 Warning
 Large setup violation  
-There is a large setup violation of -1.450 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ri0/B[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.446 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[20] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#667 Warning
 Large setup violation  
-There is a large setup violation of -1.452 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.450 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ri0/B[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#668 Warning
 Large setup violation  
-There is a large setup violation of -1.452 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ii0/B[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.452 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#669 Warning
 Large setup violation  
-There is a large setup violation of -1.453 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0/B[11] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.452 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/II/mult_ii0/B[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#670 Warning
 Large setup violation  
-There is a large setup violation of -1.453 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ri0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.453 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ii0/B[11] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#671 Warning
 Large setup violation  
-There is a large setup violation of -1.459 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.453 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ri0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#672 Warning
 Large setup violation  
-There is a large setup violation of -1.459 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.459 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#673 Warning
 Large setup violation  
-There is a large setup violation of -1.461 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ii0/B[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.459 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#674 Warning
 Large setup violation  
-There is a large setup violation of -1.461 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ii0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.461 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_2/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/II/mult_ii0/B[7] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#675 Warning
 Large setup violation  
-There is a large setup violation of -1.462 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[20] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.461 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ii0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#676 Warning
 Large setup violation  
-There is a large setup violation of -1.462 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/B_img_o_i_reg[12]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.462 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[20] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#677 Warning
 Large setup violation  
-There is a large setup violation of -1.462 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/A_img_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.462 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/B_img_o_i_reg[12]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#678 Warning
 Large setup violation  
-There is a large setup violation of -1.464 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ri0/B[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.462 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/A_img_o_i_reg[13]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#679 Warning
 Large setup violation  
-There is a large setup violation of -1.467 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.464 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_4/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_2/II/mult_ri0/B[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#680 Warning
 Large setup violation  
-There is a large setup violation of -1.467 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.467 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#681 Warning
 Large setup violation  
-There is a large setup violation of -1.468 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.467 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#682 Warning
 Large setup violation  
-There is a large setup violation of -1.470 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0__0/A[8] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.468 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#683 Warning
 Large setup violation  
-There is a large setup violation of -1.475 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.470 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0__0/A[8] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#684 Warning
 Large setup violation  
-There is a large setup violation of -1.475 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.475 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[21] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#685 Warning
 Large setup violation  
-There is a large setup violation of -1.476 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_rea_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.475 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[22] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#686 Warning
 Large setup violation  
-There is a large setup violation of -1.477 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.476 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_rea_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#687 Warning
 Large setup violation  
-There is a large setup violation of -1.477 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[27] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.477 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#688 Warning
 Large setup violation  
-There is a large setup violation of -1.478 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.477 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[27] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#689 Warning
 Large setup violation  
-There is a large setup violation of -1.478 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/B_img_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.478 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0__0/A[26] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#690 Warning
 Large setup violation  
-There is a large setup violation of -1.479 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0__0/A[9] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.478 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_1/I/B_img_o_i_reg[14]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#691 Warning
 Large setup violation  
-There is a large setup violation of -1.483 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.479 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_8/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_4/II/mult_ri0__0/A[9] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#692 Warning
 Large setup violation  
-There is a large setup violation of -1.484 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[18] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.483 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_rr0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#693 Warning
 Large setup violation  
-There is a large setup violation of -1.484 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[19] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.484 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[18] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#694 Warning
 Large setup violation  
-There is a large setup violation of -1.486 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[16] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.484 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/I/mult_ri0__0/A[19] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#695 Warning
 Large setup violation  
-There is a large setup violation of -1.486 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[17] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.486 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[16] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#696 Warning
 Large setup violation  
-There is a large setup violation of -1.486 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ri0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.486 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[17] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#697 Warning
 Large setup violation  
-There is a large setup violation of -1.487 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.486 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ri0/B[5] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#698 Warning
 Large setup violation  
-There is a large setup violation of -1.487 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.487 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#699 Warning
 Large setup violation  
-There is a large setup violation of -1.488 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_img_o_i_reg[8]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.487 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[29] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#700 Warning
 Large setup violation  
-There is a large setup violation of -1.489 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.488 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/B_img_o_i_reg[8]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#701 Warning
 Large setup violation  
-There is a large setup violation of -1.489 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.489 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[24] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#702 Warning
 Large setup violation  
-There is a large setup violation of -1.489 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_6/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/B[9] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.489 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_10/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_5/II/mult_ir0__0/A[25] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#703 Warning
 Large setup violation  
-There is a large setup violation of -1.491 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/psdsp_144/C (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/B_rea_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.489 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_6/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_ir0/B[9] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#704 Warning
 Large setup violation  
-There is a large setup violation of -1.493 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.491 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/psdsp_144/C (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/B_rea_o_i_reg[15]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#705 Warning
 Large setup violation  
-There is a large setup violation of -1.493 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.493 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[14] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#706 Warning
 Large setup violation  
-There is a large setup violation of -1.493 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.493 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_ii0/B[13] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#707 Warning
 Large setup violation  
-There is a large setup violation of -1.495 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.493 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0/B[15] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#708 Warning
 Large setup violation  
-There is a large setup violation of -1.496 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_rr0/B[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.495 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_12/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_6/I/mult_ri0__0/A[28] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#709 Warning
 Large setup violation  
-There is a large setup violation of -1.496 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_6/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/B[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.496 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_14/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_7/II/mult_rr0/B[6] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#710 Warning
 Large setup violation  
-There is a large setup violation of -1.497 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/mult_ri0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_8/I/mult_ii0__0/A[23] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.496 ns between hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_6/mult_rr0/CLK (clocked by clk_pll_i) and hdmi_i/fft_axi_0/inst/fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/B_3/II/mult_rr0/B[10] (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#711 Warning

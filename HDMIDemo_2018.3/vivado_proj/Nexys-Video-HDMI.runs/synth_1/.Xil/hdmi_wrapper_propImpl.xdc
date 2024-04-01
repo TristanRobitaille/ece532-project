@@ -56,7 +56,7 @@ set_property -dict { PACKAGE_PIN AB3   IOSTANDARD TMDS_33     } [get_ports { TMD
 set_property src_info {type:XDC file:3 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN R4 IOSTANDARD LVCMOS33} [get_ports clk_100MHz]
 set_property src_info {type:XDC file:3 line:5 export:INPUT save:INPUT read:READ} [current_design]
-set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets clk_100MHz_IBUF]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_100MHz_IBUF]
 set_property src_info {type:XDC file:3 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN G4 IOSTANDARD LVCMOS33} [get_ports reset_rtl_0]
 set_property src_info {type:XDC file:3 line:12 export:INPUT save:INPUT read:READ} [current_design]
