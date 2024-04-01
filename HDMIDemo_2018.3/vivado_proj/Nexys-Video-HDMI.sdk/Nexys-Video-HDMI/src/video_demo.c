@@ -33,6 +33,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "xuartlite_l.h"
+#include "text_overlay_bin/overlay_text_bin.h"
 //#include "xuartps.h"
 #include "math.h"
 #include <ctype.h>
@@ -55,19 +56,6 @@
 #define SCU_TIMER_ID XPAR_AXI_TIMER_0_DEVICE_ID
 #define UART_BASEADDR XPAR_UARTLITE_0_BASEADDR
 
-// note definitions
-#define A       0
-#define As_Bf   1
-#define B       2
-#define C       3
-#define Cs_Df   4
-#define D       5
-#define Ds_Ef   6
-#define E       7
-#define F       8
-#define Fs_Gf   9
-#define G       10
-#define Gs_Af   11
 
 /* ------------------------------------------------------------ */
 /*				Global Variables								*/
@@ -107,8 +95,7 @@ int main(void)
 
 	DemoInitialize();
 
-	//DemoRun();
-	DemoRun2();
+	DemoRun();
 
 	return 0;
 }
@@ -215,6 +202,7 @@ void DemoRun()
 {
 	int nextFrame = 0;
 	char userInput = 0;
+	u8* image = 0x90000000;
 	u32 locked;
 	XGpio *GpioPtr = &videoCapt.gpio;
 
@@ -246,81 +234,43 @@ void DemoRun()
 		switch (userInput)
 		{
 		case '1':
-			pFrames[0] = 0x90000000;
-			//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
-						//DisplayStart(&dispCtrl);
-			nextFrame = 0;
-						//VideoChangeFrame(&videoCapt, nextFrame);
-			memcpy(0x90000000,0x98000000,(size_t) 1440800);
+			analyseNote(236);
 			break;
 		case '2':
-			pFrames[1] = 0x91000000;
-						//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
-									//DisplayStart(&dispCtrl);
-						nextFrame = 1;
-									//VideoChangeFrame(&videoCapt, nextFrame);
-									memcpy(0x90000000,0x91000000,(size_t) 1440800);
+			analyseNote(246);
 			break;
 		case '3':
-			pFrames[2] = 0x92000000;
-									//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
-												//DisplayStart(&dispCtrl);
-									nextFrame = 2;
-												//VideoChangeFrame(&videoCapt, nextFrame);
-									memcpy(0x90000000,0x92000000,(size_t) 1440800);
+			analyseNote(261);
 			break;
 		case '4':
-			pFrames[0] = 0x93000000;
-												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
-															//DisplayStart(&dispCtrl);
-												nextFrame = 3;
-															//VideoChangeFrame(&videoCapt, nextFrame);
-												memcpy(0x90000000,0x93000000,(size_t) 1440800);
+			analyseNote(277);
 			break;
 		case '5':
-			pFrames[1] = 0x94000000;
-												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
-															//DisplayStart(&dispCtrl);
-												nextFrame = 4;
-															//VideoChangeFrame(&videoCapt, nextFrame);
-												memcpy(0x90000000,0x94000000,(size_t) 1440800);
+			analyseNote(293);
 			break;
 		case '6':
-			pFrames[2] = 0x95000000;
-												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
-															//DisplayStart(&dispCtrl);
-												nextFrame = 5;
-															//VideoChangeFrame(&videoCapt, nextFrame);
-												memcpy(0x90000000,0x95000000,(size_t) 1440800);
+			analyseNote(311);
 			break;
 		case '7':
-			pFrames[0] = 0x96000000;
-												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
-															//DisplayStart(&dispCtrl);
-												nextFrame = 6;
-															//VideoChangeFrame(&videoCapt, nextFrame);
-												memcpy(0x90000000,0x96000000,(size_t) 1440800);
+			analyseNote(329);
 			break;
 		case '8':
-			pFrames[1] = 0x97000000;
-												//DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
-															//DisplayStart(&dispCtrl);
-												nextFrame = 7;
-															//VideoChangeFrame(&videoCapt, nextFrame);
-												memcpy(0x90000000,0x97000000,(size_t) 1440800);
-
+			analyseNote(349);
 			break;
 		case '9':
-			for (int i = 0; i < DISPLAY_NUM_FRAMES; i++)
-				{
-					pFrames[i] = 0x90000000 + i*0x1000000;
-				}
-			DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
-			DisplayStart(&dispCtrl);
-			nextFrame = 2;
-						VideoChangeFrame(&videoCapt, nextFrame);
-						DisplayChangeFrame(&dispCtrl, nextFrame);
-
+			analyseNote(370);
+			break;
+		case 'a':
+			analyseNote(398);
+			break;
+		case 'b':
+			analyseNote(415);
+			break;
+		case 'c':
+			analyseNote(440);
+			break;
+		case 'd':
+			analyseNote(461);
 			break;
 		case 'q':
 			break;
@@ -337,36 +287,6 @@ void DemoRun()
 	return;
 }
 
-void DemoRun2()
-{
-
-	DemoPrintMenu();
-	unsigned int overlayImageAddr = 0x122000000;
-
-	// check if basic overlay works
-	memcpy(0x90000000,0x98000000,(size_t) 1440800);
-	memcpy(0x90000000,0x99000000,(size_t) 1440800);
-	usleep(500);
-
-	// check if basic overlay works
-	memcpy(overlayImageAddr,0x98000000,(size_t) 1440800);
-	memcpy(overlayImageAddr,loadBinaryImageNote(Cs_Df),(size_t) 1440800);
-	memcpy(0x90000000, overlayImageAddr, (size_t) 1440800);
-	usleep(500);
-
-	// check if basic overlay works
-	memcpy(0x90000000,0x98000000,(size_t) 1440800);
-	memcpy(0x90000000,0x99000000,(size_t) 1440800);
-	usleep(500);
-
-	// check if shifting works
-	/*int [] image = *overlayImageAddr;
-	for(int i = 0; i < image.size(); i++) {
-		image[i] += 3*(11); //add 11 to each pixel 
-	}
-	*overlayImageAddr = image; */
-	memcpy(0x90000000, overlayImageAddr, (size_t) 1440800);
-}
 
 void DemoPrintMenu()
 {
@@ -753,146 +673,4 @@ void DemoISR(void *callBackRef, void *pVideo)
 	*data = 1; //set fRefresh to 1
 }
 
-int loadBinaryImageNote(int note) {
-    switch (note) {
-        case A:
-            xil_printf("Loading binary image for A...\n");
-            return 0x108000000;
-            break;
-        case As_Bf:
-            xil_printf("Loading binary image for A# / Bflat...\n");
-            return 0x107000000;
-            break;
-        case B:
-            xil_printf("Loading binary image for B...\n");
-            return 0x109000000;
-            break;
-        case C:
-            xil_printf("Loading binary image for C...\n");
-            return 0x105000000;
-            break;
-        case Cs_Df:
-            xil_printf("Loading binary image for C# / Dflat...\n");
-            return 0x99000000;
-            break;
-        case D:
-            xil_printf("Loading binary image for D...\n");
-            return 0x101000000;
-            break;
-        case Ds_Ef:
-            xil_printf("Loading binary image for D# / Eflat...\n");
-            return 0x110000000;
-            break;
-        case E:
-            xil_printf("Loading binary image for E...\n");
-            return 0x100000000;
-            break;
-        case F:
-            xil_printf("Loading binary image for F...\n");
-            return 0x102000000;
-            break;
-        case Fs_Gf:
-            xil_printf("Loading binary image for F# / Gflat...\n");
-            return 0x104000000;
-            break;
-        case G:
-            xil_printf("Loading binary image for G...\n");
-            return 0x106000000;
-            break;
-        case Gs_Af:
-            xil_printf("Loading binary image for G# / Bflat...\n");
-            return 0x103000000;
-            break;
-        default:
-            xil_printf("Invalid note\n");
-            break;
-    }
-}
 
-int loadBinaryImageNumber(int frequencyDigit) {
-    switch (frequencyDigit) {
-        case 0:
-            xil_printf("Loading binary image for 0...\n");
-            return 0x111000000;
-            break;
-        case 1:
-            xil_printf("Loading binary image for 1...\n");
-            return 0x112000000;
-            break;
-        case 2:
-            xil_printf("Loading binary image for 2...\n");
-            return 0x113000000;
-            break;
-        case 3:
-            xil_printf("Loading binary image for 3...\n");
-            return 0x114000000;
-            break;
-        case 4:
-            xil_printf("Loading binary image for 4...\n");
-            return 0x115000000;
-            break;
-        case 5:
-            xil_printf("Loading binary image for 5...\n");
-            return 0x116000000;
-            break;
-        case 6:
-            xil_printf("Loading binary image for 6...\n");
-            return 0x117000000;
-            break;
-        case 7:
-            xil_printf("Loading binary image for 7...\n");
-            return 0x118000000;
-            break;
-        case 8:
-            xil_printf("Loading binary image for 8...\n");
-            return 0x119000000;
-            break;
-        case 9:
-            xil_printf("Loading binary image for 9...\n");
-            return 0x120000000;
-            break;
-        default:
-            xil_printf("Empty since number is smaller -> Display empty\n");
-            return 0x121000000;
-            break;
-    }
-}
-
-void displayNote(int note) {
-    unsigned letterBinaryAddr = 0;
-
-    letterBinaryAddr = loadBinaryImageNumber(note);
-    memcpy(0x90000000,letterBinaryAddr,(size_t) 1440800);
-}
-
-void analyseNote(int frequency){
-    if ((frequency >= 1015.385 && frequency < 1077.615) || (frequency >= 2034.265 && frequency < 2155.23)) {
-        displayNote(C);
-    } else if ((frequency >= 1077.615 && frequency < 1141.695) || (frequency >= 2155.23 && frequency < 2283.39)) {
-        displayNote(Cs_Df);
-    } else if ((frequency >= 1141.695 && frequency < 1209.585) || (frequency >= 2283.39 && frequency < 2419.17)) {
-        displayNote(D);
-    } else if ((frequency >= 1209.585 && frequency < 1281.51) || (frequency >= 2419.17 && frequency < 2563.02)) {
-        displayNote(Ds_Ef);
-    } else if ((frequency >= 1281.51 && frequency < 1357.71) || (frequency >= 2563.02 && frequency < 2715.425)) {
-        displayNote(E);
-    } else if ((frequency >= 1357.71 && frequency < 1438.445) || (frequency >= 2715.425 && frequency < 2876.895)) {
-        displayNote(F);
-    } else if ((frequency >= 1438.445 && frequency < 1523.98) || (frequency >= 2876.895 && frequency < 3047.96)) {
-        displayNote(Fs_Gf);
-    } else if ((frequency >= 1523.98 && frequency < 1614.6) || (frequency >= 3047.96 && frequency < 3229.2)) {
-        displayNote(G);
-    } else if ((frequency >= 1614.6 && frequency < 1710.61) || (frequency >= 3229.2 && frequency < 3421.22)) {
-        displayNote(Gs_Af);
-    } else if ((frequency >= 1710.61 && frequency < 1812.33) || (frequency >= 3421.22 && frequency < 3624.655)) {
-        displayNote(A);
-    } else if ((frequency >= 1812.33 && frequency < 1920.095) || (frequency >= 3624.655 && frequency < 3840.19)) {
-        displayNote(As_Bf);
-    } else if ((frequency >= 1920.095 && frequency < 2034.265) || (frequency >= 3840.19 && frequency < 4068.54)) {
-        displayNote(B);
-    } else {
-        xil_printf("Frequency doesn't correspond to any note!\n");
-        return 1;
-    }
-
-}
