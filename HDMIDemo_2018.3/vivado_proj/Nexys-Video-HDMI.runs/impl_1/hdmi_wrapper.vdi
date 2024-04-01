@@ -1,0 +1,786 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 31 19:49:32 2024
+# Process ID: 32708
+# Current directory: C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/impl_1
+# Command line: vivado.exe -log hdmi_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hdmi_wrapper.tcl -notrace
+# Log file: C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/impl_1/hdmi_wrapper.vdi
+# Journal file: C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source hdmi_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.ipdefs/repo_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 395.723 ; gain = 46.438
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.cache/ip 
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 483.391 ; gain = 83.594
+Command: link_design -top hdmi_wrapper -part xc7a200tsbg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_iic_0_1/hdmi_axi_iic_0_1.dcp' for cell 'hdmi_i/I2S_audio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_dynclk_0_0/hdmi_axi_dynclk_0_0.dcp' for cell 'hdmi_i/axi_dynclk_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_0_0/hdmi_axi_gpio_0_0.dcp' for cell 'hdmi_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_1_0/hdmi_axi_gpio_1_0.dcp' for cell 'hdmi_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_video_0/hdmi_axi_gpio_video_0.dcp' for cell 'hdmi_i/axi_gpio_video'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_timer_0_0/hdmi_axi_timer_0_0.dcp' for cell 'hdmi_i/axi_timer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_uartlite_0_0/hdmi_axi_uartlite_0_0.dcp' for cell 'hdmi_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_vdma_0_0/hdmi_axi_vdma_0_0.dcp' for cell 'hdmi_i/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.dcp' for cell 'hdmi_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dvi2rgb_0_0/hdmi_dvi2rgb_0_0.dcp' for cell 'hdmi_i/dvi2rgb_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_fft_axi_0_0/hdmi_fft_axi_0_0.dcp' for cell 'hdmi_i/fft_axi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_i2s_0_0/hdmi_i2s_0_0.dcp' for cell 'hdmi_i/i2s_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mdm_1_0/hdmi_mdm_1_0.dcp' for cell 'hdmi_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mic_storage_0_0/hdmi_mic_storage_0_0.dcp' for cell 'hdmi_i/mic_storage_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_0/hdmi_microblaze_0_0.dcp' for cell 'hdmi_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_axi_intc_0/hdmi_microblaze_0_axi_intc_0.dcp' for cell 'hdmi_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mig_7series_0_0/hdmi_mig_7series_0_0.dcp' for cell 'hdmi_i/mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_one_register_0_0/hdmi_one_register_0_0.dcp' for cell 'hdmi_i/one_register_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_playback_ctrl_0_0/hdmi_playback_ctrl_0_0.dcp' for cell 'hdmi_i/playback_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rgb2dvi_0_0/hdmi_rgb2dvi_0_0.dcp' for cell 'hdmi_i/rgb2dvi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_100M_0/hdmi_rst_mig_7series_0_100M_0.dcp' for cell 'hdmi_i/rst_mig_7series_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_pxl_0/hdmi_rst_mig_7series_0_pxl_0.dcp' for cell 'hdmi_i/rst_mig_7series_0_pxl'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_spi_controller_0_0/hdmi_spi_controller_0_0.dcp' for cell 'hdmi_i/spi_controller_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_axi4s_vid_out_0_0/hdmi_v_axi4s_vid_out_0_0.dcp' for cell 'hdmi_i/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_tc_0_0/hdmi_v_tc_0_0.dcp' for cell 'hdmi_i/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_tc_1_0/hdmi_v_tc_1_0.dcp' for cell 'hdmi_i/v_tc_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_vid_in_axi4s_0_0/hdmi_v_vid_in_axi4s_0_0.dcp' for cell 'hdmi_i/v_vid_in_axi4s_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_xbar_0/hdmi_xbar_0.dcp' for cell 'hdmi_i/axi_mem_intercon/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_ds_0/hdmi_auto_ds_0.dcp' for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_rs_w_0/hdmi_auto_rs_w_0.dcp' for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_rs_w'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_m00_regslice_0/hdmi_m00_regslice_0.dcp' for cell 'hdmi_i/axi_mem_intercon/m00_couplers/m00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_rs_w_1/hdmi_auto_rs_w_1.dcp' for cell 'hdmi_i/axi_mem_intercon/s00_couplers/auto_rs_w'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_us_0/hdmi_auto_us_0.dcp' for cell 'hdmi_i/axi_mem_intercon/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s00_regslice_0/hdmi_s00_regslice_0.dcp' for cell 'hdmi_i/axi_mem_intercon/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_rs_w_2/hdmi_auto_rs_w_2.dcp' for cell 'hdmi_i/axi_mem_intercon/s01_couplers/auto_rs_w'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_us_1/hdmi_auto_us_1.dcp' for cell 'hdmi_i/axi_mem_intercon/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s01_regslice_0/hdmi_s01_regslice_0.dcp' for cell 'hdmi_i/axi_mem_intercon/s01_couplers/s01_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s02_regslice_0/hdmi_s02_regslice_0.dcp' for cell 'hdmi_i/axi_mem_intercon/s02_couplers/s02_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s03_regslice_0/hdmi_s03_regslice_0.dcp' for cell 'hdmi_i/axi_mem_intercon/s03_couplers/s03_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_2_0/hdmi_axi_gpio_2_0.dcp' for cell 'hdmi_i/i2c_cap_btn/axi_cap_btn_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_iic_0_0/hdmi_axi_iic_0_0.dcp' for cell 'hdmi_i/i2c_cap_btn/axi_iic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_xbar_1/hdmi_xbar_1.dcp' for cell 'hdmi_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dlmb_bram_if_cntlr_0/hdmi_dlmb_bram_if_cntlr_0.dcp' for cell 'hdmi_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dlmb_v10_0/hdmi_dlmb_v10_0.dcp' for cell 'hdmi_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_ilmb_bram_if_cntlr_0/hdmi_ilmb_bram_if_cntlr_0.dcp' for cell 'hdmi_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_ilmb_v10_0/hdmi_ilmb_v10_0.dcp' for cell 'hdmi_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_lmb_bram_0/hdmi_lmb_bram_0.dcp' for cell 'hdmi_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Netlist 29-17] Analyzing 8872 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. hdmi_i/mig_7series_0/u_hdmi_mig_7series_0_0_mig/u_ddr3_clk_ibuf/se_input_clk.u_ibufg_sys_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'hdmi_i/mig_7series_0/sys_clk_i' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Chipscope 16-324] Core: hdmi_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx UUID: 2b64a1f9-992b-51b8-8d87-0cecc058978b 
+INFO: [Chipscope 16-324] Core: hdmi_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx UUID: 0d81b617-e931-5c22-af98-69e59ca729f6 
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_video_0/hdmi_axi_gpio_video_0_board.xdc] for cell 'hdmi_i/axi_gpio_video/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_video_0/hdmi_axi_gpio_video_0_board.xdc] for cell 'hdmi_i/axi_gpio_video/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_video_0/hdmi_axi_gpio_video_0.xdc] for cell 'hdmi_i/axi_gpio_video/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_video_0/hdmi_axi_gpio_video_0.xdc] for cell 'hdmi_i/axi_gpio_video/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_timer_0_0/hdmi_axi_timer_0_0.xdc] for cell 'hdmi_i/axi_timer_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_timer_0_0/hdmi_axi_timer_0_0.xdc] for cell 'hdmi_i/axi_timer_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_uartlite_0_0/hdmi_axi_uartlite_0_0_board.xdc] for cell 'hdmi_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_uartlite_0_0/hdmi_axi_uartlite_0_0_board.xdc] for cell 'hdmi_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_uartlite_0_0/hdmi_axi_uartlite_0_0.xdc] for cell 'hdmi_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_uartlite_0_0/hdmi_axi_uartlite_0_0.xdc] for cell 'hdmi_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_vdma_0_0/hdmi_axi_vdma_0_0.xdc] for cell 'hdmi_i/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_vdma_0_0/hdmi_axi_vdma_0_0.xdc] for cell 'hdmi_i/axi_vdma_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'hdmi_i/dvi2rgb_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'hdmi_i/dvi2rgb_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc] for cell 'hdmi_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dvi2rgb_0_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc] for cell 'hdmi_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dvi2rgb_0_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc] for cell 'hdmi_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dvi2rgb_0_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc] for cell 'hdmi_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mdm_1_0/hdmi_mdm_1_0.xdc] for cell 'hdmi_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mdm_1_0/hdmi_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2195.793 ; gain = 898.277
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mdm_1_0/hdmi_mdm_1_0.xdc] for cell 'hdmi_i/mdm_1/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_0/hdmi_microblaze_0_0.xdc] for cell 'hdmi_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_0/hdmi_microblaze_0_0.xdc] for cell 'hdmi_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_axi_intc_0/hdmi_microblaze_0_axi_intc_0.xdc] for cell 'hdmi_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_axi_intc_0/hdmi_microblaze_0_axi_intc_0.xdc] for cell 'hdmi_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mig_7series_0_0/hdmi_mig_7series_0_0/user_design/constraints/hdmi_mig_7series_0_0.xdc] for cell 'hdmi_i/mig_7series_0'
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: hdmi_i/mig_7series_0/sys_clk_i). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mig_7series_0_0/hdmi_mig_7series_0_0/user_design/constraints/hdmi_mig_7series_0_0.xdc:41]
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mig_7series_0_0/hdmi_mig_7series_0_0/user_design/constraints/hdmi_mig_7series_0_0.xdc:275]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mig_7series_0_0/hdmi_mig_7series_0_0/user_design/constraints/hdmi_mig_7series_0_0.xdc:276]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mig_7series_0_0/hdmi_mig_7series_0_0/user_design/constraints/hdmi_mig_7series_0_0.xdc] for cell 'hdmi_i/mig_7series_0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mig_7series_0_0/hdmi_mig_7series_0_0_board.xdc] for cell 'hdmi_i/mig_7series_0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mig_7series_0_0/hdmi_mig_7series_0_0_board.xdc] for cell 'hdmi_i/mig_7series_0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'hdmi_i/rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'hdmi_i/rgb2dvi_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_100M_0/hdmi_rst_mig_7series_0_100M_0_board.xdc] for cell 'hdmi_i/rst_mig_7series_0_100M/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_100M_0/hdmi_rst_mig_7series_0_100M_0_board.xdc] for cell 'hdmi_i/rst_mig_7series_0_100M/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_100M_0/hdmi_rst_mig_7series_0_100M_0.xdc] for cell 'hdmi_i/rst_mig_7series_0_100M/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_100M_0/hdmi_rst_mig_7series_0_100M_0.xdc] for cell 'hdmi_i/rst_mig_7series_0_100M/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_pxl_0/hdmi_rst_mig_7series_0_pxl_0_board.xdc] for cell 'hdmi_i/rst_mig_7series_0_pxl/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_pxl_0/hdmi_rst_mig_7series_0_pxl_0_board.xdc] for cell 'hdmi_i/rst_mig_7series_0_pxl/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_pxl_0/hdmi_rst_mig_7series_0_pxl_0.xdc] for cell 'hdmi_i/rst_mig_7series_0_pxl/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rst_mig_7series_0_pxl_0/hdmi_rst_mig_7series_0_pxl_0.xdc] for cell 'hdmi_i/rst_mig_7series_0_pxl/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dlmb_v10_0/hdmi_dlmb_v10_0.xdc] for cell 'hdmi_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dlmb_v10_0/hdmi_dlmb_v10_0.xdc] for cell 'hdmi_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_ilmb_v10_0/hdmi_ilmb_v10_0.xdc] for cell 'hdmi_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_ilmb_v10_0/hdmi_ilmb_v10_0.xdc] for cell 'hdmi_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_0_0/hdmi_axi_gpio_0_0_board.xdc] for cell 'hdmi_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_0_0/hdmi_axi_gpio_0_0_board.xdc] for cell 'hdmi_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_0_0/hdmi_axi_gpio_0_0.xdc] for cell 'hdmi_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_0_0/hdmi_axi_gpio_0_0.xdc] for cell 'hdmi_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_1_0/hdmi_axi_gpio_1_0_board.xdc] for cell 'hdmi_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_1_0/hdmi_axi_gpio_1_0_board.xdc] for cell 'hdmi_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_1_0/hdmi_axi_gpio_1_0.xdc] for cell 'hdmi_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_1_0/hdmi_axi_gpio_1_0.xdc] for cell 'hdmi_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_board.xdc] for cell 'hdmi_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_board.xdc] for cell 'hdmi_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.xdc] for cell 'hdmi_i/clk_wiz_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.xdc] for cell 'hdmi_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_iic_0_0/hdmi_axi_iic_0_0_board.xdc] for cell 'hdmi_i/i2c_cap_btn/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_iic_0_0/hdmi_axi_iic_0_0_board.xdc] for cell 'hdmi_i/i2c_cap_btn/axi_iic_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_2_0/hdmi_axi_gpio_2_0_board.xdc] for cell 'hdmi_i/i2c_cap_btn/axi_cap_btn_gpio/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_2_0/hdmi_axi_gpio_2_0_board.xdc] for cell 'hdmi_i/i2c_cap_btn/axi_cap_btn_gpio/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_2_0/hdmi_axi_gpio_2_0.xdc] for cell 'hdmi_i/i2c_cap_btn/axi_cap_btn_gpio/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_2_0/hdmi_axi_gpio_2_0.xdc] for cell 'hdmi_i/i2c_cap_btn/axi_cap_btn_gpio/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_iic_0_1/hdmi_axi_iic_0_1_board.xdc] for cell 'hdmi_i/I2S_audio/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_iic_0_1/hdmi_axi_iic_0_1_board.xdc] for cell 'hdmi_i/I2S_audio/U0'
+Parsing XDC File [C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/constrs_1/imports/constraints/vdma_timing_workaround.xdc]
+Finished Parsing XDC File [C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/constrs_1/imports/constraints/vdma_timing_workaround.xdc]
+Parsing XDC File [C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/constrs_1/imports/constraints/NexysVideo_Master.xdc]
+Finished Parsing XDC File [C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/constrs_1/imports/constraints/NexysVideo_Master.xdc]
+Parsing XDC File [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc]
+WARNING: [Vivado 12-584] No ports matched 'reset_rtl_0'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_rst'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[1]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[2]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[3]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[4]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[5]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[6]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[7]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[7]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[6]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[5]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[4]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[3]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[2]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[1]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_tri_i[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fft_pwm_out'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_tri_o[2]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_tri_o[1]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_tri_o[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_tri_o[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_tri_o[1]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_tri_o[2]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fft_pwm_out'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_rtl_0_rxd'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_rtl_0_txd'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn[1]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn[1]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_scl_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_sda_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_sda_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_scl_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_scl_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_sda_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_scl_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_sda_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_sda_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cap_btn_i2c_scl_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_bclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_data'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_mclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_lrclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_mclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_lrclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_bclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_data'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_bclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_mclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_data'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_lrclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_bclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_mclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_data'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_lrclk'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_i2c_scl_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_i2c_sda_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_i2c_sda_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_i2c_scl_io'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'chip_select'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'master_in_slave_out'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'serial_clock'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_mic_pwm'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_mic_pwm'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_playback_mode'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_playback_mode'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'recording_in_progress_led'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'recording_in_progress_led'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'playback_in_progress_led'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'playback_in_progress_led'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_playback_mode'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt_playback_mode'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vadj_en[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vadj_en[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[0]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[1]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'set_vadj[1]'. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/constraints/microblaze.xdc]
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_vdma_0_0/hdmi_axi_vdma_0_0_clocks.xdc] for cell 'hdmi_i/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_vdma_0_0/hdmi_axi_vdma_0_0_clocks.xdc] for cell 'hdmi_i/axi_vdma_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dvi2rgb_0_0/src/ila_timing_workaround.xdc] for cell 'hdmi_i/dvi2rgb_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dvi2rgb_0_0/src/ila_timing_workaround.xdc] for cell 'hdmi_i/dvi2rgb_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_axi_intc_0/hdmi_microblaze_0_axi_intc_0_clocks.xdc] for cell 'hdmi_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_axi_intc_0/hdmi_microblaze_0_axi_intc_0_clocks.xdc] for cell 'hdmi_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'hdmi_i/rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'hdmi_i/rgb2dvi_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_axi4s_vid_out_0_0/hdmi_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'hdmi_i/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_axi4s_vid_out_0_0/hdmi_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'hdmi_i/v_axi4s_vid_out_0/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_tc_0_0/hdmi_v_tc_0_0_clocks.xdc] for cell 'hdmi_i/v_tc_0/U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_tc_0_0/hdmi_v_tc_0_0_clocks.xdc:2]
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_tc_0_0/hdmi_v_tc_0_0_clocks.xdc] for cell 'hdmi_i/v_tc_0/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_tc_1_0/hdmi_v_tc_1_0_clocks.xdc] for cell 'hdmi_i/v_tc_1/U0'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_tc_1_0/hdmi_v_tc_1_0_clocks.xdc] for cell 'hdmi_i/v_tc_1/U0'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_vid_in_axi4s_0_0/hdmi_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'hdmi_i/v_vid_in_axi4s_0/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_vid_in_axi4s_0_0/hdmi_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'hdmi_i/v_vid_in_axi4s_0/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s00_regslice_0/hdmi_s00_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s00_couplers/s00_regslice/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s00_regslice_0/hdmi_s00_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s00_couplers/s00_regslice/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_us_0/hdmi_auto_us_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_us_0/hdmi_auto_us_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_rs_w_1/hdmi_auto_rs_w_1_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s00_couplers/auto_rs_w/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_rs_w_1/hdmi_auto_rs_w_1_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s00_couplers/auto_rs_w/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s01_regslice_0/hdmi_s01_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s01_couplers/s01_regslice/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s01_regslice_0/hdmi_s01_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s01_couplers/s01_regslice/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_us_1/hdmi_auto_us_1_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_us_1/hdmi_auto_us_1_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_rs_w_2/hdmi_auto_rs_w_2_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s01_couplers/auto_rs_w/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_rs_w_2/hdmi_auto_rs_w_2_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s01_couplers/auto_rs_w/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s02_regslice_0/hdmi_s02_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s02_couplers/s02_regslice/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s02_regslice_0/hdmi_s02_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s02_couplers/s02_regslice/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s03_regslice_0/hdmi_s03_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s03_couplers/s03_regslice/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_s03_regslice_0/hdmi_s03_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/s03_couplers/s03_regslice/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_m00_regslice_0/hdmi_m00_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/m00_regslice/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_m00_regslice_0/hdmi_m00_regslice_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/m00_regslice/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_ds_0/hdmi_auto_ds_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_ds_0/hdmi_auto_ds_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_ds/inst'
+Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_rs_w_0/hdmi_auto_rs_w_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_rs_w/inst'
+Finished Parsing XDC File [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_auto_rs_w_0/hdmi_auto_rs_w_0_clocks.xdc] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_rs_w/inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hdmi_i/axi_mem_intercon/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'hdmi_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'hdmi_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'hdmi_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'hdmi_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/CDC_SINGLE_REMAP_OVERFLOW_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/CDC_SINGLE_REMAP_OVERFLOW_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/CDC_SINGLE_RESET_PULSE_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/CDC_SINGLE_RESET_PULSE_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'hdmi_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'hdmi_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 2529.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2564 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 192 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 64 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM16X1S => RAM32X1S (RAMS32): 512 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 179 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 1564 instances
+
+64 Infos, 85 Warnings, 83 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:42 . Memory (MB): peak = 2529.465 ; gain = 2046.074
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2529.465 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 2052bd23b
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2529.465 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "2084018ca4afe590".
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2529.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 2529.465 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1693098b0
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:42 . Memory (MB): peak = 2529.465 ; gain = 0.000
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 7 inverter(s) to 37 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 153867a44
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:55 . Memory (MB): peak = 2529.465 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 689 cells and removed 995 cells
+INFO: [Opt 31-1021] In phase Retarget, 410 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 22 inverter(s) to 59 load pin(s).
+Phase 3 Constant propagation | Checksum: 196f3b099
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:59 . Memory (MB): peak = 2529.465 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 1713 cells and removed 4389 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 917 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 209db4caa
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:01:14 . Memory (MB): peak = 2529.465 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 9068 cells
+INFO: [Opt 31-1021] In phase Sweep, 1471 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG hdmi_i/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_clk_BUFG_inst to drive 0 load(s) on clock net hdmi_i/axi_dynclk_0/U0/mmcm_clk
+INFO: [Opt 31-194] Inserted BUFG hdmi_i/clk_wiz_0/inst/clk_out1_hdmi_clk_wiz_0_0_BUFG_inst to drive 0 load(s) on clock net hdmi_i/clk_wiz_0/inst/clk_out1_hdmi_clk_wiz_0_0_BUFG
+INFO: [Opt 31-194] Inserted BUFG hdmi_i/mig_7series_0/u_hdmi_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_clkout0_BUFG_inst to drive 0 load(s) on clock net hdmi_i/mig_7series_0/u_hdmi_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_clkout0_BUFG
+INFO: [Opt 31-194] Inserted BUFG hdmi_i/mig_7series_0/u_hdmi_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_clkout1_BUFG_inst to drive 0 load(s) on clock net hdmi_i/mig_7series_0/u_hdmi_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_clkout1_BUFG
+INFO: [Opt 31-194] Inserted BUFG hdmi_i/mig_7series_0/u_hdmi_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3_out_BUFG_inst to drive 0 load(s) on clock net hdmi_i/mig_7series_0/u_hdmi_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3_out_BUFG
+INFO: [Opt 31-193] Inserted 5 BUFG(s) on clock nets
+Phase 5 BUFG optimization | Checksum: 1d9214e59
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:01:16 . Memory (MB): peak = 2529.465 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: 17daf592e
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:25 . Memory (MB): peak = 2529.465 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 1ddcf895a
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:01:26 . Memory (MB): peak = 2529.465 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 79 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             689  |             995  |                                            410  |
+|  Constant propagation         |            1713  |            4389  |                                            917  |
+|  Sweep                        |               0  |            9068  |                                           1471  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             79  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.227 . Memory (MB): peak = 2529.465 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 17fbe0b58
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:01:26 . Memory (MB): peak = 2529.465 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.095 | TNS=-6376.745 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 37 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 12 newly gated: 12 Total Ports: 74
+Ending PowerOpt Patch Enables Task | Checksum: 10db8e635
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.710 . Memory (MB): peak = 3031.672 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 10db8e635
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:45 . Memory (MB): peak = 3031.672 ; gain = 502.207
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1692e76c4
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 3031.672 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1692e76c4
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3031.672 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 3031.672 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1692e76c4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 3031.672 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+104 Infos, 85 Warnings, 83 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:20 ; elapsed = 00:03:01 . Memory (MB): peak = 3031.672 ; gain = 502.207
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 3031.672 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 3031.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 3031.672 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/impl_1/hdmi_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 3031.672 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file hdmi_wrapper_drc_opted.rpt -pb hdmi_wrapper_drc_opted.pb -rpx hdmi_wrapper_drc_opted.rpx
+Command: report_drc -file hdmi_wrapper_drc_opted.rpt -pb hdmi_wrapper_drc_opted.pb -rpx hdmi_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/impl_1/hdmi_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3031.672 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1827] BUFMR_driven_by_MMCM_PLL: BUFMR hdmi_i/axi_dynclk_0/U0/GenerateBUFMR.BUFMR_inst is driven by an MMCM or PLL (hdmi_i/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_adv_inst), but this is not recommended connectivity.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/ENARDEN (net: hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (hdmi_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.rd_rst_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/ENARDEN (net: hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (hdmi_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.rd_rst_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2 has an input control pin hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2/ENARDEN (net: hdmi_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (hdmi_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.rd_rst_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 3031.672 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14c25dbaf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 3031.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 3031.672 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-575] Sub-optimal placement for a clock-capable IO pin and MMCM pair. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets hdmi_i/clk_wiz_0/inst/clk_in1_hdmi_clk_wiz_0_0] >
+
+	hdmi_i/clk_wiz_0/inst/clkin1_ibufg (IBUF.O) is locked to IOB_X1Y124
+	hdmi_i/clk_wiz_0/inst/mmcm_adv_inst (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X1Y4
+
+	The above error could possibly be related to other connected instances. Following is a list of 
+	all the related clock rules and their respective instances.
+
+	Clock Rule: rule_mmcm_bufg
+	Status: PASS 
+	Rule Description: An MMCM driving a BUFG must be placed on the same half side (top/bottom) of the device
+	hdmi_i/clk_wiz_0/inst/mmcm_adv_inst (MMCME2_ADV.CLKFBOUT) is provisionally placed by clockplacer on MMCME2_ADV_X1Y4
+	hdmi_i/clk_wiz_0/inst/clkf_buf (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y17
+
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+ERROR: [Place 30-575] Sub-optimal placement for a clock-capable IO pin and MMCM pair. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/CLK_IN_hdmi_clk] >
+
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/InputBuffer (IBUFDS.O) is locked to IOB_X1Y126
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/DVI_ClkGenerator (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X1Y1
+
+	The above error could possibly be related to other connected instances. Following is a list of 
+	all the related clock rules and their respective instances.
+
+	Clock Rule: rule_bufh_bufr_ramb
+	Status: PASS 
+	Rule Description: Reginal buffers in the same clock region must drive a total number of brams less
+	than the capacity of the region
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClkBuffer (BUFR.O) is provisionally placed by clockplacer on BUFR_X1Y10
+
+	Clock Rule: rule_bufr_IoClkLds
+	Status: PASS 
+	Rule Description: A BUFR driving any number of IOBs must be placed within the same clock region
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClkBuffer (BUFR.O) is provisionally placed by clockplacer on BUFR_X1Y10
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/InputSERDES_X/DeserializerMaster (ISERDESE2.CLKDIV) is locked to ILOGIC_X1Y146
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/InputSERDES_X/DeserializerSlave (ISERDESE2.CLKDIV) is locked to ILOGIC_X1Y145
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/InputSERDES_X/InputDelay (IDELAYE2.C) is locked to IDELAY_X1Y146
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/InputSERDES_X/DeserializerMaster (ISERDESE2.CLKDIV) is locked to ILOGIC_X1Y132
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/InputSERDES_X/DeserializerSlave (ISERDESE2.CLKDIV) is locked to ILOGIC_X1Y131
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/InputSERDES_X/InputDelay (IDELAYE2.C) is locked to IDELAY_X1Y132
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/InputSERDES_X/DeserializerMaster (ISERDESE2.CLKDIV) is locked to ILOGIC_X1Y142
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/InputSERDES_X/DeserializerSlave (ISERDESE2.CLKDIV) is locked to ILOGIC_X1Y141
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/InputSERDES_X/InputDelay (IDELAYE2.C) is locked to IDELAY_X1Y142
+
+	Clock Rule: rule_clk_locked_loads
+	Status: PASS 
+	Rule Description NOT AVAILABLE
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClkBuffer (BUFR.O) is provisionally placed by clockplacer on BUFR_X1Y10
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/InputSERDES_X/InputDelay (IDELAYE2.C) is locked to IDELAY_X1Y146
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/InputSERDES_X/InputDelay (IDELAYE2.C) is locked to IDELAY_X1Y132
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/InputSERDES_X/InputDelay (IDELAYE2.C) is locked to IDELAY_X1Y142
+
+	Clock Rule: rule_bufio_clklds
+	Status: PASS 
+	Rule Description: A BUFIO driving any number of IOBs must be placed within the same bank. In V7, there
+	is at most one IO bank in  each clock region so the SameClockRegion rule is sufficient to satisfy the
+	requirement.
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClkBuffer (BUFIO.O) is provisionally placed by clockplacer on BUFIO_X1Y10
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/InputSERDES_X/DeserializerMaster (ISERDESE2.CLKB) is locked to ILOGIC_X1Y146
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/InputSERDES_X/DeserializerSlave (ISERDESE2.CLKB) is locked to ILOGIC_X1Y145
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/InputSERDES_X/DeserializerMaster (ISERDESE2.CLKB) is locked to ILOGIC_X1Y132
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/InputSERDES_X/DeserializerSlave (ISERDESE2.CLKB) is locked to ILOGIC_X1Y131
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/InputSERDES_X/DeserializerMaster (ISERDESE2.CLKB) is locked to ILOGIC_X1Y142
+	hdmi_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/InputSERDES_X/DeserializerSlave (ISERDESE2.CLKB) is locked to ILOGIC_X1Y141
+
+	Clock Rule: rule_mmcm_bufr_bufio
+	Status: FAIL 
+	Rule Description: An MMCM driving a BUFR/BUFIO must both be in the same clock region
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/DVI_ClkGenerator (MMCME2_ADV.CLKOUT0) is provisionally placed by clockplacer on MMCME2_ADV_X1Y1
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClkBuffer (BUFR.I) is provisionally placed by clockplacer on BUFR_X1Y10
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClkBuffer (BUFIO.I) is provisionally placed by clockplacer on BUFIO_X1Y10
+	ERROR: The above is also an illegal clock rule
+	Workaround: < set_property CLOCK_DEDICATED_ROUTE ANY_CMT_COLUMN [get_nets hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/CLK_OUT_5x_hdmi_clk] >
+
+	Clock Rule: rule_mmcm_mmcm
+	Status: PASS 
+	Rule Description: An MMCM driving an MMCM must be in the same CMT column, and they are adjacent to
+	each other (vertically), if the  CLOCK_DEDICATED_ROUTE=BACKBONE constraint is NOT set
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/DVI_ClkGenerator (MMCME2_ADV.CLKFBOUT) is provisionally placed by clockplacer on MMCME2_ADV_X1Y1
+	hdmi_i/dvi2rgb_0/U0/TMDS_ClockingX/DVI_ClkGenerator (MMCME2_ADV.CLKFBIN) is provisionally placed by clockplacer on MMCME2_ADV_X1Y1
+
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13399e049
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 3031.672 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 13399e049
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 3031.672 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 1c6345b82
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 3031.672 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+122 Infos, 89 Warnings, 83 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 31 19:56:17 2024...

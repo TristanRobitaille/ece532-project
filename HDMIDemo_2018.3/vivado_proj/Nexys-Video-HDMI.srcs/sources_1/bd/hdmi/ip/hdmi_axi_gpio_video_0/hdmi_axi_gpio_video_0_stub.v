@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Wed Mar 20 22:52:39 2024
+// Date        : Wed Mar 20 22:52:38 2024
 // Host        : Jasons-PC running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_video_0/hdmi_axi_gpio_video_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top hdmi_axi_gpio_video_0 -prefix
+//               hdmi_axi_gpio_video_0_ hdmi_axi_gpio_video_0_stub.v
 // Design      : hdmi_axi_gpio_video_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a200tsbg484-1

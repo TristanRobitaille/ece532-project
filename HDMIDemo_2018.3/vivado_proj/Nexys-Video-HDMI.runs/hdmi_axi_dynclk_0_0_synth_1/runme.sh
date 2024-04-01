@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/hdmi_axi_dynclk_0_0_synth_1'
+HD_PWD='C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/hdmi_axi_dynclk_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

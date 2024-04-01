@@ -37,7 +37,7 @@ module hdmi_wrapper
     hdmi_hpd,
     hdmi_rx_txen,
     reset,
-    sys_clk_i,
+    clk_100MHz,
     usb_uart_rxd,
     usb_uart_txd);
   inout DDC_scl_io;
@@ -67,7 +67,7 @@ module hdmi_wrapper
   output [0:0]hdmi_hpd;
   output [0:0]hdmi_rx_txen;
   input reset;
-  input sys_clk_i;
+  input clk_100MHz;
   input usb_uart_rxd;
   output usb_uart_txd;
 
@@ -150,7 +150,7 @@ module hdmi_wrapper
         .hdmi_hpd(hdmi_hpd),
         .hdmi_rx_txen(hdmi_rx_txen),
         .reset(reset),
-        .sys_clk_i(sys_clk_i),
+        .clk_100MHz(clk_100MHz),
         .usb_uart_rxd(usb_uart_rxd),
         .usb_uart_txd(usb_uart_txd));
 endmodule

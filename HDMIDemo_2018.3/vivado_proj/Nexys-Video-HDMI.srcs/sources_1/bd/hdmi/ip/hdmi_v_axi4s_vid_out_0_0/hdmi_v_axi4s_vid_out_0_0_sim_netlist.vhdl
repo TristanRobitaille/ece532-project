@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Wed Mar 20 22:52:31 2024
+-- Date        : Wed Mar 20 22:52:30 2024
 -- Host        : Jasons-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_v_axi4s_vid_out_0_0/hdmi_v_axi4s_vid_out_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_v_axi4s_vid_out_0_0 -prefix
+--               hdmi_v_axi4s_vid_out_0_0_ hdmi_v_axi4s_vid_out_0_0_sim_netlist.vhdl
 -- Design      : hdmi_v_axi4s_vid_out_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -38,8 +38,6 @@ entity hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_formatter is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_formatter : entity is "v_axi4s_vid_out_v4_0_10_formatter";
 end hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_formatter;
 
 architecture STRUCTURE of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_formatter is
@@ -476,8 +474,6 @@ entity hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_sync is
     aresetn : in STD_LOGIC;
     fivid_reset_full_frame : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_sync : entity is "v_axi4s_vid_out_v4_0_10_sync";
 end hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_sync;
 
 architecture STRUCTURE of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_sync is
@@ -4216,8 +4212,6 @@ entity hdmi_v_axi4s_vid_out_0_0_xpm_cdc_single is
   attribute DEST_SYNC_FF of hdmi_v_axi4s_vid_out_0_0_xpm_cdc_single : entity is 4;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of hdmi_v_axi4s_vid_out_0_0_xpm_cdc_single : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_xpm_cdc_single : entity is "xpm_cdc_single";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of hdmi_v_axi4s_vid_out_0_0_xpm_cdc_single : entity is 0;
   attribute SRC_INPUT_REG : integer;
@@ -4386,8 +4380,6 @@ entity hdmi_v_axi4s_vid_out_0_0_xpm_counter_updn is
     \count_value_i_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_xpm_counter_updn : entity is "xpm_counter_updn";
 end hdmi_v_axi4s_vid_out_0_0_xpm_counter_updn;
 
 architecture STRUCTURE of hdmi_v_axi4s_vid_out_0_0_xpm_counter_updn is
@@ -5639,8 +5631,6 @@ entity hdmi_v_axi4s_vid_out_0_0_xpm_fifo_reg_bit is
     ram_wr_en_pf_q : in STD_LOGIC;
     prog_full : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_reg_bit : entity is "xpm_fifo_reg_bit";
 end hdmi_v_axi4s_vid_out_0_0_xpm_fifo_reg_bit;
 
 architecture STRUCTURE of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_reg_bit is
@@ -5737,8 +5727,6 @@ entity hdmi_v_axi4s_vid_out_0_0_xpm_fifo_rst is
     rd_en : in STD_LOGIC;
     wr_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_rst : entity is "xpm_fifo_rst";
 end hdmi_v_axi4s_vid_out_0_0_xpm_fifo_rst;
 
 architecture STRUCTURE of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_rst is
@@ -5959,8 +5947,6 @@ entity hdmi_v_axi4s_vid_out_0_0_xpm_memory_base is
   attribute MESSAGE_CONTROL of hdmi_v_axi4s_vid_out_0_0_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
   attribute NUM_CHAR_LOC of hdmi_v_axi4s_vid_out_0_0_xpm_memory_base : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_xpm_memory_base : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
   attribute P_ECC_MODE of hdmi_v_axi4s_vid_out_0_0_xpm_memory_base : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
@@ -6907,8 +6893,6 @@ entity hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_cdc_single is
     src_in : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_cdc_single : entity is "v_axi4s_vid_out_v4_0_10_cdc_single";
 end hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_cdc_single;
 
 architecture STRUCTURE of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_cdc_single is
@@ -7057,8 +7041,6 @@ entity hdmi_v_axi4s_vid_out_0_0_xpm_fifo_base is
   attribute FULL_RESET_VALUE of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_base : entity is 1;
   attribute FULL_RST_VAL : string;
   attribute FULL_RST_VAL of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_base : entity is "1'b1";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_base : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
   attribute PE_THRESH_ADJ of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_base : entity is 8;
   attribute PE_THRESH_MAX : integer;
@@ -7992,8 +7974,6 @@ entity hdmi_v_axi4s_vid_out_0_0_xpm_fifo_sync is
   attribute FIFO_WRITE_DEPTH of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_sync : entity is 32;
   attribute FULL_RESET_VALUE : integer;
   attribute FULL_RESET_VALUE of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_sync : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_sync : entity is "xpm_fifo_sync";
   attribute PROG_EMPTY_THRESH : integer;
   attribute PROG_EMPTY_THRESH of hdmi_v_axi4s_vid_out_0_0_xpm_fifo_sync : entity is 10;
   attribute PROG_FULL_THRESH : integer;
@@ -8211,8 +8191,6 @@ entity hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_fifo_sync is
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     fifo_eol_dly : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_fifo_sync : entity is "v_axi4s_vid_out_v4_0_10_fifo_sync";
 end hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_fifo_sync;
 
 architecture STRUCTURE of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_fifo_sync is
@@ -8409,8 +8387,6 @@ entity hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_coupler is
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     fifo_eol_dly : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_coupler : entity is "v_axi4s_vid_out_v4_0_10_coupler";
 end hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_coupler;
 
 architecture STRUCTURE of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10_coupler is
@@ -8509,8 +8485,6 @@ entity hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10 is
   attribute C_VTG_MASTER_SLAVE of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10 : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10 : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10 : entity is "v_axi4s_vid_out_v4_0_10";
 end hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10;
 
 architecture STRUCTURE of hdmi_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_10 is

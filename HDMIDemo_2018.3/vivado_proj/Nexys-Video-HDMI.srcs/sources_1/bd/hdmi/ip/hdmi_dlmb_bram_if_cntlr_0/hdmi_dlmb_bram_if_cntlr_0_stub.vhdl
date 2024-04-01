@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 -- Date        : Wed Mar 20 22:50:34 2024
 -- Host        : Jasons-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dlmb_bram_if_cntlr_0/hdmi_dlmb_bram_if_cntlr_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top hdmi_dlmb_bram_if_cntlr_0 -prefix
+--               hdmi_dlmb_bram_if_cntlr_0_ hdmi_dlmb_bram_if_cntlr_0_stub.vhdl
 -- Design      : hdmi_dlmb_bram_if_cntlr_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a200tsbg484-1

@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Wed Mar 20 22:46:14 2024
+// Date        : Wed Mar 20 22:46:13 2024
 // Host        : Jasons-PC running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_lmb_bram_0/hdmi_lmb_bram_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top hdmi_lmb_bram_0 -prefix
+//               hdmi_lmb_bram_0_ hdmi_lmb_bram_0_sim_netlist.v
 // Design      : hdmi_lmb_bram_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -220,7 +220,6 @@ module hdmi_lmb_bram_0
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module hdmi_lmb_bram_0_blk_mem_gen_generic_cstr
    (douta,
     doutb,
@@ -388,7 +387,6 @@ module hdmi_lmb_bram_0_blk_mem_gen_generic_cstr
         .web(web[3]));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module hdmi_lmb_bram_0_blk_mem_gen_prim_width
    (douta,
     doutb,
@@ -892,7 +890,6 @@ module hdmi_lmb_bram_0_blk_mem_gen_prim_width__parameterized6
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module hdmi_lmb_bram_0_blk_mem_gen_prim_wrapper
    (douta,
     doutb,
@@ -3044,7 +3041,6 @@ module hdmi_lmb_bram_0_blk_mem_gen_prim_wrapper__parameterized6
         .WEBWE({1'b0,1'b0,1'b0,1'b0,web,web,web,web}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module hdmi_lmb_bram_0_blk_mem_gen_top
    (douta,
     doutb,
@@ -3132,7 +3128,7 @@ endmodule
 (* C_WEA_WIDTH = "4" *) (* C_WEB_WIDTH = "4" *) (* C_WRITE_DEPTH_A = "8192" *) 
 (* C_WRITE_DEPTH_B = "8192" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) (* C_WRITE_MODE_B = "WRITE_FIRST" *) 
 (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) (* C_XDEVICEFAMILY = "artix7" *) 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_2" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* downgradeipidentifiedwarnings = "yes" *) 
 module hdmi_lmb_bram_0_blk_mem_gen_v8_4_2
    (clka,
     rsta,
@@ -3416,7 +3412,6 @@ module hdmi_lmb_bram_0_blk_mem_gen_v8_4_2
         .web(web));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_2_synth" *) 
 module hdmi_lmb_bram_0_blk_mem_gen_v8_4_2_synth
    (douta,
     doutb,

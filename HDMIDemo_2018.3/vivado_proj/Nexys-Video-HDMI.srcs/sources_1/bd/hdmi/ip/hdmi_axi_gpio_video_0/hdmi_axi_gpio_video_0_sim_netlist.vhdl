@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 -- Date        : Wed Mar 20 22:52:39 2024
 -- Host        : Jasons-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_gpio_video_0/hdmi_axi_gpio_video_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_axi_gpio_video_0 -prefix
+--               hdmi_axi_gpio_video_0_ hdmi_axi_gpio_video_0_sim_netlist.vhdl
 -- Design      : hdmi_axi_gpio_video_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -63,8 +63,6 @@ entity hdmi_axi_gpio_video_0_address_decoder is
     gpio_io_t : in STD_LOGIC_VECTOR ( 0 to 0 );
     gpio2_io_o : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_gpio_video_0_address_decoder : entity is "address_decoder";
 end hdmi_axi_gpio_video_0_address_decoder;
 
 architecture STRUCTURE of hdmi_axi_gpio_video_0_address_decoder is
@@ -947,8 +945,6 @@ entity hdmi_axi_gpio_video_0_cdc_sync is
     gpio_io_i : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_gpio_video_0_cdc_sync : entity is "cdc_sync";
 end hdmi_axi_gpio_video_0_cdc_sync;
 
 architecture STRUCTURE of hdmi_axi_gpio_video_0_cdc_sync is
@@ -1149,8 +1145,6 @@ entity hdmi_axi_gpio_video_0_interrupt_control is
     p_6_in : in STD_LOGIC;
     Bus_RNW_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_gpio_video_0_interrupt_control : entity is "interrupt_control";
 end hdmi_axi_gpio_video_0_interrupt_control;
 
 architecture STRUCTURE of hdmi_axi_gpio_video_0_interrupt_control is
@@ -1371,8 +1365,6 @@ entity hdmi_axi_gpio_video_0_GPIO_Core is
     gpio_io_i : in STD_LOGIC_VECTOR ( 0 to 0 );
     gpio2_io_i : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_gpio_video_0_GPIO_Core : entity is "GPIO_Core";
 end hdmi_axi_gpio_video_0_GPIO_Core;
 
 architecture STRUCTURE of hdmi_axi_gpio_video_0_GPIO_Core is
@@ -1655,8 +1647,6 @@ entity hdmi_axi_gpio_video_0_slave_attachment is
     gpio2_io_o : in STD_LOGIC_VECTOR ( 0 to 0 );
     \s_axi_rdata_i_reg[31]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_gpio_video_0_slave_attachment : entity is "slave_attachment";
 end hdmi_axi_gpio_video_0_slave_attachment;
 
 architecture STRUCTURE of hdmi_axi_gpio_video_0_slave_attachment is
@@ -2397,8 +2387,6 @@ entity hdmi_axi_gpio_video_0_axi_lite_ipif is
     gpio2_io_o : in STD_LOGIC_VECTOR ( 0 to 0 );
     \s_axi_rdata_i_reg[31]\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_gpio_video_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end hdmi_axi_gpio_video_0_axi_lite_ipif;
 
 architecture STRUCTURE of hdmi_axi_gpio_video_0_axi_lite_ipif is
@@ -2529,8 +2517,6 @@ entity hdmi_axi_gpio_video_0_axi_gpio is
   attribute C_TRI_DEFAULT of hdmi_axi_gpio_video_0_axi_gpio : entity is -1;
   attribute C_TRI_DEFAULT_2 : integer;
   attribute C_TRI_DEFAULT_2 of hdmi_axi_gpio_video_0_axi_gpio : entity is -1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_gpio_video_0_axi_gpio : entity is "axi_gpio";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of hdmi_axi_gpio_video_0_axi_gpio : entity is "yes";
   attribute ip_group : string;

@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 -- Date        : Wed Mar 20 23:04:37 2024
 -- Host        : Jasons-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_rgb2dvi_0_0/hdmi_rgb2dvi_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_rgb2dvi_0_0 -prefix
+--               hdmi_rgb2dvi_0_0_ hdmi_rgb2dvi_0_0_sim_netlist.vhdl
 -- Design      : hdmi_rgb2dvi_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity hdmi_rgb2dvi_0_0_OutputSERDES is
     PixelClk : in STD_LOGIC;
     aRst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_rgb2dvi_0_0_OutputSERDES : entity is "OutputSERDES";
 end hdmi_rgb2dvi_0_0_OutputSERDES;
 
 architecture STRUCTURE of hdmi_rgb2dvi_0_0_OutputSERDES is
@@ -659,8 +657,6 @@ entity hdmi_rgb2dvi_0_0_SyncAsync is
     PixelClk : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_rgb2dvi_0_0_SyncAsync : entity is "SyncAsync";
 end hdmi_rgb2dvi_0_0_SyncAsync;
 
 architecture STRUCTURE of hdmi_rgb2dvi_0_0_SyncAsync is
@@ -712,8 +708,6 @@ entity hdmi_rgb2dvi_0_0_TMDS_Encoder is
     vid_pVDE : in STD_LOGIC;
     vid_pData : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_rgb2dvi_0_0_TMDS_Encoder : entity is "TMDS_Encoder";
 end hdmi_rgb2dvi_0_0_TMDS_Encoder;
 
 architecture STRUCTURE of hdmi_rgb2dvi_0_0_TMDS_Encoder is
@@ -4502,8 +4496,6 @@ entity hdmi_rgb2dvi_0_0_ResetBridge is
     aRst_n : in STD_LOGIC;
     PixelClk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_rgb2dvi_0_0_ResetBridge : entity is "ResetBridge";
 end hdmi_rgb2dvi_0_0_ResetBridge;
 
 architecture STRUCTURE of hdmi_rgb2dvi_0_0_ResetBridge is
@@ -4545,8 +4537,6 @@ entity hdmi_rgb2dvi_0_0_rgb2dvi is
     PixelClk : in STD_LOGIC;
     SerialClk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_rgb2dvi_0_0_rgb2dvi : entity is "rgb2dvi";
   attribute kClkPrimitive : string;
   attribute kClkPrimitive of hdmi_rgb2dvi_0_0_rgb2dvi : entity is "PLL";
   attribute kClkRange : integer;
