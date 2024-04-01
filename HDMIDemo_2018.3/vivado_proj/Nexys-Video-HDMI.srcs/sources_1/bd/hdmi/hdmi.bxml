@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="hdmi" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1711928846"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1711928846"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1711928846"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1711928846"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1711996395"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1711996395"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1711996395"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1711996395"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\hdmi_axi_dynclk_0_0\hdmi_axi_dynclk_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_dynclk_0"/>
@@ -289,14 +289,6 @@
       </File>
       <File Name="ip\hdmi_fft_axi_0_0\hdmi_fft_axi_0_0.xci" Type="IP">
         <Instance HierarchyPath="fft_axi_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\hdmi_clk_wiz_0_0\hdmi_clk_wiz_0_0.xci" Type="IP">
-        <Instance HierarchyPath="clk_wiz_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

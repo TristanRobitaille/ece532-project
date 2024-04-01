@@ -118,9 +118,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_axi_gpio_1
 # IP: bd/hdmi/ip/hdmi_fft_axi_0_0/hdmi_fft_axi_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_fft_axi_0_0 || ORIG_REF_NAME==hdmi_fft_axi_0_0} -quiet] -quiet
 
-# IP: bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_clk_wiz_0_0 || ORIG_REF_NAME==hdmi_clk_wiz_0_0} -quiet] -quiet
-
 # IP: bd/hdmi/ip/hdmi_axi_iic_0_0/hdmi_axi_iic_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_axi_iic_0_0 || ORIG_REF_NAME==hdmi_axi_iic_0_0} -quiet] -quiet
 

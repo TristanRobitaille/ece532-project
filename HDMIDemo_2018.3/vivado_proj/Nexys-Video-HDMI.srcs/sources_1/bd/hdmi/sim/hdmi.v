@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Sun Mar 31 19:46:26 2024
+//Date        : Mon Apr  1 14:32:28 2024
 //Host        : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
 //Command     : generate_target hdmi.bd
 //Design      : hdmi
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "hdmi,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=73,numReposBlks=49,numNonXlnxBlks=4,numHierBlks=24,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=1,da_clkrst_cnt=88,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "hdmi.hwdef" *) 
+(* CORE_GENERATION_INFO = "hdmi,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=72,numReposBlks=48,numNonXlnxBlks=4,numHierBlks=24,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=2,da_clkrst_cnt=89,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "hdmi.hwdef" *) 
 module hdmi
    (DDC_scl_i,
     DDC_scl_o,
@@ -105,12 +105,12 @@ module hdmi
   (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 TMDS_OUT DATA_P" *) output [2:0]TMDS_OUT_data_p;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.BTN_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.BTN_RST, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input btn_rst;
   input [1:0]cap_btn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c " *) input cap_btn_i2c_scl_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c " *) output cap_btn_i2c_scl_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c " *) output cap_btn_i2c_scl_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c " *) input cap_btn_i2c_sda_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c " *) output cap_btn_i2c_sda_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c " *) output cap_btn_i2c_sda_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c SCL_I" *) input cap_btn_i2c_scl_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c SCL_O" *) output cap_btn_i2c_scl_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c SCL_T" *) output cap_btn_i2c_scl_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c SDA_I" *) input cap_btn_i2c_sda_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c SDA_O" *) output cap_btn_i2c_sda_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 cap_btn_i2c SDA_T" *) output cap_btn_i2c_sda_t;
   output chip_select;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_100MHZ CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_100MHZ, CLK_DOMAIN hdmi_clk_in1_0, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) input clk_100MHz;
   output fft_pwm_out;
@@ -118,25 +118,25 @@ module hdmi
   output [0:0]hdmi_rx_txen;
   output i2s_bclk;
   output i2s_data;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c " *) input i2s_i2c_scl_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c " *) output i2s_i2c_scl_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c " *) output i2s_i2c_scl_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c " *) input i2s_i2c_sda_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c " *) output i2s_i2c_sda_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c " *) output i2s_i2c_sda_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c SCL_I" *) input i2s_i2c_scl_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c SCL_O" *) output i2s_i2c_scl_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c SCL_T" *) output i2s_i2c_scl_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c SDA_I" *) input i2s_i2c_sda_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c SDA_O" *) output i2s_i2c_sda_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 i2s_i2c SDA_T" *) output i2s_i2c_sda_t;
   output i2s_lrclk;
   output i2s_mclk;
   output led_playback_mode;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 led " *) output [2:0]led_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 led TRI_O" *) output [2:0]led_tri_o;
   input master_in_slave_out;
   output playback_in_progress_led;
   output recording_in_progress_led;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL_0, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset_rtl_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SERIAL_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SERIAL_CLOCK, CLK_DOMAIN hdmi_spi_controller_0_0_serial_clock, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output serial_clock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 swt " *) input [31:0]swt_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 swt " *) output [31:0]swt_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 swt " *) output [31:0]swt_tri_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 swt TRI_I" *) input [31:0]swt_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 swt TRI_O" *) output [31:0]swt_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 swt TRI_T" *) output [31:0]swt_tri_t;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart RxD" *) input usb_uart_rxd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart TxD" *) output usb_uart_txd;
 
@@ -147,7 +147,6 @@ module hdmi
   wire TMDS_IN_1_CLK_P;
   wire [2:0]TMDS_IN_1_DATA_N;
   wire [2:0]TMDS_IN_1_DATA_P;
-  wire axi_dynclk_0_PXL_CLK_5X_O;
   wire axi_dynclk_0_PXL_CLK_O;
   wire [2:0]axi_gpio_0_GPIO_TRI_O;
   wire [31:0]axi_gpio_1_GPIO_TRI_I;
@@ -235,7 +234,6 @@ module hdmi
   wire axi_vdma_0_s2mm_introut;
   wire btn_rst_0_1;
   wire [1:0]cap_btn_0_1;
-  wire clk_in1_0_1;
   wire clk_wiz_0_clk_out1;
   wire dvi2rgb_0_DDC_SCL_I;
   wire dvi2rgb_0_DDC_SCL_O;
@@ -694,7 +692,7 @@ module hdmi
   assign cap_btn_i2c_sda_o = i2c_cap_btn_IIC_0_SDA_O;
   assign cap_btn_i2c_sda_t = i2c_cap_btn_IIC_0_SDA_T;
   assign chip_select = spi_controller_0_chip_select;
-  assign clk_in1_0_1 = clk_100MHz;
+  assign clk_wiz_0_clk_out1 = clk_100MHz;
   assign dvi2rgb_0_DDC_SCL_I = DDC_scl_i;
   assign dvi2rgb_0_DDC_SDA_I = DDC_sda_i;
   assign fft_pwm_out = fft_axi_0_fft_pwm_out;
@@ -748,8 +746,7 @@ module hdmi
         .sda_o(axi_iic_0_IIC_SDA_O),
         .sda_t(axi_iic_0_IIC_SDA_T));
   hdmi_axi_dynclk_0_0 axi_dynclk_0
-       (.PXL_CLK_5X_O(axi_dynclk_0_PXL_CLK_5X_O),
-        .PXL_CLK_O(axi_dynclk_0_PXL_CLK_O),
+       (.PXL_CLK_O(axi_dynclk_0_PXL_CLK_O),
         .REF_CLK_I(mig_7series_0_ui_clk),
         .s00_axi_aclk(mig_7series_0_ui_clk),
         .s00_axi_araddr(microblaze_0_axi_periph_M04_AXI_ARADDR[4:0]),
@@ -1073,10 +1070,6 @@ module hdmi
         .s_axis_s2mm_tready(v_vid_in_axi4s_0_video_out_TREADY),
         .s_axis_s2mm_tuser(v_vid_in_axi4s_0_video_out_TUSER),
         .s_axis_s2mm_tvalid(v_vid_in_axi4s_0_video_out_TVALID));
-  hdmi_clk_wiz_0_0 clk_wiz_0
-       (.clk_in1(clk_in1_0_1),
-        .clk_out1(clk_wiz_0_clk_out1),
-        .resetn(resetn_0_1));
   hdmi_dvi2rgb_0_0 dvi2rgb_0
        (.PixelClk(dvi2rgb_0_PixelClk),
         .RefClk(mig_7series_0_ui_addn_clk_1),
@@ -1648,7 +1641,7 @@ module hdmi
         .ILMB_ready(microblaze_0_ilmb_1_READY),
         .ILMB_ue(microblaze_0_ilmb_1_UE),
         .ILMB_wait(microblaze_0_ilmb_1_WAIT),
-        .LMB_Clk(clk_wiz_0_clk_out1),
+        .LMB_Clk(mig_7series_0_ui_clk),
         .SYS_Rst(SYS_Rst_1));
   hdmi_microblaze_0_xlconcat_0 microblaze_0_xlconcat
        (.In0(axi_vdma_0_s2mm_introut),
@@ -1729,12 +1722,12 @@ module hdmi
         .speaker_mode(playback_ctrl_0_speaker_mode));
   hdmi_rgb2dvi_0_0 rgb2dvi_0
        (.PixelClk(axi_dynclk_0_PXL_CLK_O),
-        .SerialClk(axi_dynclk_0_PXL_CLK_5X_O),
+        .SerialClk(mig_7series_0_ui_clk),
         .TMDS_Clk_n(rgb2dvi_0_TMDS_CLK_N),
         .TMDS_Clk_p(rgb2dvi_0_TMDS_CLK_P),
         .TMDS_Data_n(rgb2dvi_0_TMDS_DATA_N),
         .TMDS_Data_p(rgb2dvi_0_TMDS_DATA_P),
-        .aRst_n(1'b1),
+        .aRst_n(rst_mig_7series_0_100M_peripheral_aresetn),
         .vid_pData(v_axi4s_vid_out_0_vid_io_out_DATA),
         .vid_pHSync(v_axi4s_vid_out_0_vid_io_out_HSYNC),
         .vid_pVDE(v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO),

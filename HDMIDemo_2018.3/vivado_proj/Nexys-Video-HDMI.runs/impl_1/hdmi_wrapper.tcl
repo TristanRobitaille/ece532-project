@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -74,7 +73,7 @@ set rc [catch {
   set_property webtalk.parent_dir C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.cache/wt [current_project]
   set_property parent.project_path C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.ipdefs/repo_0
+  C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.ipdefs/repo_0
   C:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/ip_repo
 } [current_project]
   update_ip_catalog

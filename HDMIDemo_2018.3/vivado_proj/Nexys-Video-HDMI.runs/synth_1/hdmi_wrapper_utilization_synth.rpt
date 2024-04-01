@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun Mar 31 19:49:25 2024
+| Date         : Mon Apr  1 15:33:24 2024
 | Host         : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hdmi_wrapper_utilization_synth.rpt -pb hdmi_wrapper_utilization_synth.pb
 | Design       : hdmi_wrapper
@@ -191,7 +191,6 @@ Table of Contents
 | hdmi_dvi2rgb_0_0              |    1 |
 | hdmi_dlmb_v10_0               |    1 |
 | hdmi_dlmb_bram_if_cntlr_0     |    1 |
-| hdmi_clk_wiz_0_0              |    1 |
 | hdmi_axi_vdma_0_0             |    1 |
 | hdmi_axi_uartlite_0_0         |    1 |
 | hdmi_axi_timer_0_0            |    1 |

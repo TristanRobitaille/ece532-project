@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Wed Mar 20 22:55:47 2024
+-- Date        : Wed Mar 20 22:55:46 2024
 -- Host        : Jasons-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_microblaze_0_axi_intc_0/hdmi_microblaze_0_axi_intc_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_microblaze_0_axi_intc_0 -prefix
+--               hdmi_microblaze_0_axi_intc_0_ hdmi_microblaze_0_axi_intc_0_sim_netlist.vhdl
 -- Design      : hdmi_microblaze_0_axi_intc_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -92,8 +92,6 @@ entity hdmi_microblaze_0_axi_intc_0_address_decoder is
     \CIE_GEN.CIE_BIT_GEN[0].cie_reg[0]\ : in STD_LOGIC;
     Bus_RNW_reg_reg_6 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_microblaze_0_axi_intc_0_address_decoder : entity is "address_decoder";
 end hdmi_microblaze_0_axi_intc_0_address_decoder;
 
 architecture STRUCTURE of hdmi_microblaze_0_axi_intc_0_address_decoder is
@@ -1477,8 +1475,6 @@ entity hdmi_microblaze_0_axi_intc_0_shared_ram_ivar is
     \ram_i[0].Doutb_reg[0]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     ivar_index_axi_clk : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_microblaze_0_axi_intc_0_shared_ram_ivar : entity is "shared_ram_ivar";
 end hdmi_microblaze_0_axi_intc_0_shared_ram_ivar;
 
 architecture STRUCTURE of hdmi_microblaze_0_axi_intc_0_shared_ram_ivar is
@@ -2913,8 +2909,6 @@ entity hdmi_microblaze_0_axi_intc_0_intc_core is
     isr_en : in STD_LOGIC;
     intr : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_microblaze_0_axi_intc_0_intc_core : entity is "intc_core";
 end hdmi_microblaze_0_axi_intc_0_intc_core;
 
 architecture STRUCTURE of hdmi_microblaze_0_axi_intc_0_intc_core is
@@ -4677,8 +4671,6 @@ entity hdmi_microblaze_0_axi_intc_0_slave_attachment is
     p_0_in18_in : in STD_LOGIC;
     \CIE_GEN.CIE_BIT_GEN[0].cie_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_microblaze_0_axi_intc_0_slave_attachment : entity is "slave_attachment";
 end hdmi_microblaze_0_axi_intc_0_slave_attachment;
 
 architecture STRUCTURE of hdmi_microblaze_0_axi_intc_0_slave_attachment is
@@ -6077,8 +6069,6 @@ entity hdmi_microblaze_0_axi_intc_0_axi_lite_ipif is
     p_0_in18_in : in STD_LOGIC;
     \CIE_GEN.CIE_BIT_GEN[0].cie_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_microblaze_0_axi_intc_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end hdmi_microblaze_0_axi_intc_0_axi_lite_ipif;
 
 architecture STRUCTURE of hdmi_microblaze_0_axi_intc_0_axi_lite_ipif is
@@ -6268,8 +6258,6 @@ entity hdmi_microblaze_0_axi_intc_0_axi_intc is
   attribute C_S_AXI_ADDR_WIDTH of hdmi_microblaze_0_axi_intc_0_axi_intc : entity is 9;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of hdmi_microblaze_0_axi_intc_0_axi_intc : entity is 32;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_microblaze_0_axi_intc_0_axi_intc : entity is "axi_intc";
   attribute hdl : string;
   attribute hdl of hdmi_microblaze_0_axi_intc_0_axi_intc : entity is "VHDL";
   attribute imp_netlist : string;

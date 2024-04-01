@@ -2,20 +2,20 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Mar 31 18:44:51 2024
-# Process ID: 8080
+# Start of session at: Sun Mar 31 20:40:28 2024
+# Process ID: 5964
 # Current directory: C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/hdmi_mic_storage_0_0_synth_1
 # Command line: vivado.exe -log hdmi_mic_storage_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_mic_storage_0_0.tcl
 # Log file: C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/hdmi_mic_storage_0_0_synth_1/hdmi_mic_storage_0_0.vds
 # Journal file: C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/hdmi_mic_storage_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source hdmi_mic_storage_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 347.039 ; gain = 100.531
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 346.469 ; gain = 89.492
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.ipdefs/repo_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ECE53/Desktop/final_demo/ECE532-project/Trumpet_project/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 393.465 ; gain = 44.383
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 393.773 ; gain = 45.254
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.cache/ip 
 Command: synth_design -top hdmi_mic_storage_0_0 -part xc7a200tsbg484-1 -mode out_of_context
@@ -23,9 +23,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 25328 
+INFO: Helper process launched with PID 23816 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 510.996 ; gain = 104.641
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 513.031 ; gain = 106.289
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'hdmi_mic_storage_0_0' [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mic_storage_0_0/synth/hdmi_mic_storage_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'mic_storage' [C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/imports/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/new/mic_storage.sv:3]
@@ -39,7 +39,7 @@ INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/ECE5
 INFO: [Synth 8-6155] done synthesizing module 'mic_storage' (1#1) [C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/imports/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/new/mic_storage.sv:3]
 INFO: [Synth 8-6155] done synthesizing module 'hdmi_mic_storage_0_0' (2#1) [c:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_mic_storage_0_0/synth/hdmi_mic_storage_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 572.477 ; gain = 166.121
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 574.332 ; gain = 167.590
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -52,10 +52,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 572.477 ; gain = 166.121
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 574.332 ; gain = 167.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 572.477 ; gain = 166.121
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 574.332 ; gain = 167.590
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tsbg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -64,35 +64,35 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 920.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.559 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 920.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.559 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 922.188 ; gain = 1.621
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 926.273 ; gain = 2.715
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:01:13 . Memory (MB): peak = 922.188 ; gain = 515.832
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 926.273 ; gain = 519.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:01:13 . Memory (MB): peak = 922.188 ; gain = 515.832
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 926.273 ; gain = 519.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:01:13 . Memory (MB): peak = 922.188 ; gain = 515.832
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 926.273 ; gain = 519.531
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "mic_data_storage" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "timebase_clk0" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element current_playback_index_reg_rep was removed.  [C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/imports/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/new/mic_storage.sv:58]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:17 . Memory (MB): peak = 922.188 ; gain = 515.832
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:46 . Memory (MB): peak = 926.273 ; gain = 519.531
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -186,7 +186,7 @@ INFO: [Synth 8-3886] merging instance 'inst/current_playback_index_reg_rep[8]' (
 INFO: [Synth 8-3886] merging instance 'inst/current_playback_index_reg_rep[13]' (FDRE) to 'inst/current_playback_index_reg[13]'
 INFO: [Synth 8-3886] merging instance 'inst/current_playback_index_reg_rep[14]' (FDRE) to 'inst/current_playback_index_reg[14]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:02:03 . Memory (MB): peak = 922.188 ; gain = 515.832
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:08 . Memory (MB): peak = 926.273 ; gain = 519.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -213,13 +213,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:02:51 . Memory (MB): peak = 945.156 ; gain = 538.801
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:37 . Memory (MB): peak = 947.660 ; gain = 540.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:02:54 . Memory (MB): peak = 949.031 ; gain = 542.676
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:38 . Memory (MB): peak = 951.508 ; gain = 544.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -245,7 +245,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:03:04 . Memory (MB): peak = 992.711 ; gain = 586.355
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:40 . Memory (MB): peak = 993.859 ; gain = 587.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -269,7 +269,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:03:16 . Memory (MB): peak = 992.711 ; gain = 586.355
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:42 . Memory (MB): peak = 993.859 ; gain = 587.117
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -282,7 +282,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:03:16 . Memory (MB): peak = 992.711 ; gain = 586.355
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:42 . Memory (MB): peak = 993.859 ; gain = 587.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -294,25 +294,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:03:18 . Memory (MB): peak = 992.711 ; gain = 586.355
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:43 . Memory (MB): peak = 993.859 ; gain = 587.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:03:18 . Memory (MB): peak = 992.711 ; gain = 586.355
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:43 . Memory (MB): peak = 993.859 ; gain = 587.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:03:18 . Memory (MB): peak = 992.711 ; gain = 586.355
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:43 . Memory (MB): peak = 993.859 ; gain = 587.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:03:18 . Memory (MB): peak = 992.711 ; gain = 586.355
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:43 . Memory (MB): peak = 993.859 ; gain = 587.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -350,18 +350,18 @@ Report Instance Areas:
 |2     |  inst   |mic_storage |  4758|
 +------+---------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:03:18 . Memory (MB): peak = 992.711 ; gain = 586.355
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:43 . Memory (MB): peak = 993.859 ; gain = 587.117
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:02:39 . Memory (MB): peak = 992.711 ; gain = 236.645
-Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:03:19 . Memory (MB): peak = 992.711 ; gain = 586.355
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 993.859 ; gain = 235.176
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:43 . Memory (MB): peak = 993.859 ; gain = 587.117
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2502 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'hdmi_mic_storage_0_0' is not ideal for floorplanning, since the cellview 'mic_storage' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1004.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1007.219 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1564 instances were transformed.
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 1564 instances
@@ -369,17 +369,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 38 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:03:40 . Memory (MB): peak = 1004.848 ; gain = 611.348
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1004.848 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:51 . Memory (MB): peak = 1007.219 ; gain = 613.406
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1007.219 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/hdmi_mic_storage_0_0_synth_1/hdmi_mic_storage_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1004.848 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1004.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1007.219 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.runs/hdmi_mic_storage_0_0_synth_1/hdmi_mic_storage_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1004.848 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_mic_storage_0_0_utilization_synth.rpt -pb hdmi_mic_storage_0_0_utilization_synth.pb
-write_vhdl: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1004.848 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Mar 31 18:49:39 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 31 20:42:59 2024...

@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 -- Date        : Wed Mar 20 22:57:57 2024
 -- Host        : Jasons-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_dlmb_v10_0/hdmi_dlmb_v10_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_dlmb_v10_0 -prefix
+--               hdmi_dlmb_v10_0_ hdmi_dlmb_v10_0_sim_netlist.vhdl
 -- Design      : hdmi_dlmb_v10_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -50,8 +50,6 @@ entity hdmi_dlmb_v10_0_lmb_v10 is
   attribute C_LMB_DWIDTH of hdmi_dlmb_v10_0_lmb_v10 : entity is 32;
   attribute C_LMB_NUM_SLAVES : integer;
   attribute C_LMB_NUM_SLAVES of hdmi_dlmb_v10_0_lmb_v10 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_dlmb_v10_0_lmb_v10 : entity is "lmb_v10";
 end hdmi_dlmb_v10_0_lmb_v10;
 
 architecture STRUCTURE of hdmi_dlmb_v10_0_lmb_v10 is

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1711928871">
+<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1711999917">
   <File Type="PA-TCL" Name="hdmi_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="hdmi_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="hdmi_wrapper_reports.tcl"/>
@@ -155,32 +155,16 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design">
+      <Option Id="FlattenHierarchy">1</Option>
       <Option Id="Directive">0</Option>
       <Option Id="FsmExtraction">0</Option>
-      <Option Id="FlattenHierarchy">1</Option>
     </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_v_axi4s_vid_out_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_rst_mig_7series_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_rst_mig_7series_0_pxl_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_gpio_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_timer_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_gpio_video_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_dynclk_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_dvi2rgb_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_xbar_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_i2s_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_one_register_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_i2s_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_playback_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_spi_controller_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_mic_storage_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_fft_axi_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_gpio_2_0"/>
 </GenRun>

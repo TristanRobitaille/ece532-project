@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1711928876">
+<GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1711999917">
   <File Type="BITSTR-BMM" Name="hdmi_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="hdmi_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="hdmi_wrapper_timing_summary_init.rpt"/>
@@ -215,9 +215,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Performance_Explore" Flow="Vivado Implementation 2018">
-      <Desc>Uses multiple algorithms for optimization, placement, and routing to get potentially better results.</Desc>
-    </StratHandle>
+    <StratHandle Name="Performance_Explore" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design">
       <Option Id="Directive">0</Option>
@@ -236,23 +234,9 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_v_axi4s_vid_out_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_rst_mig_7series_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_rst_mig_7series_0_pxl_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_gpio_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_timer_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_gpio_video_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_dynclk_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_dvi2rgb_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_xbar_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_i2s_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_one_register_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_i2s_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_playback_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_spi_controller_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_mic_storage_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_fft_axi_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_axi_gpio_2_0"/>
 </GenRun>

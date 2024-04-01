@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 -- Date        : Wed Mar 20 22:53:58 2024
 -- Host        : Jasons-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/jason/ECE532/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_axi_uartlite_0_0/hdmi_axi_uartlite_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_axi_uartlite_0_0 -prefix
+--               hdmi_axi_uartlite_0_0_ hdmi_axi_uartlite_0_0_sim_netlist.vhdl
 -- Design      : hdmi_axi_uartlite_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity hdmi_axi_uartlite_0_0_baudrate is
     EN_16x_Baud_reg_0 : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_baudrate : entity is "baudrate";
 end hdmi_axi_uartlite_0_0_baudrate;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_baudrate is
@@ -200,8 +198,6 @@ entity hdmi_axi_uartlite_0_0_cdc_sync is
     rx : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_cdc_sync : entity is "cdc_sync";
 end hdmi_axi_uartlite_0_0_cdc_sync;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_cdc_sync is
@@ -344,8 +340,6 @@ entity hdmi_axi_uartlite_0_0_cntr_incr_decr_addn_f is
     tx_Start : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_cntr_incr_decr_addn_f : entity is "cntr_incr_decr_addn_f";
 end hdmi_axi_uartlite_0_0_cntr_incr_decr_addn_f;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_cntr_incr_decr_addn_f is
@@ -770,8 +764,6 @@ entity hdmi_axi_uartlite_0_0_dynshreg_f is
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_dynshreg_f : entity is "dynshreg_f";
 end hdmi_axi_uartlite_0_0_dynshreg_f;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_dynshreg_f is
@@ -1143,8 +1135,6 @@ entity hdmi_axi_uartlite_0_0_pselect_f is
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_pselect_f : entity is "pselect_f";
 end hdmi_axi_uartlite_0_0_pselect_f;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_pselect_f is
@@ -1237,8 +1227,6 @@ entity hdmi_axi_uartlite_0_0_address_decoder is
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_address_decoder : entity is "address_decoder";
 end hdmi_axi_uartlite_0_0_address_decoder;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_address_decoder is
@@ -1755,8 +1743,6 @@ entity hdmi_axi_uartlite_0_0_srl_fifo_rbu_f is
     fifo_wr : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_srl_fifo_rbu_f : entity is "srl_fifo_rbu_f";
 end hdmi_axi_uartlite_0_0_srl_fifo_rbu_f;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_srl_fifo_rbu_f is
@@ -1960,8 +1946,6 @@ entity hdmi_axi_uartlite_0_0_slave_attachment is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_slave_attachment : entity is "slave_attachment";
 end hdmi_axi_uartlite_0_0_slave_attachment;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_slave_attachment is
@@ -2379,8 +2363,6 @@ entity hdmi_axi_uartlite_0_0_srl_fifo_f is
     fifo_wr : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_srl_fifo_f : entity is "srl_fifo_f";
 end hdmi_axi_uartlite_0_0_srl_fifo_f;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_srl_fifo_f is
@@ -2512,8 +2494,6 @@ entity hdmi_axi_uartlite_0_0_axi_lite_ipif is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end hdmi_axi_uartlite_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_axi_lite_ipif is
@@ -2590,8 +2570,6 @@ entity hdmi_axi_uartlite_0_0_uartlite_rx is
     tx_Buffer_Empty_Pre : in STD_LOGIC;
     rx : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_uartlite_rx : entity is "uartlite_rx";
 end hdmi_axi_uartlite_0_0_uartlite_rx;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_uartlite_rx is
@@ -3240,8 +3218,6 @@ entity hdmi_axi_uartlite_0_0_uartlite_tx is
     fifo_wr : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_uartlite_tx : entity is "uartlite_tx";
 end hdmi_axi_uartlite_0_0_uartlite_tx;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_uartlite_tx is
@@ -3526,8 +3502,6 @@ entity hdmi_axi_uartlite_0_0_uartlite_core is
     fifo_wr : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_uartlite_core : entity is "uartlite_core";
 end hdmi_axi_uartlite_0_0_uartlite_core;
 
 architecture STRUCTURE of hdmi_axi_uartlite_0_0_uartlite_core is
@@ -3723,8 +3697,6 @@ entity hdmi_axi_uartlite_0_0_axi_uartlite is
   attribute C_S_AXI_DATA_WIDTH of hdmi_axi_uartlite_0_0_axi_uartlite : entity is 32;
   attribute C_USE_PARITY : integer;
   attribute C_USE_PARITY of hdmi_axi_uartlite_0_0_axi_uartlite : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_axi_uartlite_0_0_axi_uartlite : entity is "axi_uartlite";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of hdmi_axi_uartlite_0_0_axi_uartlite : entity is "yes";
 end hdmi_axi_uartlite_0_0_axi_uartlite;

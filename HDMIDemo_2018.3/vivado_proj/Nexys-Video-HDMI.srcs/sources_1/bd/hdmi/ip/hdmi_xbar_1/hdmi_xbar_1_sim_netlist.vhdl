@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Sun Mar 31 18:48:50 2024
+-- Date        : Sun Mar 31 18:48:44 2024
 -- Host        : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_xbar_1/hdmi_xbar_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_xbar_1 -prefix
+--               hdmi_xbar_1_ hdmi_xbar_1_sim_netlist.vhdl
 -- Design      : hdmi_xbar_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -84,8 +84,6 @@ entity hdmi_xbar_1_axi_crossbar_v2_1_19_addr_arbiter_sasd is
     mi_wready : in STD_LOGIC_VECTOR ( 0 to 0 );
     mi_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_xbar_1_axi_crossbar_v2_1_19_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_19_addr_arbiter_sasd";
 end hdmi_xbar_1_axi_crossbar_v2_1_19_addr_arbiter_sasd;
 
 architecture STRUCTURE of hdmi_xbar_1_axi_crossbar_v2_1_19_addr_arbiter_sasd is
@@ -2599,8 +2597,6 @@ entity hdmi_xbar_1_axi_crossbar_v2_1_19_decerr_slave is
     \gen_axilite.s_axi_awready_i_reg_0\ : in STD_LOGIC;
     \gen_axilite.s_axi_awready_i_reg_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_xbar_1_axi_crossbar_v2_1_19_decerr_slave : entity is "axi_crossbar_v2_1_19_decerr_slave";
 end hdmi_xbar_1_axi_crossbar_v2_1_19_decerr_slave;
 
 architecture STRUCTURE of hdmi_xbar_1_axi_crossbar_v2_1_19_decerr_slave is
@@ -2908,8 +2904,6 @@ entity hdmi_xbar_1_axi_crossbar_v2_1_19_splitter is
     \m_ready_d_reg[0]_2\ : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_xbar_1_axi_crossbar_v2_1_19_splitter : entity is "axi_crossbar_v2_1_19_splitter";
 end hdmi_xbar_1_axi_crossbar_v2_1_19_splitter;
 
 architecture STRUCTURE of hdmi_xbar_1_axi_crossbar_v2_1_19_splitter is
@@ -3491,8 +3485,6 @@ entity hdmi_xbar_1_axi_register_slice_v2_1_18_axic_register_slice is
     reset : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_xbar_1_axi_register_slice_v2_1_18_axic_register_slice : entity is "axi_register_slice_v2_1_18_axic_register_slice";
 end hdmi_xbar_1_axi_register_slice_v2_1_18_axic_register_slice;
 
 architecture STRUCTURE of hdmi_xbar_1_axi_register_slice_v2_1_18_axic_register_slice is
@@ -8389,8 +8381,6 @@ entity hdmi_xbar_1_axi_crossbar_v2_1_19_crossbar_sasd is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_xbar_1_axi_crossbar_v2_1_19_crossbar_sasd : entity is "axi_crossbar_v2_1_19_crossbar_sasd";
 end hdmi_xbar_1_axi_crossbar_v2_1_19_crossbar_sasd;
 
 architecture STRUCTURE of hdmi_xbar_1_axi_crossbar_v2_1_19_crossbar_sasd is
@@ -9292,8 +9282,6 @@ entity hdmi_xbar_1_axi_crossbar_v2_1_19_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of hdmi_xbar_1_axi_crossbar_v2_1_19_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of hdmi_xbar_1_axi_crossbar_v2_1_19_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_xbar_1_axi_crossbar_v2_1_19_axi_crossbar : entity is "axi_crossbar_v2_1_19_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of hdmi_xbar_1_axi_crossbar_v2_1_19_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

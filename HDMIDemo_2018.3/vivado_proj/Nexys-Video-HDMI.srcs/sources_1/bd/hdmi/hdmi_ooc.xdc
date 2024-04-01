@@ -7,5 +7,7 @@
 # of Vivado)
 ################################################################################
 create_clock -name clk_100MHz -period 10 [get_ports clk_100MHz]
+create_clock -name TMDS_IN_clk_p -period 10 [get_ports TMDS_IN_clk_p]
+create_clock -name TMDS_IN_clk_n -period 10 [get_ports TMDS_IN_clk_n]
 
 ################################################################################

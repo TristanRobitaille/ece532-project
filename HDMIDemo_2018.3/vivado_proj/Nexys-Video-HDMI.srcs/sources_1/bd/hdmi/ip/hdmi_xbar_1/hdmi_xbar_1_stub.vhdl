@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Sun Mar 31 18:48:49 2024
+-- Date        : Sun Mar 31 18:48:43 2024
 -- Host        : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/ECE53/Desktop/final_demo/ECE532-project/HDMIDemo_2018.3/vivado_proj/Nexys-Video-HDMI.srcs/sources_1/bd/hdmi/ip/hdmi_xbar_1/hdmi_xbar_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top hdmi_xbar_1 -prefix
+--               hdmi_xbar_1_ hdmi_xbar_1_stub.vhdl
 -- Design      : hdmi_xbar_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a200tsbg484-1
