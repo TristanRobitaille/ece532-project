@@ -294,7 +294,7 @@ always_ff @ (posedge clk_100MHz) begin
         local_freq <= 'b0;
     end else begin
         if(fft_done) begin
-            local_freq <= (index_largest == 'b0) ? ( (second_largest_index < 'd16) ?   (second_largest_index * (SAMPLE_FREQUENCY / (FFT_LENGTH * 2))) : ((second_largest_index - 'd16) * (SAMPLE_FREQUENCY / (FFT_LENGTH * 2))) ) : (second_largest_index < 'd16) ?   (second_largest_index * (SAMPLE_FREQUENCY / (FFT_LENGTH * 2))) : ((second_largest_index - 'd16) * (SAMPLE_FREQUENCY / (FFT_LENGTH * 2)));
+            local_freq <= (index_largest == 'b0) ? ( (second_largest_index < 'd64) ?   (second_largest_index * (SAMPLE_FREQUENCY / (FFT_LENGTH * 2))) : ((second_largest_index - 'd64) * (SAMPLE_FREQUENCY / (FFT_LENGTH * 2))) ) : (second_largest_index < 'd64) ?   (second_largest_index * (SAMPLE_FREQUENCY / (FFT_LENGTH * 2))) : ((second_largest_index - 'd64) * (SAMPLE_FREQUENCY / (FFT_LENGTH * 2)));
         end
         else local_freq <= local_freq;
     end

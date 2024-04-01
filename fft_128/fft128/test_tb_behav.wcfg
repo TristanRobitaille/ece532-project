@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="18000000001fs"></ZoomEndTime>
-      <Cursor1Time time="8920166000fs"></Cursor1Time>
+      <ZoomEndTime time="181800000001fs"></ZoomEndTime>
+      <Cursor1Time time="12708471000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="273"></NameColumnWidth>
-      <ValueColumnWidth column_width="242"></ValueColumnWidth>
+      <ValueColumnWidth column_width="235"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="64" />
    <wvobject fp_name="/test_tb/fft128/clk_100MHz" type="logic">
@@ -317,6 +317,518 @@
          <obj_property name="ElementShortName">[64][31:0]</obj_property>
          <obj_property name="ObjectShortName">[64][31:0]</obj_property>
          <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[65]" type="array">
+         <obj_property name="ElementShortName">[65][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[65][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[66]" type="array">
+         <obj_property name="ElementShortName">[66][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[66][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[67]" type="array">
+         <obj_property name="ElementShortName">[67][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[67][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[68]" type="array">
+         <obj_property name="ElementShortName">[68][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[68][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[69]" type="array">
+         <obj_property name="ElementShortName">[69][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[69][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[70]" type="array">
+         <obj_property name="ElementShortName">[70][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[70][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[71]" type="array">
+         <obj_property name="ElementShortName">[71][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[71][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[72]" type="array">
+         <obj_property name="ElementShortName">[72][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[72][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[73]" type="array">
+         <obj_property name="ElementShortName">[73][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[73][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[74]" type="array">
+         <obj_property name="ElementShortName">[74][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[74][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[75]" type="array">
+         <obj_property name="ElementShortName">[75][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[75][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[76]" type="array">
+         <obj_property name="ElementShortName">[76][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[76][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[77]" type="array">
+         <obj_property name="ElementShortName">[77][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[77][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[78]" type="array">
+         <obj_property name="ElementShortName">[78][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[78][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[79]" type="array">
+         <obj_property name="ElementShortName">[79][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[79][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[80]" type="array">
+         <obj_property name="ElementShortName">[80][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[80][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[81]" type="array">
+         <obj_property name="ElementShortName">[81][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[81][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[82]" type="array">
+         <obj_property name="ElementShortName">[82][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[82][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[83]" type="array">
+         <obj_property name="ElementShortName">[83][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[83][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[84]" type="array">
+         <obj_property name="ElementShortName">[84][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[84][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[85]" type="array">
+         <obj_property name="ElementShortName">[85][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[85][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[86]" type="array">
+         <obj_property name="ElementShortName">[86][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[86][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[87]" type="array">
+         <obj_property name="ElementShortName">[87][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[87][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[88]" type="array">
+         <obj_property name="ElementShortName">[88][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[88][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[89]" type="array">
+         <obj_property name="ElementShortName">[89][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[89][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[90]" type="array">
+         <obj_property name="ElementShortName">[90][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[90][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[91]" type="array">
+         <obj_property name="ElementShortName">[91][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[91][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[92]" type="array">
+         <obj_property name="ElementShortName">[92][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[92][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[93]" type="array">
+         <obj_property name="ElementShortName">[93][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[93][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[94]" type="array">
+         <obj_property name="ElementShortName">[94][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[94][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[95]" type="array">
+         <obj_property name="ElementShortName">[95][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[95][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[96]" type="array">
+         <obj_property name="ElementShortName">[96][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[96][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[97]" type="array">
+         <obj_property name="ElementShortName">[97][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[97][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[98]" type="array">
+         <obj_property name="ElementShortName">[98][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[98][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[99]" type="array">
+         <obj_property name="ElementShortName">[99][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[99][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[100]" type="array">
+         <obj_property name="ElementShortName">[100][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[100][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[101]" type="array">
+         <obj_property name="ElementShortName">[101][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[101][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[102]" type="array">
+         <obj_property name="ElementShortName">[102][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[102][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[103]" type="array">
+         <obj_property name="ElementShortName">[103][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[103][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[104]" type="array">
+         <obj_property name="ElementShortName">[104][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[104][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[105]" type="array">
+         <obj_property name="ElementShortName">[105][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[105][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[106]" type="array">
+         <obj_property name="ElementShortName">[106][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[106][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[107]" type="array">
+         <obj_property name="ElementShortName">[107][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[107][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[108]" type="array">
+         <obj_property name="ElementShortName">[108][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[108][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[109]" type="array">
+         <obj_property name="ElementShortName">[109][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[109][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[110]" type="array">
+         <obj_property name="ElementShortName">[110][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[110][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[111]" type="array">
+         <obj_property name="ElementShortName">[111][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[111][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[112]" type="array">
+         <obj_property name="ElementShortName">[112][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[112][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[113]" type="array">
+         <obj_property name="ElementShortName">[113][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[113][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[114]" type="array">
+         <obj_property name="ElementShortName">[114][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[114][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[115]" type="array">
+         <obj_property name="ElementShortName">[115][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[115][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[116]" type="array">
+         <obj_property name="ElementShortName">[116][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[116][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[117]" type="array">
+         <obj_property name="ElementShortName">[117][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[117][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[118]" type="array">
+         <obj_property name="ElementShortName">[118][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[118][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[119]" type="array">
+         <obj_property name="ElementShortName">[119][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[119][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[120]" type="array">
+         <obj_property name="ElementShortName">[120][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[120][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[121]" type="array">
+         <obj_property name="ElementShortName">[121][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[121][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[122]" type="array">
+         <obj_property name="ElementShortName">[122][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[122][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[123]" type="array">
+         <obj_property name="ElementShortName">[123][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[123][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[124]" type="array">
+         <obj_property name="ElementShortName">[124][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[124][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[125]" type="array">
+         <obj_property name="ElementShortName">[125][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[125][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[126]" type="array">
+         <obj_property name="ElementShortName">[126][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[126][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[127]" type="array">
+         <obj_property name="ElementShortName">[127][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[127][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[16]" type="array">
+         <obj_property name="ElementShortName">[16][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[17]" type="array">
+         <obj_property name="ElementShortName">[17][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[18]" type="array">
+         <obj_property name="ElementShortName">[18][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[19]" type="array">
+         <obj_property name="ElementShortName">[19][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[20]" type="array">
+         <obj_property name="ElementShortName">[20][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[21]" type="array">
+         <obj_property name="ElementShortName">[21][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[22]" type="array">
+         <obj_property name="ElementShortName">[22][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[23]" type="array">
+         <obj_property name="ElementShortName">[23][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[24]" type="array">
+         <obj_property name="ElementShortName">[24][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[25]" type="array">
+         <obj_property name="ElementShortName">[25][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[26]" type="array">
+         <obj_property name="ElementShortName">[26][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[27]" type="array">
+         <obj_property name="ElementShortName">[27][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[28]" type="array">
+         <obj_property name="ElementShortName">[28][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[29]" type="array">
+         <obj_property name="ElementShortName">[29][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[30]" type="array">
+         <obj_property name="ElementShortName">[30][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[31]" type="array">
+         <obj_property name="ElementShortName">[31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[32]" type="array">
+         <obj_property name="ElementShortName">[32][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[33]" type="array">
+         <obj_property name="ElementShortName">[33][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[34]" type="array">
+         <obj_property name="ElementShortName">[34][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[35]" type="array">
+         <obj_property name="ElementShortName">[35][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[36]" type="array">
+         <obj_property name="ElementShortName">[36][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[37]" type="array">
+         <obj_property name="ElementShortName">[37][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[38]" type="array">
+         <obj_property name="ElementShortName">[38][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[39]" type="array">
+         <obj_property name="ElementShortName">[39][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[40]" type="array">
+         <obj_property name="ElementShortName">[40][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[41]" type="array">
+         <obj_property name="ElementShortName">[41][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[41][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[42]" type="array">
+         <obj_property name="ElementShortName">[42][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[42][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[43]" type="array">
+         <obj_property name="ElementShortName">[43][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[43][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[44]" type="array">
+         <obj_property name="ElementShortName">[44][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[44][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[45]" type="array">
+         <obj_property name="ElementShortName">[45][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[45][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[46]" type="array">
+         <obj_property name="ElementShortName">[46][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[46][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[47]" type="array">
+         <obj_property name="ElementShortName">[47][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[47][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[48]" type="array">
+         <obj_property name="ElementShortName">[48][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[48][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[49]" type="array">
+         <obj_property name="ElementShortName">[49][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[49][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[50]" type="array">
+         <obj_property name="ElementShortName">[50][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[50][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[51]" type="array">
+         <obj_property name="ElementShortName">[51][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[51][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[52]" type="array">
+         <obj_property name="ElementShortName">[52][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[52][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[53]" type="array">
+         <obj_property name="ElementShortName">[53][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[53][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[54]" type="array">
+         <obj_property name="ElementShortName">[54][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[54][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[55]" type="array">
+         <obj_property name="ElementShortName">[55][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[55][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[56]" type="array">
+         <obj_property name="ElementShortName">[56][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[56][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[57]" type="array">
+         <obj_property name="ElementShortName">[57][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[57][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[58]" type="array">
+         <obj_property name="ElementShortName">[58][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[58][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[59]" type="array">
+         <obj_property name="ElementShortName">[59][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[59][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[60]" type="array">
+         <obj_property name="ElementShortName">[60][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[60][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[61]" type="array">
+         <obj_property name="ElementShortName">[61][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[61][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[62]" type="array">
+         <obj_property name="ElementShortName">[62][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[62][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[63]" type="array">
+         <obj_property name="ElementShortName">[63][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[63][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/data[64]" type="array">
+         <obj_property name="ElementShortName">[64][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[64][31:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/test_tb/fft128/data[65]" type="array">
          <obj_property name="ElementShortName">[65][31:0]</obj_property>
@@ -1290,6 +1802,518 @@
          <obj_property name="ObjectShortName">[0][15:0]</obj_property>
          <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[127]" type="array">
+         <obj_property name="ElementShortName">[127][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[127][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[126]" type="array">
+         <obj_property name="ElementShortName">[126][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[126][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[125]" type="array">
+         <obj_property name="ElementShortName">[125][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[125][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[124]" type="array">
+         <obj_property name="ElementShortName">[124][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[124][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[123]" type="array">
+         <obj_property name="ElementShortName">[123][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[123][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[122]" type="array">
+         <obj_property name="ElementShortName">[122][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[122][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[121]" type="array">
+         <obj_property name="ElementShortName">[121][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[121][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[120]" type="array">
+         <obj_property name="ElementShortName">[120][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[120][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[119]" type="array">
+         <obj_property name="ElementShortName">[119][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[119][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[118]" type="array">
+         <obj_property name="ElementShortName">[118][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[118][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[117]" type="array">
+         <obj_property name="ElementShortName">[117][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[117][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[116]" type="array">
+         <obj_property name="ElementShortName">[116][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[116][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[115]" type="array">
+         <obj_property name="ElementShortName">[115][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[115][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[114]" type="array">
+         <obj_property name="ElementShortName">[114][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[114][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[113]" type="array">
+         <obj_property name="ElementShortName">[113][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[113][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[112]" type="array">
+         <obj_property name="ElementShortName">[112][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[112][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[111]" type="array">
+         <obj_property name="ElementShortName">[111][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[111][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[110]" type="array">
+         <obj_property name="ElementShortName">[110][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[110][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[109]" type="array">
+         <obj_property name="ElementShortName">[109][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[109][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[108]" type="array">
+         <obj_property name="ElementShortName">[108][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[108][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[107]" type="array">
+         <obj_property name="ElementShortName">[107][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[107][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[106]" type="array">
+         <obj_property name="ElementShortName">[106][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[106][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[105]" type="array">
+         <obj_property name="ElementShortName">[105][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[105][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[104]" type="array">
+         <obj_property name="ElementShortName">[104][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[104][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[103]" type="array">
+         <obj_property name="ElementShortName">[103][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[103][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[102]" type="array">
+         <obj_property name="ElementShortName">[102][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[102][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[101]" type="array">
+         <obj_property name="ElementShortName">[101][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[101][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[100]" type="array">
+         <obj_property name="ElementShortName">[100][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[100][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[99]" type="array">
+         <obj_property name="ElementShortName">[99][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[99][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[98]" type="array">
+         <obj_property name="ElementShortName">[98][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[98][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[97]" type="array">
+         <obj_property name="ElementShortName">[97][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[97][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[96]" type="array">
+         <obj_property name="ElementShortName">[96][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[96][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[95]" type="array">
+         <obj_property name="ElementShortName">[95][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[95][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[94]" type="array">
+         <obj_property name="ElementShortName">[94][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[94][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[93]" type="array">
+         <obj_property name="ElementShortName">[93][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[93][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[92]" type="array">
+         <obj_property name="ElementShortName">[92][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[92][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[91]" type="array">
+         <obj_property name="ElementShortName">[91][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[91][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[90]" type="array">
+         <obj_property name="ElementShortName">[90][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[90][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[89]" type="array">
+         <obj_property name="ElementShortName">[89][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[89][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[88]" type="array">
+         <obj_property name="ElementShortName">[88][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[88][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[87]" type="array">
+         <obj_property name="ElementShortName">[87][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[87][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[86]" type="array">
+         <obj_property name="ElementShortName">[86][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[86][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[85]" type="array">
+         <obj_property name="ElementShortName">[85][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[85][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[84]" type="array">
+         <obj_property name="ElementShortName">[84][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[84][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[83]" type="array">
+         <obj_property name="ElementShortName">[83][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[83][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[82]" type="array">
+         <obj_property name="ElementShortName">[82][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[82][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[81]" type="array">
+         <obj_property name="ElementShortName">[81][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[81][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[80]" type="array">
+         <obj_property name="ElementShortName">[80][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[80][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[79]" type="array">
+         <obj_property name="ElementShortName">[79][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[79][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[78]" type="array">
+         <obj_property name="ElementShortName">[78][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[78][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[77]" type="array">
+         <obj_property name="ElementShortName">[77][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[77][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[76]" type="array">
+         <obj_property name="ElementShortName">[76][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[76][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[75]" type="array">
+         <obj_property name="ElementShortName">[75][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[75][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[74]" type="array">
+         <obj_property name="ElementShortName">[74][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[74][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[73]" type="array">
+         <obj_property name="ElementShortName">[73][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[73][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[72]" type="array">
+         <obj_property name="ElementShortName">[72][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[72][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[71]" type="array">
+         <obj_property name="ElementShortName">[71][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[71][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[70]" type="array">
+         <obj_property name="ElementShortName">[70][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[70][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[69]" type="array">
+         <obj_property name="ElementShortName">[69][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[69][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[68]" type="array">
+         <obj_property name="ElementShortName">[68][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[68][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[67]" type="array">
+         <obj_property name="ElementShortName">[67][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[67][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[66]" type="array">
+         <obj_property name="ElementShortName">[66][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[66][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[65]" type="array">
+         <obj_property name="ElementShortName">[65][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[65][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[64]" type="array">
+         <obj_property name="ElementShortName">[64][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[64][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[63]" type="array">
+         <obj_property name="ElementShortName">[63][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[63][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[62]" type="array">
+         <obj_property name="ElementShortName">[62][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[62][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[61]" type="array">
+         <obj_property name="ElementShortName">[61][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[61][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[60]" type="array">
+         <obj_property name="ElementShortName">[60][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[60][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[59]" type="array">
+         <obj_property name="ElementShortName">[59][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[59][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[58]" type="array">
+         <obj_property name="ElementShortName">[58][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[58][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[57]" type="array">
+         <obj_property name="ElementShortName">[57][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[57][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[56]" type="array">
+         <obj_property name="ElementShortName">[56][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[56][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[55]" type="array">
+         <obj_property name="ElementShortName">[55][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[55][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[54]" type="array">
+         <obj_property name="ElementShortName">[54][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[54][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[53]" type="array">
+         <obj_property name="ElementShortName">[53][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[53][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[52]" type="array">
+         <obj_property name="ElementShortName">[52][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[52][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[51]" type="array">
+         <obj_property name="ElementShortName">[51][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[51][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[50]" type="array">
+         <obj_property name="ElementShortName">[50][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[50][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[49]" type="array">
+         <obj_property name="ElementShortName">[49][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[49][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[48]" type="array">
+         <obj_property name="ElementShortName">[48][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[48][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[47]" type="array">
+         <obj_property name="ElementShortName">[47][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[47][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[46]" type="array">
+         <obj_property name="ElementShortName">[46][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[46][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[45]" type="array">
+         <obj_property name="ElementShortName">[45][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[45][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[44]" type="array">
+         <obj_property name="ElementShortName">[44][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[44][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[43]" type="array">
+         <obj_property name="ElementShortName">[43][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[43][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[42]" type="array">
+         <obj_property name="ElementShortName">[42][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[42][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[41]" type="array">
+         <obj_property name="ElementShortName">[41][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[41][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[40]" type="array">
+         <obj_property name="ElementShortName">[40][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[39]" type="array">
+         <obj_property name="ElementShortName">[39][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[38]" type="array">
+         <obj_property name="ElementShortName">[38][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[37]" type="array">
+         <obj_property name="ElementShortName">[37][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[36]" type="array">
+         <obj_property name="ElementShortName">[36][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[35]" type="array">
+         <obj_property name="ElementShortName">[35][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[34]" type="array">
+         <obj_property name="ElementShortName">[34][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[33]" type="array">
+         <obj_property name="ElementShortName">[33][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[32]" type="array">
+         <obj_property name="ElementShortName">[32][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[31]" type="array">
+         <obj_property name="ElementShortName">[31][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[30]" type="array">
+         <obj_property name="ElementShortName">[30][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[29]" type="array">
+         <obj_property name="ElementShortName">[29][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[28]" type="array">
+         <obj_property name="ElementShortName">[28][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[27]" type="array">
+         <obj_property name="ElementShortName">[27][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[26]" type="array">
+         <obj_property name="ElementShortName">[26][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[25]" type="array">
+         <obj_property name="ElementShortName">[25][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[24]" type="array">
+         <obj_property name="ElementShortName">[24][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[23]" type="array">
+         <obj_property name="ElementShortName">[23][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[22]" type="array">
+         <obj_property name="ElementShortName">[22][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[21]" type="array">
+         <obj_property name="ElementShortName">[21][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[20]" type="array">
+         <obj_property name="ElementShortName">[20][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[19]" type="array">
+         <obj_property name="ElementShortName">[19][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[18]" type="array">
+         <obj_property name="ElementShortName">[18][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[17]" type="array">
+         <obj_property name="ElementShortName">[17][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[16]" type="array">
+         <obj_property name="ElementShortName">[16][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[15]" type="array">
+         <obj_property name="ElementShortName">[15][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[14]" type="array">
+         <obj_property name="ElementShortName">[14][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[13]" type="array">
+         <obj_property name="ElementShortName">[13][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[12]" type="array">
+         <obj_property name="ElementShortName">[12][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[11]" type="array">
+         <obj_property name="ElementShortName">[11][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[10]" type="array">
+         <obj_property name="ElementShortName">[10][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[9]" type="array">
+         <obj_property name="ElementShortName">[9][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[8]" type="array">
+         <obj_property name="ElementShortName">[8][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[7]" type="array">
+         <obj_property name="ElementShortName">[7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[6]" type="array">
+         <obj_property name="ElementShortName">[6][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[5]" type="array">
+         <obj_property name="ElementShortName">[5][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[4]" type="array">
+         <obj_property name="ElementShortName">[4][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[3]" type="array">
+         <obj_property name="ElementShortName">[3][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[2]" type="array">
+         <obj_property name="ElementShortName">[2][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[1]" type="array">
+         <obj_property name="ElementShortName">[1][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_r[0]" type="array">
+         <obj_property name="ElementShortName">[0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][15:0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="/test_tb/fft128/absolute_i" type="array">
       <obj_property name="ElementShortName">absolute_i[127:0][15:0]</obj_property>
@@ -1679,6 +2703,518 @@
          <obj_property name="ElementShortName">[32][15:0]</obj_property>
          <obj_property name="ObjectShortName">[32][15:0]</obj_property>
          <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[31]" type="array">
+         <obj_property name="ElementShortName">[31][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[30]" type="array">
+         <obj_property name="ElementShortName">[30][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[29]" type="array">
+         <obj_property name="ElementShortName">[29][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[28]" type="array">
+         <obj_property name="ElementShortName">[28][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[27]" type="array">
+         <obj_property name="ElementShortName">[27][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[26]" type="array">
+         <obj_property name="ElementShortName">[26][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[25]" type="array">
+         <obj_property name="ElementShortName">[25][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[24]" type="array">
+         <obj_property name="ElementShortName">[24][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[23]" type="array">
+         <obj_property name="ElementShortName">[23][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[22]" type="array">
+         <obj_property name="ElementShortName">[22][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[21]" type="array">
+         <obj_property name="ElementShortName">[21][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[20]" type="array">
+         <obj_property name="ElementShortName">[20][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[19]" type="array">
+         <obj_property name="ElementShortName">[19][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[18]" type="array">
+         <obj_property name="ElementShortName">[18][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[17]" type="array">
+         <obj_property name="ElementShortName">[17][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[16]" type="array">
+         <obj_property name="ElementShortName">[16][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[15]" type="array">
+         <obj_property name="ElementShortName">[15][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[14]" type="array">
+         <obj_property name="ElementShortName">[14][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[13]" type="array">
+         <obj_property name="ElementShortName">[13][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[12]" type="array">
+         <obj_property name="ElementShortName">[12][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[11]" type="array">
+         <obj_property name="ElementShortName">[11][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[10]" type="array">
+         <obj_property name="ElementShortName">[10][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[9]" type="array">
+         <obj_property name="ElementShortName">[9][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[8]" type="array">
+         <obj_property name="ElementShortName">[8][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[7]" type="array">
+         <obj_property name="ElementShortName">[7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[6]" type="array">
+         <obj_property name="ElementShortName">[6][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[5]" type="array">
+         <obj_property name="ElementShortName">[5][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[4]" type="array">
+         <obj_property name="ElementShortName">[4][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[3]" type="array">
+         <obj_property name="ElementShortName">[3][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[2]" type="array">
+         <obj_property name="ElementShortName">[2][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[1]" type="array">
+         <obj_property name="ElementShortName">[1][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[0]" type="array">
+         <obj_property name="ElementShortName">[0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[127]" type="array">
+         <obj_property name="ElementShortName">[127][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[127][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[126]" type="array">
+         <obj_property name="ElementShortName">[126][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[126][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[125]" type="array">
+         <obj_property name="ElementShortName">[125][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[125][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[124]" type="array">
+         <obj_property name="ElementShortName">[124][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[124][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[123]" type="array">
+         <obj_property name="ElementShortName">[123][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[123][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[122]" type="array">
+         <obj_property name="ElementShortName">[122][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[122][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[121]" type="array">
+         <obj_property name="ElementShortName">[121][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[121][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[120]" type="array">
+         <obj_property name="ElementShortName">[120][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[120][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[119]" type="array">
+         <obj_property name="ElementShortName">[119][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[119][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[118]" type="array">
+         <obj_property name="ElementShortName">[118][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[118][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[117]" type="array">
+         <obj_property name="ElementShortName">[117][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[117][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[116]" type="array">
+         <obj_property name="ElementShortName">[116][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[116][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[115]" type="array">
+         <obj_property name="ElementShortName">[115][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[115][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[114]" type="array">
+         <obj_property name="ElementShortName">[114][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[114][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[113]" type="array">
+         <obj_property name="ElementShortName">[113][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[113][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[112]" type="array">
+         <obj_property name="ElementShortName">[112][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[112][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[111]" type="array">
+         <obj_property name="ElementShortName">[111][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[111][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[110]" type="array">
+         <obj_property name="ElementShortName">[110][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[110][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[109]" type="array">
+         <obj_property name="ElementShortName">[109][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[109][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[108]" type="array">
+         <obj_property name="ElementShortName">[108][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[108][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[107]" type="array">
+         <obj_property name="ElementShortName">[107][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[107][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[106]" type="array">
+         <obj_property name="ElementShortName">[106][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[106][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[105]" type="array">
+         <obj_property name="ElementShortName">[105][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[105][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[104]" type="array">
+         <obj_property name="ElementShortName">[104][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[104][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[103]" type="array">
+         <obj_property name="ElementShortName">[103][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[103][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[102]" type="array">
+         <obj_property name="ElementShortName">[102][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[102][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[101]" type="array">
+         <obj_property name="ElementShortName">[101][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[101][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[100]" type="array">
+         <obj_property name="ElementShortName">[100][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[100][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[99]" type="array">
+         <obj_property name="ElementShortName">[99][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[99][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[98]" type="array">
+         <obj_property name="ElementShortName">[98][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[98][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[97]" type="array">
+         <obj_property name="ElementShortName">[97][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[97][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[96]" type="array">
+         <obj_property name="ElementShortName">[96][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[96][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[95]" type="array">
+         <obj_property name="ElementShortName">[95][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[95][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[94]" type="array">
+         <obj_property name="ElementShortName">[94][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[94][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[93]" type="array">
+         <obj_property name="ElementShortName">[93][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[93][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[92]" type="array">
+         <obj_property name="ElementShortName">[92][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[92][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[91]" type="array">
+         <obj_property name="ElementShortName">[91][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[91][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[90]" type="array">
+         <obj_property name="ElementShortName">[90][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[90][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[89]" type="array">
+         <obj_property name="ElementShortName">[89][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[89][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[88]" type="array">
+         <obj_property name="ElementShortName">[88][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[88][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[87]" type="array">
+         <obj_property name="ElementShortName">[87][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[87][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[86]" type="array">
+         <obj_property name="ElementShortName">[86][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[86][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[85]" type="array">
+         <obj_property name="ElementShortName">[85][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[85][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[84]" type="array">
+         <obj_property name="ElementShortName">[84][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[84][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[83]" type="array">
+         <obj_property name="ElementShortName">[83][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[83][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[82]" type="array">
+         <obj_property name="ElementShortName">[82][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[82][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[81]" type="array">
+         <obj_property name="ElementShortName">[81][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[81][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[80]" type="array">
+         <obj_property name="ElementShortName">[80][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[80][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[79]" type="array">
+         <obj_property name="ElementShortName">[79][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[79][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[78]" type="array">
+         <obj_property name="ElementShortName">[78][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[78][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[77]" type="array">
+         <obj_property name="ElementShortName">[77][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[77][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[76]" type="array">
+         <obj_property name="ElementShortName">[76][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[76][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[75]" type="array">
+         <obj_property name="ElementShortName">[75][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[75][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[74]" type="array">
+         <obj_property name="ElementShortName">[74][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[74][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[73]" type="array">
+         <obj_property name="ElementShortName">[73][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[73][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[72]" type="array">
+         <obj_property name="ElementShortName">[72][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[72][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[71]" type="array">
+         <obj_property name="ElementShortName">[71][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[71][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[70]" type="array">
+         <obj_property name="ElementShortName">[70][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[70][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[69]" type="array">
+         <obj_property name="ElementShortName">[69][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[69][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[68]" type="array">
+         <obj_property name="ElementShortName">[68][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[68][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[67]" type="array">
+         <obj_property name="ElementShortName">[67][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[67][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[66]" type="array">
+         <obj_property name="ElementShortName">[66][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[66][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[65]" type="array">
+         <obj_property name="ElementShortName">[65][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[65][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[64]" type="array">
+         <obj_property name="ElementShortName">[64][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[64][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[63]" type="array">
+         <obj_property name="ElementShortName">[63][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[63][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[62]" type="array">
+         <obj_property name="ElementShortName">[62][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[62][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[61]" type="array">
+         <obj_property name="ElementShortName">[61][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[61][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[60]" type="array">
+         <obj_property name="ElementShortName">[60][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[60][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[59]" type="array">
+         <obj_property name="ElementShortName">[59][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[59][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[58]" type="array">
+         <obj_property name="ElementShortName">[58][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[58][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[57]" type="array">
+         <obj_property name="ElementShortName">[57][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[57][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[56]" type="array">
+         <obj_property name="ElementShortName">[56][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[56][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[55]" type="array">
+         <obj_property name="ElementShortName">[55][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[55][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[54]" type="array">
+         <obj_property name="ElementShortName">[54][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[54][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[53]" type="array">
+         <obj_property name="ElementShortName">[53][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[53][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[52]" type="array">
+         <obj_property name="ElementShortName">[52][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[52][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[51]" type="array">
+         <obj_property name="ElementShortName">[51][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[51][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[50]" type="array">
+         <obj_property name="ElementShortName">[50][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[50][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[49]" type="array">
+         <obj_property name="ElementShortName">[49][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[49][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[48]" type="array">
+         <obj_property name="ElementShortName">[48][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[48][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[47]" type="array">
+         <obj_property name="ElementShortName">[47][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[47][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[46]" type="array">
+         <obj_property name="ElementShortName">[46][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[46][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[45]" type="array">
+         <obj_property name="ElementShortName">[45][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[45][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[44]" type="array">
+         <obj_property name="ElementShortName">[44][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[44][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[43]" type="array">
+         <obj_property name="ElementShortName">[43][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[43][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[42]" type="array">
+         <obj_property name="ElementShortName">[42][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[42][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[41]" type="array">
+         <obj_property name="ElementShortName">[41][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[41][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[40]" type="array">
+         <obj_property name="ElementShortName">[40][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[39]" type="array">
+         <obj_property name="ElementShortName">[39][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[38]" type="array">
+         <obj_property name="ElementShortName">[38][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[37]" type="array">
+         <obj_property name="ElementShortName">[37][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[36]" type="array">
+         <obj_property name="ElementShortName">[36][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[35]" type="array">
+         <obj_property name="ElementShortName">[35][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[34]" type="array">
+         <obj_property name="ElementShortName">[34][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[33]" type="array">
+         <obj_property name="ElementShortName">[33][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_tb/fft128/absolute_i[32]" type="array">
+         <obj_property name="ElementShortName">[32][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][15:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/test_tb/fft128/absolute_i[31]" type="array">
          <obj_property name="ElementShortName">[31][15:0]</obj_property>

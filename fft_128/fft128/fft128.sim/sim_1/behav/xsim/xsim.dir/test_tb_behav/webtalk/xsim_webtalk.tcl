@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/ECE532/fft_128/fft128/fft128.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Mon Apr  1 12:57:04 2024" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon Apr  1 16:10:16 2024" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.3 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2405991" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "ad2309dc-6ac3-4d03-bd49-880a009d1ce1" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "6b25bc978c4f4299860943ff3c25ec32" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "199" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "201" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "AMD Ryzen 9 7940HS w/ Radeon 780M Graphics     " -context "user_environment"
@@ -37,7 +37,7 @@ webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Processes -value "5694" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "230" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip unimacro_ver unisims_ver " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "2.27_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "328344_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2765060789 -regid "" -xml C:/ECE532/fft_128/fft128/fft128.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/ECE532/fft_128/fft128/fft128.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/ECE532/fft_128/fft128/fft128.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "2.73_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "327616_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1423497126 -regid "" -xml C:/ECE532/fft_128/fft128/fft128.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/ECE532/fft_128/fft128/fft128.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/ECE532/fft_128/fft128/fft128.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
