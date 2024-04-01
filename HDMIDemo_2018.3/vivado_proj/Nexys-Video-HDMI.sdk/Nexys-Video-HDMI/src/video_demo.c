@@ -272,6 +272,42 @@ void DemoRun()
 		case 'd':
 			analyseNote(461);
 			break;
+		case 'e':
+			analyseNote(490);
+			break;
+		case 'f':
+			analyseNote(520);
+			break;
+		case 'g':
+			analyseNote(555);
+			break;
+		case 'h':
+			analyseNote(590);
+			break;
+		case 'i':
+					analyseNote(625);
+					break;
+		case 'j':
+			analyseNote(660);
+			break;
+		case 'k':
+			analyseNote(700);
+			break;
+		case 'l':
+			analyseNote(740);
+			break;
+		case 'm':
+			analyseNote(790);
+			break;
+		case 'n':
+			analyseNote(830);
+			break;
+		case 'o':
+			analyseNote(880);
+			break;
+		case 'p':
+			analyseNote(932);
+			break;
 		case 'q':
 			break;
 		case 'r':

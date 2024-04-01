@@ -111,7 +111,7 @@ void overlayFrequency(int ones, int tens, int hundreds, int thousands) {
 	u8* hundreds_overlay = loadBinaryImageNumber(hundreds);
 	u8* thousands_overlay = loadBinaryImageNumber(thousands);
 
-	for (int i = 509; i < 526; i++){
+	for (int i = 510; i < 526; i++){
 		memcpy(framebuffer + 3*800*i + 3*21,thousands_overlay + 3*800*i + 3*21, (size_t) 30);
 		memcpy(framebuffer + 3*800*i + 3*21 + 36,hundreds_overlay + 3*800*i + 3*21, (size_t) 30);
 		memcpy(framebuffer + 3*800*i + 3*21 + 72,tens_overlay + 3*800*i + 3*21, (size_t) 30);
