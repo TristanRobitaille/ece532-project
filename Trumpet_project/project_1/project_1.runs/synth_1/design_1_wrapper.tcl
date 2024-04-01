@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a200tsbg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,7 +30,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   c:/ECE532/m2_mod_dsp/pre_processing/pre_processing
-  c:/ECE532/new_fft_design/fft_package
+  c:/ECE532/fft_128/fft_packed
   c:/ECE532/git-version/ECE532-project/preprocessor
   c:/ECE532/git-version/ECE532-project/Trumpet_project/ip_repo/AXI_I2S_driver_1.0
 } [current_project]
