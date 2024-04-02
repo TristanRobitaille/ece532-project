@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1711834658"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1711834658"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1711834658"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1711834658"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1712024712"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1712024712"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1712024712"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1712024712"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\design_1_clk_wiz_1_0\design_1_clk_wiz_1_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_1"/>
@@ -218,8 +218,16 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\design_1_fft_axi_0_1\design_1_fft_axi_0_1.xci" Type="IP">
-        <Instance HierarchyPath="fft_axi_0"/>
+      <File Name="ip\design_1_fft_AXI_0_2\design_1_fft_AXI_0_2.xci" Type="IP">
+        <Instance HierarchyPath="fft_AXI_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_s00_mmu_0\design_1_s00_mmu_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_0/s00_mmu"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

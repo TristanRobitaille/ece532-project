@@ -47,7 +47,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d6b52f34</spirit:value>
+            <spirit:value>9:ec0bbd26</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -63,11 +63,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 30 21:37:38 UTC 2024</spirit:value>
+            <spirit:value>Tue Apr 02 02:25:12 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d6b52f34</spirit:value>
+            <spirit:value>9:ec0bbd26</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -79,7 +79,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:b5880836</spirit:value>
+            <spirit:value>9:d39c57c6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -95,11 +95,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 30 21:37:38 UTC 2024</spirit:value>
+            <spirit:value>Tue Apr 02 02:25:12 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:b5880836</spirit:value>
+            <spirit:value>9:d39c57c6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -112,8 +112,12 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Apr 02 02:27:01 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d6b52f34</spirit:value>
+            <spirit:value>9:ec0bbd26</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -254,12 +258,12 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>buffer_length</spirit:name>
         <spirit:displayName>Buffer Length</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.buffer_length" spirit:dependency="((2500 * spirit:decode(id(&apos;MODELPARAM_VALUE.recording_duration_s&apos;))) - 1)">12499</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.buffer_length" spirit:dependency="((5000 * spirit:decode(id(&apos;MODELPARAM_VALUE.recording_duration_s&apos;))) - 1)">24999</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>TIMEBASE_CLK_DIV</spirit:name>
         <spirit:displayName>Timebase Clk Div</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TIMEBASE_CLK_DIV">20000</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TIMEBASE_CLK_DIV">10000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>IDLE</spirit:name>
@@ -349,12 +353,12 @@
     <spirit:parameter>
       <spirit:name>buffer_length</spirit:name>
       <spirit:displayName>Buffer Length</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.buffer_length">12499</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.buffer_length">24999</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>TIMEBASE_CLK_DIV</spirit:name>
       <spirit:displayName>Timebase Clk Div</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.TIMEBASE_CLK_DIV">20000</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.TIMEBASE_CLK_DIV">10000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>IDLE</spirit:name>

@@ -1,10 +1,10 @@
--- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
--- Date        : Fri Mar 29 19:28:42 2024
--- Host        : BA3135WS39 running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+-- Date        : Mon Apr  1 22:26:50 2024
+-- Host        : yudi running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/robita46/ECE532-project-FFT/ECE532-project-FFT/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_audio_preprocessor_1_0/design_1_audio_preprocessor_1_0_sim_netlist.vhdl
+--               C:/ECE532/git_intergration/ECE532-project/Trumpet_project/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_audio_preprocessor_1_0/design_1_audio_preprocessor_1_0_sim_netlist.vhdl
 -- Design      : design_1_audio_preprocessor_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -30,7 +30,7 @@ entity design_1_audio_preprocessor_1_0 is
   attribute IP_DEFINITION_SOURCE : string;
   attribute IP_DEFINITION_SOURCE of design_1_audio_preprocessor_1_0 : entity is "module_ref";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of design_1_audio_preprocessor_1_0 : entity is "audio_preprocessor,Vivado 2018.3.1";
+  attribute X_CORE_INFO of design_1_audio_preprocessor_1_0 : entity is "audio_preprocessor,Vivado 2018.3";
 end design_1_audio_preprocessor_1_0;
 
 architecture STRUCTURE of design_1_audio_preprocessor_1_0 is

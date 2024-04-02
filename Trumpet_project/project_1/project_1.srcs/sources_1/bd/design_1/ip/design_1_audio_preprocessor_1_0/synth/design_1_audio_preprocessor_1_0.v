@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:module_ref:audio_preprocessor:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "audio_preprocessor,Vivado 2018.3.1" *)
+(* X_CORE_INFO = "audio_preprocessor,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "design_1_audio_preprocessor_1_0,audio_preprocessor,{}" *)
-(* CORE_GENERATION_INFO = "design_1_audio_preprocessor_1_0,audio_preprocessor,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=audio_preprocessor,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,weight_num=17}" *)
+(* CORE_GENERATION_INFO = "design_1_audio_preprocessor_1_0,audio_preprocessor,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=audio_preprocessor,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,weight_num=17}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_audio_preprocessor_1_0 (

@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:module_ref:i2s:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "i2s,Vivado 2018.3.1" *)
+(* X_CORE_INFO = "i2s,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "design_1_i2s_0_0,i2s,{}" *)
-(* CORE_GENERATION_INFO = "design_1_i2s_0_0,i2s,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=i2s,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,BCLK_DIV=208,MCLK_DIV=39,DATA_WIDTH=24}" *)
+(* CORE_GENERATION_INFO = "design_1_i2s_0_0,i2s,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=i2s,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,BCLK_DIV=208,MCLK_DIV=39,DATA_WIDTH=24}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_i2s_0_0 (

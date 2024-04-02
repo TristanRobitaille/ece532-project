@@ -1,8 +1,8 @@
--- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
--- Date        : Fri Mar 29 19:28:43 2024
--- Host        : BA3135WS39 running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+-- Date        : Mon Apr  1 22:26:50 2024
+-- Host        : yudi running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_one_register_0_0_stub.vhdl
 -- Design      : design_1_one_register_0_0
@@ -27,6 +27,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "clk_100MHz,in_input[11:0],out_output[11:0]";
 attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "one_register,Vivado 2018.3.1";
+attribute X_CORE_INFO of stub : architecture is "one_register,Vivado 2018.3";
 begin
 end;
