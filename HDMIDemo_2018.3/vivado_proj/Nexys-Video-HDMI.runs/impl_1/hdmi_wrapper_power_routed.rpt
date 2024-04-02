@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon Apr  1 19:03:10 2024
+| Date             : Mon Apr  1 22:03:29 2024
 | Host             : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_wrapper_power_routed.rpt -pb hdmi_wrapper_power_summary_routed.pb -rpx hdmi_wrapper_power_routed.rpx
 | Design           : hdmi_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.514        |
+| Total On-Chip Power (W)  | 1.513        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.358        |
@@ -52,25 +52,25 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.197 |       34 |       --- |             --- |
-| Slice Logic              |     0.034 |    92498 |       --- |             --- |
-|   LUT as Logic           |     0.030 |    34843 |    133800 |           26.04 |
-|   Register               |     0.002 |    41138 |    267600 |           15.37 |
+| Clocks                   |     0.193 |       34 |       --- |             --- |
+| Slice Logic              |     0.034 |    92562 |       --- |             --- |
+|   LUT as Logic           |     0.030 |    34840 |    133800 |           26.04 |
+|   Register               |     0.002 |    41202 |    267600 |           15.40 |
 |   CARRY4                 |     0.001 |     3013 |     33450 |            9.01 |
 |   LUT as Distributed RAM |    <0.001 |     1284 |     46200 |            2.78 |
 |   F7/F8 Muxes            |    <0.001 |     1555 |    133800 |            1.16 |
 |   LUT as Shift Register  |    <0.001 |     1100 |     46200 |            2.38 |
-|   Others                 |    <0.001 |     2746 |       --- |             --- |
-| Signals                  |     0.053 |    89103 |       --- |             --- |
+|   Others                 |    <0.001 |     2747 |       --- |             --- |
+| Signals                  |     0.055 |    89177 |       --- |             --- |
 | Block RAM                |     0.073 |     45.5 |       365 |           12.47 |
 | MMCM                     |     0.300 |        3 |        10 |           30.00 |
 | PLL                      |     0.091 |        1 |        10 |           10.00 |
 | DSPs                     |     0.011 |      617 |       740 |           83.38 |
-| I/O                      |     0.461 |       72 |       285 |           25.26 |
+| I/O                      |     0.462 |       72 |       285 |           25.26 |
 | PHASER                   |     0.134 |       14 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.156 |          |           |                 |
-| Total                    |     1.514 |          |           |                 |
+| Total                    |     1.513 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,7 +80,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.449 |       0.411 |      0.038 |
+| Vccint    |       1.000 |     0.448 |       0.411 |      0.038 |
 | Vccaux    |       1.800 |     0.375 |       0.344 |      0.031 |
 | Vcco33    |       3.300 |     0.045 |       0.040 |      0.005 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -191,43 +191,43 @@ Table of Contents
 |       U0                         |     0.114 |
 |     axi_gpio_1                   |     0.001 |
 |       U0                         |     0.001 |
-|     axi_mem_intercon             |     0.035 |
+|     axi_mem_intercon             |     0.034 |
 |       m00_couplers               |     0.009 |
 |       s00_couplers               |     0.006 |
 |       s01_couplers               |     0.006 |
 |       s02_couplers               |     0.005 |
 |       s03_couplers               |     0.003 |
-|       xbar                       |     0.007 |
+|       xbar                       |     0.006 |
 |     axi_timer_0                  |     0.003 |
 |       U0                         |     0.003 |
-|     axi_vdma_0                   |     0.031 |
-|       U0                         |     0.031 |
-|     dvi2rgb_0                    |     0.175 |
-|       U0                         |     0.175 |
-|     fft_axi_0                    |     0.036 |
-|       inst                       |     0.036 |
+|     axi_vdma_0                   |     0.030 |
+|       U0                         |     0.030 |
+|     dvi2rgb_0                    |     0.174 |
+|       U0                         |     0.174 |
+|     fft_axi_0                    |     0.035 |
+|       inst                       |     0.035 |
 |     i2c_cap_btn                  |     0.002 |
 |       axi_iic_0                  |     0.002 |
-|     microblaze_0                 |     0.117 |
-|       U0                         |     0.117 |
+|     microblaze_0                 |     0.119 |
+|       U0                         |     0.119 |
 |     microblaze_0_axi_intc        |     0.001 |
 |       U0                         |     0.001 |
-|     microblaze_0_axi_periph      |     0.002 |
-|       xbar                       |     0.002 |
+|     microblaze_0_axi_periph      |     0.001 |
+|       xbar                       |     0.001 |
 |     microblaze_0_local_memory    |     0.004 |
 |       lmb_bram                   |     0.004 |
 |     mig_7series_0                |     0.668 |
 |       u_hdmi_mig_7series_0_0_mig |     0.666 |
-|     rgb2dvi_0                    |     0.132 |
-|       U0                         |     0.132 |
+|     rgb2dvi_0                    |     0.134 |
+|       U0                         |     0.134 |
 |     v_axi4s_vid_out_0            |     0.002 |
 |       inst                       |     0.002 |
-|     v_tc_0                       |     0.012 |
-|       U0                         |     0.012 |
-|     v_tc_1                       |     0.011 |
+|     v_tc_0                       |     0.011 |
 |       U0                         |     0.011 |
-|     v_vid_in_axi4s_0             |     0.003 |
-|       inst                       |     0.003 |
+|     v_tc_1                       |     0.010 |
+|       U0                         |     0.010 |
+|     v_vid_in_axi4s_0             |     0.002 |
+|       inst                       |     0.002 |
 +----------------------------------+-----------+
 
 

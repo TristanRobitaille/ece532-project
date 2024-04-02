@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Mon Apr  1 14:32:28 2024
+//Date        : Mon Apr  1 21:15:43 2024
 //Host        : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
 //Command     : generate_target hdmi.bd
 //Design      : hdmi
@@ -147,6 +147,7 @@ module hdmi
   wire TMDS_IN_1_CLK_P;
   wire [2:0]TMDS_IN_1_DATA_N;
   wire [2:0]TMDS_IN_1_DATA_P;
+  wire axi_dynclk_0_PXL_CLK_5X_O;
   wire axi_dynclk_0_PXL_CLK_O;
   wire [2:0]axi_gpio_0_GPIO_TRI_O;
   wire [31:0]axi_gpio_1_GPIO_TRI_I;
@@ -746,7 +747,8 @@ module hdmi
         .sda_o(axi_iic_0_IIC_SDA_O),
         .sda_t(axi_iic_0_IIC_SDA_T));
   hdmi_axi_dynclk_0_0 axi_dynclk_0
-       (.PXL_CLK_O(axi_dynclk_0_PXL_CLK_O),
+       (.PXL_CLK_5X_O(axi_dynclk_0_PXL_CLK_5X_O),
+        .PXL_CLK_O(axi_dynclk_0_PXL_CLK_O),
         .REF_CLK_I(mig_7series_0_ui_clk),
         .s00_axi_aclk(mig_7series_0_ui_clk),
         .s00_axi_araddr(microblaze_0_axi_periph_M04_AXI_ARADDR[4:0]),
@@ -1722,12 +1724,12 @@ module hdmi
         .speaker_mode(playback_ctrl_0_speaker_mode));
   hdmi_rgb2dvi_0_0 rgb2dvi_0
        (.PixelClk(axi_dynclk_0_PXL_CLK_O),
-        .SerialClk(mig_7series_0_ui_clk),
+        .SerialClk(axi_dynclk_0_PXL_CLK_5X_O),
         .TMDS_Clk_n(rgb2dvi_0_TMDS_CLK_N),
         .TMDS_Clk_p(rgb2dvi_0_TMDS_CLK_P),
         .TMDS_Data_n(rgb2dvi_0_TMDS_DATA_N),
         .TMDS_Data_p(rgb2dvi_0_TMDS_DATA_P),
-        .aRst_n(rst_mig_7series_0_100M_peripheral_aresetn),
+        .aRst_n(1'b1),
         .vid_pData(v_axi4s_vid_out_0_vid_io_out_DATA),
         .vid_pHSync(v_axi4s_vid_out_0_vid_io_out_HSYNC),
         .vid_pVDE(v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO),
