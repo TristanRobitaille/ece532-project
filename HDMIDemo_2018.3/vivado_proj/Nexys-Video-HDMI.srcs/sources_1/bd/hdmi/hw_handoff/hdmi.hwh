@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr  1 14:33:15 2024" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr  1 19:42:20 2024" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys_video:part0:1.1" DEVICE="7a200t" NAME="hdmi" PACKAGE="sbg484" SPEEDGRADE="-1"/>
 
@@ -42,12 +42,7 @@
     </PORT>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100MHz" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="playback_ctrl_0" PORT="clk_100MHz"/>
-        <CONNECTION INSTANCE="one_register_0" PORT="clk_100MHz"/>
-        <CONNECTION INSTANCE="spi_controller_0" PORT="clk_100MHz"/>
-        <CONNECTION INSTANCE="i2s_0" PORT="clk_100MHz"/>
         <CONNECTION INSTANCE="mig_7series_0" PORT="sys_clk_i"/>
-        <CONNECTION INSTANCE="mic_storage_0" PORT="clk_100MHz"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="fft_pwm_out" SIGIS="undef" SIGNAME="fft_axi_0_fft_pwm_out">
@@ -102,6 +97,166 @@
     <PORT DIR="I" NAME="master_in_slave_out" SIGIS="undef" SIGNAME="External_Ports_master_in_slave_out">
       <CONNECTIONS>
         <CONNECTION INSTANCE="spi_controller_0" PORT="master_in_slave_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="cap_btn_i2c_scl_i" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_scl_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="scl_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="cap_btn_i2c_scl_o" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_scl_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="scl_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="cap_btn_i2c_scl_t" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_scl_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="scl_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="cap_btn_i2c_sda_i" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_sda_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="sda_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="cap_btn_i2c_sda_o" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_sda_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="sda_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="cap_btn_i2c_sda_t" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_sda_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="sda_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="i2s_i2c_scl_i" SIGIS="undef" SIGNAME="I2S_audio_scl_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="I2S_audio" PORT="scl_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="i2s_i2c_scl_o" SIGIS="undef" SIGNAME="I2S_audio_scl_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="I2S_audio" PORT="scl_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="i2s_i2c_scl_t" SIGIS="undef" SIGNAME="I2S_audio_scl_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="I2S_audio" PORT="scl_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="i2s_i2c_sda_i" SIGIS="undef" SIGNAME="I2S_audio_sda_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="I2S_audio" PORT="sda_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="i2s_i2c_sda_o" SIGIS="undef" SIGNAME="I2S_audio_sda_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="I2S_audio" PORT="sda_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="i2s_i2c_sda_t" SIGIS="undef" SIGNAME="I2S_audio_sda_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="I2S_audio" PORT="sda_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="TMDS_IN_clk_p" SIGIS="clk" SIGNAME="dvi2rgb_0_TMDS_Clk_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="TMDS_Clk_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="TMDS_IN_clk_n" SIGIS="clk" SIGNAME="dvi2rgb_0_TMDS_Clk_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="TMDS_Clk_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="TMDS_IN_data_p" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_TMDS_Data_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="TMDS_Data_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="TMDS_IN_data_n" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_TMDS_Data_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="TMDS_Data_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="swt_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_gpio_io_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_gpio_1" PORT="gpio_io_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="swt_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_gpio_io_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_gpio_1" PORT="gpio_io_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="swt_tri_t" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_gpio_io_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_gpio_1" PORT="gpio_io_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="TMDS_OUT_clk_p" SIGIS="clk" SIGNAME="rgb2dvi_0_TMDS_Clk_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Clk_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="TMDS_OUT_clk_n" SIGIS="clk" SIGNAME="rgb2dvi_0_TMDS_Clk_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Clk_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="TMDS_OUT_data_p" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_TMDS_Data_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Data_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="TMDS_OUT_data_n" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_TMDS_Data_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Data_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="DDC_scl_i" SIGIS="undef" SIGNAME="dvi2rgb_0_SCL_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SCL_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="DDC_scl_o" SIGIS="undef" SIGNAME="dvi2rgb_0_SCL_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SCL_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="DDC_scl_t" SIGIS="undef" SIGNAME="dvi2rgb_0_SCL_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SCL_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="DDC_sda_i" SIGIS="undef" SIGNAME="dvi2rgb_0_SDA_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SDA_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="DDC_sda_o" SIGIS="undef" SIGNAME="dvi2rgb_0_SDA_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SDA_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="DDC_sda_t" SIGIS="undef" SIGNAME="dvi2rgb_0_SDA_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SDA_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="led_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="usb_uart_rxd" SIGIS="undef" SIGNAME="axi_uartlite_0_rx">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_uartlite_0" PORT="rx"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="usb_uart_txd" SIGIS="undef" SIGNAME="axi_uartlite_0_tx">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_uartlite_0" PORT="tx"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="IO" LEFT="15" NAME="DDR3_dq" RIGHT="0" SIGIS="undef" SIGNAME="mig_7series_0_ddr3_dq">
@@ -172,166 +327,6 @@
     <PORT DIR="O" LEFT="0" NAME="DDR3_odt" RIGHT="0" SIGIS="undef" SIGNAME="mig_7series_0_ddr3_odt">
       <CONNECTIONS>
         <CONNECTION INSTANCE="mig_7series_0" PORT="ddr3_odt"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="cap_btn_i2c_scl_i" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_scl_i">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="scl_i"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="cap_btn_i2c_scl_o" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_scl_o">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="scl_o"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="cap_btn_i2c_scl_t" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_scl_t">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="scl_t"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="cap_btn_i2c_sda_i" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_sda_i">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="sda_i"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="cap_btn_i2c_sda_o" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_sda_o">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="sda_o"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="cap_btn_i2c_sda_t" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_sda_t">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="sda_t"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="i2s_i2c_scl_i" SIGIS="undef" SIGNAME="I2S_audio_scl_i">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="I2S_audio" PORT="scl_i"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="i2s_i2c_scl_o" SIGIS="undef" SIGNAME="I2S_audio_scl_o">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="I2S_audio" PORT="scl_o"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="i2s_i2c_scl_t" SIGIS="undef" SIGNAME="I2S_audio_scl_t">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="I2S_audio" PORT="scl_t"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="i2s_i2c_sda_i" SIGIS="undef" SIGNAME="I2S_audio_sda_i">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="I2S_audio" PORT="sda_i"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="i2s_i2c_sda_o" SIGIS="undef" SIGNAME="I2S_audio_sda_o">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="I2S_audio" PORT="sda_o"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="i2s_i2c_sda_t" SIGIS="undef" SIGNAME="I2S_audio_sda_t">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="I2S_audio" PORT="sda_t"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="2" NAME="led_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="31" NAME="swt_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_gpio_io_i">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_gpio_1" PORT="gpio_io_i"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="31" NAME="swt_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_gpio_io_o">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_gpio_1" PORT="gpio_io_o"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="31" NAME="swt_tri_t" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_gpio_io_t">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_gpio_1" PORT="gpio_io_t"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="TMDS_IN_clk_p" SIGIS="clk" SIGNAME="dvi2rgb_0_TMDS_Clk_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="TMDS_Clk_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="TMDS_IN_clk_n" SIGIS="clk" SIGNAME="dvi2rgb_0_TMDS_Clk_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="TMDS_Clk_n"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="TMDS_IN_data_p" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_TMDS_Data_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="TMDS_Data_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="TMDS_IN_data_n" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_TMDS_Data_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="TMDS_Data_n"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="DDC_scl_i" SIGIS="undef" SIGNAME="dvi2rgb_0_SCL_I">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SCL_I"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="DDC_scl_o" SIGIS="undef" SIGNAME="dvi2rgb_0_SCL_O">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SCL_O"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="DDC_scl_t" SIGIS="undef" SIGNAME="dvi2rgb_0_SCL_T">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SCL_T"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="DDC_sda_i" SIGIS="undef" SIGNAME="dvi2rgb_0_SDA_I">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SDA_I"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="DDC_sda_o" SIGIS="undef" SIGNAME="dvi2rgb_0_SDA_O">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SDA_O"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="DDC_sda_t" SIGIS="undef" SIGNAME="dvi2rgb_0_SDA_T">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="dvi2rgb_0" PORT="SDA_T"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="TMDS_OUT_clk_p" SIGIS="clk" SIGNAME="rgb2dvi_0_TMDS_Clk_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Clk_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="TMDS_OUT_clk_n" SIGIS="clk" SIGNAME="rgb2dvi_0_TMDS_Clk_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Clk_n"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="2" NAME="TMDS_OUT_data_p" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_TMDS_Data_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Data_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="2" NAME="TMDS_OUT_data_n" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_TMDS_Data_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Data_n"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="usb_uart_rxd" SIGIS="undef" SIGNAME="axi_uartlite_0_rx">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_uartlite_0" PORT="rx"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="usb_uart_txd" SIGIS="undef" SIGNAME="axi_uartlite_0_tx">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_uartlite_0" PORT="tx"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -1421,7 +1416,11 @@
             <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axis_mm2s_aclk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="PXL_CLK_5X_O" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="PXL_CLK_5X_O" SIGIS="clk" SIGNAME="axi_dynclk_0_PXL_CLK_5X_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="SerialClk"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="LOCKED_O" SIGIS="undef"/>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="mig_7series_0_ui_clk">
           <CONNECTIONS>
@@ -3064,6 +3063,233 @@
             <CONNECTION INSTANCE="rst_mig_7series_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S00_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S00_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S00_AXI_arlock" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="S00_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S00_AXI_arregion" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S00_AXI_arqos" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S00_AXI_arready" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="S00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S00_AXI_rlast" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S00_AXI_rvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S00_AXI_rready" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S01_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S01_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S01_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_awlock" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="S01_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S01_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_awregion" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S01_AXI_awqos" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S01_AXI_awvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S01_AXI_awready" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="S01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="S01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_wlast" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_wvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S01_AXI_wready" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S01_AXI_bvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_bready" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S03_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARLEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S03_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARSIZE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S03_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARBURST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_arlock" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arlock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARLOCK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S03_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARCACHE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S03_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_arregion" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="S03_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arqos">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARQOS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_arvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S03_AXI_arready" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="255" NAME="S03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S03_AXI_rlast" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S03_AXI_rvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_rready" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RREADY"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="S02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S02_AXI_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DC_AWADDR"/>
@@ -3229,233 +3455,6 @@
         <PORT DIR="I" NAME="S02_AXI_rready" SIGIS="undef" SIGNAME="axi_mem_intercon_S02_AXI_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_DC_RREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="7" NAME="S01_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awlen">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awlen"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S01_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awsize">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S01_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awburst">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awburst"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S01_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="S01_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awcache">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awcache"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S01_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S01_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S01_AXI_awqos" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S01_AXI_awvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S01_AXI_awready" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="127" NAME="S01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="15" NAME="S01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S01_AXI_wlast" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wlast"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S01_AXI_wvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S01_AXI_wready" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S01_AXI_bvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S01_AXI_bready" SIGIS="undef" SIGNAME="axi_mem_intercon_S01_AXI_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_s2mm_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="7" NAME="S00_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arlen">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arlen"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arsize">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S00_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arburst">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arburst"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arcache">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arcache"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_arqos" SIGIS="undef"/>
-        <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S00_AXI_arready" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="127" NAME="S00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S00_AXI_rlast" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rlast"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S00_AXI_rvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_rready" SIGIS="undef" SIGNAME="axi_mem_intercon_S00_AXI_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_vdma_0" PORT="m_axi_mm2s_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARADDR"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="7" NAME="S03_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arlen">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARLEN"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S03_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arsize">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARSIZE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S03_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arburst">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARBURST"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S03_AXI_arlock" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arlock">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARLOCK"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S03_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arcache">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARCACHE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S03_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARPROT"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S03_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="S03_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arqos">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARQOS"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S03_AXI_arvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARVALID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S03_AXI_arready" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_ARREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="255" NAME="S03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RDATA"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RRESP"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S03_AXI_rlast" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RLAST"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S03_AXI_rvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RVALID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S03_AXI_rready" SIGIS="undef" SIGNAME="axi_mem_intercon_S03_AXI_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M_AXI_IC_RREADY"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="28" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awaddr">
@@ -8483,9 +8482,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="mig_7series_0_ui_clk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+            <CONNECTION INSTANCE="mig_7series_0" PORT="ui_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="btn_rst" SIGIS="rst" SIGNAME="External_Ports_btn_rst">
@@ -8655,9 +8654,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="mig_7series_0_ui_clk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+            <CONNECTION INSTANCE="mig_7series_0" PORT="ui_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rst_n" SIGIS="rst" SIGNAME="External_Ports_btn_rst">
@@ -12060,447 +12059,360 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M08_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_awaddr"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_awvalid">
+        <PORT DIR="O" LEFT="2" NAME="M08_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_awprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_awvalid"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_awprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_awready">
+        <PORT DIR="O" NAME="M08_AXI_awvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_awready"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_wdata">
+        <PORT DIR="I" NAME="M08_AXI_awready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M03_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_wstrb">
+        <PORT DIR="O" LEFT="31" NAME="M08_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_wstrb"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_wvalid">
+        <PORT DIR="O" LEFT="3" NAME="M08_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_wvalid"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_wready">
+        <PORT DIR="O" NAME="M08_AXI_wvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_bresp">
+        <PORT DIR="I" NAME="M08_AXI_wready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_bresp"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M03_AXI_bvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_bvalid">
+        <PORT DIR="I" LEFT="1" NAME="M08_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_bvalid"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_bready">
+        <PORT DIR="I" NAME="M08_AXI_bvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_bready"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_araddr">
+        <PORT DIR="O" NAME="M08_AXI_bready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_araddr"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_arvalid">
+        <PORT DIR="O" LEFT="31" NAME="M08_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_arvalid"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_arready">
+        <PORT DIR="O" LEFT="2" NAME="M08_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_arprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_arready"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_arprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_rdata">
+        <PORT DIR="O" NAME="M08_AXI_arvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_rdata"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_rresp">
+        <PORT DIR="I" NAME="M08_AXI_arready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_rresp"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M03_AXI_rvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_rvalid">
+        <PORT DIR="I" LEFT="31" NAME="M08_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_rvalid"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_rready">
+        <PORT DIR="I" LEFT="1" NAME="M08_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_awaddr">
+        <PORT DIR="I" NAME="M08_AXI_rvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_awaddr"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M04_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_awprot">
+        <PORT DIR="O" NAME="M08_AXI_rready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_awprot"/>
+            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_awvalid">
+        <PORT DIR="O" LEFT="31" NAME="M09_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_awvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_awready">
+        <PORT DIR="O" NAME="M09_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_awvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_awready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M04_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_wdata">
+        <PORT DIR="I" NAME="M09_AXI_awready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_wdata"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M04_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_wstrb">
+        <PORT DIR="O" LEFT="31" NAME="M09_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_wstrb"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_wvalid">
+        <PORT DIR="O" LEFT="3" NAME="M09_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_wvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_wready">
+        <PORT DIR="O" NAME="M09_AXI_wvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_wready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M04_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_bresp">
+        <PORT DIR="I" NAME="M09_AXI_wready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_bresp"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_bvalid">
+        <PORT DIR="I" LEFT="1" NAME="M09_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_bvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_bready">
+        <PORT DIR="I" NAME="M09_AXI_bvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_bready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_araddr">
+        <PORT DIR="O" NAME="M09_AXI_bready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_araddr"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M04_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_arprot">
+        <PORT DIR="O" LEFT="31" NAME="M09_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_arprot"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_arvalid">
+        <PORT DIR="O" NAME="M09_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M09_AXI_arvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_arvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_arready">
+        <PORT DIR="I" NAME="M09_AXI_arready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_arready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M04_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_rdata">
+        <PORT DIR="I" LEFT="31" NAME="M09_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_rdata"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M04_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_rresp">
+        <PORT DIR="I" LEFT="1" NAME="M09_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_rresp"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_rvalid">
+        <PORT DIR="I" NAME="M09_AXI_rvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_rvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_rready">
+        <PORT DIR="O" NAME="M09_AXI_rready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_rready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M05_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M10_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_awaddr"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M05_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M05_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_awvalid">
+        <PORT DIR="O" NAME="M10_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M10_AXI_awvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_awvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M05_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_awready">
+        <PORT DIR="I" NAME="M10_AXI_awready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_awready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M05_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_wdata">
+        <PORT DIR="O" LEFT="31" NAME="M10_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M05_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_wstrb">
+        <PORT DIR="O" LEFT="3" NAME="M10_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_wstrb"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M05_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_wvalid">
+        <PORT DIR="O" NAME="M10_AXI_wvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_wvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M05_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_wready">
+        <PORT DIR="I" NAME="M10_AXI_wready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M05_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_bresp">
+        <PORT DIR="I" LEFT="1" NAME="M10_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_bresp"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M05_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_bvalid">
+        <PORT DIR="I" NAME="M10_AXI_bvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_bvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M05_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_bready">
+        <PORT DIR="O" NAME="M10_AXI_bready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_bready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M05_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_araddr">
+        <PORT DIR="O" LEFT="31" NAME="M10_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_araddr"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M05_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M05_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_arvalid">
+        <PORT DIR="O" NAME="M10_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M10_AXI_arvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_arvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M05_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_arready">
+        <PORT DIR="I" NAME="M10_AXI_arready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_arready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M05_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_rdata">
+        <PORT DIR="I" LEFT="31" NAME="M10_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_rdata"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M05_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_rresp">
+        <PORT DIR="I" LEFT="1" NAME="M10_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_rresp"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M05_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_rvalid">
+        <PORT DIR="I" NAME="M10_AXI_rvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_rvalid"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M05_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_rready">
+        <PORT DIR="O" NAME="M10_AXI_rready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M06_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M11_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_awaddr"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_awvalid">
+        <PORT DIR="O" NAME="M11_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M11_AXI_awvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_awvalid"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M06_AXI_awready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_awready">
+        <PORT DIR="I" NAME="M11_AXI_awready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_awready"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M06_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_wdata">
+        <PORT DIR="O" LEFT="31" NAME="M11_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M06_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_wstrb">
+        <PORT DIR="O" LEFT="3" NAME="M11_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_wstrb"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_wvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_wvalid">
+        <PORT DIR="O" NAME="M11_AXI_wvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_wvalid"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M06_AXI_wready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_wready">
+        <PORT DIR="I" NAME="M11_AXI_wready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M06_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_bresp">
+        <PORT DIR="I" LEFT="1" NAME="M11_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_bresp"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M06_AXI_bvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_bvalid">
+        <PORT DIR="I" NAME="M11_AXI_bvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_bvalid"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_bready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_bready">
+        <PORT DIR="O" NAME="M11_AXI_bready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_bready"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M06_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_araddr">
+        <PORT DIR="O" LEFT="31" NAME="M11_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_araddr"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_arvalid">
+        <PORT DIR="O" NAME="M11_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M11_AXI_arvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_arvalid"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M06_AXI_arready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_arready">
+        <PORT DIR="I" NAME="M11_AXI_arready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_arready"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M06_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_rdata">
+        <PORT DIR="I" LEFT="31" NAME="M11_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_rdata"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M06_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_rresp">
+        <PORT DIR="I" LEFT="1" NAME="M11_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_rresp"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M06_AXI_rvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_rvalid">
+        <PORT DIR="I" NAME="M11_AXI_rvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_rvalid"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_rready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_rready">
+        <PORT DIR="O" NAME="M11_AXI_rready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M13_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M13_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M13_AXI_awvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M13_AXI_awready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M13_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M13_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M13_AXI_wvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M13_AXI_wready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M13_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M13_AXI_bvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M13_AXI_bready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M13_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M13_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M13_AXI_arvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M13_AXI_arready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M13_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M13_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M13_AXI_rvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M13_AXI_rready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M12_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_awaddr">
@@ -12588,6 +12500,93 @@
         <PORT DIR="O" NAME="M12_AXI_rready" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M13_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M13_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M13_AXI_awvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M13_AXI_awready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M13_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M13_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M13_AXI_wvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M13_AXI_wready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M13_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M13_AXI_bvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M13_AXI_bready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M13_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M13_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M13_AXI_arvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M13_AXI_arready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M13_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M13_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M13_AXI_rvalid" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M13_AXI_rready" SIGIS="undef" SIGNAME="axi_gpio_1_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_M_AXI_DP_AWADDR">
@@ -12942,360 +12941,360 @@
             <CONNECTION INSTANCE="axi_gpio_video" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M08_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_awaddr"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M08_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_awprot">
+        <PORT DIR="O" NAME="M03_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_awprot"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M08_AXI_awvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_awvalid">
+        <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_awvalid"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M08_AXI_awready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_awready">
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_awready"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M08_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_wdata">
+        <PORT DIR="O" LEFT="3" NAME="M03_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_wdata"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M08_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_wstrb">
+        <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_wstrb"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M08_AXI_wvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_wvalid">
+        <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_wvalid"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M08_AXI_wready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_wready">
+        <PORT DIR="I" LEFT="1" NAME="M03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_wready"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M08_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_bresp">
+        <PORT DIR="I" NAME="M03_AXI_bvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_bresp"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M08_AXI_bvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_bvalid">
+        <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_bvalid"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M08_AXI_bready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_bready">
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_bready"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M08_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_araddr">
+        <PORT DIR="O" NAME="M03_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_araddr"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M08_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_arprot">
+        <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_arprot"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M08_AXI_arvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_arvalid">
+        <PORT DIR="I" LEFT="31" NAME="M03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_arvalid"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M08_AXI_arready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_arready">
+        <PORT DIR="I" LEFT="1" NAME="M03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_arready"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M08_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_rdata">
+        <PORT DIR="I" NAME="M03_AXI_rvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_rdata"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M08_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_rresp">
+        <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M03_AXI_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_rresp"/>
+            <CONNECTION INSTANCE="v_tc_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M08_AXI_rvalid" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_rvalid">
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_rvalid"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M08_AXI_rready" SIGIS="undef" SIGNAME="fft_axi_0_s00_axi_rready">
+        <PORT DIR="O" LEFT="2" NAME="M04_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_awprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fft_axi_0" PORT="s00_axi_rready"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_awprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M09_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_awaddr">
+        <PORT DIR="O" LEFT="0" NAME="M04_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_awaddr"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M09_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M09_AXI_awvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_awvalid">
+        <PORT DIR="I" LEFT="0" NAME="M04_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_awvalid"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M09_AXI_awready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_awready">
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_awready"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M09_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_wdata">
+        <PORT DIR="O" LEFT="3" NAME="M04_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M09_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_wstrb">
+        <PORT DIR="O" LEFT="0" NAME="M04_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_wstrb"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M09_AXI_wvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_wvalid">
+        <PORT DIR="I" LEFT="0" NAME="M04_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_wvalid"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M09_AXI_wready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_wready">
+        <PORT DIR="I" LEFT="1" NAME="M04_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M09_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_bresp">
+        <PORT DIR="I" LEFT="0" NAME="M04_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_bresp"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M09_AXI_bvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_bvalid">
+        <PORT DIR="O" LEFT="0" NAME="M04_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_bvalid"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M09_AXI_bready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_bready">
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_bready"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M09_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_araddr">
+        <PORT DIR="O" LEFT="2" NAME="M04_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_arprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_araddr"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_arprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M09_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M09_AXI_arvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_arvalid">
+        <PORT DIR="O" LEFT="0" NAME="M04_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_arvalid"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M09_AXI_arready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_arready">
+        <PORT DIR="I" LEFT="0" NAME="M04_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_arready"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M09_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_rdata">
+        <PORT DIR="I" LEFT="31" NAME="M04_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_rdata"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M09_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_rresp">
+        <PORT DIR="I" LEFT="1" NAME="M04_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_rresp"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M09_AXI_rvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_rvalid">
+        <PORT DIR="I" LEFT="0" NAME="M04_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_rvalid"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M09_AXI_rready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_cap_btn_gpio_s_axi_rready">
+        <PORT DIR="O" LEFT="0" NAME="M04_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_dynclk_0_s00_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_cap_btn_gpio" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="s00_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M11_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M05_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_awaddr"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M11_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M11_AXI_awvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_awvalid">
+        <PORT DIR="O" NAME="M05_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="0" NAME="M05_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_awvalid"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M11_AXI_awready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_awready">
+        <PORT DIR="I" LEFT="0" NAME="M05_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_awready"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M11_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_wdata">
+        <PORT DIR="O" LEFT="31" NAME="M05_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M11_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_wstrb">
+        <PORT DIR="O" LEFT="3" NAME="M05_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_wstrb"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M11_AXI_wvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_wvalid">
+        <PORT DIR="O" LEFT="0" NAME="M05_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_wvalid"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M11_AXI_wready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_wready">
+        <PORT DIR="I" LEFT="0" NAME="M05_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M11_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_bresp">
+        <PORT DIR="I" LEFT="1" NAME="M05_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_bresp"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M11_AXI_bvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_bvalid">
+        <PORT DIR="I" LEFT="0" NAME="M05_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_bvalid"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M11_AXI_bready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_bready">
+        <PORT DIR="O" LEFT="0" NAME="M05_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_bready"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M11_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_araddr">
+        <PORT DIR="O" LEFT="31" NAME="M05_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_araddr"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M11_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M11_AXI_arvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_arvalid">
+        <PORT DIR="O" NAME="M05_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="0" NAME="M05_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_arvalid"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M11_AXI_arready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_arready">
+        <PORT DIR="I" LEFT="0" NAME="M05_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_arready"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M11_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_rdata">
+        <PORT DIR="I" LEFT="31" NAME="M05_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_rdata"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M11_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="I2S_audio_s_axi_rresp">
+        <PORT DIR="I" LEFT="1" NAME="M05_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_rresp"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M11_AXI_rvalid" SIGIS="undef" SIGNAME="I2S_audio_s_axi_rvalid">
+        <PORT DIR="I" LEFT="0" NAME="M05_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_rvalid"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M11_AXI_rready" SIGIS="undef" SIGNAME="I2S_audio_s_axi_rready">
+        <PORT DIR="O" LEFT="0" NAME="M05_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_timer_0_s_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="I2S_audio" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M10_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M06_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_awaddr"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M10_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M10_AXI_awvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_awvalid">
+        <PORT DIR="O" NAME="M06_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M06_AXI_awvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_awvalid"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M10_AXI_awready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_awready">
+        <PORT DIR="I" NAME="M06_AXI_awready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_awready"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M10_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_wdata">
+        <PORT DIR="O" LEFT="31" NAME="M06_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M10_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_wstrb">
+        <PORT DIR="O" LEFT="3" NAME="M06_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_wstrb"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M10_AXI_wvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_wvalid">
+        <PORT DIR="O" NAME="M06_AXI_wvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_wvalid"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M10_AXI_wready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_wready">
+        <PORT DIR="I" NAME="M06_AXI_wready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M10_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_bresp">
+        <PORT DIR="I" LEFT="1" NAME="M06_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_bresp"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M10_AXI_bvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_bvalid">
+        <PORT DIR="I" NAME="M06_AXI_bvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_bvalid"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M10_AXI_bready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_bready">
+        <PORT DIR="O" NAME="M06_AXI_bready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_bready"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M10_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_araddr">
+        <PORT DIR="O" LEFT="31" NAME="M06_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_araddr"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M10_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M10_AXI_arvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_arvalid">
+        <PORT DIR="O" NAME="M06_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M06_AXI_arvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_arvalid"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M10_AXI_arready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_arready">
+        <PORT DIR="I" NAME="M06_AXI_arready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_arready"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M10_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_rdata">
+        <PORT DIR="I" LEFT="31" NAME="M06_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_rdata"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M10_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_rresp">
+        <PORT DIR="I" LEFT="1" NAME="M06_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_rresp"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M10_AXI_rvalid" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_rvalid">
+        <PORT DIR="I" NAME="M06_AXI_rvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_rvalid"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M10_AXI_rready" SIGIS="undef" SIGNAME="i2c_cap_btn_axi_iic_0_s_axi_rready">
+        <PORT DIR="O" NAME="M06_AXI_rready" SIGIS="undef" SIGNAME="microblaze_0_axi_periph_M06_AXI_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="i2c_cap_btn_axi_iic_0" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="v_tc_1" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -15973,7 +15972,11 @@
             <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_Clk"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_Clk"/>
             <CONNECTION INSTANCE="microblaze_0" PORT="Clk"/>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="SerialClk"/>
+            <CONNECTION INSTANCE="i2s_0" PORT="clk_100MHz"/>
+            <CONNECTION INSTANCE="mic_storage_0" PORT="clk_100MHz"/>
+            <CONNECTION INSTANCE="one_register_0" PORT="clk_100MHz"/>
+            <CONNECTION INSTANCE="spi_controller_0" PORT="clk_100MHz"/>
+            <CONNECTION INSTANCE="playback_ctrl_0" PORT="clk_100MHz"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="160000000" DIR="O" NAME="ui_addn_clk_0" SIGIS="clk" SIGNAME="mig_7series_0_ui_addn_clk_0">
@@ -16289,9 +16292,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="mig_7series_0_ui_clk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+            <CONNECTION INSTANCE="mig_7series_0" PORT="ui_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="11" NAME="in_input" RIGHT="0" SIGIS="undef" SIGNAME="spi_controller_0_mic_data_out">
@@ -16314,9 +16317,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="mig_7series_0_ui_clk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+            <CONNECTION INSTANCE="mig_7series_0" PORT="ui_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="btn_rst" SIGIS="rst" SIGNAME="External_Ports_btn_rst">
@@ -16386,11 +16389,7 @@
             <CONNECTION INSTANCE="hdmi_imp" PORT="TMDS_OUT_data_n"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="aRst_n" SIGIS="rst" SIGNAME="rst_mig_7series_0_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_mig_7series_0_100M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" NAME="aRst_n" SIGIS="rst"/>
         <PORT DIR="I" LEFT="23" NAME="vid_pData" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pData">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_data"/>
@@ -16416,9 +16415,9 @@
             <CONNECTION INSTANCE="axi_dynclk_0" PORT="PXL_CLK_O"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="SerialClk" SIGIS="clk" SIGNAME="mig_7series_0_ui_clk">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="SerialClk" SIGIS="clk" SIGNAME="axi_dynclk_0_PXL_CLK_5X_O">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mig_7series_0" PORT="ui_clk"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="PXL_CLK_5X_O"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -16536,7 +16535,6 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M12_ARESETN"/>
             <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M13_ARESETN"/>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="aRst_n"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -16608,9 +16606,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="External_Ports_clk_100MHz">
+        <PORT DIR="I" NAME="clk_100MHz" SIGIS="undef" SIGNAME="mig_7series_0_ui_clk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="clk_100MHz"/>
+            <CONNECTION INSTANCE="mig_7series_0" PORT="ui_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rst_n" SIGIS="rst" SIGNAME="External_Ports_btn_rst">

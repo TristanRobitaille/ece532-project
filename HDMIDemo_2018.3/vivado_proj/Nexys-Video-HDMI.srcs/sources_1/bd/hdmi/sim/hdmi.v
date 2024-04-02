@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Mon Apr  1 14:32:28 2024
+//Date        : Mon Apr  1 19:41:46 2024
 //Host        : DESKTOP-QFC1GU1 running 64-bit major release  (build 9200)
 //Command     : generate_target hdmi.bd
 //Design      : hdmi
@@ -147,6 +147,7 @@ module hdmi
   wire TMDS_IN_1_CLK_P;
   wire [2:0]TMDS_IN_1_DATA_N;
   wire [2:0]TMDS_IN_1_DATA_P;
+  wire axi_dynclk_0_PXL_CLK_5X_O;
   wire axi_dynclk_0_PXL_CLK_O;
   wire [2:0]axi_gpio_0_GPIO_TRI_O;
   wire [31:0]axi_gpio_1_GPIO_TRI_I;
@@ -746,7 +747,8 @@ module hdmi
         .sda_o(axi_iic_0_IIC_SDA_O),
         .sda_t(axi_iic_0_IIC_SDA_T));
   hdmi_axi_dynclk_0_0 axi_dynclk_0
-       (.PXL_CLK_O(axi_dynclk_0_PXL_CLK_O),
+       (.PXL_CLK_5X_O(axi_dynclk_0_PXL_CLK_5X_O),
+        .PXL_CLK_O(axi_dynclk_0_PXL_CLK_O),
         .REF_CLK_I(mig_7series_0_ui_clk),
         .s00_axi_aclk(mig_7series_0_ui_clk),
         .s00_axi_araddr(microblaze_0_axi_periph_M04_AXI_ARADDR[4:0]),
@@ -1162,7 +1164,7 @@ module hdmi
   hdmi_i2s_0_0 i2s_0
        (.bclk(i2s_0_bclk),
         .btn_rst(btn_rst_0_1),
-        .clk_100MHz(clk_wiz_0_clk_out1),
+        .clk_100MHz(mig_7series_0_ui_clk),
         .input_source(playback_ctrl_0_speaker_mode),
         .lrclk(i2s_0_lrclk),
         .mclk(i2s_0_mclk),
@@ -1180,7 +1182,7 @@ module hdmi
         .Dbg_TDO_0(microblaze_0_debug_TDO),
         .Dbg_Update_0(microblaze_0_debug_UPDATE));
   hdmi_mic_storage_0_0 mic_storage_0
-       (.clk_100MHz(clk_wiz_0_clk_out1),
+       (.clk_100MHz(mig_7series_0_ui_clk),
         .mic_data(Net),
         .new_sample(spi_controller_0_new_data_ready_clk_100MHz),
         .playback_data(mic_storage_0_playback_data),
@@ -1710,24 +1712,24 @@ module hdmi
         .ui_addn_clk_1(mig_7series_0_ui_addn_clk_1),
         .ui_clk(mig_7series_0_ui_clk));
   hdmi_one_register_0_0 one_register_0
-       (.clk_100MHz(clk_wiz_0_clk_out1),
+       (.clk_100MHz(mig_7series_0_ui_clk),
         .in_input(Net),
         .out_output(one_register_0_out_output));
   hdmi_playback_ctrl_0_0 playback_ctrl_0
        (.btn_rst(btn_rst_0_1),
         .cap_btn(cap_btn_0_1),
-        .clk_100MHz(clk_wiz_0_clk_out1),
+        .clk_100MHz(mig_7series_0_ui_clk),
         .playback_start(playback_ctrl_0_playback_start),
         .recording_in_progress(playback_ctrl_0_recording_in_progress),
         .speaker_mode(playback_ctrl_0_speaker_mode));
   hdmi_rgb2dvi_0_0 rgb2dvi_0
        (.PixelClk(axi_dynclk_0_PXL_CLK_O),
-        .SerialClk(mig_7series_0_ui_clk),
+        .SerialClk(axi_dynclk_0_PXL_CLK_5X_O),
         .TMDS_Clk_n(rgb2dvi_0_TMDS_CLK_N),
         .TMDS_Clk_p(rgb2dvi_0_TMDS_CLK_P),
         .TMDS_Data_n(rgb2dvi_0_TMDS_DATA_N),
         .TMDS_Data_p(rgb2dvi_0_TMDS_DATA_P),
-        .aRst_n(rst_mig_7series_0_100M_peripheral_aresetn),
+        .aRst_n(1'b1),
         .vid_pData(v_axi4s_vid_out_0_vid_io_out_DATA),
         .vid_pHSync(v_axi4s_vid_out_0_vid_io_out_HSYNC),
         .vid_pVDE(v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO),
@@ -1752,7 +1754,7 @@ module hdmi
         .slowest_sync_clk(dvi2rgb_0_PixelClk));
   hdmi_spi_controller_0_0 spi_controller_0
        (.chip_select(spi_controller_0_chip_select),
-        .clk_100MHz(clk_wiz_0_clk_out1),
+        .clk_100MHz(mig_7series_0_ui_clk),
         .master_in_slave_out(master_in_slave_out_0_1),
         .mic_data_out(Net),
         .new_data_ready_clk_100MHz(spi_controller_0_new_data_ready_clk_100MHz),
