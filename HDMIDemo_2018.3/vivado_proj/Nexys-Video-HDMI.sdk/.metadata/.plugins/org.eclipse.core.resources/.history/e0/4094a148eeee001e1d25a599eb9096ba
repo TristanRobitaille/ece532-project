@@ -1,0 +1,18 @@
+/*
+ * overlay_text_bin.h
+ *
+ *  Created on: Mar 30, 2024
+ *      Author: jason
+ */
+
+#ifndef SRC_TEXT_OVERLAY_BIN_OVERLAY_TEXT_BIN_H_
+#define SRC_TEXT_OVERLAY_BIN_OVERLAY_TEXT_BIN_H_
+
+
+
+#endif /* SRC_TEXT_OVERLAY_BIN_OVERLAY_TEXT_BIN_H_ */
+
+
+unsigned int loadBinaryImageNote(int note);
+
+unsigned int loadBinaryImageNumber(int frequencyDigit)

@@ -1,0 +1,221 @@
+// code to convert frequency to 4 digits and display each number/letter pixel
+// separately using the position
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "overlay_text_bin.h"
+#include "xil_types.h"
+#include <string.h>
+#include "../video_demo.h"
+#include "xil_cache.h"
+#include "math.h"
+
+u8* framebuffer = (u8*) 0x90000000;
+
+u8* loadBinaryImageNote(int note) {
+    switch (note) {
+        case A_nat:
+            return (u8*) 0x99000000;
+            break;
+        case As_Bf:
+            return (u8*) 0x99300000;
+            break;
+        case B_nat:
+            return (u8*) 0x99600000;
+            break;
+        case C_nat:
+            return (u8*) 0x99900000;
+            break;
+        case Cs_Df:
+            return (u8*) 0x99c00000;
+            break;
+        case D_nat:
+            return (u8*) 0x99f00000;
+            break;
+        case Ds_Ef:
+            return (u8*) 0x9a200000;
+            break;
+        case E_nat:
+            return (u8*) 0x9a500000;
+            break;
+        case F_nat:
+            return (u8*) 0x9a800000;
+            break;
+        case Fs_Gf:
+            return (u8*) 0x9ab00000;
+            break;
+        case G_nat:
+            return (u8*) 0x9ae00000;
+            break;
+        case Gs_Af:
+            return (u8*) 0x9b100000;
+            break;
+        default:
+            xil_printf("Invalid note\n");
+            return NULL;
+            break;
+    }
+}
+
+u8* loadBinaryImageNumber(int frequencyDigit) {
+    switch (frequencyDigit) {
+        case 0:
+            return (u8*) 0x9b400000;
+            break;
+        case 1:
+            return (u8*) 0x9b700000;
+            break;
+        case 2:
+            return (u8*) 0x9ba00000;
+            break;
+        case 3:
+            return (u8*) 0x9bd00000;
+            break;
+        case 4:
+            return (u8*) 0x9c000000;
+            break;
+        case 5:
+            return (u8*)  0x9c300000;
+            break;
+        case 6:
+            return (u8*) 0x9c600000;
+            break;
+        case 7:
+            return (u8*) 0x9c900000;
+            break;
+        case 8:
+            return (u8*) 0x9cc00000;
+            break;
+        case 9:
+            return (u8*) 0x9cf00000;
+            break;
+        case empty:
+        	return (u8*) 0x9d200000;
+        	break;
+        default:
+            return (u8*) (u8*) 0x9d200000;
+            break;
+    }
+}
+
+void overlayNote(int note) {
+    u8* overlay = loadBinaryImageNote(note);
+    for (int i = 0; i < 1440000;i++){
+    				if(overlay[i] != 255) framebuffer[i] = overlay[i];
+    }
+}
+
+void overlayFrequency(int ones, int tens, int hundreds, int thousands) {
+	u8* ones_overlay = loadBinaryImageNumber(ones);
+	u8* tens_overlay = loadBinaryImageNumber(tens);
+	u8* hundreds_overlay = loadBinaryImageNumber(hundreds);
+	u8* thousands_overlay = loadBinaryImageNumber(thousands);
+
+	for (int i = 509; i < 526; i++){
+		memcpy(framebuffer + 3*800*i + 3*21,thousands_overlay + 3*800*i + 3*21, (size_t) 30);
+		memcpy(framebuffer + 3*800*i + 3*21 + 36,hundreds_overlay + 3*800*i + 3*21, (size_t) 30);
+		memcpy(framebuffer + 3*800*i + 3*21 + 72,tens_overlay + 3*800*i + 3*21, (size_t) 30);
+		memcpy(framebuffer + 3*800*i + 3*21 + 108,ones_overlay + 3*800*i + 3*21, (size_t) 30);
+		Xil_DCacheFlushRange((unsigned int) framebuffer, DEMO_MAX_FRAME);
+	}
+}
+
+void switchValveCombo(int combo){
+	if (combo == 0) memcpy(framebuffer,(u8*) 0x98000000,(size_t) 1440800);
+	else {
+		memcpy(framebuffer,(u8*) (framebuffer + 0x1000000*combo),(size_t) 1440800);
+	}
+}
+
+void analyseNote(int frequency){
+	int combo;
+    if (frequency < 240 || (frequency >= 453 && frequency < 479) || frequency >= 906) {
+    	switchValveCombo(7);
+    	overlayNote(C_nat);
+    	splitFrequency(frequency);
+    } else if ((frequency >= 240 && frequency < 254) || (frequency >= 480 && frequency < 508)) {
+    	combo = (frequency < 254) ? 0 : 4;
+    	switchValveCombo(combo);
+    	overlayNote(Cs_Df);
+    	splitFrequency(frequency);
+    } else if ((frequency >= 254 && frequency < 269) || (frequency >= 508 && frequency < 539)) {
+        	combo = (frequency < 269) ? 2 : 6;
+        	switchValveCombo(combo);
+        	overlayNote(D_nat);
+        	splitFrequency(frequency);
+    } else if ((frequency >= 269 && frequency < 285) || (frequency >= 538 && frequency < 570)) {
+            	combo = (frequency < 285) ? 1 : 5;
+            	switchValveCombo(combo);
+            	overlayNote(Ds_Ef);
+            	splitFrequency(frequency);
+    } else if ((frequency >= 285 && frequency < 302) || (frequency >= 570 && frequency < 604)) {
+            	combo = (frequency < 269) ? 4 : 7;
+            	switchValveCombo(combo);
+            	overlayNote(E_nat);
+            	splitFrequency(frequency);
+    } else if ((frequency >= 254 && frequency < 269) || (frequency >= 507 && frequency < 538)) {
+            	combo = (frequency < 269) ? 2 : 6;
+            	switchValveCombo(combo);
+            	overlayNote(Cs_Df);
+            	splitFrequency(frequency);
+    } else if ((frequency >= 254 && frequency < 269) || (frequency >= 507 && frequency < 538)) {
+            	combo = (frequency < 269) ? 2 : 6;
+            	switchValveCombo(combo);
+            	overlayNote(Cs_Df);
+            	splitFrequency(frequency);
+    } else if ((frequency >= 254 && frequency < 269) || (frequency >= 507 && frequency < 538)) {
+            	combo = (frequency < 269) ? 2 : 6;
+            	switchValveCombo(combo);
+            	overlayNote(Cs_Df);
+            	splitFrequency(frequency);
+    } else if ((frequency >= 254 && frequency < 269) || (frequency >= 507 && frequency < 538)) {
+            	combo = (frequency < 269) ? 2 : 6;
+            	switchValveCombo(combo);
+            	overlayNote(Cs_Df);
+            	splitFrequency(frequency);
+    } else if ((frequency >= 254 && frequency < 269) || (frequency >= 507 && frequency < 538)) {
+            	combo = (frequency < 269) ? 2 : 6;
+            	switchValveCombo(combo);
+            	overlayNote(Cs_Df);
+            	splitFrequency(frequency);
+    } else if ((frequency >= 254 && frequency < 269) || (frequency >= 507 && frequency < 538)) {
+            	combo = (frequency < 269) ? 2 : 6;
+            	switchValveCombo(combo);
+            	overlayNote(Cs_Df);
+            	splitFrequency(frequency);
+    } else if ((frequency >= 254 && frequency < 269) || (frequency >= 507 && frequency < 538)) {
+            	combo = (frequency < 269) ? 2 : 6;
+            	switchValveCombo(combo);
+            	overlayNote(Cs_Df);
+            	splitFrequency(frequency);
+    } else {
+        xil_printf("Frequency doesn't correspond to any note!\n");
+    }
+}
+
+void splitFrequency(int frequency) {
+    int thousands, hundreds, tens, ones;
+    int number = frequency;
+
+    number %= 10000; // removing higher digits
+    thousands = floor(number / 1000);
+
+    number %= 1000;
+    hundreds = floor(number / 100);
+
+
+    number %= 100;
+    tens = floor(number / 10);
+
+    ones = number % 10;
+
+    if(thousands == 0) overlayFrequency(ones, tens, hundreds,empty);
+    else{
+    	overlayFrequency(ones, tens, hundreds,thousands);
+    }
+
+
+
+}
+
+

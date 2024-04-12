@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Users\jason\ECE532\ECE532-project\HDMIDemo_2018.3\vivado_proj\Nexys-Video-HDMI.sdk\Nexys-Video-HDMI\Debug" key="tcf_debug_app_selection"/>
+	<item value="C:\Users\jason\ECE532\ECE532-project\HDMIDemo_2018.3\vivado_proj\Nexys-Video-HDMI.sdk\hdmi_wrapper_hw_platform_1" key="program_fpga_view_bit_bmm_browse_key"/>
+	<item value="C:\Users\jason\ECE532" key="zynq_flash_files_selection"/>
+	<item value="C:\Users\jason\ECE532\ECE532-project\HDMIDemo_2018.3\vivado_proj\Nexys-Video-HDMI.sdk\hdmi_wrapper_hw_platform_1" key="last_stored_selection"/>
+</section>
