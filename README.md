@@ -8,7 +8,7 @@ Contributors:
   - Tristan Robitaille
 
 <br />
-Our hardware project is structured in a set of folders. The following list shows the relevant directories:
+Our hardware project is structured in the following set of folders. The following list shows the relevant directories:
 
 * HDMI_gui_project: contains source code for the HDMI setup and GUI display
 
