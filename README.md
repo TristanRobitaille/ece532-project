@@ -9,12 +9,19 @@ Contributors:
 
 <br />
 Our hardware project is structured in a set of folders. The following list shows the relevant directories:
+
 * HDMI_gui_project: contains source code for the HDMI setup and GUI display
+
 * Trumpet_project: contains source code for the audio processing including the SPI controller, and audio playback/record
+
 * doc: contains final demo videos and final demo presentation slides as well as datasheets for various components in our system. <br />This group report will also be in this folder.
+
 * fft_sw: contains code for 32-point FFT version in Python
+
 * fft_32_fft_128_source_files: contains source code for the 32-point and 128-point FFT custom IP blocks
+  
 * Mic_FFT_project: contains the Vivado project for the mic and 128-point FFT
+  
 * warmup_demo: contains warmup demo project for having a TCP client on MicroBlaze
 
 
