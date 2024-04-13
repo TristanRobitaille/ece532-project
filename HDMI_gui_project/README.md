@@ -6,11 +6,19 @@ Description
 
 This directory includes all the code and associated assets for the HDMI GUI output section of our project. It includes the full Vivado project in HDMIDemo_2018.3, as well as the key custom or modified files in the key_files directory. These key files include:
 community_contribution_jason: an example .snap file and an image of the directory from which the .snap file needs to be deleted in order to fix the crashed SDK.
+
 gui_assets: The .png images and .bin files for all of the base images and overlays.
-gui_library: overlay_text_bin.c and overlay_text_bin.h, our custom graphics library. video_demo.c, the file containing our main function for the final demo. video_demo_tb.c, the file containing a testbench for the GUI library that puts in fake frequencies instead of reading frequencies from the FFT output.
+
+gui_library: overlay_text_bin.c and overlay_text_bin.h, our custom graphics library. video_demo.c, the file containing our main function for the final demo. video_demo_tb.c, the file containing a testbench for the GUI 
+
+library that puts in fake frequencies instead of reading frequencies from the FFT output.
+
 frequency_max_min_values: A spreadsheet that was used to calculate the frequency bounds for mapping frequencies to notes
+
 image_encoder: A MATLAB file to encode the image assets to binary
+
 OverlayMaker: A MATLAB file to create the overlays from the base images
+
 
 Setup
 -----------
