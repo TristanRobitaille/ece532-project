@@ -1,0 +1,94 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Fri Mar 29 18:51:59 2024
+| Host         : BA3135WS39 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fft_axi_v1_0_control_sets_placed.rpt
+| Design       : fft_axi_v1_0
+| Device       : xc7a200t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |    50 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      5 |            1 |
+|      8 |            8 |
+|      9 |            2 |
+|     10 |            1 |
+|     13 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              52 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              14 |            5 |
+| Yes          | No                    | No                     |              22 |           10 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            3246 |          858 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+-----------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|       Clock Signal      |                          Enable Signal                          |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++-------------------------+-----------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|  s00_axi_aclk_IBUF_BUFG |                                                                 | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/i___707_n_0      |                1 |              4 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_13/CEB2            | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_13/o_valid_reg |                2 |              5 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0                   | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |                6 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/slv_reg2[23]_i_1_n_0                  | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |                5 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/slv_reg2[15]_i_1_n_0                  | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |                6 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/slv_reg2[31]_i_1_n_0                  | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |                6 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/p_1_in[7]                             | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |                6 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/p_1_in[23]                            | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |                5 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/p_1_in[15]                            | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |                5 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/p_1_in[31]                            | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |                6 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/counter[8]_i_1_n_0           | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/reset_c_reg |                3 |              9 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/freq[10]_i_1_n_0                 |                                                             |                4 |              9 |
+|  s00_axi_aclk_IBUF_BUFG |                                                                 | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |                4 |             10 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/o_valid_reg_0   |                                                             |                6 |             13 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_13/E[0]            | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/SR[0]       |                5 |             17 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/fft_busy_reg[0] | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/SR[0]       |                6 |             17 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/fft_done                     | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/reset_c_reg |                8 |             30 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/slv_reg_rden                          | fft_axi_v1_0_S00_AXI_inst/axi_wready_i_1_n_0                |               21 |             32 |
+|  s00_axi_aclk_IBUF_BUFG |                                                                 |                                                             |               19 |             52 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_1/B_16/o_valid_I       | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/reset_c_reg |              128 |            512 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_2/o_valid_II           | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/reset_c_reg |              128 |            512 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_3/B_4/IV/o_valid_III   | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/reset_c_reg |              128 |            512 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/fft_busy_reg_n_0             | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/reset_c_reg |              128 |            512 |
+|  s00_axi_aclk_IBUF_BUFG | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_4/B_16/E[0]            | fft_axi_v1_0_S00_AXI_inst/inst/fft/level_5/B_16/reset_c_reg |              256 |           1024 |
++-------------------------+-----------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+
+
