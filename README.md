@@ -34,3 +34,9 @@ The Mic_FFT_project has the same audio setup as the trumpet project, except the 
 ### Setup Instructions for the HDMI_gui_project:
 Detailed instructions for setting up the HDMI GUI project can be found in the README for that project. 
 
+### Demo Videos:
+
+Demo Video for FFT and HDMI: https://drive.google.com/file/d/11ZhswJv4U7q5H-CWO5S1MKEScLU6eB60/view?usp=sharing
+
+Demo Video for Audio Recording and Playback: https://www.youtube.com/watch?v=eBKRHMZSFQ4
+
