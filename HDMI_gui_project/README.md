@@ -25,7 +25,7 @@ Setup
 -----------
 To set up the demo, complete the following steps:
 
-0. Connect board to FFT board using wire PMODs as described in the FFT project, plug in power, HDMI out and prog/UART USB cables. 
+0. Connect board to FFT board using wire PMODs, plug in power, HDMI out and prog/UART USB cables. 
 1. Open the full HDMIDemo_2018.3 project in Vivado 2018.3.
 2. Run synthesis, implementation and Generate Bitstream
 3. Go to File>Export Hardware and Click Export Hardware. Check the Include Bitstream Button.
